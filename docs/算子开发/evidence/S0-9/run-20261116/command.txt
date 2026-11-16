@@ -1,0 +1,2 @@
+bash scripts/package_docker_bundle.sh --version 0.1.0
+tar -tzf dist/op-data-mixing-0.1.0.tar.gz

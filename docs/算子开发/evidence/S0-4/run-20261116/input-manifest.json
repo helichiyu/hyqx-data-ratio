@@ -1,0 +1,11 @@
+{
+  "runId": "run-20261116",
+  "workPackage": "S0-4",
+  "inputs": [
+    "根 tests/：契约 22 次参数化、信封、路径闸门、幂等",
+    "模板 tests/：conftest + contract_smoke",
+    "init_run_evidence.py 一次生成 9 件证据文件",
+    "pytest 58 项：57 passed / 1 skipped（Windows 符号链接权限）"
+  ],
+  "note": "S0 阶段输入为文档/样例/配置，详见 report.md"
+}

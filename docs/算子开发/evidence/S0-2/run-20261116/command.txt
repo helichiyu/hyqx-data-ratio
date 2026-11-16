@@ -1,0 +1,1 @@
+python -m pytest tests/test_contract_all.py tests/test_envelope.py tests/test_path_gate.py -q

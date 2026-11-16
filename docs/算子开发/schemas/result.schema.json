@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hsmty.local/schemas/result.schema.json",
+  "title": "算子 predict 结果 data（S0 冻结）",
+  "description": "任务书 3.4 结果契约；校验信封中的 data 对象。operatorId 为目录名，semanticCode 单独给出（与任务书 3.4 示例的差异已登记）。",
+  "type": "object",
+  "required": [
+    "operatorId",
+    "operatorVersion",
+    "modelVersion",
+    "treeVersion",
+    "paramsHash",
+    "seed",
+    "sampleCount",
+    "successCount",
+    "failedCount",
+    "failedSamples",
+    "metrics",
+    "artifacts",
+    "outputFilePath",
+    "outputDir"
+  ],
+  "properties": {
+    "operatorId": {"type": "string", "minLength": 1, "description": "目录名即 operatorId。"},
+    "semanticCode": {"type": "string", "minLength": 1},
+    "operatorVersion": {"type": "string", "minLength": 1},
+    "modelVersion": {"type": ["string", "null"]},
+    "treeVersion": {"type": ["string", "null"]},
+    "paramsHash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "seed": {"type": "integer"},
+    "sampleCount": {"type": ["integer", "null"], "minimum": 0},
+    "successCount": {"type": ["integer", "null"], "minimum": 0},
+    "failedCount": {"type": ["integer", "null"], "minimum": 0},
+    "failedSamples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "reasonCode"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "reasonCode": {"type": "string", "minLength": 1},
+          "detail": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "metrics": {"type": "object"},
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "path", "sha256"],
+        "properties": {
+          "type": {"type": "string", "minLength": 1},
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "bytes": {"type": "integer", "minimum": 0}
+        },
+        "additionalProperties": true
+      }
+    },
+    "outputFilePath": {"type": ["string", "null"]},
+    "outputDir": {"type": ["string", "null"]},
+    "result": {
+      "type": "object",
+      "description": "规则类算子的内联结果；文件型算子使用 outputFilePath。"
+    },
+    "runId": {"type": "string", "pattern": "^[0-9a-f]{16}$"},
+    "inputFingerprint": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "cached": {"type": "boolean"},
+    "deterministic": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

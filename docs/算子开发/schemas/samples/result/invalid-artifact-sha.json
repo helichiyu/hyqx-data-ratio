@@ -1,0 +1,34 @@
+{
+  "operatorId": "dm-corpus-normalization",
+  "semanticCode": "corpus_ingest_normalize_index_v1",
+  "operatorVersion": "0.1.0",
+  "modelVersion": null,
+  "treeVersion": "taxonomy-1013-pending",
+  "paramsHash": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "seed": 42,
+  "runId": "0123456789abcdef",
+  "inputFingerprint": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "sampleCount": 100,
+  "successCount": 99,
+  "failedCount": 1,
+  "failedSamples": [
+    {
+      "id": "rec-0099",
+      "reasonCode": "DECODE_FAILED"
+    }
+  ],
+  "metrics": {
+    "compressionRatio": 0.5
+  },
+  "artifacts": [
+    {
+      "type": "parquet",
+      "path": "out/part-0.parquet",
+      "sha256": "xyz"
+    }
+  ],
+  "outputFilePath": "/data/output/dm-corpus-normalization/0123456789abcdef/result.jsonl",
+  "outputDir": "/data/output/dm-corpus-normalization/0123456789abcdef",
+  "cached": false,
+  "deterministic": true
+}

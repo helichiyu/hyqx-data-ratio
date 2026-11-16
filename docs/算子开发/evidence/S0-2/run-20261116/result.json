@@ -1,0 +1,9 @@
+{
+  "workPackage": "S0-2",
+  "status": "完成（本机）",
+  "metrics": {
+    "contractCases": 22,
+    "envelopeCases": 14,
+    "pathGateCases": 16
+  }
+}

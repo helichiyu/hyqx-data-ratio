@@ -1,0 +1,9 @@
+{
+  "workPackage": "S0-3",
+  "status": "完成（本机）",
+  "metrics": {
+    "schemas": 3,
+    "validSamples": 3,
+    "invalidSamples": 13
+  }
+}

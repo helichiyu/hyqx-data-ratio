@@ -1,0 +1,2 @@
+python scripts/gen_tree_snapshot.py
+python scripts/gen_sample_manifest.py

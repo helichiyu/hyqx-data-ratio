@@ -1,0 +1,5 @@
+python -m pytest tests operator/_template/tests
+python scripts/validate_schemas.py
+python scripts/check_registry.py
+python scripts/check_healthz.py --base-url http://127.0.0.1:17025
+bash scripts/package_docker_bundle.sh --version 0.1.0

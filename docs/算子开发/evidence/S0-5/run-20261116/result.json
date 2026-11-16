@@ -1,0 +1,11 @@
+{
+  "workPackage": "S0-5",
+  "status": "完成（本机）；树版本/阈值待业务确认（H-02/H-03）",
+  "metrics": {
+    "contentNodes": 423,
+    "domainNodes": 272,
+    "abilityNodes": 99,
+    "treeVersion": "taxonomy-1013-pending",
+    "thresholds": 23
+  }
+}

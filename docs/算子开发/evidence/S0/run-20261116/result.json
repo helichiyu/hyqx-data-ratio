@@ -1,0 +1,12 @@
+{
+  "workPackage": "S0",
+  "status": "本机自测通过，状态待评审",
+  "metrics": {
+    "workPackages": 9,
+    "pytestPassed": 57,
+    "pytestSkipped": 1,
+    "healthzReady": 22,
+    "registryRows": 22,
+    "bundleCoreFiles": 22
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "runId": "run-20261116",
+  "workPackage": "S0-3",
+  "inputs": [
+    "record/manifest/result 三份 Draft 2020-12 Schema",
+    "每份 1 个正样例 + 4～5 个反样例",
+    "正样例全部通过、反样例全部被拒"
+  ],
+  "note": "S0 阶段输入为文档/样例/配置，详见 report.md"
+}

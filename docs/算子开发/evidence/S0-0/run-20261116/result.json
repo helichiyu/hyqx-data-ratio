@@ -1,0 +1,9 @@
+{
+  "workPackage": "S0-0",
+  "status": "完成（本机）；样例授权待人工确认（H-04）",
+  "metrics": {
+    "samples": 7,
+    "mixedZipBytes": 1120290,
+    "treeVersion": "taxonomy-1013-pending"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "runId": "run-20261116",
+  "workPackage": "S0-8",
+  "inputs": [
+    "docker-compose.yml：单服务 op-data-mixing、17025、输入输出卷、健康检查",
+    "docker compose config 解析通过，build context=operator/",
+    "本机 uvicorn + 22 个 healthz 通过"
+  ],
+  "note": "S0 阶段输入为文档/样例/配置，详见 report.md"
+}

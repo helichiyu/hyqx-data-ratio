@@ -1,0 +1,10 @@
+{
+  "workPackage": "S0-1",
+  "status": "完成（本机）",
+  "metrics": {
+    "operators": 22,
+    "healthzReady": 22,
+    "pytestPassed": 57,
+    "pytestSkipped": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "runId": "run-20261116",
+  "workPackage": "S0-7",
+  "inputs": [
+    "权重/密钥/语料/样例授权规则",
+    "许可证清单：基础镜像、系统包、Python 依赖、样例、模型预登记",
+    ".gitignore 排除权重、dist、runtime、.env、缓存",
+    "仓库无权重文件、无 .env"
+  ],
+  "note": "S0 阶段输入为文档/样例/配置，详见 report.md"
+}

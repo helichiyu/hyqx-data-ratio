@@ -1,0 +1,32 @@
+services:
+  op-data-mixing:
+    image: op-data-mixing:${OP_DATA_MIXING_VERSION:-0.1.0}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: op-data-mixing
+    ports:
+      - "17025:17025"
+    environment:
+      INPUT_DIR: /app/runtime/transport/input
+      OUTPUT_DIR: /app/runtime/transport/output
+      MAX_UPLOAD_BYTES: "10485760"
+      MAX_EXTRACT_BYTES: "104857600"
+      DEFAULT_SEED: "42"
+      REQUIRE_X_TOKEN: "false"
+      DEVICE: "cpu"
+    volumes:
+      # 宿主机路径由部署环境注入，不写死在镜像里
+      - ${INPUT_DIR_HOST:-./runtime/input}:/app/runtime/transport/input
+      - ${OUTPUT_DIR_HOST:-./runtime/output}:/app/runtime/transport/output
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:17025/health', timeout=3).read()"
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+    restart: unless-stopped

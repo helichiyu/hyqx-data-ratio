@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hsmty.local/schemas/record.schema.json",
+  "title": "标准语料记录（S0 冻结）",
+  "description": "任务书 3.3 标准记录；图像/音频/视频的模态属性放 metadata。",
+  "type": "object",
+  "required": ["record_id", "modal", "source", "metadata", "quality", "partitions", "hashes"],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256,
+      "description": "稳定唯一 ID：由输入指纹/平台 ID 生成，禁止自增。"
+    },
+    "modal": {
+      "type": "string",
+      "enum": ["text", "image", "audio", "video"],
+      "description": "主模态；视频含音轨时以 metadata.audioStreams 承载子模态。"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["web_text", "books", "code", "science", "wiki", "dialogue"],
+      "description": "六类来源 alias，与 baseline/source-map.json 一致。"
+    },
+    "text": {
+      "type": ["string", "null"],
+      "description": "正文/转写/OCR；无文本为 null。"
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["format", "sizeBytes", "sha256"],
+      "properties": {
+        "format": {"type": "string", "minLength": 1},
+        "mime": {"type": "string"},
+        "sizeBytes": {"type": "integer", "minimum": 0},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "md5": {"type": "string", "pattern": "^[0-9a-f]{32}$"},
+        "width": {"type": "integer", "minimum": 1},
+        "height": {"type": "integer", "minimum": 1},
+        "durationSec": {"type": "number", "minimum": 0},
+        "sampleRate": {"type": "integer", "minimum": 1},
+        "channels": {"type": "integer", "minimum": 1},
+        "fps": {"type": "number", "exclusiveMinimum": 0},
+        "frameCount": {"type": "integer", "minimum": 0},
+        "capturedAt": {"type": ["string", "null"], "format": "date-time"},
+        "originalSource": {"type": ["string", "null"]},
+        "synthetic": {"type": "boolean"},
+        "extra": {"type": "object"}
+      },
+      "additionalProperties": true
+    },
+    "quality": {
+      "type": "object",
+      "required": ["decodable", "completeness"],
+      "properties": {
+        "decodable": {"type": "boolean"},
+        "completeness": {"type": "number", "minimum": 0, "maximum": 1},
+        "emptyText": {"type": "boolean"},
+        "mojibakeRate": {"type": "number", "minimum": 0, "maximum": 1},
+        "decodeError": {"type": ["string", "null"]},
+        "notes": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "confidence"],
+        "properties": {
+          "path": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "string", "minLength": 1},
+            "description": "可变深度标签路径，必须命中当前 treeVersion。"
+          },
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "topK": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["path", "confidence"],
+              "properties": {
+                "path": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+                "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+              }
+            }
+          },
+          "evidence": {"type": "object"},
+          "modelVersion": {"type": ["string", "null"]},
+          "treeVersion": {"type": ["string", "null"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "partitions": {
+      "type": "object",
+      "required": ["modal", "source", "dt"],
+      "properties": {
+        "modal": {"type": "string", "enum": ["text", "image", "audio", "video"]},
+        "source": {"type": "string", "enum": ["web_text", "books", "code", "science", "wiki", "dialogue"]},
+        "dt": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}
+      },
+      "additionalProperties": false
+    },
+    "hashes": {
+      "type": "object",
+      "required": ["md5", "sha256"],
+      "properties": {
+        "md5": {"type": "string", "pattern": "^[0-9a-f]{32}$"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "simhash": {"type": ["string", "null"]},
+        "phash": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

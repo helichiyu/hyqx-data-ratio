@@ -1,0 +1,11 @@
+{
+  "runId": "run-20261116",
+  "workPackage": "S0",
+  "inputs": [
+    "9 个工作包全部完成本机可执行部分",
+    "pytest 57 passed / 1 skipped；Schema 正反样例通过；registry 22 行一致",
+    "uvicorn 22/22 healthz；压缩包清单干净并可解压核对",
+    "Docker 构建/容器内探针/压缩包独立构建待人工执行"
+  ],
+  "note": "S0 阶段输入为文档/样例/配置，详见 report.md"
+}

@@ -1,0 +1,10 @@
+{
+  "runId": "run-20261116",
+  "workPackage": "S0-6",
+  "inputs": [
+    "registry.json 22 行，含状态机字段；publishId=null",
+    "check_registry 比对 xlsx/map/registry 逐行一致，依赖无环",
+    "状态均为「未开始」，AI 不标已验收"
+  ],
+  "note": "S0 阶段输入为文档/样例/配置，详见 report.md"
+}

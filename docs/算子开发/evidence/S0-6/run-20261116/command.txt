@@ -1,0 +1,2 @@
+python scripts/gen_registry.py
+python scripts/check_registry.py

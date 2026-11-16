@@ -1,0 +1,11 @@
+{
+  "runId": "run-20261116",
+  "workPackage": "S0-1",
+  "inputs": [
+    "生成 22 个算子包骨架（core.run + configs + utils），目录=包名，不嵌套",
+    "写 map.json 22 条；根 inference.py 单入口五端点 + /health",
+    "Dockerfile / .dockerignore / docker-compose.yml / requirements.txt",
+    "本机 uvicorn 启动，22/22 healthz code=0"
+  ],
+  "note": "S0 阶段输入为文档/样例/配置，详见 report.md"
+}

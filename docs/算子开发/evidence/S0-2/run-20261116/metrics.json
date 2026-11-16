@@ -1,0 +1,9 @@
+{
+  "workPackage": "S0-2",
+  "metrics": {
+    "contractCases": 22,
+    "envelopeCases": 14,
+    "pathGateCases": 16
+  },
+  "blockedReason": "see report.md#未决问题"
+}

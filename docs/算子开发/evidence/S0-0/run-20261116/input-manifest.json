@@ -1,0 +1,11 @@
+{
+  "runId": "run-20261116",
+  "workPackage": "S0-0",
+  "inputs": [
+    "固定解释器 D:/anaconda3/envs/use/python.exe（Python 3.12.12）",
+    "安装 ffmpeg 9.0.2（imageio-ffmpeg 静态构建，放入 env Scripts）",
+    "收集 7 个样例：文本/图像/音频×2/视频×2/PDF 扫描书；生成四模态混合 zip",
+    "记录来源、大小、SHA-256、授权状态"
+  ],
+  "note": "S0 阶段输入为文档/样例/配置，详见 report.md"
+}

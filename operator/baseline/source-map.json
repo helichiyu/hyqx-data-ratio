@@ -1,0 +1,107 @@
+{
+  "version": "0.1.0",
+  "sourceClassVersion": "fgw-six-v1",
+  "status": "pending-confirmation",
+  "statusNote": "六类来源以 FGW 为准；与原型三类的对应关系待人工确认（Q-02）。",
+  "classes": [
+    {
+      "alias": "web_text",
+      "nameZh": "网络文本",
+      "definition": "网页、资讯、论坛、博客等公开网络抓取文本；无明确书籍/论文/代码/维基/对话特征时归入本类。",
+      "ruleHints": {
+        "domains": ["news", "blog", "forum", "bbs", "sohu.com", "sina.com.cn", "163.com", "qq.com"],
+        "urlPatterns": ["^https?://"],
+        "extensions": [".html", ".htm", ".txt"]
+      },
+      "precedence": 60,
+      "fallback": true
+    },
+    {
+      "alias": "books",
+      "nameZh": "书籍",
+      "definition": "图书、出版物及其数字化版本，具备 ISBN、出版社、章节结构或图书语料库来源。",
+      "ruleHints": {
+        "metadataKeys": ["isbn", "publisher", "bookTitle"],
+        "domains": ["gutenberg.org", "archive.org", "book"],
+        "extensions": [".epub", ".mobi"]
+      },
+      "precedence": 30,
+      "fallback": false
+    },
+    {
+      "alias": "code",
+      "nameZh": "代码",
+      "definition": "源代码、配置文件、脚本与代码仓库内容，具备代码语法结构或仓库来源。",
+      "ruleHints": {
+        "domains": ["github.com", "gitlab.com", "gitee.com", "bitbucket.org", "stackoverflow.com"],
+        "extensions": [".py", ".java", ".js", ".ts", ".go", ".rs", ".c", ".cpp", ".h", ".cs", ".php", ".rb", ".sql", ".sh", ".yaml", ".yml", ".toml"],
+        "contentHints": ["license header", "import/package 声明", "代码块占比"]
+      },
+      "precedence": 20,
+      "fallback": false
+    },
+    {
+      "alias": "science",
+      "nameZh": "科学文献",
+      "definition": "论文、专利、技术报告、标准等学术或专业文献，具备 DOI/arXiv/PubMed 等标识。",
+      "ruleHints": {
+        "metadataKeys": ["doi", "arxivId", "pubmedId", "journal", "issn"],
+        "domains": ["arxiv.org", "doi.org", "pubmed.ncbi.nlm.nih.gov", "nature.com", "science.org", "ieee.org", "acm.org", "springer.com", "sciencedirect.com"],
+        "extensions": [".tex", ".bib"]
+      },
+      "precedence": 10,
+      "fallback": false
+    },
+    {
+      "alias": "wiki",
+      "nameZh": "维基",
+      "definition": "维基百科、维基数据、维基文库等 Wikimedia 项目内容，具备 wiki 域名或编辑历史特征。",
+      "ruleHints": {
+        "domains": ["wikipedia.org", "wikidata.org", "wikisource.org", "wikimedia.org", "wiki"],
+        "urlPatterns": ["/wiki/"]
+      },
+      "precedence": 15,
+      "fallback": false
+    },
+    {
+      "alias": "dialogue",
+      "nameZh": "对话",
+      "definition": "多轮对话、问答、客服记录、聊天语料，具备角色/轮次结构或对话数据集来源。",
+      "ruleHints": {
+        "metadataKeys": ["turns", "speaker", "role", "dialogueId"],
+        "domains": ["convai.io", "dialogue"],
+        "contentHints": ["多轮角色标记", "问句-答句成对", "会话分隔符"]
+      },
+      "precedence": 40,
+      "fallback": false
+    }
+  ],
+  "rulePrecedence": [
+    "1. 显式元数据（doi/arxivId/isbn/repository/role 等）优先",
+    "2. 域名与 URL 规则次之",
+    "3. 扩展名与内容特征再次",
+    "4. 均不命中时归 web_text，并标记 confidence=low，进人工确认清单"
+  ],
+  "prototypeMapping": {
+    "移动内部": {
+      "ownership": "internal",
+      "displayDefault": "web_text",
+      "note": "归属标签，不直接决定六类；样本级规则命中时以规则结果为准。"
+    },
+    "移动外部": {
+      "ownership": "external",
+      "displayDefault": "web_text",
+      "note": "归属标签，不直接决定六类；第三方采买数据按实际内容判定。"
+    },
+    "合成生成": {
+      "ownership": "synthetic",
+      "displayDefault": "dialogue",
+      "note": "合成数据必须在 metadata.synthetic=true 标记；不得冒充真实来源。"
+    }
+  },
+  "notes": [
+    "六类占比合计必须为 100%，由 OP-08 校验。",
+    "原型三类是数据归属/产生方式，FGW 六类是内容来源形态，两者正交，不能一一硬映射。",
+    "规则阈值与置信度由 OP-08 的 configs 落地，本文件只冻结六类别名与判定优先级。"
+  ]
+}

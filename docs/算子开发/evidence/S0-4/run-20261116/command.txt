@@ -1,0 +1,2 @@
+python -m pytest tests operator/_template/tests
+python scripts/init_run_evidence.py --output-dir docs/算子开发/evidence/S0-4/run-20261116

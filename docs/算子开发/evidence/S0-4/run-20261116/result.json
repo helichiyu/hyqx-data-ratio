@@ -1,0 +1,10 @@
+{
+  "workPackage": "S0-4",
+  "status": "完成（本机）",
+  "metrics": {
+    "collected": 58,
+    "passed": 57,
+    "skipped": 1,
+    "evidenceFiles": 9
+  }
+}

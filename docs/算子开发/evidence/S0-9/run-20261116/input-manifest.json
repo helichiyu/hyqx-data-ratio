@@ -1,0 +1,11 @@
+{
+  "runId": "run-20261116",
+  "workPackage": "S0-9",
+  "inputs": [
+    "allowlist 单一来源；.dockerignore 与打包脚本共用",
+    "生成 dist/op-data-mixing-0.1.0.tar.gz，44230 字节，170 个文件",
+    "清单无 tests/dataset/output/docs/*.md/缓存；22 个 core.py",
+    "解压到空目录核对 map 22 条、必需文件齐全、无 _template"
+  ],
+  "note": "S0 阶段输入为文档/样例/配置，详见 report.md"
+}

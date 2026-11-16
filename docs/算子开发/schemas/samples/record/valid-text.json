@@ -1,0 +1,65 @@
+{
+  "record_id": "cc-ml-0001",
+  "modal": "text",
+  "source": "wiki",
+  "text": "Machine learning is a field of study in artificial intelligence.",
+  "metadata": {
+    "format": "jsonl",
+    "mime": "application/jsonl",
+    "sizeBytes": 162,
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "originalSource": "https://en.wikipedia.org/wiki/Machine_learning"
+  },
+  "quality": {
+    "decodable": true,
+    "completeness": 1.0,
+    "emptyText": false,
+    "mojibakeRate": 0.0
+  },
+  "labels": [
+    {
+      "path": [
+        "新闻与资讯",
+        "科技新闻",
+        "产品发布与行业动态"
+      ],
+      "confidence": 0.92,
+      "topK": [
+        {
+          "path": [
+            "新闻与资讯",
+            "科技新闻",
+            "产品发布与行业动态"
+          ],
+          "confidence": 0.92
+        },
+        {
+          "path": [
+            "新闻与资讯",
+            "科技新闻",
+            "科技新闻"
+          ],
+          "confidence": 0.41
+        }
+      ],
+      "evidence": {
+        "span": [
+          0,
+          72
+        ]
+      },
+      "modelVersion": "bert-taxonomy-2026-11",
+      "treeVersion": "taxonomy-1013-pending"
+    }
+  ],
+  "partitions": {
+    "modal": "text",
+    "source": "wiki",
+    "dt": "2026-11-16"
+  },
+  "hashes": {
+    "md5": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "simhash": "1234567890123456789"
+  }
+}

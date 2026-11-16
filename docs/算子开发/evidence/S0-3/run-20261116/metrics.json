@@ -1,0 +1,9 @@
+{
+  "workPackage": "S0-3",
+  "metrics": {
+    "schemas": 3,
+    "validSamples": 3,
+    "invalidSamples": 13
+  },
+  "blockedReason": null
+}

@@ -1,0 +1,9 @@
+{
+  "workPackage": "S0-6",
+  "metrics": {
+    "rows": 22,
+    "publishIdNonNull": 0,
+    "cycles": 0
+  },
+  "blockedReason": null
+}

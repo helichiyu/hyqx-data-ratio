@@ -1,0 +1,104 @@
+{
+  "batchId": "samples-2026-11-16",
+  "generatedAt": "2026-11-16",
+  "generatedBy": "scripts/gen_sample_manifest.py",
+  "purpose": "S0 流程验证；不作为效果验收证据。",
+  "authorizationNote": "内部项目素材授权状态待人工确认（H-04）；公有领域素材已标注来源。",
+  "entries": [
+    {
+      "path": "text/machine_learning.jsonl",
+      "modal": "text",
+      "format": "jsonl",
+      "source": "../后训练系统/commoncrawl_test_dataset/machine_learning.jsonl",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Machine_learning",
+      "license": "CC BY-SA（维基百科内容，经 Common Crawl 采集）",
+      "authorization": "public-license",
+      "note": "维基百科单页抓取样本，425 段；来源 SHA-256 见随附 manifest。",
+      "bytes": 195538,
+      "sha256": "e9814887434f4f2da1970322978d6dd6f67aedf6d8dd3b476e646a4ccbde67c7"
+    },
+    {
+      "path": "image/530384988814704640.jpg",
+      "modal": "image",
+      "format": "jpg",
+      "source": "../平行语料/4个算子源码/图片OCR知识库相似度匹配算子/dataset/530384988814704640.jpg",
+      "sourceUrl": null,
+      "license": "内部项目素材，授权待确认",
+      "authorization": "pending",
+      "note": "内部 OCR 算子样例图；仅用于流程验证。",
+      "bytes": 246616,
+      "sha256": "fb1a93eab3908af56fe7f7fca071e1ad1afa80585ecf0625ff91f05f06d655fc"
+    },
+    {
+      "path": "audio/0_0.mp3",
+      "modal": "audio",
+      "format": "mp3",
+      "source": "../平行语料/4个算子源码/音频转文本知识库相似度匹算子/dataset/0_0.mp3",
+      "sourceUrl": null,
+      "license": "内部项目素材，授权待确认",
+      "authorization": "pending",
+      "note": "3.38 秒、24 kHz 单声道。",
+      "bytes": 27072,
+      "sha256": "180961720fdf7d1c4d49ec5f23c0fdabb6058b72396b431d5eb70db788112c77"
+    },
+    {
+      "path": "audio/asr_example_hotword.wav",
+      "modal": "audio",
+      "format": "wav",
+      "source": "../平行语料/4个算子源码/音频转文本知识库相似度匹算子/models/paraformer-zh/asr_example_hotword.wav",
+      "sourceUrl": null,
+      "license": "内部项目素材/FunASR 示例，授权待确认",
+      "authorization": "pending",
+      "note": "WAV 格式样例，覆盖第二种音频容器。",
+      "bytes": 253642,
+      "sha256": "51792bc95be33075c1a8abb9afb76ad9f72943e84cd723cc8825b2678799b004"
+    },
+    {
+      "path": "video/image__00260.mp4",
+      "modal": "video",
+      "format": "mp4",
+      "source": "../平行语料/4个算子源码/视频抽帧OCR知识库相似度匹配算子/dataset/image__00260.mp4",
+      "sourceUrl": null,
+      "license": "内部项目素材，授权待确认",
+      "authorization": "pending",
+      "note": "5.04 秒、512x512、24 fps、无音轨。",
+      "bytes": 340281,
+      "sha256": "9f2797708457233f57014ced095faf7cac0660f05a7cc6c6fd4a98473ef39b43"
+    },
+    {
+      "path": "video/60b5695ab2f0_with_audio.mp4",
+      "modal": "video",
+      "format": "mp4",
+      "source": "../平行语料/4个算子源码/视频抽帧视觉特征匹配算子/dataset/60b5695ab2f0.mp4",
+      "sourceUrl": null,
+      "license": "内部项目素材，授权待确认",
+      "authorization": "pending",
+      "note": "10.01 秒、1280x720、24 fps、含 mp3 音轨（音视频拆流样本）。",
+      "bytes": 831693,
+      "sha256": "03bdfd257f273e87f6e3c9b9055c27d265aa1d5fd72b2c3d71c413d7ed7a966e"
+    },
+    {
+      "path": "pdf/noches_blancas_1905.pdf",
+      "modal": "image+text",
+      "format": "pdf",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/7/75/Antonio_de_Zayas_-_Noches_blancas_%281905%29.pdf",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antonio_de_Zayas_-_Noches_blancas_(1905).pdf",
+      "license": "Public domain（Wikimedia Commons，PD-scan）",
+      "authorization": "public-domain",
+      "note": "326 页扫描书；第 3 页文本层为空、仅有图像，用于 PDF 扫描页 OCR 触发验证。",
+      "bytes": 4466151,
+      "sha256": "e6635e182b13c6eeb1ea1198ffc32a802a2e4ada0bd15d8d8221ab0b2db8c8bc"
+    }
+  ],
+  "mixedBatch": {
+    "path": "mixed/mixed_batch_2026-11-16.zip",
+    "members": [
+      "text/machine_learning.jsonl",
+      "image/530384988814704640.jpg",
+      "audio/0_0.mp3",
+      "video/60b5695ab2f0_with_audio.mp4"
+    ],
+    "bytes": 1120290,
+    "sha256": "7f826ceed2bef81e6d7438bdbc30f72622eaa2c14d94310867ebacb8ca6455e3"
+  }
+}

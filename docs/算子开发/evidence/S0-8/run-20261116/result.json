@@ -1,0 +1,9 @@
+{
+  "workPackage": "S0-8",
+  "status": "完成（本机）；容器内验证待人工（H-01）",
+  "metrics": {
+    "services": 1,
+    "port": 17025,
+    "healthzReady": 22
+  }
+}

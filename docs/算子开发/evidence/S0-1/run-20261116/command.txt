@@ -1,0 +1,4 @@
+python scripts/scaffold_operators.py
+python -m pytest tests operator/_template/tests -q
+python -m uvicorn inference:app --host 127.0.0.1 --port 17025
+python scripts/check_healthz.py --base-url http://127.0.0.1:17025

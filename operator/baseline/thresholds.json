@@ -1,0 +1,230 @@
+{
+  "version": "0.1.0",
+  "thresholdVersion": "s0-2026-11-16",
+  "status": "pending-confirmation",
+  "statusNote": "业务阈值待书面确认（Q-03）。未确认项按任务书默认值执行并标注「联调初值」，不得静默定稿。",
+  "thresholds": {
+    "coverage.core_label_min": {
+      "value": 0.3,
+      "unit": "ratio",
+      "scope": "OP-15 配比校验",
+      "description": "高频核心标签覆盖率下限 30%",
+      "source": "任务书 S4 门禁 / FGW 12.x",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "coverage.level1_min": {
+      "value": 1.0,
+      "unit": "ratio",
+      "scope": "OP-15 配比校验",
+      "description": "一级分类覆盖 100%",
+      "source": "任务书 S4 门禁",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "coverage.level2_min": {
+      "value": 1.0,
+      "unit": "ratio",
+      "scope": "OP-15 配比校验",
+      "description": "二级分类覆盖 100%",
+      "source": "任务书 S4 门禁",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "ratio.sum_target": {
+      "value": 1.0,
+      "unit": "ratio",
+      "scope": "OP-15 配比归一化",
+      "description": "全部标签占比合计必须为 100%",
+      "source": "任务书 S4 门禁",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "ratio.normalization_error_max": {
+      "value": 0.001,
+      "unit": "ratio",
+      "scope": "OP-15 配比归一化",
+      "description": "最大余数法归一化误差 ≤0.1%",
+      "source": "任务书 S4 门禁",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "sample.min_total": {
+      "value": 100000,
+      "unit": "records",
+      "scope": "OP-15 / OP-17",
+      "description": "最小样本 10 万条",
+      "source": "任务书 S4 门禁",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "quality.gini_threshold": {
+      "value": 0.6,
+      "unit": "coefficient",
+      "scope": "OP-14",
+      "description": "基尼系数失衡阈值",
+      "source": "任务书 S3 / FGW 13.3",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "speech.wer_low_quality": {
+      "value": 0.2,
+      "unit": "ratio",
+      "scope": "OP-11",
+      "description": "WER >20% 标记低质量语音（仅有参考文本时计算）",
+      "source": "任务书 S3",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "time.freshness_stale": {
+      "value": 0.4,
+      "unit": "index",
+      "scope": "OP-09",
+      "description": "新鲜度指数 <0.4 提示过时风险",
+      "source": "任务书 S3 / FGW 13.2-6",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "language.confidence_min": {
+      "value": 0.85,
+      "unit": "probability",
+      "scope": "OP-09",
+      "description": "语种置信度 <0.85 标记混合语/未识别",
+      "source": "任务书 S3",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "source.ahp_weights": {
+      "value": {
+        "authority": 0.4,
+        "transparency": 0.3,
+        "freshness": 0.2,
+        "evaluation": 0.1
+      },
+      "unit": "weights",
+      "scope": "OP-08 来源可信度",
+      "description": "权威 40 / 透明 30 / 更新 20 / 评价 10",
+      "source": "任务书 S3 / FGW 13.2-2",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "source.ahp_consistency_max": {
+      "value": 0.1,
+      "unit": "ratio",
+      "scope": "OP-08 AHP",
+      "description": "AHP 一致性比率 CR < 0.1",
+      "source": "任务书 S3",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "time.freshness_weights": {
+      "value": {
+        "last_1y": 0.6,
+        "last_3y": 0.3,
+        "older": 0.1
+      },
+      "unit": "weights",
+      "scope": "OP-09 新鲜度指数",
+      "description": "近 1 年×0.6 + 近 3 年×0.3 + 3 年以上×0.1",
+      "source": "任务书 S3",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "taskfit.weights": {
+      "value": {
+        "structure": 0.4,
+        "semantic": 0.3,
+        "domain": 0.3
+      },
+      "unit": "weights",
+      "scope": "OP-10 六维任务适配",
+      "description": "结构完整性 40 / 语义复杂 30 / 领域相关 30",
+      "source": "任务书 S3 / FGW 13.3-2",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "sampling.share_large": {
+      "value": {
+        "min": 0.05,
+        "max": 0.1
+      },
+      "unit": "ratio",
+      "scope": "OP-04 / OP-17 / OP-21",
+      "description": "大规模语料抽样比例 5%–10%",
+      "source": "任务书 S3/S5",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "sampling.share_small": {
+      "value": {
+        "min": 0.2,
+        "max": 0.3
+      },
+      "unit": "ratio",
+      "scope": "OP-04",
+      "description": "中小规模语料抽样比例 20%–30%",
+      "source": "任务书 S3",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "labels.min_confidence": {
+      "value": null,
+      "unit": "probability",
+      "scope": "OP-05 / OP-06 / OP-07",
+      "description": "打标低置信阈值，待业务确认；未确认前由算子 configs 以「联调初值」声明",
+      "source": "待业务确认",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "labels.top_k": {
+      "value": null,
+      "unit": "count",
+      "scope": "OP-05 / OP-06",
+      "description": "topK 上限，待业务确认",
+      "source": "待业务确认",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "labels.max_depth": {
+      "value": null,
+      "unit": "level",
+      "scope": "OP-05",
+      "description": "标签路径最大深度，待业务确认",
+      "source": "待业务确认",
+      "status": "pending-business-confirm",
+      "qId": "Q-03"
+    },
+    "platform.max_request_bytes": {
+      "value": 10485760,
+      "unit": "bytes",
+      "scope": "全部算子",
+      "description": "平台单请求上限 10 MiB；语料不得内联 JSON",
+      "source": "任务书 3.2 / 交接文档 02",
+      "status": "confirmed"
+    },
+    "platform.upload_max_bytes": {
+      "value": 10485760,
+      "unit": "bytes",
+      "scope": "全部算子 uploadFile",
+      "description": "单次上传上限，可用 MAX_UPLOAD_BYTES 覆盖",
+      "source": "任务书 3.2",
+      "status": "confirmed"
+    },
+    "platform.extract_max_bytes": {
+      "value": 104857600,
+      "unit": "bytes",
+      "scope": "全部算子 zip 解压",
+      "description": "zip 解压后总量上限，防压缩炸弹；可用 MAX_EXTRACT_BYTES 覆盖",
+      "source": "S0 联调初值",
+      "status": "confirmed"
+    },
+    "runtime.default_seed": {
+      "value": 42,
+      "unit": "seed",
+      "scope": "全部算子",
+      "description": "未传 seed 时的默认值，结果必须写回",
+      "source": "S0 联调初值",
+      "status": "confirmed"
+    }
+  }
+}

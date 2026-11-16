@@ -1,0 +1,425 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-11-16",
+  "generatedBy": "scripts/gen_registry.py",
+  "source": "operator/map.json + docs/任务要求/算子清单 xlsx 01/03 表",
+  "publishIdPolicy": "不生成对外发布 ID（已确认口径）；如需发布 ID 按《平台相关 ID 生成规范》另行申请。",
+  "statusMachine": [
+    "未开始",
+    "进行中",
+    "自测通过",
+    "待评审",
+    "已验收",
+    "阻塞"
+  ],
+  "operators": [
+    {
+      "opId": "OP-01",
+      "operatorId": "dm-multimodal-analysis",
+      "nameZh": "多模态识别与解析",
+      "semanticCode": "corpus_ingest_multimodal_parse_v1",
+      "stage": "S1",
+      "priority": "P0",
+      "group": "①接入与解析",
+      "dependsOn": [],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-02",
+      "operatorId": "dm-corpus-normalization",
+      "nameZh": "标准化、元数据与去重",
+      "semanticCode": "corpus_ingest_normalize_index_v1",
+      "stage": "S1",
+      "priority": "P0",
+      "group": "①接入与解析",
+      "dependsOn": [
+        "OP-01"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-03",
+      "operatorId": "dm-text-clustering",
+      "nameZh": "句向量与主题聚类",
+      "semanticCode": "corpus_shard_embed_cluster_v1",
+      "stage": "S2",
+      "priority": "P0",
+      "group": "②分片与打标",
+      "dependsOn": [
+        "OP-02"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-04",
+      "operatorId": "dm-stratified-sampling",
+      "nameZh": "分层抽样",
+      "semanticCode": "corpus_shard_stratified_sample_v1",
+      "stage": "S3",
+      "priority": "P1",
+      "group": "②分片与打标",
+      "dependsOn": [
+        "OP-02",
+        "OP-03",
+        "OP-14"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-05",
+      "operatorId": "dm-multimodal-labeling",
+      "nameZh": "多模态自动打标",
+      "semanticCode": "corpus_label_multimodal_v1",
+      "stage": "S2",
+      "priority": "P0",
+      "group": "②分片与打标",
+      "dependsOn": [
+        "OP-02"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-06",
+      "operatorId": "dm-taxonomy-labeling",
+      "nameZh": "领域/能力多标签",
+      "semanticCode": "corpus_label_taxonomy_multilabel_v1",
+      "stage": "S2",
+      "priority": "P1",
+      "group": "②分片与打标",
+      "dependsOn": [
+        "OP-05"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-07",
+      "operatorId": "dm-label-governance",
+      "nameZh": "标签治理",
+      "semanticCode": "corpus_label_governance_v1",
+      "stage": "S2",
+      "priority": "P1",
+      "group": "②分片与打标",
+      "dependsOn": [
+        "OP-05",
+        "OP-06"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-08",
+      "operatorId": "dm-corpus-profiling",
+      "nameZh": "规模、来源与领域画像",
+      "semanticCode": "corpus_profile_scale_source_domain_v1",
+      "stage": "S3",
+      "priority": "P0",
+      "group": "③语料画像",
+      "dependsOn": [
+        "OP-02",
+        "OP-05",
+        "OP-06"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-09",
+      "operatorId": "dm-language-profiling",
+      "nameZh": "语言、地域与时效画像",
+      "semanticCode": "corpus_profile_language_region_time_v1",
+      "stage": "S3",
+      "priority": "P0",
+      "group": "③语料画像",
+      "dependsOn": [
+        "OP-02",
+        "OP-01"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-10",
+      "operatorId": "dm-text-profiling",
+      "nameZh": "文本属性与任务适配",
+      "semanticCode": "corpus_profile_text_taskfit_v1",
+      "stage": "S3",
+      "priority": "P0",
+      "group": "③语料画像",
+      "dependsOn": [
+        "OP-02",
+        "OP-06"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-11",
+      "operatorId": "dm-speech-analysis",
+      "nameZh": "语音质量与声学属性",
+      "semanticCode": "corpus_profile_speech_quality_v1",
+      "stage": "S3",
+      "priority": "P1",
+      "group": "③语料画像",
+      "dependsOn": [
+        "OP-01",
+        "OP-02"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-12",
+      "operatorId": "dm-visual-analysis",
+      "nameZh": "图像/视频属性",
+      "semanticCode": "corpus_profile_visual_attributes_v1",
+      "stage": "S3",
+      "priority": "P1",
+      "group": "③语料画像",
+      "dependsOn": [
+        "OP-01",
+        "OP-02"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-13",
+      "operatorId": "dm-knowledge-analysis",
+      "nameZh": "知识覆盖、热点与风格",
+      "semanticCode": "corpus_profile_knowledge_style_v1",
+      "stage": "S3",
+      "priority": "P1",
+      "group": "③语料画像",
+      "dependsOn": [
+        "OP-02"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-14",
+      "operatorId": "dm-quality-analysis",
+      "nameZh": "质量、一致性与难度",
+      "semanticCode": "corpus_profile_quality_difficulty_v1",
+      "stage": "S3",
+      "priority": "P0",
+      "group": "③语料画像",
+      "dependsOn": [
+        "OP-02",
+        "OP-05"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-15",
+      "operatorId": "dm-ratio-computation",
+      "nameZh": "配比引擎",
+      "semanticCode": "ratio_weighted_plan_v1",
+      "stage": "S4",
+      "priority": "P0",
+      "group": "④配比引擎",
+      "dependsOn": [
+        "OP-05",
+        "OP-08",
+        "OP-14"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-16",
+      "operatorId": "dm-ratio-analysis",
+      "nameZh": "配比分析与建议",
+      "semanticCode": "ratio_analysis_recommend_v1",
+      "stage": "S4",
+      "priority": "P1",
+      "group": "④配比引擎",
+      "dependsOn": [
+        "OP-15"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-17",
+      "operatorId": "dm-dataset-packaging",
+      "nameZh": "数据组装与打包",
+      "semanticCode": "prod_assembly_package_v1",
+      "stage": "S5",
+      "priority": "P0",
+      "group": "⑤生产评测",
+      "dependsOn": [
+        "OP-15"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-18",
+      "operatorId": "dm-dataset-evaluation",
+      "nameZh": "数据评测",
+      "semanticCode": "prod_evaluation_v1",
+      "stage": "S5",
+      "priority": "P0",
+      "group": "⑤生产评测",
+      "dependsOn": [
+        "OP-17",
+        "OP-05"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-19",
+      "operatorId": "dm-ratio-reporting",
+      "nameZh": "配比分析与报告",
+      "semanticCode": "prod_ratio_report_v1",
+      "stage": "S5",
+      "priority": "P1",
+      "group": "⑤生产评测",
+      "dependsOn": [
+        "OP-08",
+        "OP-09",
+        "OP-10",
+        "OP-11",
+        "OP-12",
+        "OP-13",
+        "OP-14",
+        "OP-15",
+        "OP-16",
+        "OP-17",
+        "OP-18"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-20",
+      "operatorId": "dm-graph-indexing",
+      "nameZh": "知识图谱与向量索引",
+      "semanticCode": "tool_graph_vector_index_v1",
+      "stage": "S6",
+      "priority": "P1",
+      "group": "⑥工具与风险",
+      "dependsOn": [
+        "OP-02",
+        "OP-03"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-21",
+      "operatorId": "dm-expert-validation",
+      "nameZh": "专家校验",
+      "semanticCode": "tool_expert_validation_v1",
+      "stage": "S6",
+      "priority": "P1",
+      "group": "⑥工具与风险",
+      "dependsOn": [
+        "OP-05",
+        "OP-18"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    },
+    {
+      "opId": "OP-22",
+      "operatorId": "dm-risk-detection",
+      "nameZh": "风险检测与分级",
+      "semanticCode": "risk_metric_rule_v1",
+      "stage": "S6",
+      "priority": "P1",
+      "group": "⑥工具与风险",
+      "dependsOn": [
+        "OP-08",
+        "OP-09",
+        "OP-10",
+        "OP-11",
+        "OP-12",
+        "OP-13",
+        "OP-14",
+        "OP-15",
+        "OP-16",
+        "OP-17",
+        "OP-18",
+        "OP-19"
+      ],
+      "status": "未开始",
+      "statusUpdatedAt": "2026-11-16",
+      "evidencePath": null,
+      "publishId": null,
+      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+    }
+  ]
+}

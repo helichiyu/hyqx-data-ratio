@@ -1,0 +1,12 @@
+{
+  "workPackage": "S0",
+  "metrics": {
+    "workPackages": 9,
+    "pytestPassed": 57,
+    "pytestSkipped": 1,
+    "healthzReady": 22,
+    "registryRows": 22,
+    "bundleCoreFiles": 22
+  },
+  "blockedReason": "see report.md#未决问题"
+}

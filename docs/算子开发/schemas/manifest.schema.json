@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hsmty.local/schemas/manifest.schema.json",
+  "title": "算子产物 manifest（S0 冻结）",
+  "description": "任务书 3.3 标准产物 manifest：输入指纹、版本四件套、条数、字节、压缩比、产物 SHA-256。",
+  "type": "object",
+  "required": [
+    "inputFingerprint",
+    "operatorId",
+    "operatorVersion",
+    "modelVersion",
+    "treeVersion",
+    "paramsHash",
+    "seed",
+    "sampleCount",
+    "successCount",
+    "failedCount",
+    "inputBytes",
+    "outputBytes",
+    "compressionRatio",
+    "artifacts"
+  ],
+  "properties": {
+    "runId": {"type": "string", "pattern": "^[0-9a-f]{16}$"},
+    "inputFingerprint": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "description": "输入文件清单/大小/哈希的聚合指纹。"
+    },
+    "operatorId": {"type": "string", "minLength": 1, "description": "目录名即 operatorId。"},
+    "semanticCode": {"type": "string", "minLength": 1},
+    "operatorVersion": {"type": "string", "minLength": 1},
+    "modelVersion": {"type": ["string", "null"]},
+    "treeVersion": {"type": ["string", "null"]},
+    "paramsHash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "seed": {"type": "integer"},
+    "sampleCount": {"type": "integer", "minimum": 0},
+    "successCount": {"type": "integer", "minimum": 0},
+    "failedCount": {"type": "integer", "minimum": 0},
+    "inputBytes": {"type": "integer", "minimum": 0},
+    "outputBytes": {"type": "integer", "minimum": 0},
+    "compressionRatio": {"type": "number", "minimum": 0},
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "path", "sha256"],
+        "properties": {
+          "type": {"type": "string", "minLength": 1},
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "bytes": {"type": "integer", "minimum": 0}
+        },
+        "additionalProperties": true
+      }
+    },
+    "failedSamples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "reasonCode"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "reasonCode": {"type": "string", "minLength": 1},
+          "detail": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "createdAt": {"type": "string", "format": "date-time"},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

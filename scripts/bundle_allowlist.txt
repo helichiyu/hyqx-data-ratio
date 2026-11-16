@@ -1,0 +1,14 @@
+# 最小压缩包 allowlist（相对 operator/ 构建上下文）。
+# 与 operator/.dockerignore 保持一致；只列 Docker 构建与运行必需文件。
+Dockerfile
+.dockerignore
+docker-compose.yml
+inference.py
+requirements.txt
+map.json
+baseline/
+weights/
+dm-*/__init__.py
+dm-*/core.py
+dm-*/configs/
+dm-*/utils/

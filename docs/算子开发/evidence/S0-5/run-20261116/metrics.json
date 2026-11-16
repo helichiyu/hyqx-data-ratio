@@ -1,0 +1,11 @@
+{
+  "workPackage": "S0-5",
+  "metrics": {
+    "contentNodes": 423,
+    "domainNodes": 272,
+    "abilityNodes": 99,
+    "treeVersion": "taxonomy-1013-pending",
+    "thresholds": 23
+  },
+  "blockedReason": "see report.md#未决问题"
+}

@@ -1,0 +1,10 @@
+{
+  "workPackage": "S0-1",
+  "metrics": {
+    "operators": 22,
+    "healthzReady": 22,
+    "pytestPassed": 57,
+    "pytestSkipped": 1
+  },
+  "blockedReason": "see report.md#未决问题"
+}

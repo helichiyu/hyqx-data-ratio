@@ -1,0 +1,10 @@
+{
+  "workPackage": "S0-9",
+  "metrics": {
+    "bundleBytes": 44230,
+    "members": 170,
+    "coreFiles": 22,
+    "version": "0.1.0"
+  },
+  "blockedReason": "see report.md#未决问题"
+}

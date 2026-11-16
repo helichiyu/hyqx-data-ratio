@@ -1,0 +1,6 @@
+# 数据配比中心算子单镜像统一依赖（全部锁定版本，运行期禁止联网下载）
+fastapi==0.116.1
+uvicorn==0.51.0
+python-multipart==0.0.32
+jsonschema==4.26.0
+pyarrow==26.0.0

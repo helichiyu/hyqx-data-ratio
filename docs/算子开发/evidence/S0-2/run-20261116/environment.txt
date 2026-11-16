@@ -1,0 +1,11 @@
+generatedAt: 2026-11-16T19:13:05
+python: 3.12.12
+platform: Windows-11-10.0.26200-SP0
+ffmpeg: ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+docker: Docker version 29.8.0, build 88096ef
+dockerCompose: Docker Compose version v5.5.1
+pytest: 8.3.4
+fastapi: 0.116.1
+uvicorn: 0.51.0
+jsonschema: 4.26.0
+pyarrow: 26.0.0

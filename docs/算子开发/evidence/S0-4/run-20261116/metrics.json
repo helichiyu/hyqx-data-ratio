@@ -1,0 +1,10 @@
+{
+  "workPackage": "S0-4",
+  "metrics": {
+    "collected": 58,
+    "passed": 57,
+    "skipped": 1,
+    "evidenceFiles": 9
+  },
+  "blockedReason": "see report.md#未决问题"
+}

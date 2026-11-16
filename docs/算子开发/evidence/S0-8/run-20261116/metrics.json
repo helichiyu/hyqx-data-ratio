@@ -1,0 +1,9 @@
+{
+  "workPackage": "S0-8",
+  "metrics": {
+    "services": 1,
+    "port": 17025,
+    "healthzReady": 22
+  },
+  "blockedReason": "see report.md#未决问题"
+}

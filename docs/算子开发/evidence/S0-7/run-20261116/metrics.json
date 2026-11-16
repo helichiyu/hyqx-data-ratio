@@ -1,0 +1,10 @@
+{
+  "workPackage": "S0-7",
+  "metrics": {
+    "weightFiles": 0,
+    "envFiles": 0,
+    "licenseDocs": 2,
+    "pendingItems": 5
+  },
+  "blockedReason": "see report.md#未决问题"
+}

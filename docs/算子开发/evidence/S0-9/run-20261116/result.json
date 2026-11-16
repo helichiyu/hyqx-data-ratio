@@ -1,0 +1,10 @@
+{
+  "workPackage": "S0-9",
+  "status": "完成（本机 dry-run + 打包）；独立 docker build 待人工（H-01）",
+  "metrics": {
+    "bundleBytes": 44230,
+    "members": 170,
+    "coreFiles": 22,
+    "version": "0.1.0"
+  }
+}
