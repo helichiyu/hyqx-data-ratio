@@ -1,0 +1,50 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S2 联调初值；零样本相似度阈值（cosine>=0.45、topK 内 softmax>=0.25、margin>=0.005）待人工确认（H-05/H-06）。",
+  "model": {
+    "name": "bge-base-zh-v1.5",
+    "relativePath": "shared/bge-base-zh-v1.5",
+    "dimension": 768,
+    "maxTokens": 512,
+    "batchSize": 16,
+    "device": "cpu",
+    "_source": "与 OP-03 共用权重；MIT 可商用"
+  },
+  "tree": {
+    "relativePath": "baseline/tree-snapshot.json",
+    "space": "content",
+    "leafOnly": true,
+    "_source": "S0 树快照 taxonomy-1013-pending（H-02 待确认）"
+  },
+  "labeling": {
+    "topK": 5,
+    "confidenceThreshold": 0.25,
+    "marginThreshold": 0.005,
+    "temperature": 0.02,
+    "minEvidenceChars": 2,
+    "_source": "联调初值：低置信 <0.25 或 top1-top2 <0.05 进未归类池",
+    "minSimilarity": 0.45,
+    "_note": "confidence=topK 内 softmax(T=0.02)；另需余弦 top1>=minSimilarity 且 top1-top2>=marginThreshold"
+  },
+  "media": {
+    "ocrEnabled": true,
+    "ocrLang": "ch",
+    "asrEnabled": true,
+    "asrModelRelativePath": "shared/paraformer-zh",
+    "maxKeyframes": 16,
+    "videoFusion": {
+      "ocr": 0.5,
+      "asr": 0.5
+    },
+    "_source": "任务书 OP-05（四模态融合）+ 联调初值（融合权重/抽帧数）"
+  },
+  "limits": {
+    "maxRecords": 100000,
+    "maxTextChars": 20000,
+    "ffmpegTimeoutSec": 180,
+    "maxAudioSec": 1800,
+    "asrChunkSec": 300,
+    "_source": "联调初值：单条文本 2 万字符；ASR 单段 5 分钟"
+  }
+}

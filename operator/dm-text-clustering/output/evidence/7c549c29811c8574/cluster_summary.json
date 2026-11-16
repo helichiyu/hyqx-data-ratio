@@ -1,0 +1,412 @@
+{
+  "algorithm": "kmeans",
+  "clusters": [
+    {
+      "cluster": 0,
+      "maxDistance": 0.706291,
+      "representativeRecordIds": [
+        "r_4915546b8853466cb1a996d8",
+        "r_5c61c6244b820a7c8f7f164b",
+        "r_03f2443b0d9324f1b15101f1"
+      ],
+      "size": 34,
+      "topTerms": [
+        "points",
+        "manifold",
+        "point",
+        "labels",
+        "accordance",
+        "divides",
+        "labelled",
+        "rain",
+        "sprinkler",
+        "unobserved"
+      ]
+    },
+    {
+      "cluster": 1,
+      "maxDistance": 0.492627,
+      "representativeRecordIds": [
+        "r_8a34e3617683e8703a742845",
+        "r_55d3f68f8c251ce8d0289701",
+        "r_c8a20cbe0ff3d174b9a118a8"
+      ],
+      "size": 9,
+      "topTerms": [
+        "rev",
+        "aal4230",
+        "author",
+        "avelar",
+        "aylin",
+        "bryson",
+        "caliskan",
+        "carissa",
+        "comments",
+        "cultures"
+      ]
+    },
+    {
+      "cluster": 2,
+      "maxDistance": 0.647509,
+      "representativeRecordIds": [
+        "r_1dccd9a345728f623fd1e662",
+        "r_209fe6d94855238fa2a8cd86",
+        "r_e1ab3da35921afd1c6f82e6b"
+      ],
+      "size": 11,
+      "topTerms": [
+        "articles",
+        "statements",
+        "unsourced",
+        "needing",
+        "scikit",
+        "wikipedia",
+        "clarification",
+        "edited",
+        "incomplete",
+        "newly"
+      ]
+    },
+    {
+      "cluster": 3,
+      "maxDistance": 0.739209,
+      "representativeRecordIds": [
+        "r_851415b27c42b9481916f51b",
+        "r_e8bdf93aa1775521f70b4860",
+        "r_c92666787ee930ac6c733309"
+      ],
+      "size": 29,
+      "topTerms": [
+        "wayback",
+        "gregory",
+        "piatetsky",
+        "shapiro",
+        "ma",
+        "cs",
+        "corrado",
+        "dean",
+        "edu",
+        "greg"
+      ]
+    },
+    {
+      "cluster": 4,
+      "maxDistance": 0.562784,
+      "representativeRecordIds": [
+        "r_093b4bceeb2d2d979758dd28",
+        "r_eb8f69a66c1ed4b1f20d4b1d",
+        "r_9891505a723097c6ecd13cbc"
+      ],
+      "size": 89,
+      "topTerms": [
+        "to",
+        "as",
+        "data",
+        "of",
+        "training",
+        "rfr",
+        "in",
+        "set",
+        "is",
+        "model"
+      ]
+    },
+    {
+      "cluster": 5,
+      "maxDistance": 0.700367,
+      "representativeRecordIds": [
+        "r_3672d9e9e34b2ec699f9a86c",
+        "r_68f1199d7e453784909db5de",
+        "r_3e1ce59ea0b6aeffde4d3b18"
+      ],
+      "size": 59,
+      "topTerms": [
+        "august",
+        "june",
+        "retrieved",
+        "ibm",
+        "november",
+        "original",
+        "december",
+        "archived",
+        "march",
+        "february"
+      ]
+    },
+    {
+      "cluster": 6,
+      "maxDistance": 0.595514,
+      "representativeRecordIds": [
+        "r_1b3d01bf7258142c06a08d61",
+        "r_c20cbc18c37045367c944a93",
+        "r_bce3e4724a54411b87c54c46"
+      ],
+      "size": 34,
+      "topTerms": [
+        "press",
+        "isbn",
+        "ed",
+        "pearson",
+        "norvig",
+        "russell",
+        "stuart",
+        "peter",
+        "modern",
+        "bishop"
+      ]
+    },
+    {
+      "cluster": 7,
+      "maxDistance": 0.800106,
+      "representativeRecordIds": [
+        "r_429dcd7bd2407a765960c91d",
+        "r_c5443cda1010115450d9fce0",
+        "r_51de28c27c260b3795c9a4b1"
+      ],
+      "size": 21,
+      "topTerms": [
+        "edit",
+        "excerpt",
+        "law",
+        "mathrm",
+        "ohmae",
+        "section",
+        "controversy",
+        "attribution",
+        "blue",
+        "british"
+      ]
+    },
+    {
+      "cluster": 8,
+      "maxDistance": 0.513121,
+      "representativeRecordIds": [
+        "r_ddb9278570d16630f5e704a6",
+        "r_b032322fb9480be08c6dc3e0",
+        "r_39c03ff14998ff72100a0f4b"
+      ],
+      "size": 38,
+      "topTerms": [
+        "pmc",
+        "hui",
+        "iot",
+        "pmid",
+        "doi",
+        "issn",
+        "bibcode",
+        "fire",
+        "fleer",
+        "moringen"
+      ]
+    },
+    {
+      "cluster": 9,
+      "maxDistance": 0.717326,
+      "representativeRecordIds": [
+        "r_070b0149848b7b33fd7f532c",
+        "r_ec814a759ab706e5308ff19d",
+        "r_7bdc85870e34d7921e4b4ff5"
+      ],
+      "size": 18,
+      "topTerms": [
+        "la",
+        "de",
+        "el",
+        "que",
+        "los",
+        "en",
+        "las",
+        "del",
+        "con",
+        "un"
+      ]
+    },
+    {
+      "cluster": 10,
+      "maxDistance": 0.75199,
+      "representativeRecordIds": [
+        "r_b9c8d914ad26f22ae9395bac",
+        "r_bc2aa56cf67f2a5533461f6d",
+        "r_b0f29812d93bbf673106acc1"
+      ],
+      "size": 15,
+      "topTerms": [
+        "dblp",
+        "org",
+        "https",
+        "crossbar",
+        "altman",
+        "bach",
+        "beaudoin",
+        "bf00994018",
+        "bozinovska",
+        "bzdok"
+      ]
+    },
+    {
+      "cluster": 11,
+      "maxDistance": 0.730475,
+      "representativeRecordIds": [
+        "r_b8ddfc4efa47a7b091a86b33",
+        "r_75bf6e4011889e3ac6144143",
+        "r_087451bee2ff273528233254"
+      ],
+      "size": 9,
+      "topTerms": [
+        "list",
+        "datasets",
+        "authority",
+        "extremely",
+        "illustration",
+        "learninganddata",
+        "onmachine",
+        "big",
+        "complex",
+        "control"
+      ]
+    },
+    {
+      "cluster": 12,
+      "maxDistance": 0.568342,
+      "representativeRecordIds": [
+        "r_f7aa9872f310cb0b62a12adf",
+        "r_8db033423610f4278b58d7d2",
+        "r_44decedfaeb1f2632ce242cb"
+      ],
+      "size": 25,
+      "topTerms": [
+        "cite",
+        "citeseerx",
+        "pdf",
+        "deprecated",
+        "parameter",
+        "sas",
+        "sigmod",
+        "help",
+        "s2cid",
+        "embedding"
+      ]
+    },
+    {
+      "cluster": 13,
+      "maxDistance": 0.619866,
+      "representativeRecordIds": [
+        "r_68c1ef6f48ff25e879013508",
+        "r_e13617bd21a00dfd092a499e",
+        "r_bf53d8153dd88630884df339"
+      ],
+      "size": 10,
+      "topTerms": [
+        "conference",
+        "biostatistics",
+        "cibb",
+        "discovery",
+        "ecml",
+        "iclr",
+        "icml",
+        "iros",
+        "neurips",
+        "pkdd"
+      ]
+    },
+    {
+      "cluster": 14,
+      "maxDistance": 0.737469,
+      "representativeRecordIds": [
+        "r_fdd5e6e6c2be4a0110622b67",
+        "r_cd5a9b5d6c43c5a71fc596b6",
+        "r_322fffbdf35cbee7cf256de6"
+      ],
+      "size": 25,
+      "topTerms": [
+        "main",
+        "open",
+        "source",
+        "article",
+        "see",
+        "editions",
+        "learningsee",
+        "proprietary",
+        "sciences",
+        "trends"
+      ]
+    }
+  ],
+  "generatedAt": "2026-11-16T20:05:03+08:00",
+  "k": 15,
+  "modelVersion": "bge-base-zh-v1.5",
+  "search": [
+    {
+      "k": 15,
+      "silhouette": 0.060446
+    },
+    {
+      "k": 19,
+      "silhouette": 0.043156
+    },
+    {
+      "k": 23,
+      "silhouette": 0.03977
+    },
+    {
+      "k": 27,
+      "silhouette": 0.026033
+    },
+    {
+      "k": 31,
+      "silhouette": 0.03016
+    },
+    {
+      "k": 35,
+      "silhouette": 0.032975
+    },
+    {
+      "k": 39,
+      "silhouette": 0.033654
+    },
+    {
+      "k": 43,
+      "silhouette": 0.033815
+    },
+    {
+      "k": 47,
+      "silhouette": 0.037537
+    },
+    {
+      "k": 51,
+      "silhouette": 0.033131
+    },
+    {
+      "k": 55,
+      "silhouette": 0.034145
+    },
+    {
+      "k": 59,
+      "silhouette": 0.035321
+    },
+    {
+      "k": 63,
+      "silhouette": 0.038886
+    },
+    {
+      "k": 64,
+      "silhouette": 0.039256
+    },
+    {
+      "k": 16,
+      "silhouette": 0.027166
+    },
+    {
+      "k": 17,
+      "silhouette": 0.045
+    },
+    {
+      "k": 18,
+      "silhouette": 0.045674
+    }
+  ],
+  "seed": 42,
+  "silhouette": 0.060446,
+  "treeVersion": null,
+  "vectorDimension": 768
+}

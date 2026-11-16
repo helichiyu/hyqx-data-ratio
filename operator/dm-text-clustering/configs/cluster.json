@@ -1,0 +1,48 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S2 联调初值；模型选型（bge-base 替代任务卡 bge-m3）与 K 搜索参数待人工确认（H-06）。",
+  "model": {
+    "name": "bge-base-zh-v1.5",
+    "relativePath": "shared/bge-base-zh-v1.5",
+    "dimension": 768,
+    "maxTokens": 512,
+    "batchSize": 16,
+    "normalize": true,
+    "device": "cpu",
+    "storageDtype": "float16",
+    "_source": "任务书 OP-03（512 token、bge、L2 归一化、float16）；模型改为 MIT 的 bge-base-zh-v1.5"
+  },
+  "chunking": {
+    "maxTokens": 512,
+    "minCharsPerChunk": 1,
+    "sentenceSplitPattern": "[。！？!?；;\\n]",
+    "keepChunkVectors": false,
+    "_source": "任务书 OP-03（512 token 切窗）+ 联调初值（按句末打包）"
+  },
+  "clustering": {
+    "minK": 8,
+    "maxK": 64,
+    "lowerFormula": "sqrt(N/2)",
+    "upperFormula": "4*sqrt(N)",
+    "coarseStep": 4,
+    "refineRadius": 3,
+    "silhouetteSample": 5000,
+    "nInit": 3,
+    "maxIter": 100,
+    "algorithm": "kmeans",
+    "miniBatchThreshold": 5000,
+    "seed": 42,
+    "_source": "任务书 OP-03（K 8–64 / sqrt(N/2)–4sqrt(N)、5 万样本估轮廓、固定 seed）"
+  },
+  "topics": {
+    "topTerms": 10,
+    "minTermChars": 2,
+    "stopwords": [
+      "的", "了", "和", "是", "在", "与", "及", "或", "一个", "一种", "以及", "可以",
+      "通过", "进行", "具有", "包括", "使用", "这种", "其中", "对于", "由于", "因此",
+      "the", "and", "for", "with", "that", "this", "from", "are", "was", "were"
+    ],
+    "_source": "联调初值：中文高频虚词与英文停用词"
+  }
+}

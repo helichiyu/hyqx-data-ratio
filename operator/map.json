@@ -45,7 +45,7 @@
         "OP-02"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-04",
@@ -77,7 +77,7 @@
         "OP-02"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-06",
@@ -92,7 +92,7 @@
         "OP-05"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-07",
@@ -108,7 +108,7 @@
         "OP-06"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-08",

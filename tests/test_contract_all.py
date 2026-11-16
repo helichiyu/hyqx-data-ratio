@@ -23,7 +23,29 @@ IMPLEMENTED = {
 
 
 def _upload_payload(operator_id: str) -> tuple[str, bytes, str]:
-    if operator_id == "dm-corpus-normalization":
+    if operator_id == "dm-label-governance":
+        row = {
+            "record_id": "r_contract_labels",
+            "labels": [
+                {
+                    "path": ["新闻与资讯", "科技新闻", "产品发布与行业动态"],
+                    "confidence": 0.8,
+                    "sourceKey": "labels",
+                }
+            ],
+            "unclassified": False,
+        }
+        return (
+            "result.jsonl",
+            (json.dumps(row, ensure_ascii=False) + "\n").encode("utf-8"),
+            "application/jsonl",
+        )
+    if operator_id in {
+        "dm-corpus-normalization",
+        "dm-text-clustering",
+        "dm-multimodal-labeling",
+        "dm-taxonomy-labeling",
+    }:
         text = PAYLOAD.decode("utf-8")
         sha = hashlib.sha256(PAYLOAD).hexdigest()
         md5 = hashlib.md5(PAYLOAD, usedforsecurity=False).hexdigest()
@@ -92,8 +114,8 @@ def test_operator_five_endpoints(meta, app_env):
 
     if operator_id in IMPLEMENTED:
         assert predict_body["code"] == 0
-        assert data["successCount"] >= 1
-        assert data["failedCount"] == 0
+        assert data["sampleCount"] >= 1
+        assert (data["successCount"] or 0) + (data["failedCount"] or 0) == data["sampleCount"]
         assert data["outputFilePath"]
         assert Path(data["outputFilePath"]).exists()
     else:

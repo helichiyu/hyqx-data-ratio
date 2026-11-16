@@ -1,0 +1,5 @@
+python - <<PY
+import sys; sys.path.insert(0,"operator"); import inference
+core=inference._import_operator_core("dm-label-governance")
+core.run("operator/runtime/output/op05-run", {}, 42, "operator/runtime/output/op07-run")
+PY

@@ -1,0 +1,32 @@
+{
+  "avgChunksPerRecord": 1.146,
+  "chunkCount": 488,
+  "clusterSizes": {
+    "max": 89,
+    "mean": 28.4,
+    "median": 25.0,
+    "min": 9
+  },
+  "clusteredRecords": 426,
+  "deterministic": true,
+  "failedCount": 0,
+  "failuresByReason": {},
+  "generatedAt": "2026-11-16T20:05:03+08:00",
+  "k": 15,
+  "modelVersion": "bge-base-zh-v1.5",
+  "provisional": true,
+  "recordsRead": 432,
+  "runtimeSec": 54.178,
+  "searchCandidates": 17,
+  "searchRange": {
+    "lower": 15,
+    "n": 426,
+    "upper": 64
+  },
+  "silhouette": 0.060446,
+  "skippedNonText": 6,
+  "storageDtype": "float16",
+  "textRecords": 426,
+  "topicClusters": 15,
+  "vectorDimension": 768
+}

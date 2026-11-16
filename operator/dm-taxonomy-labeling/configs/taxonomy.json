@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S2 联调初值；领域/能力树版本（H-02）与零样本阈值待人工确认。",
+  "model": {
+    "name": "bge-base-zh-v1.5",
+    "relativePath": "shared/bge-base-zh-v1.5",
+    "dimension": 768,
+    "maxTokens": 512,
+    "batchSize": 16,
+    "device": "cpu"
+  },
+  "tree": {
+    "relativePath": "baseline/tree-snapshot.json",
+    "spaces": ["domain", "ability"],
+    "_source": "S0 树快照：领域 16 行业树 + 能力树；与内容树分离"
+  },
+  "labeling": {
+    "topK": 5,
+    "maxLabels": 3,
+    "minSimilarity": 0.45,
+    "confidenceThreshold": 0.25,
+    "temperature": 0.02,
+    "unknownLabel": "未明确",
+    "_source": "联调初值：每条空间最多 3 个标签；低于相似度/置信度不输出"
+  },
+  "limits": {
+    "maxRecords": 100000,
+    "maxTextChars": 20000
+  }
+}

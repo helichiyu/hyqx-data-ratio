@@ -748,6 +748,15 @@ def create_app(
                 logger.error("算子依赖不可用 %s: %s", runtime.operator_id, exc)
                 return _error("DEPENDENCY_UNAVAILABLE", data={**base_data, "detail": str(exc)})
             except Exception as exc:  # noqa: BLE001 - 未预期异常转标准错误并留日志
+                if type(exc).__name__ == "DependencyUnavailable" or getattr(
+                    exc, "reason_code", None
+                ) == "DEPENDENCY_UNAVAILABLE":
+                    logger.error("算子依赖不可用 %s: %s", runtime.operator_id, exc)
+                    return _error(
+                        "DEPENDENCY_UNAVAILABLE",
+                        str(exc),
+                        data={**base_data, "detail": str(exc)},
+                    )
                 logger.exception("算子执行失败 %s runId=%s", runtime.operator_id, run_id)
                 (run_dir / "error.log").write_text(f"{type(exc).__name__}: {exc}\n", encoding="utf-8")
                 return _error("INTERNAL_ERROR", data={**base_data, "detail": f"{type(exc).__name__}: {exc}"})

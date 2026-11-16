@@ -1,0 +1,1 @@
+直接调用 core.run，无 HTTP 服务；服务级证据见 docs/算子开发/evidence/S2/。

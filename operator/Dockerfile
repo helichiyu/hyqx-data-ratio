@@ -18,9 +18,9 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /app
 
-# 解码/探测依赖：ffmpeg（含 ffprobe）、libmagic（模态判定）
+# 解码/探测依赖：ffmpeg、libmagic、OpenCV 运行库（RapidOCR）
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends ffmpeg libmagic1 \
+    && apt-get install -y --no-install-recommends ffmpeg libmagic1 libgl1 libglib2.0-0 libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt /app/requirements.txt

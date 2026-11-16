@@ -1,0 +1,2 @@
+{"labels": [{"confidence": 0.62, "path": ["新闻与资讯", "科技新闻", "产品发布与行业动态"], "sourceKey": "labels"}], "record_id": "r_demo_ok", "unclassified": false}
+{"labels": [{"confidence": 0.31, "path": ["不存在的类目", "子类", "叶子"]}], "record_id": "r_demo_bad", "unclassified": false}

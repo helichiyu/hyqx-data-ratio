@@ -1,0 +1,1031 @@
+{
+  "artifacts": [
+    {
+      "bytes": 23945,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/failures.jsonl",
+      "sha256": "411a21fd9a5bcca9067c9f90697395390e26dba6f2140b1880570aa17593b8b6",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 462,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/input_manifest.json",
+      "sha256": "2700b7033cbe94674e31515b948f491ce6b942752e6a302f5d6327e01cbd6dad",
+      "type": "json"
+    },
+    {
+      "bytes": 72385,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/label_ids.jsonl",
+      "sha256": "40df677bcfe1bbc2953f0d50c1ffa8a225d3e5fdcf16cd9aafa07702c764644e",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 428672,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/label_vectors.npy",
+      "sha256": "0fb7ca3ecba7edb69595fd9fb90386226a87ba6ca7cc64f26134bfde3e736dfc",
+      "type": "vectors"
+    },
+    {
+      "bytes": 1560,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/metrics.json",
+      "sha256": "2e704f1927a40ed23446ee449300abff59aabeda3c094b75b588490cda5e772d",
+      "type": "json"
+    },
+    {
+      "bytes": 731771,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/result.jsonl",
+      "sha256": "1b858bc2d764342afb450974060593e9f02b0c84df24ef35216ad73f8917b876",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 29117,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0001.jpg",
+      "sha256": "452d4d4c4674a79626f227f2b7e23387561221d9bdcb7ca13ebd94648a2a982b",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30309,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0002.jpg",
+      "sha256": "a9f85254d7624551a4543c53f2e6bc51bea939c36a62a095f2581d61ae689508",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 29763,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0003.jpg",
+      "sha256": "a9eaae56f8ec33f091aa919a52a7741d483f3dc3fa4c4f5e234a35bfb3c934ed",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30378,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0004.jpg",
+      "sha256": "477e84915bb8500e3449e6bcee175d88d8f5f4e2d8c5ec3a79e0767f9f4d6fc4",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30343,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0005.jpg",
+      "sha256": "549757ff69c697061488a22d5ff7011906c0e245c18544469861049237d45ed6",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30043,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0006.jpg",
+      "sha256": "3f4f3f6230fbdda5bf3adf0a3447f64869d8c7b029af9b04f71cad7d14749cd7",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30235,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0007.jpg",
+      "sha256": "b9b5e02968982ba804cb2d37653daacd179efadb8fd68aa44269c8166a14711a",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30016,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0008.jpg",
+      "sha256": "d5754972ba8e3ed0ca5bc037f9e57d98f4c0038365e3a8bb8eceeaa5d75f6b05",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 29758,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0009.jpg",
+      "sha256": "07257e287adffc32b40d2c01f9d9e8f3eb262d0d74f089e5c32692314e41011c",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30722,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0010.jpg",
+      "sha256": "e7539f56deebc2cd108ab04fdf6ebdab3e49d36887599bbdf8615eb1d17a1348",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31020,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0011.jpg",
+      "sha256": "ae55cf09d377374b1dc2768acd195486835b9f605145ff29a2c92185eee13bcc",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31406,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0012.jpg",
+      "sha256": "815cdfce33094d9fafeb067203f574eb0d67db0f18a8ede90cb984b1a570bb78",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31170,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0013.jpg",
+      "sha256": "263a5bf4d4742b04f44c156c1680a9ff076ce5379ce6d4dc9dd3f268c5ca6be4",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30519,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0014.jpg",
+      "sha256": "a38602a3840ade3be6c3c4302dcc41d6aaa38d4fc3f96463ae7757e87c2a08c2",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 28881,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0015.jpg",
+      "sha256": "9de438a0496e9979d8423aa92ee39791efaf0ffc9f68592ebde53ebd384be68b",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 29028,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_6841eacda9ed6033d2c93134/frame_0016.jpg",
+      "sha256": "e81bb34f03a104f023e8956ebc607f904cdf8c3a1c396f10f13fb45f9e80a493",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 55622,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0001.jpg",
+      "sha256": "0c94e73647e9436c3c931d1482a7e233c8dda508ed064cf86f1fbf667aae4371",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 55037,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0002.jpg",
+      "sha256": "1a268cce449cce55886066474356a44eaed4e70257d650273bedd8a44417fef2",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 54964,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0003.jpg",
+      "sha256": "a26a3d29ee17247988a14121574105d2d4034d8325eb2aa06be76b2dbb2850ba",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 53264,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0004.jpg",
+      "sha256": "90ab8c723843a02552b898acae6b7505489d73c52634b744ebbcae400345d4b8",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 5602,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0005.jpg",
+      "sha256": "032f7cc9490dc2241b5362fcce25473c4164fad981ed602d23be0ed3331708cc",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 20724,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0006.jpg",
+      "sha256": "ea776418c520bacd0778747cbed83499b3c9286aa7c1de6834cf206e95565966",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 20737,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0007.jpg",
+      "sha256": "a26bdd63f699850d3d4b2568211b8f08fe2b4c5a741d5309683fdfe83af84809",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 20737,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0008.jpg",
+      "sha256": "a26bdd63f699850d3d4b2568211b8f08fe2b4c5a741d5309683fdfe83af84809",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 64428,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0009.jpg",
+      "sha256": "a8718528f034452a96efac62324dddd9ade21beba581afacaa87d0c701543eab",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 62385,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0010.jpg",
+      "sha256": "494d7206c288014a264521af095a6f8401c1b809b698b4187a18b6750e84c98f",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 44191,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0011.jpg",
+      "sha256": "ffa14dd045114b0aec9fd7a8f585141417123c13af034ec7a96dbada5031efe8",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 47598,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0012.jpg",
+      "sha256": "f762326908cd62caeae370abe8e4a98e014f424ee388eac9fe4a0ad61149b9cf",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 57742,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0013.jpg",
+      "sha256": "428800ae41f33d28b4d254d83d0cc3f118ae75779d186895384baf73f27a5fe5",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 55828,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0014.jpg",
+      "sha256": "1907c82c9c3abdae6bbf29400cb3d6bed65913784e284a0ab6443734d6c2ce4d",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 56507,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0015.jpg",
+      "sha256": "ed022fca834df02ad725cd03a747b8932ee913bff7542850f1dbb8ac20ea2bb4",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 55730,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/streams/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0016.jpg",
+      "sha256": "39b05fc0fbe78d055cb2f0c07e0d4640d4c6523cd15eb51a98b8eb4361b126f2",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 149427,
+      "path": "E:/HYQX/数据配比/operator/runtime/output/_dev_op05/unclassified.jsonl",
+      "sha256": "b818c831041e0249277e1dda0c8bed778456f7cb27216f9bfc6f2c14fe04394d",
+      "type": "jsonl"
+    }
+  ],
+  "compressionRatio": 2.983756,
+  "createdAt": "2026-11-16T20:18:06+08:00",
+  "failedCount": 154,
+  "failedSamples": [
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_d4be1b7c293e2a0eb5e5b656",
+      "reasonCode": "UNCLASSIFIED_NO_SPEECH"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_5b99e7ea16c11d13384ed12f",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_6841eacda9ed6033d2c93134",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_05757e6f8c6d3fdc00cc1315",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_b8ddfc4efa47a7b091a86b33",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_efeeec2c1d72f9b83d2db355",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_2e64db4d9e3b19114ebcfca0",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_e977ff429d74684595ce17ab",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_75dedfa9afd9fa68608156d1",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_7cbc59a8848e403ea9488366",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_748ae9988433c42579b28ab4",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_08d4e51efe0e0e9756467bcf",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_7d0678563be938ae7f1e03d0",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_c60ef4e82c6713e60ffa77e9",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_51de28c27c260b3795c9a4b1",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_ac72b2e01a676455f38178ef",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_2483d3341e6a87cf556867d1",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_842190a0cbb037a86f4a0ca4",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_9d84d504f16cf6665cc23a49",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_4915546b8853466cb1a996d8",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_4a6112a435e1521c883061d1",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_c40a4b088719caf01db1eafc",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_65e21de28efed64a1c3af736",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_22351a3d84069b0d59566cd2",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_558d6cad0c075b1e01ef9a7a",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_d82585154d56fc88d4b3c219",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_4325d1703d6f0642999c27c4",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_22e64912630e097f19c00f06",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_3f2c160a9df8b19681b4ad72",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_5c61c6244b820a7c8f7f164b",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_eeec067a567e474ab4cde7fb",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_46a84dd89551c9bc9a4f8870",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_437cdaa404a5507e8477ec36",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_03a6966b7beb9900c0667200",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_d53afd5e520baea4d0a8b259",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_fed916ce06003f35a2e69668",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_5505d59f3692c034bd03baa4",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_dbea59630f1a26050447a964",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_fbd5b9ad5e0e78a5b2af6938",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_2341d3337d4edf49d20ed4bb",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_9106ad411709588905a4b489",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_af9afea89aeddc1ecaa5ebdf",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_75d50b5f9134a9730f3af9c7",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_fcff37c5b67bf575f507fec1",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_4a72eb5ce69bd625d6143cfc",
+      "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_1b7715509888a2a41fc699d2",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_07266758e636c4bf3f725ef6",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_2391eb06b0d3a8b52f0753d1",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_0bd7cdc94c6611c2b41acd3a",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_4c05a374db3dec7b5987cab2",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_16048eb0777d560503ad17da",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_d0a78afb2784209ba1f36784",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_27526a5294e8ce77ed148f56",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_456f770573cccfe4b5c86604",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_987c84c12eaf4cc084c5ee90",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_1ff53a10ca4c071c3f91b236",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_418f9f3d1f8838346c79506b",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_cdba39c5976f3d5bb365a257",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_c2b223265827b0a0ec32c315",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_c3bbf37fe2ee06426546b53d",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_8b0fdc8daeb7a9d86f04aff5",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_78359a549aa65fa3e9f2fa89",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_cd5a9b5d6c43c5a71fc596b6",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_306d764bcb058e28df434995",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_c161274d0cc22f39687d99cd",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_bf53d8153dd88630884df339",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_e13617bd21a00dfd092a499e",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_c96aea833096afb81994c49e",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_5c527cd6a65bfa05cbd62a65",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_75bf6e4011889e3ac6144143",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_59c8d7955a4fa9e2ac6d12d1",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_41044c44315db8da8858a049",
+      "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_0a8cd82cb2c64e0c2223103a",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_e8bdf93aa1775521f70b4860",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_46746303576a4bb17b63a5a3",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_7bdc85870e34d7921e4b4ff5",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_3426f9ca67cfa6d20deb559c",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_44decedfaeb1f2632ce242cb",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_8db033423610f4278b58d7d2",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_a6f5e9c673dd380eb3a083b8",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_43aa6ad392cfe81268ad6d0d",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_0e4ab1a9db10fcb8ec6373d7",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_bc2aa56cf67f2a5533461f6d",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_dea758e6ac5f3589d0f11215",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_c197d8b968bb56f326d79173",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_baec2d7a4ffe7df608275a87",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_1b3d01bf7258142c06a08d61",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_9e2f14e5b1b176ab5c91e42d",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_28bcbfb754a1aa8021d0245e",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_c20cbc18c37045367c944a93",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_11e6488057e88e490ad6c58f",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_0f4244eaea11deb0550ad7d2",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_5aadcecdf268992412a0ca7d",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_3448edb9467bd3fb2da08ad5",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_e965dc1f56993dd552d9087e",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_1ef6ccbc86c1690aba802624",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_53249fdb397193d65185fbb3",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_fd5c64eda19a026bf233c387",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_ad10a02ee2e4a5923f98eb78",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_851415b27c42b9481916f51b",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_cb8dd7e3b99783f7e39fdf33",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_db2f9d890c6c47987ae3cfb5",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_83796d0d0332616a0f79f110",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_3588b8ac64de03b837d32fe2",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_461dd1cbd7ab4b671f038da0",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_6b24bf5957c5235a8742e718",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_e679d70cc35c94ea651770a1",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_b2b56ec5b60f5e603d036c87",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_f7aa9872f310cb0b62a12adf",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_ed3e75383d5c56c7330165e4",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_31f17402ce98f3f0a6b4881f",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_a83f2bd2eda16b2def69ddfd",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_73fd31c607a4925c7cdbf4d7",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_78b14004ded87af5815891d5",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_25b4d1cbc87fb3710802d4b2",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_dab3dc77ccc7229c87ff947f",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_68f1199d7e453784909db5de",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_0ed52197a90f5b31c5a3aee9",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_5e54b889a16a3ed83e4a04c7",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_22e724cbd99d012e6a86a521",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_5979da042c7cac36656b9e6a",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_97f3c5e40a6ccc47d7ec97ce",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_2f2392b37df275ce7a3f4a70",
+      "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_118e3c5b6f2f72e040a35d04",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_a6978e57aad0d939be2f7daa",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_7cb0db995f43375b8c0ef14b",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_c92666787ee930ac6c733309",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_41748e712a2f0e3371b8ea92",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_cd9f5e4bdc80c39927f3bbd6",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_2e799574bcb575f0b208977c",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_04577aa4870f2cf4b8653a2e",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_e351b3becb4ccae79942ce32",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_8a3a51deedcda4040056b78f",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_8a34e3617683e8703a742845",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_ab145815f709014dedc92a35",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_1f71cc35f95db952a9458865",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_edf343fd8550fa081c49734d",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_175a840ac1040f2b076d04ac",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_3672d9e9e34b2ec699f9a86c",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_ec814a759ab706e5308ff19d",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_a21f9b1da39d5ef0ac57246d",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_f8e0a3d91d97b48805149c4c",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_b0ccceaef2b6cf5a5fb9d3a9",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_39c03ff14998ff72100a0f4b",
+      "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_9c47ca71d5b736e15a0ff2f0",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_3f567494a2a5b61023966b99",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_559213e4602e72d380bc1c5a",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_6fb25c6746f4caee2d125320",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_7183403fd367a3911bc02260",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_9d4b4d97968e44b469a652e1",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_5808a951b1a01c9d52bc3b31",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_79a4262df713790dc22ae730",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_31a06d1c0342885f47f42027",
+      "reasonCode": "UNCLASSIFIED_SMALL_MARGIN"
+    },
+    {
+      "detail": "未进入置信度阈值或缺少可识别文字/语音证据",
+      "id": "r_920e8cb1bb9bc6c1750ec857",
+      "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY"
+    }
+  ],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": "bge-base-zh-v1.5",
+  "notes": [
+    "零样本打标：bge 标签向量 + 内容向量余弦相似度；非训练型分类器，需人工验证。",
+    "图像/视频文字来自 RapidOCR，音频/视频语音来自 FunASR paraformer-zh。",
+    "无人工标注时不填准确率；低置信/无证据样本进 unclassified.jsonl。"
+  ],
+  "operatorId": "dm-multimodal-labeling",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 2622026,
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "runId": "7c549c29811c8574",
+  "sampleCount": 432,
+  "seed": 42,
+  "semanticCode": "corpus_label_multimodal_v1",
+  "successCount": 278,
+  "treeVersion": "taxonomy-1013-pending"
+}

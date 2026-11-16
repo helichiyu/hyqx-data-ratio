@@ -10,11 +10,11 @@ dist/
 .env
 
 # 模型权重不进 git（允许 .gitkeep、SHA256SUMS 与说明文件）
-operator/weights/*
+operator/weights/**/*
+!operator/weights/**/
 !operator/weights/.gitkeep
 !operator/weights/SHA256SUMS
 !operator/weights/README.md
-!operator/weights/shared/
 !operator/weights/shared/.gitkeep
 
 # Python 缓存

@@ -1,0 +1,5 @@
+python - <<PY
+import sys; sys.path.insert(0,"operator"); import inference
+core=inference._import_operator_core("dm-taxonomy-labeling")
+core.run("operator/dm-corpus-normalization/output/evidence/10a342ae92595ab7", {}, 42, "operator/runtime/output/op06-run")
+PY
