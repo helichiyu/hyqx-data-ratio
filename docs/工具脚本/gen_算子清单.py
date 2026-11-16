@@ -13,7 +13,7 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                   "【算子清单】数据配比中心算子开发清单_2026-11-16.xlsx")
+                   "算子开发", "【算子清单】数据配比中心算子开发清单_2026-11-16.xlsx")
 
 HEADERS = ["序号", "算子ID", "大环节", "算子名称", "算子类型", "优先级", "能力说明", "处理逻辑",
            "前置依赖", "FGW条款", "原型位置", "输入数据", "输出数据", "失败处理", "约束边界",
@@ -579,6 +579,297 @@ add(id="OP-RSK-02", stage="⑥工具与风险", name="过时知识检测", type=
     en="risk_stale_knowledge_v1",
     note="原型未展示，P2；如审计要求可后置。")
 
+# ============ 收敛版：22 个算子 ============
+C_HEADERS = ["序号", "算子ID", "大环节", "算子名称", "算子类型", "优先级", "能力说明", "处理逻辑",
+             "前置依赖", "FGW条款", "原型位置", "包含明细算子", "输入数据", "输出数据", "失败处理",
+             "约束边界", "技术关键处理方案", "平台/算子边界", "是否通用", "算子英文名", "模型/技术栈",
+             "完成状态", "负责人", "交付时间", "备注/待确认"]
+C_KEYS = ["seq", "id", "stage", "name", "type", "priority", "desc", "logic", "dep", "fgw", "proto",
+          "members", "inp", "out", "fail", "bound", "tech", "boundary", "common", "en", "stack",
+          "status", "owner", "date", "note"]
+C_WIDTHS = [5, 10, 14, 20, 15, 8, 48, 58, 22, 14, 30, 22, 32, 36, 30, 35, 52, 35, 8, 30, 32, 8, 8, 10, 30]
+
+C_DEFAULT = {
+    "type": "模型型", "priority": "P1", "status": "未开始", "owner": "待定", "date": "待定",
+    "common": "通用", "note": "",
+    "fail": "单批失败记录原因码并返回失败清单，不阻断已成功批次；支持幂等重跑。",
+    "bound": "单请求受平台上限约束；原始数据只读；结果带算子版本、模型版本（如适用）、树版本与参数哈希。",
+    "boundary": "平台负责批次调度、存储、结果落库与展示；算子只对输入数据计算并返回结果/产物。",
+}
+CONS = []
+
+
+def cadd(**kw):
+    row = dict(C_DEFAULT)
+    row.update(kw)
+    row["seq"] = len(CONS) + 1
+    CONS.append(row)
+
+
+cadd(id="OP-01", stage="①接入与解析", name="多模态识别与解析", type="解析型", priority="P0",
+     members="ING-01~05",
+     desc="判定并解析一个批次里的所有模态：文本、图像、音频、视频；同一数据集可多模态，同一模态可多格式，混合文件先拆流。",
+     logic="文件头/MIME 判模态；按格式路由解析；PDF 扫描页 OCR；音视频拆流；输出内容、格式元数据、声学/图像特征。",
+     dep="批次登记、文件可访问", fgw="13.1-一", proto="数据接入·模态识别与四模态分步 L2395-2412、L2414-2462",
+     inp="文件清单/OSS 前缀、扩展名/MIME、解析参数（OCR/重采样/抽帧）",
+     out="各模态内容/特征、格式元数据、解析质量指标、拆流清单",
+     tech="libmagic/ffprobe 判模态；PyMuPDF/PaddleOCR 解析文本；Pillow 解析图像；ffmpeg/librosa 解析音频；ffmpeg/PySceneDetect 拆视频。",
+     stack="libmagic / ffprobe / PyMuPDF / PaddleOCR / Pillow / ffmpeg / librosa / PySceneDetect",
+     en="dm-multimodal-analysis",
+     note="内部按模态分支，不按模态拆成多个算子；视频音轨转音频分支；四模态同等优先级。")
+
+cadd(id="OP-02", stage="①接入与解析", name="标准化、元数据与去重", type="解析型/规则型", priority="P0",
+     members="ING-06~08",
+     desc="标准容器、分区、manifest、元数据索引、去重/异常识别、跨模态关联表。",
+     logic="Parquet/WebP/WAV/H.264；按 modal/source/dt 分区；MD5/SimHash 去重；元数据宽表+索引；帧-音频-文本关联。",
+     dep="多模态解析完成", fgw="13.1-二/三", proto="标准化路径 L2410；数据分片卡 L1556",
+     inp="解析产物、分区规则、索引字段、哈希阈值",
+     out="标准产物+manifest、元数据宽表/索引、重复/异常清单、跨模态关联表",
+     tech="pyarrow+zstd；Pillow/ffmpeg；hashlib+SimHash/MinHashLSH；DuckDB/ES 索引。",
+     stack="pyarrow / ffmpeg / Pillow / SimHash / MinHashLSH / DuckDB / Elasticsearch",
+     en="dm-corpus-normalization",
+     note="标准化、元数据、去重、关联作为同一算子的子步骤；如部署资源差异大，可再拆。")
+
+cadd(id="OP-03", stage="②分片与打标", name="句向量与主题聚类", type="模型型/统计型", priority="P0",
+     members="SHP-01",
+     desc="文本分句/分块→bge 向量→K-Means，轮廓系数选 K，输出簇与主题词。",
+     logic="512 token 切窗、L2 归一、MiniBatchKMeans、候选 K 评估、c-TF-IDF 主题词。",
+     dep="标准化文本", fgw="13.1-三", proto="数据分片卡 L1556",
+     inp="文本记录、模型、切句参数、K 范围、seed",
+     out="句向量、K/轮廓系数、record→cluster、簇规模/主题词",
+     tech="bge-m3 + sentence-transformers；FAISS/scikit-learn MiniBatchKMeans；silhouette_score。",
+     stack="bge-m3 / sentence-transformers / scikit-learn / FAISS",
+     en="dm-text-clustering",
+     note="向量可复用给打标、FAISS、近重复检测。")
+
+cadd(id="OP-04", stage="②分片与打标", name="分层抽样", type="统计型/规则型", priority="P1",
+     members="SHP-02",
+     desc="按来源×主题×质量分层，Neyman 分配配额并执行抽样，输出代表性校验。",
+     logic="n_h=n·(N_h·CV_h)/Σ；总样本 5-10%/20-30%、≥10 万；固定 seed。",
+     dep="元数据/主题簇/质量等级", fgw="13.1-四", proto="分层抽样配置 L1565/L2380",
+     inp="分层字段、N/CV、比例、最小样本、seed",
+     out="层配额、样本清单、实抽比例、代表性偏差、未达标层",
+     tech="DuckDB/Spark stratified sample；Neyman；哈希取模保证可复现。",
+     stack="DuckDB / Spark / pandas",
+     en="dm-stratified-sampling",
+     note="同时服务接入抽样与组装选样。")
+
+cadd(id="OP-05", stage="②分片与打标", name="多模态自动打标", type="模型型", priority="P0",
+     members="LBL-01~04",
+     desc="文本/图像/音频/视频统一打标，输出可变深度路径+置信度+topK；四模态同一优先级。",
+     logic="文本层级分类；图像 ViT/CLIP；音频 PANNs/ASR；视频关键帧+音轨+ASR 融合。",
+     dep="标准化四模态、类型树", fgw="12.2-6/8", proto="数据打标列表 L1810-1821",
+     inp="四模态内容、类型树、阈值/topK/最大深度",
+     out="路径、置信度、topK、证据、模型/树版本、低置信标记",
+     tech="BERT/RoBERTa；ViT/ConvNeXt+CLIP；PANNs/AST+Whisper；VideoMAE+CLIP+CLAP。",
+     stack="PyTorch / BERT / ViT / CLIP / PANNs / VideoMAE / Whisper",
+     en="dm-multimodal-labeling",
+     note="一个算子四个模态分支，任何模态都不能缺；视频音轨复用音频分支；低置信进标签治理。")
+
+cadd(id="OP-06", stage="②分片与打标", name="领域/能力多标签", type="模型型", priority="P1",
+     members="LBL-05~06",
+     desc="领域 16 行业树 + 能力树多标签，支持任意层级、跨领域分别计入。",
+     logic="多标签层次分类/embedding 相似；阈值裁剪；LLM few-shot 兜底。",
+     dep="文本/ASR/OCR、领域/能力树", fgw="12.2-6/12.3", proto="数据打标领域/能力列 L1832/L2836",
+     inp="样本内容、领域树、能力树、阈值/topK",
+     out="领域/能力多路径+分数、证据、模型/树版本",
+     tech="BERT 多标签或 bge 向量+kNN；LLM 逐能力项打分。",
+     stack="BERT / bge-m3 / LLM",
+     en="dm-taxonomy-labeling",
+     note="领域=讲什么，能力=能练什么，两个标签空间分开。")
+
+cadd(id="OP-07", stage="②分片与打标", name="标签治理", type="规则型/模型型/统计型", priority="P1",
+     members="LBL-07~09",
+     desc="标签校验、未归类识别、质量评估、治理属性建议。",
+     logic="树快照校验；低置信/margin/OOD；人工审核比对准确率；PII/价值/关联度建议。",
+     dep="打标结果、人工审核、类型树", fgw="12.2-4/5/7/9/10", proto="修改标签弹窗 L3183；未归类池 L2045；KPI L2778",
+     inp="标签记录、审核记录、树、阈值",
+     out="合法/非法、未归类原因、质量报告、治理建议",
+     tech="规则引擎+编辑距离；bge 近邻/OOD；sklearn/Kappa；PII NER。",
+     stack="Python / bge-m3 / scikit-learn / PII-BERT",
+     en="dm-label-governance",
+     note="质量评估依赖真实人工审核记录；没有记录只能标“待补数据”。")
+
+cadd(id="OP-08", stage="③语料画像", name="规模、来源与领域画像", type="统计型/规则型/模型型", priority="P0",
+     members="PRF-01~03",
+     desc="条目/字符/时长/帧数/存储/分位数；六类来源+可信度；领域占比/覆盖。",
+     logic="流式聚合+t-digest；来源规则+fastText；AHP；领域分类+树 rollup。",
+     dep="标准化产物/元数据/领域标签", fgw="13.2-1/2/3/4", proto="规模卡 L1862；来源卡 L1868；主题覆盖 L2135",
+     inp="标准产物/元数据、来源台账、领域标签",
+     out="规模/分位数/占比、六类来源+可信度、领域覆盖",
+     tech="DuckDB/Spark；fastText；AHP；BERT 领域分类。",
+     stack="DuckDB / Spark / fastText / BERT",
+     en="dm-corpus-profiling",
+     note="来源口径要从原型的 3 类扩为 FGW 六类。")
+
+cadd(id="OP-09", stage="③语料画像", name="语言、地域与时效画像", type="模型型/规则型/统计型", priority="P0",
+     members="PRF-04~06",
+     desc="语种/方言、地域推断、时间抽取与新鲜度。",
+     logic="fastText/CLD3；ip2region+GeoNames；dateparser+分桶加权。",
+     dep="文本/ASR/OCR、元数据", fgw="13.2-5/6", proto="语言分布 L1873；新鲜度 L1877；RK-005 L1893",
+     inp="文本/转写、IP/GPS/时区、时间戳",
+     out="语种/方言+置信度、地域分布、年季分布/新鲜度",
+     tech="fastText lid.176/CLD3；ip2region；dateparser/HeidelTime。",
+     stack="fastText / CLD3 / ip2region / dateparser",
+     en="dm-language-profiling",
+     note="语种置信度<0.85 标混合/未识别；地域推断为 P2 子项。")
+
+cadd(id="OP-10", stage="③语料画像", name="文本属性与任务适配", type="模型型/统计型", priority="P0",
+     members="PRF-07、PRF-11",
+     desc="句长/从句/被动/TTR/语体 + 六维任务适配评分。",
+     logic="依存句法；TTR/MSTTR；语体分类；结构 40/语义 30/领域 30 加权。",
+     dep="文本、领域标签", fgw="13.3-1/2", proto="语料属性 L1878；任务适配 L1882",
+     inp="文本、句法/语体模型、评分权重",
+     out="文本属性、分布、六维适配分+子指标",
+     tech="HanLP/LTP/Stanza；RoBERTa；LightGBM/LLM 校准。",
+     stack="HanLP / LTP / RoBERTa / LightGBM",
+     en="dm-text-profiling",
+     note="任务适配的代码/图文子项可复用打标/图像结果。")
+
+cadd(id="OP-11", stage="③语料画像", name="语音质量与声学属性", type="模型型/统计型", priority="P1",
+     members="PRF-08",
+     desc="ASR 转写、WER/CER、语速、基频、停顿、口音。",
+     logic="ASR；文本归一+编辑距离；VAD 有效时长；声学特征。",
+     dep="音频、参考文本（可选）", fgw="13.3-1", proto="WER L1887；语速 L1880；RK-002 L1890",
+     inp="音频、参考转写、ASR 模型、阈值",
+     out="转写、WER/CER、语速、基频/停顿、低质量清单",
+     tech="Whisper/FunASR；jiwer；praat/parselmouth；pyannote VAD。",
+     stack="Whisper / FunASR / jiwer / praat",
+     en="dm-speech-analysis",
+     note="无参考文本时只出置信度/困惑度，不冒充 WER。")
+
+cadd(id="OP-12", stage="③语料画像", name="图像/视频属性", type="模型型/统计型", priority="P1",
+     members="PRF-09~10",
+     desc="图像场景/目标/熵；视频镜头/光流/音画对齐/动作。",
+     logic="CLIP/YOLO；场景熵；PySceneDetect/RAFT；BLEU；VideoMAE。",
+     dep="图像/视频+音轨+ASR", fgw="13.3-1", proto="香农熵 L1880；视频帧率 L1865（缺口）",
+     inp="图像/视频、关键帧、ASR/字幕",
+     out="场景/目标/熵、镜头/光流/BLEU/动作覆盖",
+     tech="CLIP/YOLOv8；PySceneDetect/RAFT；sacrebleu；VideoMAE/SlowFast。",
+     stack="CLIP / YOLOv8 / PySceneDetect / RAFT / VideoMAE",
+     en="dm-visual-analysis",
+     note="原型没有视频专项卡；FGW 要求，建议补 UI。")
+
+cadd(id="OP-13", stage="③语料画像", name="知识覆盖、热点与风格", type="模型型/统计型", priority="P1",
+     members="PRF-12、PRF-15",
+     desc="实体/术语覆盖率、知识密度/层次；热点长尾、语体、术语覆盖。",
+     logic="NER+实体链接；AC 术语；BERTopic；语体分类。",
+     dep="文本、KG/术语表、目标清单", fgw="13.3-3", proto="知识指标 L1886；卡片9 L2142；卡片11/12 L2156/L2165",
+     inp="文本、KG/术语表、时间、目标清单",
+     out="覆盖率/密度/层次、热点/长尾、语体/术语覆盖",
+     tech="HanLP/BLINK；AC；BERTopic；RoBERTa。",
+     stack="HanLP / BLINK / BERTopic / RoBERTa",
+     en="dm-knowledge-analysis",
+     note="热点长尾为 Comic 口径；FGW 只要求稀疏/长尾。")
+
+cadd(id="OP-14", stage="③语料画像", name="质量、一致性与难度", type="统计型/模型型", priority="P0",
+     members="PRF-13~14",
+     desc="完整率/跨文档冲突/基尼/标注覆盖；难度四档/正负样本。",
+     logic="字段校验；实体链接+属性比对；基尼；PPL 分档；极性分类。",
+     dep="元数据/实体/领域/标注/样本", fgw="13.3-4/13.3-2", proto="质量卡 L1887；卡片10 L2149；卡片6 L2117",
+     inp="字段/实体/属性/标注/样本",
+     out="完整率/冲突/基尼/覆盖；难度/正负/平衡度",
+     tech="pandas；BLINK；PPL 小模型；RoBERTa 极性。",
+     stack="pandas / BLINK / Qwen2.5-0.5B / RoBERTa",
+     en="dm-quality-analysis",
+     note="难度/正负为 Comic 口径，P2 子项。")
+
+cadd(id="OP-15", stage="④配比引擎", name="配比引擎", type="规则型/统计型", priority="P0",
+     members="RAT-01~03",
+     desc="六类来源占比、加权配比、归一化、30%/100%/库存校验。",
+     logic="Σ条数×权重；最大余数法；树覆盖；库存=target%×总规模。",
+     dep="标签库存、来源权重、目标规模、标签树", fgw="12.1/12.3/12.4", proto="配比编辑 L3870；KPI L3899；库存 L3924",
+     inp="标签条数/token、权重、目标规模、核心标签集、库存",
+     out="条数/权重/占比、投喂条数、校验单、缺口量",
+     tech="Python 规则/OR-Tools；DuckDB。",
+     stack="Python / OR-Tools / DuckDB",
+     en="dm-ratio-computation",
+     note="纯规则；可下沉后端，但建议独立服务便于审计复算。")
+
+cadd(id="OP-16", stage="④配比引擎", name="配比分析与建议", type="规则型/优化型", priority="P1",
+     members="RAT-04~08",
+     desc="能力预测、领域覆盖、按目标能力推荐、缺口补数、达成度、偏见、通用/专业对标。",
+     logic="标签→能力/领域矩阵；加权/线性规划；来源覆盖打分；分布偏斜；多目标。",
+     dep="配比、映射库、库存、实际投喂", fgw="12.3-2/5、12.4-1/2/4/5", proto="能力预测 L3658；领域覆盖 L6448；推荐 L6420；达成度 L2071",
+     inp="配比、映射、库存、实际、目标",
+     out="六维能力、领域覆盖、建议配比、补数、达成度、偏见、对标",
+     tech="专家矩阵/岭回归；OR-Tools；pandas；毒性分类。",
+     stack="Python / scikit-learn / OR-Tools",
+     en="dm-ratio-analysis",
+     note="通用/专业对标、偏见为 P2 子项。")
+
+cadd(id="OP-17", stage="⑤生产评测", name="数据组装与打包", type="统计型/I/O型", priority="P0",
+     members="PRD-01~02",
+     desc="按配方配额分层选样，写成品 Parquet，生成 manifest 与校验和。",
+     logic="Neyman/加权无放回；固定 seed；分区写；MD5/SHA256；断点续跑。",
+     dep="配方、库存、分层字段", fgw="13.1-二/三/四", proto="组装任务 L4419；下载 L4477",
+     inp="配方明细、库存、分层、seed、分区/格式参数",
+     out="样本清单、成品文件、manifest、校验和",
+     tech="DuckDB/Spark；pyarrow+zstd；SHA-256。",
+     stack="DuckDB / Spark / pyarrow",
+     en="dm-dataset-packaging",
+     note="选样与打包作为同一服务两个端点。")
+
+cadd(id="OP-18", stage="⑤生产评测", name="数据评测", type="模型型/统计型/规则型", priority="P0",
+     members="PRD-03~04、TOL-03",
+     desc="5-10% 抽样、标签准确率/F1/混淆矩阵、合规/版权检测、综合质量分。",
+     logic="分层抽样；复用打标模型；路径匹配；安全模型+敏感词+版权哈希；分项加权。",
+     dep="成品 manifest、真值、打标模型", fgw="13.3/13.5-三", proto="数据评测 L4453；专家维度 L4796",
+     inp="成品、真值、抽样比例、策略/词表/版权库",
+     out="抽样清单、准确率/F1、合规/版权结果、综合分",
+     tech="复用打标模型；sklearn；安全模型；SimHash/MinHash。",
+     stack="PyTorch / scikit-learn / SimHash / MinHash",
+     en="dm-dataset-evaluation",
+     note="版权检测作为合规子项，不单独做算子。")
+
+cadd(id="OP-19", stage="⑤生产评测", name="配比分析与报告", type="统计型/服务型", priority="P1",
+     members="PRD-05~06",
+     desc="9 维结果聚合、综合评分、状态矩阵、报告数据包与 HTML/PDF/Excel 渲染。",
+     logic="归一化加权；阈值；模板结论；模板渲染+PDF/Excel。",
+     dep="9 维算子结果、模板", fgw="13.4", proto="配比分析 L4621；下载报告 L4687",
+     inp="9 维结果、权重、模板",
+     out="综合分、9 维状态、报告数据包、HTML/PDF/Excel",
+     tech="Python 聚合；Jinja2/WeasyPrint/openpyxl。",
+     stack="Python / Jinja2 / WeasyPrint / openpyxl",
+     en="dm-ratio-reporting",
+     note="报告渲染可下沉后端；算子只产数据包。")
+
+cadd(id="OP-20", stage="⑥工具与风险", name="知识图谱与向量索引", type="模型型/图检索型", priority="P1",
+     members="TOL-01~02",
+     desc="实体/关系抽取、实体链接、Neo4j 建图；多模态 embedding、FAISS 建索引/检索。",
+     logic="NER+RE+BLINK；UNWIND 批写；bge/CLIP 向量；IVF-PQ/HNSW；recall/QPS。",
+     dep="文本/图像、本体/词表、图谱/向量库", fgw="13.5-一/二", proto="工具链 Neo4j/FAISS L2009-2011",
+     inp="文本分片、图像、本体、索引参数",
+     out="实体/关系表、图谱统计、向量/索引、检索结果",
+     tech="HanLP/BLINK/Neo4j；bge/CLIP/FAISS。",
+     stack="Neo4j / HanLP / BLINK / bge / CLIP / FAISS",
+     en="dm-graph-indexing",
+     note="图谱/索引服务由平台运维；算子只做抽取/向量/建索引。")
+
+cadd(id="OP-21", stage="⑥工具与风险", name="专家校验", type="统计型/规则型", priority="P1",
+     members="TOL-04~05",
+     desc="5-10% 分层抽样、高风险必选；多专家 Kappa/Alpha、准确率/覆盖率。",
+     logic="Neyman；哈希取模；多数投票金标准；混淆矩阵；bootstrap。",
+     dep="待校验对象、专家标注、自动结果", fgw="13.5-四", proto="专家校验 L2015/L4788",
+     inp="对象清单、风险、专家标注、自动结果",
+     out="抽样清单、Kappa/Alpha、准确率/覆盖率、争议 TopN",
+     tech="Python/分层抽样/sklearn。",
+     stack="Python / scikit-learn",
+     en="dm-expert-validation",
+     note="专家任务流程/签署归平台。")
+
+cadd(id="OP-22", stage="⑥工具与风险", name="风险检测与分级", type="规则型/模型型", priority="P1",
+     members="RSK-01~02",
+     desc="消费指标结果按阈值/趋势判定风险等级、证据、建议；检测过时知识。",
+     logic="规则 DSL；双阈值；去重/抑制；时间敏感+知识库比对。",
+     dep="指标结果、规则配置、历史风险、知识库", fgw="13.4-二/13.5/13.3-三", proto="风险列表 L1888",
+     inp="指标包、阈值、历史、知识库",
+     out="风险条目、等级/证据/建议、过时标记/过时率",
+     tech="JSON 规则/决策表；时间抽取+知识库比对。",
+     stack="Python / LLM",
+     en="dm-risk-detection",
+     note="风险工单/处置归平台；过时知识为 P2 子项。")
+
 # ============ 样式与写盘 ============
 HEADER_FILL = PatternFill("solid", fgColor="1F4E78")
 HEADER_FONT = Font(name="微软雅黑", size=10, bold=True, color="FFFFFF")
@@ -607,12 +898,12 @@ def style_header(ws, ncols):
     ws.row_dimensions[1].height = 32
 
 
-def write_table(ws, rows):
-    for c, h in enumerate(HEADERS, 1):
+def write_sheet(ws, rows, headers, keys, widths):
+    for c, h in enumerate(headers, 1):
         ws.cell(row=1, column=c, value=h)
-    style_header(ws, len(HEADERS))
+    style_header(ws, len(headers))
     for i, row in enumerate(rows, 2):
-        for c, k in enumerate(KEYS, 1):
+        for c, k in enumerate(keys, 1):
             cell = ws.cell(row=i, column=c, value=row.get(k, ""))
             cell.font = BODY_FONT
             cell.alignment = CENTER if k in ("seq", "priority", "common", "status") else WRAP
@@ -623,15 +914,19 @@ def write_table(ws, rows):
         if pcell.value in PRI_FILL:
             pcell.fill = PRI_FILL[pcell.value]
         ws.row_dimensions[i].height = 62
-    for c, w in enumerate(WIDTHS, 1):
+    for c, w in enumerate(widths, 1):
         ws.column_dimensions[get_column_letter(c)].width = w
     ws.freeze_panes = "A2"
-    ws.auto_filter.ref = f"A1:{get_column_letter(len(HEADERS))}{len(rows) + 1}"
+    ws.auto_filter.ref = f"A1:{get_column_letter(len(headers))}{len(rows) + 1}"
     ws.page_setup.orientation = "landscape"
     ws.page_setup.fitToWidth = 1
     ws.page_setup.fitToHeight = 0
     ws.sheet_properties.pageSetUpPr.fitToPage = True
     ws.print_title_rows = "1:1"
+
+
+def write_table(ws, rows):
+    write_sheet(ws, rows, HEADERS, KEYS, WIDTHS)
 
 
 wb = Workbook()
@@ -648,11 +943,12 @@ ws0["A1"].alignment = Alignment(vertical="center")
 ws0.row_dimensions[1].height = 38
 
 intro = [
-    ("用途", "本表把原型中必须由算子真实计算/推理的能力整理成可排期、可验收的清单；平台 CRUD、任务编排、人工审核、存储与展示不在本表。"),
+    ("用途", "本表把原型中必须由算子真实计算/推理的能力整理成可排期、可验收的清单。01 是 22 个收敛算子，02 是 56 行能力明细，03 是 11 个 P0 最小链路。平台 CRUD、任务编排、人工审核、存储与展示不在本表。"),
     ("依据", "docs/html原型/数据配比中心_完整交互版_2026-11-15.html；FGW《数据配比》12.x/13.x；Comic 任务书；PST/PRE/IND 交接文档。"),
     ("范围口径", "只列“能对真实语料产生可核验新结果”的能力。纯 CRUD、状态机、人工审核、进度展示、报告页面交互、工具健康度面板均不列。"),
     ("模态口径", "所有模态一视同仁：文本/图像/音频/视频均有解析、打标、画像；同一数据集可含多模态；同一模态可有多种格式；混合文件先拆流再分别处理。"),
-    ("优先级", "P0=最小真实链路必须；P1=业务价值高、第二阶段；P2=增强/审计加分。"),
+    ("收敛口径", "同一个算子的多模态分支/子步骤合并为一行；01 总表 22 行，P0 11 行、P1 11 行。原 56 行能力明细保留在 02，便于追溯和验收。源库增量拉取（原 ING-09）归平台连接器，不列入算子。"),
+    ("优先级", "P0=最小真实链路必须；P1=业务价值高、第二阶段。原 P2 子项（地域推断、治理属性建议、通用/专业对标、报告渲染、过时知识、专家一致性）已并入对应算子。"),
     ("完成状态", "统一从“未开始”起算；负责人和交付时间待排期后填写。"),
     ("重要提醒", "原型中绝大多数数值是常量、哈希或 Math.random() 伪造；不能用原型的“已显示”当作“已实现”。"),
 ]
@@ -672,9 +968,10 @@ legend = [
     ("算子类型", "解析型 / 模型型 / 规则型 / 统计型 / 图检索型 / I/O型 / 服务型"),
     ("FGW条款", "对应原文 12.x/13.x 二级能力编号，用于审计追溯"),
     ("原型位置", "原型页面 + 关键行号；L 指 HTML 文件行号"),
+    ("包含明细算子", "该收敛算子合并了 02-能力明细 里的哪些行，便于追溯"),
     ("平台/算子边界", "明确平台负责什么、算子只负责什么，避免职责外溢"),
     ("是否通用", "通用=可跨业务复用；场景专用=仅本项目使用"),
-    ("算子英文名", "建议的语义编码，发布后不可改；业务编号另按平台 OP 规范生成"),
+    ("算子英文名", "01/03 采用 dm-<对象>-<动作> 两词命名（如 dm-multimodal-analysis）；02 能力明细保留内部能力编码 corpus_*。发布后不可改。"),
 ]
 for k, v in legend:
     ws0.cell(row=r, column=1, value=k).font = BODY_FONT
@@ -682,29 +979,20 @@ for k, v in legend:
     ws0.cell(row=r, column=2).alignment = WRAP
     r += 1
 
-# ---- 01 总表 ----
+# ---- 01 算子总表（22 行收敛版） ----
 ws1 = wb.create_sheet("01-算子总表")
-write_table(ws1, ROWS)
+write_sheet(ws1, CONS, C_HEADERS, C_KEYS, C_WIDTHS)
 
-# ---- 02 P0 最小链路 ----
-ws2 = wb.create_sheet("02-P0最小链路")
-write_table(ws2, [x for x in ROWS if x["priority"] == "P0"])
+# ---- 02 能力明细（原 56 行） ----
+ws2 = wb.create_sheet("02-能力明细")
+write_table(ws2, ROWS)
 
-# ---- 分环节明细 ----
-STAGES = [
-    ("03-接入与解析", ["①接入与解析"]),
-    ("04-分片与打标", ["②分片与打标"]),
-    ("05-语料画像", ["③语料画像"]),
-    ("06-配比引擎", ["④配比引擎"]),
-    ("07-生产评测", ["⑤生产评测"]),
-    ("08-工具与风险", ["⑥工具与风险"]),
-]
-for name, stages in STAGES:
-    ws = wb.create_sheet(name)
-    write_table(ws, [x for x in ROWS if x["stage"] in stages])
+# ---- 03 P0 最小链路（收敛版） ----
+ws3 = wb.create_sheet("03-P0最小链路")
+write_sheet(ws3, [x for x in CONS if x["priority"] == "P0"], C_HEADERS, C_KEYS, C_WIDTHS)
 
-# ---- 09 模态覆盖矩阵 ----
-wsM = wb.create_sheet("09-模态覆盖矩阵")
+# ---- 04 模态覆盖矩阵 ----
+wsM = wb.create_sheet("04-模态覆盖矩阵")
 m_headers = ["模态", "常见/需支持格式", "解析算子", "标准化产物", "自动打标算子", "画像/分析算子", "关键说明"]
 m_widths = [14, 40, 22, 24, 22, 30, 60]
 for c, h in enumerate(m_headers, 1):
@@ -715,15 +1003,15 @@ for c, h in enumerate(m_headers, 1):
     cell.border = BORDER
 wsM.row_dimensions[1].height = 30
 modal_rows = [
-    ("文本", "TXT、JSONL、JSON、XML、PDF（含扫描页）", "OP-ING-02 文本解析", "Parquet 列式", "OP-LBL-01 文本打标", "PRF-04/06/07/12/13",
+    ("文本", "TXT、JSONL、JSON、XML、PDF（含扫描页）", "OP-01 多模态识别与解析", "Parquet 列式", "OP-05 多模态自动打标", "OP-08/09/10/13/14",
      "同一文本模态可能同时出现多种格式；PDF 扫描页走 OCR/版面，普通文本走解析器。"),
-    ("图像", "JPG、PNG、BMP（扩展：WebP、TIFF）", "OP-ING-03 图像解析", "WebP + phash", "OP-LBL-02 图像打标", "PRF-09/13",
+    ("图像", "JPG、PNG、BMP（扩展：WebP、TIFF）", "OP-01 多模态识别与解析", "WebP + phash", "OP-05 多模态自动打标", "OP-12/14",
      "读 header/EXIF 即可出基础特征；图像打标与文本打标同级，不能只做文本。"),
-    ("音频", "WAV、MP3、FLAC（扩展：M4A、AAC）", "OP-ING-04 音频解析", "WAV 16k mono + 梅尔谱", "OP-LBL-03 音频打标", "PRF-08/04",
-     "视频里的音轨也走本算子；语种识别复用 PRF-04；WER 复用 ASR 转写。"),
-    ("视频", "MP4、MOV（扩展：AVI、MKV）", "OP-ING-05 视频拆流抽帧", "H.264 + 关键帧", "OP-LBL-04 视频打标", "PRF-10/13",
+    ("音频", "WAV、MP3、FLAC（扩展：M4A、AAC）", "OP-01 多模态识别与解析", "WAV 16k mono + 梅尔谱", "OP-05 多模态自动打标", "OP-11/09",
+     "视频里的音轨也走同一算子；语种识别复用 OP-09；WER 复用 ASR 转写。"),
+    ("视频", "MP4、MOV（扩展：AVI、MKV）", "OP-01 多模态识别与解析", "H.264 + 关键帧", "OP-05 多模态自动打标", "OP-12/14",
      "先拆音视频流，再分别走音频/图像链路；视频打标用关键帧+音轨+ASR 融合。"),
-    ("混合/跨模态", "视频含音轨、PDF 含扫描页、图文配对、音视频+字幕", "OP-ING-01 模态识别 + OP-ING-08 关联", "各模态标准产物 + 关联表", "按子模态分别调用 LBL-01~04", "PRF-13 跨模态一致性",
+    ("混合/跨模态", "视频含音轨、PDF 含扫描页、图文配对、音视频+字幕", "OP-01 拆流 + OP-02 关联", "各模态标准产物 + 关联表", "OP-05 按子模态分支", "OP-14 跨模态一致性",
      "一个数据集可含多个模态；先识别并拆流，再按子模态并行处理，最后建“帧-音频-文本”关联表。"),
 ]
 for i, row in enumerate(modal_rows, 2):
@@ -744,8 +1032,8 @@ wsM.page_setup.fitToWidth = 1
 wsM.page_setup.fitToHeight = 0
 wsM.sheet_properties.pageSetUpPr.fitToPage = True
 
-# ---- 99 非算子清单 ----
-ws9 = wb.create_sheet("99-非算子清单")
+# ---- 05 非算子清单 ----
+ws9 = wb.create_sheet("05-非算子清单")
 n_headers = ["序号", "模块/功能", "原型位置", "建议落位", "说明", "备注"]
 n_widths = [5, 34, 32, 22, 70, 30]
 for c, h in enumerate(n_headers, 1):
@@ -757,17 +1045,18 @@ for c, h in enumerate(n_headers, 1):
 ws9.row_dimensions[1].height = 30
 non_ops = [
     ("分类体系树管理", "分类体系管理 L2499-2738", "平台表+接口", "树的增删改、启停、排序、收藏；算子只消费树快照", "treeVersion 需版本化"),
-    ("场景管理", "场景管理 L3834-3868", "平台表+接口", "场景 CRUD 与标签勾选；场景→配比行由 RAT-02 计算", "不单独做算子"),
+    ("场景管理", "场景管理 L3834-3868", "平台表+接口", "场景 CRUD 与标签勾选；场景→配比行由 OP-15 计算", "不单独做算子"),
     ("配方包管理", "配方包管理 L4082-4184", "平台表+版本字段", "我的/公共配方、版本快照/差异/封存/回滚", "版本工程属平台"),
     ("配比生产任务状态机", "配比生产任务 L4186-4228", "平台任务服务", "组装/投喂/补数任务创建、进度、重试、状态流转", "算子只执行单批计算"),
     ("配比分析任务状态机", "配比分析任务 L4537-4560", "平台任务服务", "分析任务创建、运行、归档、重新分析", "算子只产维度结果"),
-    ("风险工单与处置", "风险预警 L3579-3649", "平台工单", "风险列表、筛选、处置、闭环、通知", "RSK-01 只产风险条目"),
-    ("专家校验任务流程", "工具链 L4734-4826", "平台+人工", "任务派发、专家打分、签署、发布", "TOL-04/05 只做抽样与一致性"),
-    ("报告页面与下载入口", "分析报告 L4687-4731", "前端/后端", "报告展示、下载按钮、历史归档", "PRD-06 可只做渲染服务"),
+    ("风险工单与处置", "风险预警 L3579-3649", "平台工单", "风险列表、筛选、处置、闭环、通知", "OP-22 只产风险条目"),
+    ("专家校验任务流程", "工具链 L4734-4826", "平台+人工", "任务派发、专家打分、签署、发布", "OP-21 只做抽样与一致性"),
+    ("报告页面与下载入口", "分析报告 L4687-4731", "前端/后端", "报告展示、下载按钮、历史归档", "OP-19 可只做渲染服务"),
     ("图表与看板", "语料画像/配比页", "前端", "ECharts 图表、筛选交互、KPI 卡", "算子只给数据"),
     ("进度/通知/权限/审计", "全局", "平台", "进度条、通知、菜单权限、操作日志", "不属于算子"),
+    ("源库增量拉取（原 ING-09）", "检查点恢复 L6977-7038", "平台连接器", "JDBC/S3/HTTP 游标拉取、断点续传、幂等批次", "不作为算子，归平台数据接入层"),
     ("策略仿真与准入", "Comic 额外模块", "后端占位/简单规则", "候选策略、沙盒仿真、七维评估、准入放行", "甲方只要求“有”，不必做算子"),
-    ("智能推荐生成数据集包", "Comic 额外模块", "后端占位/模板", "目标画像、语义拆解、多方案推荐、反馈迭代", "可复用 RAT-05 的简化版"),
+    ("智能推荐生成数据集包", "Comic 额外模块", "后端占位/模板", "目标画像、语义拆解、多方案推荐、反馈迭代", "可复用 OP-16 的简化版"),
     ("参考配方相似生成", "Comic 额外模块", "后端占位", "参考集画像拆解、复刻规则、双集对标", "可复用画像算子结果"),
     ("数据集包配比分析", "Comic 额外模块", "后端 SQL/简单聚合", "子集权重、主题互补/冗余、跨子集关联等", "不单独做算子"),
     ("数据集包版本管理/运营统计", "Comic 额外模块", "平台表+SQL", "版本差异、交付血缘、运营指标", "平台功能"),
@@ -796,17 +1085,17 @@ for i, ws in enumerate(wb.worksheets):
     ws.sheet_properties.tabColor = colors[i % len(colors)]
 
 # 让 Excel 打开时直接落在算子总表，而不是说明页
-ws0.title = "90-说明"
-ORDER = ["01-算子总表", "02-P0最小链路", "03-接入与解析", "04-分片与打标",
-         "05-语料画像", "06-配比引擎", "07-生产评测", "08-工具与风险",
-         "09-模态覆盖矩阵", "99-非算子清单", "90-说明"]
+ws0.title = "06-说明"
+ORDER = ["01-算子总表", "02-能力明细", "03-P0最小链路", "04-模态覆盖矩阵", "05-非算子清单", "06-说明"]
 wb._sheets = [wb[name] for name in ORDER]
 wb.active = 0
 ws1.sheet_view.zoomScale = 85
 
 wb.save(OUT)
 print("saved:", OUT)
-print("rows:", len(ROWS), "P0:", sum(1 for x in ROWS if x["priority"] == "P0"),
+print("consolidated:", len(CONS), "P0:", sum(1 for x in CONS if x["priority"] == "P0"),
+      "P1:", sum(1 for x in CONS if x["priority"] == "P1"))
+print("detail:", len(ROWS), "P0:", sum(1 for x in ROWS if x["priority"] == "P0"),
       "P1:", sum(1 for x in ROWS if x["priority"] == "P1"),
       "P2:", sum(1 for x in ROWS if x["priority"] == "P2"))
 print("sheets:", wb.sheetnames)
