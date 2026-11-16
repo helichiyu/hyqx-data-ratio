@@ -1,0 +1,8 @@
+{"detail": "文本为空或仅空白", "recordId": "r_39229cf9bf99694074db9090", "type": "EMPTY_TEXT"}
+{"detail": "文本为空或仅空白", "recordId": "r_ccb10a45e59e979e7da5f1ca", "type": "EMPTY_TEXT"}
+{"detail": "文本为空或仅空白", "recordId": "r_8b6ad3fb40d8ba74225558bd", "type": "EMPTY_TEXT"}
+{"detail": "关键帧 7 平均灰度 0.0", "evidence": "streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0008.jpg", "recordId": "r_8b6ad3fb40d8ba74225558bd", "type": "BLACK_FRAME"}
+{"detail": "文本为空或仅空白", "recordId": "r_d4be1b7c293e2a0eb5e5b656", "type": "EMPTY_TEXT"}
+{"detail": "文本为空或仅空白", "recordId": "r_5b99e7ea16c11d13384ed12f", "type": "EMPTY_TEXT"}
+{"detail": "文本为空或仅空白", "recordId": "r_6841eacda9ed6033d2c93134", "type": "EMPTY_TEXT"}
+{"detail": "扫描页 106 个，OCR 后端不可用", "recordId": "r_920e8cb1bb9bc6c1750ec857", "type": "SCANNED_PAGES_NO_OCR"}

@@ -1,0 +1,37 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S1 联调初值；分区、去重阈值与标准格式待 S1 评审/业务确认。",
+  "partition": {
+    "keys": ["modal", "source", "dt"],
+    "rowGroupSize": 65536,
+    "compression": "zstd",
+    "_source": "任务书 3.3（按 modal/source/dt 分区、zstd、row group 约 128 MB）"
+  },
+  "formats": {
+    "image": {"container": "webp", "quality": 90, "method": 4},
+    "audio": {"sampleRate": 16000, "channels": 1, "codec": "pcm_s16le", "container": "wav"},
+    "video": {"container": "mp4", "codec": "h264", "preset": "veryfast", "crf": 23, "audioCodec": "aac"},
+    "_source": "任务书 3.3（WebP / 16 kHz mono WAV / H.264 MP4）+ 联调初值（质量/CRF）"
+  },
+  "dedup": {
+    "simhashBands": 4,
+    "simhashMaxDistance": 3,
+    "phashMaxDistance": 8,
+    "maxCandidatesPerBand": 500,
+    "_source": "联调初值：SimHash 汉明距离 ≤3；pHash 汉明距离 ≤8"
+  },
+  "anomaly": {
+    "silentRatio": 0.99,
+    "blackFrameMeanBrightness": 5.0,
+    "minTextChars": 0,
+    "_source": "联调初值：静音占比 ≥99%；关键帧平均灰度 <5 视为黑帧"
+  },
+  "limits": {
+    "ffmpegTimeoutSec": 180,
+    "maxRecords": 1000000,
+    "maxFailuresInResult": 200,
+    "decodeCheckRatio": 0.01,
+    "_source": "联调初值：最多处理 100 万条；1% 产物解码抽检"
+  }
+}

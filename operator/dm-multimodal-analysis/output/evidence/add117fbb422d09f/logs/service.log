@@ -1,0 +1,9 @@
+INFO:     Started server process [25216]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:17025 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62933 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62936 - "POST /dm-multimodal-analysis/uploadFile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62937 - "POST /dm-multimodal-analysis/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62938 - "GET /dm-multimodal-analysis/downloadFile?path=E%3A%2FHYQX%2F%E6%95%B0%E6%8D%AE%E9%85%8D%E6%AF%94%2Foperator%2Fruntime%2Ftransport%2Foutput%2Fdm-multimodal-analysis%2Fadd117fbb422d09f%2Fresult.jsonl HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62939 - "GET /dm-multimodal-analysis/downloadFile?path=E%3A%2FHYQX%2F%E6%95%B0%E6%8D%AE%E9%85%8D%E6%AF%94%2Foperator%2Fruntime%2Ftransport%2Foutput%2Fdm-multimodal-analysis%2Fadd117fbb422d09f HTTP/1.1" 200 OK

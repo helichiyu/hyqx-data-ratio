@@ -1,0 +1,30 @@
+{
+  "modal=audio/source=web_text/dt=2026-11-16": {
+    "bytes": 600984,
+    "records": 3
+  },
+  "modal=image/source=web_text/dt=2026-11-16": {
+    "bytes": 246616,
+    "records": 1
+  },
+  "modal=text/source=books/dt=2026-11-16": {
+    "bytes": 4471279,
+    "records": 32
+  },
+  "modal=text/source=science/dt=2026-11-16": {
+    "bytes": 24764,
+    "records": 86
+  },
+  "modal=text/source=web_text/dt=2026-11-16": {
+    "bytes": 84303,
+    "records": 301
+  },
+  "modal=text/source=wiki/dt=2026-11-16": {
+    "bytes": 562,
+    "records": 7
+  },
+  "modal=video/source=web_text/dt=2026-11-16": {
+    "bytes": 1171974,
+    "records": 2
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "inputFingerprint": "sha256:26f26bf9a5105933444a501d6b6dcf846477fd6971be9cdb97e4fd03a6ff6d68",
+  "inputPath": "E:/HYQX/数据配比/operator/runtime/transport/input/s1-batch-20261116",
+  "members": [
+    {
+      "archive": null,
+      "bytes": 27072,
+      "path": "0_0.mp3",
+      "sha256": "180961720fdf7d1c4d49ec5f23c0fdabb6058b72396b431d5eb70db788112c77"
+    },
+    {
+      "archive": null,
+      "bytes": 246616,
+      "path": "530384988814704640.jpg",
+      "sha256": "fb1a93eab3908af56fe7f7fca071e1ad1afa80585ecf0625ff91f05f06d655fc"
+    },
+    {
+      "archive": null,
+      "bytes": 831693,
+      "path": "60b5695ab2f0_with_audio.mp4",
+      "sha256": "03bdfd257f273e87f6e3c9b9055c27d265aa1d5fd72b2c3d71c413d7ed7a966e"
+    },
+    {
+      "archive": null,
+      "bytes": 253642,
+      "path": "asr_example_hotword.wav",
+      "sha256": "51792bc95be33075c1a8abb9afb76ad9f72943e84cd723cc8825b2678799b004"
+    },
+    {
+      "archive": null,
+      "bytes": 340281,
+      "path": "image__00260.mp4",
+      "sha256": "9f2797708457233f57014ced095faf7cac0660f05a7cc6c6fd4a98473ef39b43"
+    },
+    {
+      "archive": null,
+      "bytes": 195538,
+      "path": "machine_learning.jsonl",
+      "sha256": "e9814887434f4f2da1970322978d6dd6f67aedf6d8dd3b476e646a4ccbde67c7"
+    },
+    {
+      "archive": null,
+      "bytes": 4466151,
+      "path": "noches_blancas_1905.pdf",
+      "sha256": "e6635e182b13c6eeb1ea1198ffc32a802a2e4ada0bd15d8d8221ab0b2db8c8bc"
+    }
+  ],
+  "note": "zip 输入按展开后的成员计算指纹；HTTP 层 runId 按压缩包计算，二者在 result 中分别可见。",
+  "skipped": []
+}

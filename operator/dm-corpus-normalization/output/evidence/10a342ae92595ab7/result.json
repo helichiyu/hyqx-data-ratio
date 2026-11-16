@@ -1,0 +1,298 @@
+{
+  "status": "succeeded",
+  "data": {
+    "operatorId": "dm-corpus-normalization",
+    "semanticCode": "corpus_ingest_normalize_index_v1",
+    "operatorVersion": "0.1.0",
+    "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "seed": 42,
+    "runId": "10a342ae92595ab7",
+    "inputFingerprint": "sha256:e99430ecfd9acb33c1d6112bd87fa282a892d74351961b1273fb96d1466036c3",
+    "outputDir": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7",
+    "modelVersion": null,
+    "treeVersion": null,
+    "sampleCount": 432,
+    "successCount": 432,
+    "failedCount": 0,
+    "failedSamples": [],
+    "metrics": {
+      "sampleCount": 432,
+      "successCount": 432,
+      "recordCount": 432,
+      "failedCount": 0,
+      "failureRate": 0.0,
+      "modalCounts": {
+        "audio": 3,
+        "image": 1,
+        "text": 426,
+        "video": 2
+      },
+      "sourceCounts": {
+        "books": 32,
+        "science": 86,
+        "web_text": 307,
+        "wiki": 7
+      },
+      "standardized": {
+        "images": 1,
+        "audio": 3,
+        "video": 2,
+        "text": 426
+      },
+      "parquet": {
+        "files": 7,
+        "rows": 432,
+        "partitions": 7,
+        "compression": "zstd"
+      },
+      "index": {
+        "rows": 432,
+        "missingFields": {
+          "metadata": {},
+          "quality": {},
+          "hashes": {}
+        }
+      },
+      "dedup": {
+        "groups": 3,
+        "exactGroups": 3,
+        "nearGroups": 0,
+        "duplicateRecords": 3,
+        "textPairs": 12,
+        "imagePairs": 0,
+        "simhashMaxDistance": 3,
+        "phashMaxDistance": 8
+      },
+      "anomalies": {
+        "BLACK_FRAME": 1,
+        "EMPTY_TEXT": 6,
+        "SCANNED_PAGES_NO_OCR": 1
+      },
+      "associations": {
+        "fileGroups": 1,
+        "archiveGroups": 0,
+        "directoryGroups": 1,
+        "multiModalGroups": 2,
+        "derivedStreamGroups": 1
+      },
+      "normalization": {
+        "changed": 1,
+        "controlRemoved": 0
+      },
+      "decodeCheck": {
+        "mediaFiles": 6,
+        "sampleRatio": 0.01,
+        "checked": 1,
+        "ok": 1,
+        "failed": []
+      },
+      "partitions": {
+        "modal=audio/source=web_text/dt=2026-11-16": {
+          "records": 3,
+          "bytes": 600984
+        },
+        "modal=image/source=web_text/dt=2026-11-16": {
+          "records": 1,
+          "bytes": 246616
+        },
+        "modal=text/source=books/dt=2026-11-16": {
+          "records": 32,
+          "bytes": 4471279
+        },
+        "modal=text/source=science/dt=2026-11-16": {
+          "records": 86,
+          "bytes": 24764
+        },
+        "modal=text/source=web_text/dt=2026-11-16": {
+          "records": 301,
+          "bytes": 84303
+        },
+        "modal=text/source=wiki/dt=2026-11-16": {
+          "records": 7,
+          "bytes": 562
+        },
+        "modal=video/source=web_text/dt=2026-11-16": {
+          "records": 2,
+          "bytes": 1171974
+        }
+      },
+      "failuresByReason": {},
+      "upstream": {
+        "operatorId": "dm-multimodal-analysis",
+        "runId": "add117fbb422d09f",
+        "sampleCount": 432,
+        "successCount": 432,
+        "failedCount": 0,
+        "countsMatch": true
+      },
+      "config": {
+        "normalizeVersion": "0.1.0",
+        "thresholdsStatus": "provisional",
+        "simhashMaxDistance": 3,
+        "phashMaxDistance": 8
+      },
+      "provisional": true,
+      "generatedAt": "2026-11-16T19:46:27+08:00"
+    },
+    "artifacts": [
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/anomalies.jsonl",
+        "sha256": "f6ded78a5244eb2cf7cf0c3f587f93dd531384baf39b75a3a062528daca71ea7",
+        "bytes": 935
+      },
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/associations.jsonl",
+        "sha256": "bdef57e271a37afbdbb6f78589c6e34b0c3f02198e0eaff5f6f90bff39d3ee6d",
+        "bytes": 1016
+      },
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/duplicates.jsonl",
+        "sha256": "b3ffd462caebbbdd5a58af465fff06e59ee4e54401edf1bb760a866c48911bd5",
+        "bytes": 894
+      },
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/failures.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "type": "parquet",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/index/metadata.parquet",
+        "sha256": "ba0e00398474d13e22593589eb39fb11cf24041879d9f343a9536aba40e5d782",
+        "bytes": 42067
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/index/missing_fields.json",
+        "sha256": "22347125ce8a12fac6db316fd26c1300b1bcab55f94b2fcefb1d02002d3ae83b",
+        "bytes": 59
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/index/partition_stats.json",
+        "sha256": "fb9fcb75df2f42121d31b0acf0a8d6476222917a3e7ddd27ba3e65bc88d33f8f",
+        "bytes": 666
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/input_manifest.json",
+        "sha256": "eee4321305693e3d699e57b1fbc9d4877e1bf755e0b2df9a74605ad8ae81e4d7",
+        "bytes": 714
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/manifest.json",
+        "sha256": "958a5ef204ef5fc02dfd18875647ac5cfc410256027c042d15596deb54f347e0",
+        "bytes": 8036
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/metrics.json",
+        "sha256": "b4d1fca7add323f0a31808b0ce56b32413bcad7fe0d8a0fcaf7db9da9fd94629",
+        "bytes": 2511
+      },
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/records.jsonl",
+        "sha256": "d28dc311d642894d952c5ee875cd32c44feca4b0b12cb1bc53b09b042ad7a0e7",
+        "bytes": 878767
+      },
+      {
+        "type": "audio",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/audio/r_39229cf9bf99694074db9090.wav",
+        "sha256": "f685e6484e4dee32b4545f255f4ff24d1ee6e045db82335852aeeea9708b893c",
+        "bytes": 108366
+      },
+      {
+        "type": "audio",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/audio/r_5b99e7ea16c11d13384ed12f.wav",
+        "sha256": "c6118971cfcdb1dc403a64eb2d84fa4703dc90686a40638a0ab5ef10214037fe",
+        "bytes": 253676
+      },
+      {
+        "type": "audio",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/audio/r_d4be1b7c293e2a0eb5e5b656.wav",
+        "sha256": "1ca3701d1ff36f072915f464426193c46f8c8714806f0d2b6c5b6a905bc569f4",
+        "bytes": 320270
+      },
+      {
+        "type": "image",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/images/r_ccb10a45e59e979e7da5f1ca.webp",
+        "sha256": "0bd3e1d73840c60249431329423a6bcb060000da352613556c8b8a1c222a4444",
+        "bytes": 149398
+      },
+      {
+        "type": "parquet",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/parquet/modal=audio/source=web_text/dt=2026-11-16/part-0000.parquet",
+        "sha256": "0e33a5ab71208223e2747b29db1ca2b79aa0c91c1c518f451fe8cfd21750f93b",
+        "bytes": 12006
+      },
+      {
+        "type": "parquet",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/parquet/modal=image/source=web_text/dt=2026-11-16/part-0000.parquet",
+        "sha256": "51b78163da426f3c50ef5a286cdf417d284f9bf92a79d2eb4d610d1f7ae9cc7a",
+        "bytes": 10863
+      },
+      {
+        "type": "parquet",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/parquet/modal=text/source=books/dt=2026-11-16/part-0000.parquet",
+        "sha256": "f0e8f15ed0d4f991dbbf310cd99e5f192139d9a7d191bdd8dba842c3b84117b8",
+        "bytes": 64441
+      },
+      {
+        "type": "parquet",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/parquet/modal=text/source=science/dt=2026-11-16/part-0000.parquet",
+        "sha256": "e2a4ca190735616f3e74363a275728acf6767c61d3682e79fdb3edc6ebcee673",
+        "bytes": 41552
+      },
+      {
+        "type": "parquet",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/parquet/modal=text/source=web_text/dt=2026-11-16/part-0000.parquet",
+        "sha256": "31e3f823c87b134830ec3d5255b748e7fc1d83840d2c1508559258ada482f30b",
+        "bytes": 104328
+      },
+      {
+        "type": "parquet",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/parquet/modal=text/source=wiki/dt=2026-11-16/part-0000.parquet",
+        "sha256": "3f0d48a975e9fe04a9be0477e0c0a6b3041e7dca56c0db04c77e2097ba162b72",
+        "bytes": 13659
+      },
+      {
+        "type": "parquet",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/parquet/modal=video/source=web_text/dt=2026-11-16/part-0000.parquet",
+        "sha256": "0ba030566b8bf26efda9934d61f21103f8d017d0ceac8b54d987b44c62672d35",
+        "bytes": 23274
+      },
+      {
+        "type": "video",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/video/r_6841eacda9ed6033d2c93134.mp4",
+        "sha256": "b80800bfa604b9eb37bbb865e925043a5885a94b48c9dd33194e86a41353a0f3",
+        "bytes": 197367
+      },
+      {
+        "type": "video",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/standard/video/r_8b6ad3fb40d8ba74225558bd.mp4",
+        "sha256": "23f5020a3df6a4af9943e19a7fb73a60a0eca81460675f82c6f2dbc0031a2dad",
+        "bytes": 631927
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/summary.json",
+        "sha256": "8fe0186b5151224b07783eac0814bddcb44874835d1381bd46af51e9e0c2bfc5",
+        "bytes": 3272
+      }
+    ],
+    "outputFilePath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/records.jsonl",
+    "deterministic": true,
+    "provisional": true,
+    "notes": [
+      "标准产物从上游记录与真实源文件生成；源文件缺失时记 SOURCE_FILE_MISSING，不伪造产物。",
+      "未接入人工标注，不产出准确率/去重准确率等效果指标。"
+    ],
+    "cached": false
+  }
+}

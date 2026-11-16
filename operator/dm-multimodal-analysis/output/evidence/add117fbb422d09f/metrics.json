@@ -1,0 +1,81 @@
+{
+  "archives": 0,
+  "config": {
+    "dtSource": "file_time",
+    "formatsVersion": "0.1.0",
+    "maxKeyframes": 24,
+    "parseVersion": "0.1.0",
+    "thresholdsStatus": "provisional"
+  },
+  "detection": {
+    "byModal": {
+      "audio": 2,
+      "image": 1,
+      "text": 2,
+      "video": 2
+    },
+    "conflictFiles": 0,
+    "lowConfidenceFiles": 0,
+    "minConfidence": 0.6
+  },
+  "failedCount": 0,
+  "failureRate": 0.0,
+  "failuresByReason": {},
+  "fileMembers": 7,
+  "generatedAt": "2026-11-16T19:46:25+08:00",
+  "inputBytesByModal": {
+    "audio": 280714,
+    "image": 246616,
+    "text": 4661689,
+    "video": 1171974
+  },
+  "media": {
+    "audioFiles": 3,
+    "images": 1,
+    "keyframes": 49,
+    "silentAudio": 0,
+    "videoFiles": 2,
+    "videosWithAudio": 1
+  },
+  "modalCounts": {
+    "audio": 3,
+    "image": 1,
+    "text": 426,
+    "video": 2
+  },
+  "pdf": {
+    "documents": 1,
+    "emptyPages": 86,
+    "note": "未接入 OCR 后端；扫描页只统计不伪造文本。",
+    "ocrAttempted": 0,
+    "ocrStatus": "unavailable",
+    "ocrSucceeded": 0,
+    "pages": 326,
+    "scannedPages": 106
+  },
+  "provisional": true,
+  "recordBytesByModal": {
+    "audio": 600984,
+    "image": 246616,
+    "text": 4580908,
+    "video": 1171974
+  },
+  "recordCount": 432,
+  "sampleCount": 432,
+  "sourceCounts": {
+    "books": 32,
+    "science": 86,
+    "web_text": 307,
+    "wiki": 7
+  },
+  "successCount": 432,
+  "text": {
+    "decodeFailureRecords": 0,
+    "emptyTextRate": 0.0,
+    "emptyTextRecords": 0,
+    "mojibakeRate": 0.0,
+    "mojibakeWarnRecords": 0,
+    "mojibakeWarnThreshold": 0.02,
+    "records": 426
+  }
+}

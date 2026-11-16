@@ -22,11 +22,11 @@
       "priority": "P0",
       "group": "①接入与解析",
       "dependsOn": [],
-      "status": "未开始",
+      "status": "待评审",
       "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "evidencePath": "operator/dm-multimodal-analysis/output/evidence/add117fbb422d09f/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S1 完成：四模态+PDF+混合批次 432 条，失败 0；无 OCR 后端，扫描页只统计；效果验收待 H-05；人工门禁待补。"
     },
     {
       "opId": "OP-02",
@@ -39,11 +39,11 @@
       "dependsOn": [
         "OP-01"
       ],
-      "status": "未开始",
+      "status": "待评审",
       "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "evidencePath": "operator/dm-corpus-normalization/output/evidence/10a342ae92595ab7/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S1 完成：消费 OP-01 真实产物，Parquet 432 行/7 分区，去重/异常/关联齐全；效果验收待 H-05；人工门禁待补。"
     },
     {
       "opId": "OP-03",

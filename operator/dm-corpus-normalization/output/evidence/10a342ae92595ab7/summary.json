@@ -1,0 +1,133 @@
+{
+  "failedCount": 0,
+  "generatedAt": "2026-11-16T19:46:27+08:00",
+  "inputFingerprint": "sha256:c4c1cdbc3c490256bcb998e1cfc7cf9b1b123ef1a7bac34cf65bf02d679d2d9e",
+  "metrics": {
+    "anomalies": {
+      "BLACK_FRAME": 1,
+      "EMPTY_TEXT": 6,
+      "SCANNED_PAGES_NO_OCR": 1
+    },
+    "associations": {
+      "archiveGroups": 0,
+      "derivedStreamGroups": 1,
+      "directoryGroups": 1,
+      "fileGroups": 1,
+      "multiModalGroups": 2
+    },
+    "config": {
+      "normalizeVersion": "0.1.0",
+      "phashMaxDistance": 8,
+      "simhashMaxDistance": 3,
+      "thresholdsStatus": "provisional"
+    },
+    "decodeCheck": {
+      "checked": 1,
+      "failed": [],
+      "mediaFiles": 6,
+      "ok": 1,
+      "sampleRatio": 0.01
+    },
+    "dedup": {
+      "duplicateRecords": 3,
+      "exactGroups": 3,
+      "groups": 3,
+      "imagePairs": 0,
+      "nearGroups": 0,
+      "phashMaxDistance": 8,
+      "simhashMaxDistance": 3,
+      "textPairs": 12
+    },
+    "failedCount": 0,
+    "failureRate": 0.0,
+    "failuresByReason": {},
+    "generatedAt": "2026-11-16T19:46:27+08:00",
+    "index": {
+      "missingFields": {
+        "hashes": {},
+        "metadata": {},
+        "quality": {}
+      },
+      "rows": 432
+    },
+    "modalCounts": {
+      "audio": 3,
+      "image": 1,
+      "text": 426,
+      "video": 2
+    },
+    "normalization": {
+      "changed": 1,
+      "controlRemoved": 0
+    },
+    "parquet": {
+      "compression": "zstd",
+      "files": 7,
+      "partitions": 7,
+      "rows": 432
+    },
+    "partitions": {
+      "modal=audio/source=web_text/dt=2026-11-16": {
+        "bytes": 600984,
+        "records": 3
+      },
+      "modal=image/source=web_text/dt=2026-11-16": {
+        "bytes": 246616,
+        "records": 1
+      },
+      "modal=text/source=books/dt=2026-11-16": {
+        "bytes": 4471279,
+        "records": 32
+      },
+      "modal=text/source=science/dt=2026-11-16": {
+        "bytes": 24764,
+        "records": 86
+      },
+      "modal=text/source=web_text/dt=2026-11-16": {
+        "bytes": 84303,
+        "records": 301
+      },
+      "modal=text/source=wiki/dt=2026-11-16": {
+        "bytes": 562,
+        "records": 7
+      },
+      "modal=video/source=web_text/dt=2026-11-16": {
+        "bytes": 1171974,
+        "records": 2
+      }
+    },
+    "provisional": true,
+    "recordCount": 432,
+    "sampleCount": 432,
+    "sourceCounts": {
+      "books": 32,
+      "science": 86,
+      "web_text": 307,
+      "wiki": 7
+    },
+    "standardized": {
+      "audio": 3,
+      "images": 1,
+      "text": 426,
+      "video": 2
+    },
+    "successCount": 432,
+    "upstream": {
+      "countsMatch": true,
+      "failedCount": 0,
+      "operatorId": "dm-multimodal-analysis",
+      "runId": "add117fbb422d09f",
+      "sampleCount": 432,
+      "successCount": 432
+    }
+  },
+  "operatorId": "dm-corpus-normalization",
+  "operatorVersion": "0.1.0",
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "provisional": true,
+  "runId": "db3012ef2c7a4b8d",
+  "sampleCount": 432,
+  "seed": 42,
+  "semanticCode": "corpus_ingest_normalize_index_v1",
+  "successCount": 432
+}

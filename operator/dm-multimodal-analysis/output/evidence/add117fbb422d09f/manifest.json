@@ -1,0 +1,370 @@
+{
+  "artifacts": [
+    {
+      "bytes": 0,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 1667,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/input_manifest.json",
+      "sha256": "a2e922615c5168c4f7a8ae6a3d81ab9459b0cd15bfe35de642e5d3a3b319920c",
+      "type": "json"
+    },
+    {
+      "bytes": 1710,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/metrics.json",
+      "sha256": "5d073a6c906453f6e11e96beb0033bc3b0568d59f53c9495de5a6ca7a91f931c",
+      "type": "json"
+    },
+    {
+      "bytes": 785619,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/result.jsonl",
+      "sha256": "778e384a06b7e792d1c1887db483dae6e46bb5f8ee8969a6f0507bc8df5f7d19",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 5066,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/split_manifest.json",
+      "sha256": "6c7ceb1eec6fa73626bb9be40c4fabb6c1bad71f35f150557381be605f1ef9e6",
+      "type": "json"
+    },
+    {
+      "bytes": 108366,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/audio/r_39229cf9bf99694074db9090.wav",
+      "sha256": "f685e6484e4dee32b4545f255f4ff24d1ee6e045db82335852aeeea9708b893c",
+      "type": "audio"
+    },
+    {
+      "bytes": 253676,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/audio/r_5b99e7ea16c11d13384ed12f.wav",
+      "sha256": "c6118971cfcdb1dc403a64eb2d84fa4703dc90686a40638a0ab5ef10214037fe",
+      "type": "audio"
+    },
+    {
+      "bytes": 320270,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/audio_streams/r_8b6ad3fb40d8ba74225558bd.wav",
+      "sha256": "1ca3701d1ff36f072915f464426193c46f8c8714806f0d2b6c5b6a905bc569f4",
+      "type": "audio"
+    },
+    {
+      "bytes": 28245,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0001.jpg",
+      "sha256": "532d7ef80cfde3480807c556ce9b6f265378b952bd4e59f85bbf9f17e75e4109",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30923,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0002.jpg",
+      "sha256": "534339e10a09375ae4ff829206a5b33b21bb5d704d37c8844778a46a78a56326",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31355,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0003.jpg",
+      "sha256": "ecf029b56f85b98db74c5472305739044dc4012890069a3fb5b9b32052a24cb5",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30706,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0004.jpg",
+      "sha256": "7fb438cd0fdbd02eaabffd8f797050648e93a2c4aebd0ea015581233d3d21145",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30772,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0005.jpg",
+      "sha256": "72bb290557acd1a432a619e467a60201138442c41f7c4c3dbf28e28da18dc0c9",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31399,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0006.jpg",
+      "sha256": "de68bc16aff0110fbeea02497eb83824cedc6973285eb6d5685c872e7146a427",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31510,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0007.jpg",
+      "sha256": "6a3baf2079fc2e7dbcdedec13fe8093621a3c17ee47e9bcc61e537026e0801f9",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31027,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0008.jpg",
+      "sha256": "51cb100bc069252fe2351e5b35b4b4441f41ab83dbb9e2cb91f143586f54b1e4",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30866,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0009.jpg",
+      "sha256": "69694bcbe92abfe2ebc53e385307f0b151f9fb22a77253bd7da85db1ff0a1e09",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31174,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0010.jpg",
+      "sha256": "3cb49e4fa47c2889a0b18fb950ce897d42b979bec5ff0f44ebd0da46ebfb99be",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30968,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0011.jpg",
+      "sha256": "5268b82a369205c757e4b2fe78d4a818f6de009413c395f0b91fcaf72b07feb1",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30743,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0012.jpg",
+      "sha256": "3248bb2ddf561e85cc90a87050f6c2dafaa4708059f7b6935014e7ef2a370758",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30261,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0013.jpg",
+      "sha256": "31fde0bb219c75534220482fc1cde9e780c7d818bc1f374aaaac0957b49a13a6",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30763,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0014.jpg",
+      "sha256": "13935bc18be1664fac755e60f91a526c3835981307600d97199ff7c5faf3bc42",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31377,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0015.jpg",
+      "sha256": "3b39f9eb430bc68f701366a43af8f335adbc6af0c18d7c322cf39cc148cf429e",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31857,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0016.jpg",
+      "sha256": "71a87c874d7729d67ec9fd7bb219e87cbcc03eb28c76b225248262594e17f31e",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 32007,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0017.jpg",
+      "sha256": "f729482cc730fc72b5afd08eaae2afa01707b4d3f7fb92ab047191369955e4a9",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 32494,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0018.jpg",
+      "sha256": "ba42bc06023a1061cd511b5a3da4f81dd07ebb9ffce616886b76d6f4e6c3cc81",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 32479,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0019.jpg",
+      "sha256": "76b5215d2b4d2d44514e1418aa8baaa259d674834e0678aea6ca548e641ae2cb",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31992,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0020.jpg",
+      "sha256": "f109b32a23745423d62c07d9e40ab94f6dcf4ca11e66d10e6bc21d958ded96f9",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 31614,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0021.jpg",
+      "sha256": "27031a9db7bae303565e4e2175a0e0398b91cbe323935742e0181d72ca0ad50a",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 30474,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0022.jpg",
+      "sha256": "0b1848219d6e43d89b15f603ceb33d8593cd223fe5f8006962c4ab1148628b10",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 29476,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0023.jpg",
+      "sha256": "cbc68cc614674ffc1bce0f3350763094cbbaa563a0923d14e4d11c0d65ab220d",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 29649,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0024.jpg",
+      "sha256": "dbd638c9298e20b8a08f61b9995bb1218111a2e28bdade5385bc8315df6da5fc",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 29812,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_6841eacda9ed6033d2c93134/frame_0025.jpg",
+      "sha256": "00cc359b2ee8e603e1ffa01c10e11af180470cf6bee33a4f0f60c2f9303c8c39",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 63744,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0001.jpg",
+      "sha256": "2fc0597bdd6fe1d00cc8387237fb31ac56aa5afc6416fd5051d2784c033709a3",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 61707,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0002.jpg",
+      "sha256": "d602fa36ba9e9cf2557b79bfe798a1be30099b7b3a76e2fb1bdaa2722b15081b",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 56454,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0003.jpg",
+      "sha256": "43934f2e1b20433572f90bce77728ea9f75d7702a25ea770312bd73092a2c3da",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 56731,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0004.jpg",
+      "sha256": "8bb05d6c2fbf9ef7b8bd2ff51e4f7c8134b1c7b1192ed41bc3e985c7e7a0cf86",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 56959,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0005.jpg",
+      "sha256": "d4ba759943c0993004a5b2ea85cc71466ebeffb099697fc44971bf91ee2701ba",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 57411,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0006.jpg",
+      "sha256": "8e3d0498a64b1e0716d136711664aa298dafcaf9bcab72f4554388415bb07d6d",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 57318,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0007.jpg",
+      "sha256": "0cf9f96fec154115623643047923892c24b46bc46dced52d6afb1c16eaab2ed8",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 5602,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0008.jpg",
+      "sha256": "032f7cc9490dc2241b5362fcce25473c4164fad981ed602d23be0ed3331708cc",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 21066,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0009.jpg",
+      "sha256": "11d6e1b4c90d69b41d0ddfdab657f99f710e81b76913445eda2bc9d37dcf4d83",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 21091,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0010.jpg",
+      "sha256": "c61886cc4c374051a73a26fa4a08b1b9f46503b13c4f5f5b6aa8a4f05f2c0268",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 21091,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0011.jpg",
+      "sha256": "c61886cc4c374051a73a26fa4a08b1b9f46503b13c4f5f5b6aa8a4f05f2c0268",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 21091,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0012.jpg",
+      "sha256": "c61886cc4c374051a73a26fa4a08b1b9f46503b13c4f5f5b6aa8a4f05f2c0268",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 67858,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0013.jpg",
+      "sha256": "11389c47d9c9ddf0aeace341f59441fece674e119a29fd2dedaf9ccc057d3ceb",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 66650,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0014.jpg",
+      "sha256": "43a37c2d82b469e2dbf7441c25a2c338176d425aa015ed8fa26322cf5fc0ed54",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 64682,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0015.jpg",
+      "sha256": "a5fbe3193e4c42a7b50e61e87721c38f55335476fd9aa0ffd46f5f7fe65a05b9",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 47013,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0016.jpg",
+      "sha256": "27d59cb2ac7fc083995c11fbd7fc39d0050e5bbaba91b50a786cc42fe323510d",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 47007,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0017.jpg",
+      "sha256": "550989c2ea764dda8aafcb162790d264d036b1de1240e785402597d7617ed107",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 50166,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0018.jpg",
+      "sha256": "7a2ae5a7b9d819c5a7253672606f5ccd0f532cb1923a9aadb3ddaf5272d1bb76",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 50489,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0019.jpg",
+      "sha256": "d3d822b2a4f8291d127a5bf7b75086522de6473255870c33f1a104c21ccf48fa",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 60122,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0020.jpg",
+      "sha256": "b0b672a5f91394d9deba04bcc72d74ef11ff97aec19c0dc4ffb2d1f573d85f9f",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 59917,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0021.jpg",
+      "sha256": "c9b8a22d60e3bfa2c2b734ed1684517e145f6c873cea9fbba09a566eda43b5a5",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 58554,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0022.jpg",
+      "sha256": "7aa0a1e905b3218f04121876d5f1c175bbabeaf76c6501aaa3c17bdd0e891cbb",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 58429,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0023.jpg",
+      "sha256": "ed7a203e785af3786460ac118ce91da85503df63bace9a6de4192235aa7141b6",
+      "type": "keyframe"
+    },
+    {
+      "bytes": 58181,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/streams/video/keyframes/r_8b6ad3fb40d8ba74225558bd/frame_0024.jpg",
+      "sha256": "dc3108863f45e3f8567e0fd1d4e77b523224bfc42ddd93ae9c2ce8fc938a4289",
+      "type": "keyframe"
+    }
+  ],
+  "compressionRatio": 0.540741,
+  "createdAt": "2026-11-16T19:46:25+08:00",
+  "failedCount": 0,
+  "failedSamples": [],
+  "inputBytes": 6360993,
+  "inputFingerprint": "sha256:26f26bf9a5105933444a501d6b6dcf846477fd6971be9cdb97e4fd03a6ff6d68",
+  "modelVersion": null,
+  "notes": [
+    "modelVersion=null：OP-01 为规则/解析实现，未加载模型权重。",
+    "treeVersion=null：本算子不消费分类树。",
+    "outputBytes/compressionRatio 统计 payload 产物，不含 manifest/summary 自身。",
+    "分区 dt 默认取文件修改时间（file_time），业务口径待人工确认。",
+    "OCR 后端未提供：扫描页记 scannedPages 并标 OCR_BACKEND_UNAVAILABLE。"
+  ],
+  "operatorId": "dm-multimodal-analysis",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 3439650,
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "runId": "add117fbb422d09f",
+  "sampleCount": 432,
+  "seed": 42,
+  "semanticCode": "corpus_ingest_multimodal_parse_v1",
+  "successCount": 432,
+  "treeVersion": null
+}

@@ -1,0 +1,16 @@
+{
+  "note": "recordsFingerprint 只覆盖 result.jsonl；源文件按记录 sourcePath 定位。",
+  "recordsBytes": 785619,
+  "recordsFingerprint": "sha256:c4c1cdbc3c490256bcb998e1cfc7cf9b1b123ef1a7bac34cf65bf02d679d2d9e",
+  "recordsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f/result.jsonl",
+  "recordsRoot": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-analysis/add117fbb422d09f",
+  "sourceRoot": null,
+  "upstreamManifest": {
+    "failedCount": 0,
+    "operatorId": "dm-multimodal-analysis",
+    "operatorVersion": "0.1.0",
+    "runId": "add117fbb422d09f",
+    "sampleCount": 432,
+    "successCount": 432
+  }
+}

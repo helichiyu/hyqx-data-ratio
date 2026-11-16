@@ -1,0 +1,53 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S1 联调初值；参数来源逐项标注，待 S1 评审/业务确认后升级版本。",
+  "limits": {
+    "maxFileBytes": 536870912,
+    "maxTextChars": 20000000,
+    "maxZipMembers": 10000,
+    "maxZipExtractBytes": 104857600,
+    "ffmpegTimeoutSec": 180,
+    "maxKeyframes": 24,
+    "maxAudioDecodeSec": 1800,
+    "maxBlockPages": 500,
+    "maxFailedSamplesInResult": 200,
+    "_source": "任务书 3.2（10 MiB 单请求）与 S0 契约（zip 上限）；单文件上限为 S1 联调初值"
+  },
+  "detect": {
+    "sniffBytes": 4096,
+    "minConfidence": 0.6,
+    "_source": "联调初值：低于 0.6 进待人工确认清单"
+  },
+  "pdf": {
+    "scannedPageMinTextChars": 10,
+    "ocrEnabled": true,
+    "exportPageImages": false,
+    "_source": "联调初值：扫描页=文本字符<10 且有图像；OCR 后端不可用时如实标注"
+  },
+  "audio": {
+    "targetSampleRate": 16000,
+    "channels": 1,
+    "vadFrameMs": 30,
+    "vadEnergyFloor": 0.01,
+    "vadQuantile": 0.1,
+    "_source": "任务书 3.3（16 kHz mono WAV）+ 联调初值（VAD 帧长/阈值）"
+  },
+  "video": {
+    "extractKeyframes": true,
+    "extractAudioStream": true,
+    "keyframeImageQuality": 3,
+    "_source": "任务书 OP-01 任务卡（关键帧与音轨拆流）"
+  },
+  "text": {
+    "encodings": ["utf-8-sig", "utf-8", "gb18030", "big5", "latin-1"],
+    "mojibakeRateWarn": 0.02,
+    "textFields": ["text", "content", "body", "raw_content", "document", "passage"],
+    "_source": "联调初值：替换字符/控制字符占比 >2% 视为乱码"
+  },
+  "dt": {
+    "defaultSource": "file_time",
+    "allowedSources": ["file_time", "ingest_time", "content_time"],
+    "_source": "待人工确认（任务书 S1 风险项）；默认 file_time，结果标注 provisional"
+  }
+}

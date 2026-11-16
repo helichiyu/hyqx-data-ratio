@@ -1,0 +1,218 @@
+{
+  "entries": [
+    {
+      "archive": null,
+      "bytes": 27072,
+      "confidence": 0.99,
+      "evidence": [
+        {
+          "group": "audio",
+          "rule": "extension",
+          "supports": "audio",
+          "value": ".mp3"
+        },
+        {
+          "format": "mp3",
+          "rule": "magic",
+          "supports": "audio",
+          "value": "fff3"
+        }
+      ],
+      "format": "mp3",
+      "modal": "audio",
+      "path": "0_0.mp3",
+      "streams": [
+        {
+          "channels": 1,
+          "durationSec": 3.38,
+          "modal": "audio",
+          "sampleRate": 24000,
+          "type": "audio",
+          "wav16k": "streams/audio/r_39229cf9bf99694074db9090.wav"
+        }
+      ]
+    },
+    {
+      "archive": null,
+      "bytes": 246616,
+      "confidence": 0.99,
+      "evidence": [
+        {
+          "group": "image",
+          "rule": "extension",
+          "supports": "image",
+          "value": ".jpg"
+        },
+        {
+          "format": "jpeg",
+          "rule": "magic",
+          "supports": "image",
+          "value": "ffd8ff"
+        }
+      ],
+      "format": "jpeg",
+      "modal": "image",
+      "path": "530384988814704640.jpg",
+      "streams": [
+        {
+          "decodable": true,
+          "height": 1811,
+          "modal": "image",
+          "type": "image",
+          "width": 1280
+        }
+      ]
+    },
+    {
+      "archive": null,
+      "bytes": 831693,
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "group": "video",
+          "rule": "extension",
+          "supports": "video",
+          "value": ".mp4"
+        }
+      ],
+      "format": "mp4",
+      "modal": "video",
+      "path": "60b5695ab2f0_with_audio.mp4",
+      "streams": [
+        {
+          "codec": "h264 (High) (avc1 / 0x31637661)",
+          "durationSec": 10.01,
+          "fps": 24.0,
+          "height": 720,
+          "keyframes": 24,
+          "modal": "video",
+          "type": "video_stream",
+          "width": 1280
+        },
+        {
+          "derivedFrom": "r_8b6ad3fb40d8ba74225558bd",
+          "durationSec": 10.01,
+          "modal": "audio",
+          "sampleRate": 16000,
+          "type": "audio_stream",
+          "wav16k": "streams/video/audio_streams/r_8b6ad3fb40d8ba74225558bd.wav"
+        }
+      ]
+    },
+    {
+      "archive": null,
+      "bytes": 253642,
+      "confidence": 0.99,
+      "evidence": [
+        {
+          "group": "audio",
+          "rule": "extension",
+          "supports": "audio",
+          "value": ".wav"
+        },
+        {
+          "format": "wav",
+          "rule": "magic",
+          "supports": "audio",
+          "value": "RIFF/57415645"
+        }
+      ],
+      "format": "wav",
+      "modal": "audio",
+      "path": "asr_example_hotword.wav",
+      "streams": [
+        {
+          "channels": 1,
+          "durationSec": 7.92,
+          "modal": "audio",
+          "sampleRate": 16000,
+          "type": "audio",
+          "wav16k": "streams/audio/r_5b99e7ea16c11d13384ed12f.wav"
+        }
+      ]
+    },
+    {
+      "archive": null,
+      "bytes": 340281,
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "group": "video",
+          "rule": "extension",
+          "supports": "video",
+          "value": ".mp4"
+        }
+      ],
+      "format": "mp4",
+      "modal": "video",
+      "path": "image__00260.mp4",
+      "streams": [
+        {
+          "codec": "h264 (High) (avc1 / 0x31637661)",
+          "durationSec": 5.04,
+          "fps": 24.0,
+          "height": 512,
+          "keyframes": 25,
+          "modal": "video",
+          "type": "video_stream",
+          "width": 512
+        }
+      ]
+    },
+    {
+      "archive": null,
+      "bytes": 195538,
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "group": "text",
+          "rule": "extension",
+          "supports": "text",
+          "value": ".jsonl"
+        }
+      ],
+      "format": "jsonl",
+      "modal": "text",
+      "path": "machine_learning.jsonl",
+      "streams": [
+        {
+          "modal": "text",
+          "type": "text_unit",
+          "units": 425
+        }
+      ]
+    },
+    {
+      "archive": null,
+      "bytes": 4466151,
+      "confidence": 0.99,
+      "evidence": [
+        {
+          "group": "document",
+          "rule": "extension",
+          "supports": "text",
+          "value": ".pdf"
+        },
+        {
+          "format": "pdf",
+          "rule": "magic",
+          "supports": "text",
+          "value": "25504446"
+        }
+      ],
+      "format": "pdf",
+      "modal": "text",
+      "path": "noches_blancas_1905.pdf",
+      "streams": [
+        {
+          "modal": "text",
+          "ocrStatus": "unavailable",
+          "pages": 326,
+          "scannedPages": 106,
+          "type": "pdf_document"
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-11-16T19:46:25+08:00"
+}

@@ -1,0 +1,64 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S1 联调初值；模态白名单与魔数表待 S1 评审确认。",
+  "modalExtensions": {
+    "text": [".txt", ".jsonl", ".json", ".xml", ".md", ".csv", ".tsv"],
+    "document": [".pdf"],
+    "image": [".jpg", ".jpeg", ".png", ".bmp", ".webp", ".tif", ".tiff", ".gif"],
+    "audio": [".wav", ".mp3", ".flac", ".m4a", ".aac", ".ogg", ".opus", ".aiff"],
+    "video": [".mp4", ".mov", ".mkv", ".avi", ".webm", ".flv"]
+  },
+  "modalOfGroup": {
+    "text": "text",
+    "document": "text",
+    "image": "image",
+    "audio": "audio",
+    "video": "video"
+  },
+  "archives": [".zip"],
+  "mimeByModal": {
+    "text": "text/plain; charset=utf-8",
+    "image": "image/*",
+    "audio": "audio/*",
+    "video": "video/*"
+  },
+  "magicSignatures": [
+    {"format": "pdf", "modal": "text", "offset": 0, "hex": "25504446", "note": "%PDF"},
+    {"format": "png", "modal": "image", "offset": 0, "hex": "89504e470d0a1a0a"},
+    {"format": "jpeg", "modal": "image", "offset": 0, "hex": "ffd8ff"},
+    {"format": "gif", "modal": "image", "offset": 0, "hex": "47494638"},
+    {"format": "bmp", "modal": "image", "offset": 0, "hex": "424d"},
+    {"format": "tiff-le", "modal": "image", "offset": 0, "hex": "49492a00"},
+    {"format": "tiff-be", "modal": "image", "offset": 0, "hex": "4d4d002a"},
+    {"format": "matroska", "modal": "video", "offset": 0, "hex": "1a45dfa3"},
+    {"format": "ogg", "modal": "audio", "offset": 0, "hex": "4f676753"},
+    {"format": "flac", "modal": "audio", "offset": 0, "hex": "664c6143"},
+    {"format": "mp3-id3", "modal": "audio", "offset": 0, "hex": "494433"},
+    {"format": "zip", "modal": null, "offset": 0, "hex": "504b0304", "note": "归档，交给拆流流程"}
+  ],
+  "riffSignatures": [
+    {"format": "webp", "modal": "image", "offset": 8, "hex": "57454250"},
+    {"format": "wav", "modal": "audio", "offset": 8, "hex": "57415645"},
+    {"format": "avi", "modal": "video", "offset": 8, "hex": "41564920"}
+  ],
+  "isoBmffFormats": ["mp4", "mov", "m4a", "3gp"],
+  "mp3FrameSyncPrefix": ["fffb", "fff3", "fff2", "fff9"],
+  "extensionFormatHints": {
+    ".mp4": "mp4", ".mov": "mov", ".m4a": "m4a", ".mkv": "matroska",
+    ".webm": "webm", ".avi": "avi", ".flv": "flv",
+    ".wav": "wav", ".mp3": "mp3", ".flac": "flac", ".ogg": "ogg", ".opus": "opus",
+    ".aiff": "aiff", ".aac": "aac",
+    ".jpg": "jpeg", ".jpeg": "jpeg", ".png": "png", ".bmp": "bmp",
+    ".webp": "webp", ".tif": "tiff", ".tiff": "tiff", ".gif": "gif",
+    ".pdf": "pdf", ".txt": "txt", ".jsonl": "jsonl", ".json": "json",
+    ".xml": "xml", ".md": "md", ".csv": "csv", ".tsv": "tsv"
+  },
+  "confidence": {
+    "extensionAndMagic": 0.99,
+    "magicOnly": 0.9,
+    "extensionOnly": 0.75,
+    "probeConfirmed": 0.98,
+    "unknown": 0.0
+  }
+}
