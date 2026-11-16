@@ -1,0 +1,3 @@
+# 嵌套的独立业务仓库，各自拥有独立 Git 历史，不纳入本仓库
+/hsmty-module-dm-server/
+/hsmty-web/
