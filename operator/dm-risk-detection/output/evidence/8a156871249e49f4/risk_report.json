@@ -1,0 +1,184 @@
+{
+  "dedupedCount": 4,
+  "definition": "规则 DSL：op ∈ lt/gt/le/ge/eq/ne；双阈值 critical/warn 分别定级；minSample 用配置的样本量路径校验；去重按 operator+type 保留最高等级；抑制按类型上限保留高等级条目。",
+  "evaluatedRules": 5,
+  "insufficientSample": [],
+  "noData": [
+    {
+      "metric": "compliance.hitRate",
+      "operator": "OP-18",
+      "reason": "metric missing",
+      "ruleId": "R-05"
+    }
+  ],
+  "outdated": {
+    "note": "过时知识检测需要知识库/时间敏感领域清单（H-11），未提供时不计算过时率。",
+    "reasonCode": "KNOWLEDGE_BASE_REQUIRED",
+    "status": "unavailable"
+  },
+  "rawHits": 4,
+  "risks": [
+    {
+      "evidence": {
+        "metric": "time.freshnessMean",
+        "metricsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-language-profiling/e53b5d9093388fe5/metrics.json",
+        "operator": "OP-09",
+        "value": 0.136546
+      },
+      "evidenceList": [
+        {
+          "metric": "time.freshnessMean",
+          "metricsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-language-profiling/e53b5d9093388fe5/metrics.json",
+          "operator": "OP-09",
+          "value": 0.136546
+        }
+      ],
+      "id": "R-01-OP-09",
+      "level": "critical",
+      "metric": "time.freshnessMean",
+      "minSample": 0,
+      "operator": "OP-09",
+      "ruleId": "R-01",
+      "ruleIds": [
+        "R-01"
+      ],
+      "sampleSize": null,
+      "scope": "corpus",
+      "severity": 3,
+      "suggestion": "补充近 1–3 年语料，或提高新鲜度权重后重算配比。",
+      "threshold": {
+        "critical": 0.2,
+        "op": "lt",
+        "triggered": {
+          "op": "lt",
+          "value": 0.2
+        },
+        "warn": 0.4
+      },
+      "type": "时效过时",
+      "value": 0.136546
+    },
+    {
+      "evidence": {
+        "metric": "checksPassed",
+        "metricsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-computation/cab32b6cd497cac3/metrics.json",
+        "operator": "OP-15",
+        "value": 3
+      },
+      "evidenceList": [
+        {
+          "metric": "checksPassed",
+          "metricsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-computation/cab32b6cd497cac3/metrics.json",
+          "operator": "OP-15",
+          "value": 3
+        }
+      ],
+      "id": "R-04-OP-15",
+      "level": "critical",
+      "metric": "checksPassed",
+      "minSample": 100,
+      "operator": "OP-15",
+      "ruleId": "R-04",
+      "ruleIds": [
+        "R-04"
+      ],
+      "sampleSize": 278,
+      "scope": "plan",
+      "severity": 3,
+      "suggestion": "按校验单失败项（覆盖率/库存/合计）补充语料或调整阈值后重跑 OP-15。",
+      "threshold": {
+        "critical": 4,
+        "op": "lt",
+        "triggered": {
+          "op": "lt",
+          "value": 4
+        },
+        "warn": 6
+      },
+      "type": "配比校验未通过",
+      "value": 3
+    },
+    {
+      "evidence": {
+        "metric": "domainCoverage.coverage.level1",
+        "metricsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-profiling/73e001cb4f8e5aed/metrics.json",
+        "operator": "OP-08",
+        "value": 0.8125
+      },
+      "evidenceList": [
+        {
+          "metric": "domainCoverage.coverage.level1",
+          "metricsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-profiling/73e001cb4f8e5aed/metrics.json",
+          "operator": "OP-08",
+          "value": 0.8125
+        }
+      ],
+      "id": "R-02-OP-08",
+      "level": "warning",
+      "metric": "domainCoverage.coverage.level1",
+      "minSample": 100,
+      "operator": "OP-08",
+      "ruleId": "R-02",
+      "ruleIds": [
+        "R-02"
+      ],
+      "sampleSize": 432,
+      "scope": "corpus",
+      "severity": 2,
+      "suggestion": "按未覆盖一级领域补采或降低该领域配比目标。",
+      "threshold": {
+        "critical": 0.8,
+        "op": "lt",
+        "triggered": {
+          "op": "lt",
+          "value": 0.9
+        },
+        "warn": 0.9
+      },
+      "type": "领域覆盖不足",
+      "value": 0.8125
+    },
+    {
+      "evidence": {
+        "metric": "truth.status",
+        "metricsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-evaluation/020fe881d78849c0/metrics.json",
+        "operator": "OP-18",
+        "value": "unavailable"
+      },
+      "evidenceList": [
+        {
+          "metric": "truth.status",
+          "metricsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-evaluation/020fe881d78849c0/metrics.json",
+          "operator": "OP-18",
+          "value": "unavailable"
+        }
+      ],
+      "id": "R-06-OP-18",
+      "level": "info",
+      "metric": "truth.status",
+      "minSample": 0,
+      "operator": "OP-18",
+      "ruleId": "R-06",
+      "ruleIds": [
+        "R-06"
+      ],
+      "sampleSize": 278,
+      "scope": "evaluation",
+      "severity": 1,
+      "suggestion": "提供人工真值（H-05）后重跑 OP-18，避免以代理指标替代效果评测。",
+      "threshold": {
+        "critical": null,
+        "op": "eq",
+        "triggered": {
+          "op": "eq",
+          "value": "unavailable"
+        },
+        "warn": "unavailable"
+      },
+      "type": "效果未验证",
+      "value": "unavailable"
+    }
+  ],
+  "suppressed": [],
+  "suppressedCount": 0
+}

@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "bytes": 316,
+      "path": "agreement.json",
+      "sha256": "393ab0a2e333cb5f4b69b66d31b379291427eb68893475fa2fbca29eec3570ea"
+    },
+    {
+      "bytes": 0,
+      "path": "disputes.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 11550,
+      "path": "failures.jsonl",
+      "sha256": "4dc0b00ab4791d11024f58365d2c3017dff92494bd136b3611b68fded70d7cff"
+    },
+    {
+      "bytes": 5970,
+      "path": "sampled.jsonl",
+      "sha256": "b4efbdc2b97a4f95eba3c9bee12ca0642ebbfc8f1d79d9414052ad11803e4e28"
+    }
+  ],
+  "createdAt": "2026-11-17T13:07:38+08:00",
+  "failedCount": 154,
+  "inputFingerprint": "sha256:955b74c24fe157dad27492e01a7c130457f93bf00ef13106f7a472cd5e24bc9c",
+  "modelVersion": null,
+  "notes": [
+    "5%–10% 分层抽样、固定 seed、高风险必选；实抽比例与分层统计写入 metrics.sampling。",
+    "Kappa/Alpha 只用真实专家标注；无标注时 blocked，不编造。",
+    "专家任务派发/签署/工单归平台，不在算子内。"
+  ],
+  "operatorId": "dm-expert-validation",
+  "operatorVersion": "0.1.1",
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "runId": "8ea8159784975ebe",
+  "sampleCount": 28,
+  "seed": 42,
+  "semanticCode": "tool_expert_validation_v1",
+  "successCount": 28,
+  "treeVersion": null
+}

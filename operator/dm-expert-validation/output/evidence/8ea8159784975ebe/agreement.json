@@ -1,0 +1,11 @@
+{
+  "alpha": null,
+  "blockedReason": "EXPERT_ANNOTATIONS_REQUIRED",
+  "consensus": null,
+  "disputes": [],
+  "kappa": null,
+  "message": "未提供至少 2 位专家对同一样本的标注（H-05），不计算 Kappa/Alpha。",
+  "perLabel": null,
+  "sampledWithAnnotations": 0,
+  "status": "blocked"
+}

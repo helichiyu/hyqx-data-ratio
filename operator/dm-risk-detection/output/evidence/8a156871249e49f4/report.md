@@ -1,0 +1,24 @@
+# 工作包回执 · OP-22（风险检测与分级）
+
+## 状态
+完成（本机真实链路）；S6 阶段资源/阈值待人工确认（H-03/H-05/H-11/Q-07）。
+
+## 运行命令
+```bash
+"D:/anaconda3/envs/use/python.exe" scripts/run_s6_chain.py
+```
+
+## 证据路径
+- 结果目录：`E:/HYQX/数据配比/operator/runtime/transport/output/dm-risk-detection/8a156871249e49f4`
+
+## 指标
+| 项 | 值 |
+| --- | --- |
+| 风险条数 | 4 |
+| critical / warning / info | 2 / 1 / 1 |
+| 抑制 / 无数据 / 样本不足 | 0 / 1 / 0 |
+| 过时知识 | unavailable |
+
+## 未决问题
+- 本体/KG/词表（H-11）、专家标注（H-05）、风险阈值（H-03）、Neo4j/FAISS（Q-07）待人工。
+- 资源缺失项标 unavailable/blocked，不编造。

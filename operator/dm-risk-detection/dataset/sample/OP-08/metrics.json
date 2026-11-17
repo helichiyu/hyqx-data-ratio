@@ -1,0 +1,10 @@
+{
+  "domainCoverage": {
+    "coverage": {
+      "level1": 0.75
+    }
+  },
+  "scale": {
+    "recordCount": 432
+  }
+}

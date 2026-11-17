@@ -1,0 +1,9 @@
+{
+  "expertPath": null,
+  "expertRecords": 0,
+  "inputFingerprint": "sha256:955b74c24fe157dad27492e01a7c130457f93bf00ef13106f7a472cd5e24bc9c",
+  "note": "专家标注未提供时一致性指标 blocked；抽样仍产出。",
+  "objectCount": 278,
+  "objectsFile": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-labeling/e53b5d9093388fe5/result.jsonl",
+  "riskPath": null
+}

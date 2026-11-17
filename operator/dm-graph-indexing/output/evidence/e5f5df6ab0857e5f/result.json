@@ -1,0 +1,541 @@
+{
+  "status": "succeeded",
+  "data": {
+    "operatorId": "dm-graph-indexing",
+    "semanticCode": "tool_graph_vector_index_v1",
+    "operatorVersion": "0.1.0",
+    "paramsHash": "sha256:1c0f31bbcf4763a1856094205feb914c0a1848044703d6c74ac39c5f294c4e13",
+    "seed": 42,
+    "runId": "e5f5df6ab0857e5f",
+    "inputFingerprint": "sha256:aed8d3843572719e3c4589ed538a44105424573efd814d26d903618feb4e62c9",
+    "outputDir": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-graph-indexing/e5f5df6ab0857e5f",
+    "modelVersion": null,
+    "treeVersion": null,
+    "sampleCount": 432,
+    "successCount": 432,
+    "failedCount": 0,
+    "failedSamples": [],
+    "metrics": {
+      "operatorId": "dm-graph-indexing",
+      "semanticCode": "tool_graph_vector_index_v1",
+      "operatorVersion": "0.1.0",
+      "modelVersion": null,
+      "runId": "e5f5df6ab0857e5f",
+      "paramsHash": "sha256:1c0f31bbcf4763a1856094205feb914c0a1848044703d6c74ac39c5f294c4e13",
+      "seed": 42,
+      "treeVersion": null,
+      "graph": {
+        "recordCount": 432,
+        "labelCount": 131,
+        "entityCount": 746,
+        "nodeCount": 1309,
+        "edgeCount": 6232,
+        "nodesByType": {
+          "entity": 746,
+          "label": 131,
+          "record": 432
+        },
+        "edgesByType": {
+          "ABOUT": 278,
+          "CO_OCCURS": 4337,
+          "MENTIONS": 1508,
+          "SUBCLASS_OF": 109
+        },
+        "entitiesByType": {
+          "date": 3,
+          "number": 1462,
+          "quoted": 43
+        },
+        "ruleBased": true,
+        "skipped": 0
+      },
+      "vector": {
+        "indexVersion": "1f976f5f5b5d835b",
+        "count": 426,
+        "dimension": 768,
+        "nlist": 16,
+        "nprobe": 4,
+        "topK": 10,
+        "queryCount": 20,
+        "recallAtK": {
+          "1": 0.95,
+          "5": 0.92,
+          "10": 0.875
+        },
+        "qps": 6666.62,
+        "buildSeconds": 0.155408
+      },
+      "services": {
+        "neo4j": {
+          "status": "unavailable",
+          "reasonCode": "SERVICE_NOT_CONFIGURED",
+          "env": "NEO4J_URL",
+          "note": "平台负责部署与联调；算子不发起网络连接。"
+        },
+        "faiss": {
+          "status": "unavailable",
+          "reasonCode": "SERVICE_NOT_CONFIGURED",
+          "env": "FAISS_URL",
+          "note": "平台负责部署与联调；算子不发起网络连接。"
+        }
+      },
+      "ruleBased": true,
+      "provisional": true,
+      "deterministic": true,
+      "runtimeSec": 0.261,
+      "generatedAt": "2026-11-17T13:04:49+08:00"
+    },
+    "artifacts": [
+      {
+        "path": "failures.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "graph_edges.jsonl",
+        "bytes": 674031,
+        "sha256": "e12d54c4b3d1c45831b7ea5023be8ad76b8f47b8bf533f064f81851839650ab7"
+      },
+      {
+        "path": "graph_nodes.jsonl",
+        "bytes": 175620,
+        "sha256": "07c9f3fe8089eb79fb040bc105cea4e4006b2e6189cc2abb8f2216e4ea14e9cc"
+      },
+      {
+        "path": "index/assignments.npy",
+        "bytes": 1832,
+        "sha256": "f7cb5249b523c9145358c0d82aeae87559b325383a2664d39f3afb3ad18477cd"
+      },
+      {
+        "path": "index/centroids.npy",
+        "bytes": 49280,
+        "sha256": "89454e7171c369dcb83eabe70855100f0b7d715d7914e4f200e1645fce3a16bd"
+      },
+      {
+        "path": "index/meta.json",
+        "bytes": 504,
+        "sha256": "aff3ee8d9e06febe7a1689a9866dbfcac229d508c17b080a1b3652024b4c0063"
+      },
+      {
+        "path": "index/vectors.npy",
+        "bytes": 1308800,
+        "sha256": "5906579c658e256006310b20dacf28cc9964b2a7574629f070c1f3ae499ff19b"
+      },
+      {
+        "path": "neo4j_import.cypher",
+        "bytes": 983102,
+        "sha256": "6e412e62f24ff578c562a7b778c13b319040e66b6e36ff445660e1e2cdfef129"
+      },
+      {
+        "path": "query_results.jsonl",
+        "bytes": 31410,
+        "sha256": "d272a9be9d2a6d87eabee95b0ae587eec99fb3a281f33a49630d4fae7d2be23d"
+      }
+    ],
+    "outputFilePath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-graph-indexing/e5f5df6ab0857e5f/graph_nodes.jsonl",
+    "deterministic": true,
+    "provisional": true,
+    "result": {
+      "graph": {
+        "recordCount": 432,
+        "labelCount": 131,
+        "entityCount": 746,
+        "nodeCount": 1309,
+        "edgeCount": 6232,
+        "nodesByType": {
+          "entity": 746,
+          "label": 131,
+          "record": 432
+        },
+        "edgesByType": {
+          "ABOUT": 278,
+          "CO_OCCURS": 4337,
+          "MENTIONS": 1508,
+          "SUBCLASS_OF": 109
+        },
+        "entitiesByType": {
+          "date": 3,
+          "number": 1462,
+          "quoted": 43
+        },
+        "ruleBased": true,
+        "skipped": 0
+      },
+      "index": {
+        "indexVersion": "1f976f5f5b5d835b",
+        "count": 426,
+        "dimension": 768,
+        "nlist": 16,
+        "nprobe": 4,
+        "topK": 10,
+        "queryCount": 20,
+        "recallAtK": {
+          "1": 0.95,
+          "5": 0.92,
+          "10": 0.875
+        },
+        "qps": 6666.62,
+        "buildSeconds": 0.155408,
+        "seed": 42,
+        "normalize": "l2",
+        "method": "IVF (MiniBatchKMeans) + exact-inner-product baseline",
+        "files": [
+          "index/vectors.npy",
+          "index/centroids.npy",
+          "index/assignments.npy",
+          "index/meta.json"
+        ]
+      },
+      "services": {
+        "neo4j": {
+          "status": "unavailable",
+          "reasonCode": "SERVICE_NOT_CONFIGURED",
+          "env": "NEO4J_URL",
+          "note": "平台负责部署与联调；算子不发起网络连接。"
+        },
+        "faiss": {
+          "status": "unavailable",
+          "reasonCode": "SERVICE_NOT_CONFIGURED",
+          "env": "FAISS_URL",
+          "note": "平台负责部署与联调；算子不发起网络连接。"
+        }
+      },
+      "files": {
+        "nodesFile": "graph_nodes.jsonl",
+        "edgesFile": "graph_edges.jsonl",
+        "cypherFile": "neo4j_import.cypher"
+      },
+      "querySample": [
+        {
+          "queryIndex": 0,
+          "recordId": "r_81460a18d652faf1d5826329",
+          "topK": [
+            {
+              "row": 182,
+              "recordId": "r_64d9ebccadf937390ddf87a1",
+              "score": 0.604381
+            },
+            {
+              "row": 85,
+              "recordId": "r_bef32509341c9b05cedfa237",
+              "score": 0.604294
+            },
+            {
+              "row": 83,
+              "recordId": "r_60b037180ff2e5e0311c3ad5",
+              "score": 0.595003
+            },
+            {
+              "row": 105,
+              "recordId": "r_2391eb06b0d3a8b52f0753d1",
+              "score": 0.585305
+            },
+            {
+              "row": 64,
+              "recordId": "r_ed31053fdc89fb0d4a32f4e1",
+              "score": 0.585048
+            },
+            {
+              "row": 397,
+              "recordId": "r_06684c6627caa440a8e260e6",
+              "score": 0.580417
+            },
+            {
+              "row": 295,
+              "recordId": "r_3e622dc84d3bb579dd2d220c",
+              "score": 0.5792
+            },
+            {
+              "row": 56,
+              "recordId": "r_22e64912630e097f19c00f06",
+              "score": 0.572118
+            },
+            {
+              "row": 82,
+              "recordId": "r_2341d3337d4edf49d20ed4bb",
+              "score": 0.570012
+            },
+            {
+              "row": 354,
+              "recordId": "r_04577aa4870f2cf4b8653a2e",
+              "score": 0.567378
+            }
+          ],
+          "approxTopK": [
+            {
+              "row": 182,
+              "recordId": "r_64d9ebccadf937390ddf87a1",
+              "score": 0.604381
+            },
+            {
+              "row": 85,
+              "recordId": "r_bef32509341c9b05cedfa237",
+              "score": 0.604294
+            },
+            {
+              "row": 83,
+              "recordId": "r_60b037180ff2e5e0311c3ad5",
+              "score": 0.595003
+            },
+            {
+              "row": 105,
+              "recordId": "r_2391eb06b0d3a8b52f0753d1",
+              "score": 0.585305
+            },
+            {
+              "row": 64,
+              "recordId": "r_ed31053fdc89fb0d4a32f4e1",
+              "score": 0.585048
+            },
+            {
+              "row": 56,
+              "recordId": "r_22e64912630e097f19c00f06",
+              "score": 0.572118
+            },
+            {
+              "row": 82,
+              "recordId": "r_2341d3337d4edf49d20ed4bb",
+              "score": 0.570012
+            },
+            {
+              "row": 93,
+              "recordId": "r_322fffbdf35cbee7cf256de6",
+              "score": 0.5597
+            },
+            {
+              "row": 130,
+              "recordId": "r_3e653d1fdcd4b2d3f3f6a0d2",
+              "score": 0.552134
+            },
+            {
+              "row": 156,
+              "recordId": "r_cd5a9b5d6c43c5a71fc596b6",
+              "score": 0.550145
+            }
+          ]
+        },
+        {
+          "queryIndex": 1,
+          "recordId": "r_779e9d444ee8dbad78d95910",
+          "topK": [
+            {
+              "row": 158,
+              "recordId": "r_adf8b51bb9bee41c8a26393b",
+              "score": 1.0
+            },
+            {
+              "row": 157,
+              "recordId": "r_306d764bcb058e28df434995",
+              "score": 0.6671
+            },
+            {
+              "row": 408,
+              "recordId": "r_fdd5e6e6c2be4a0110622b67",
+              "score": 0.619027
+            },
+            {
+              "row": 423,
+              "recordId": "r_31a06d1c0342885f47f42027",
+              "score": 0.604962
+            },
+            {
+              "row": 156,
+              "recordId": "r_cd5a9b5d6c43c5a71fc596b6",
+              "score": 0.59715
+            },
+            {
+              "row": 281,
+              "recordId": "r_e679d70cc35c94ea651770a1",
+              "score": 0.572434
+            },
+            {
+              "row": 398,
+              "recordId": "r_acf15e79b3c2088f1cae1119",
+              "score": 0.571654
+            },
+            {
+              "row": 29,
+              "recordId": "r_05f5e1073ffc4ea213a05e5f",
+              "score": 0.563954
+            },
+            {
+              "row": 353,
+              "recordId": "r_2e799574bcb575f0b208977c",
+              "score": 0.558992
+            },
+            {
+              "row": 357,
+              "recordId": "r_ed8019c413f5cb8956d1cafa",
+              "score": 0.550927
+            }
+          ],
+          "approxTopK": [
+            {
+              "row": 158,
+              "recordId": "r_adf8b51bb9bee41c8a26393b",
+              "score": 1.0
+            },
+            {
+              "row": 408,
+              "recordId": "r_fdd5e6e6c2be4a0110622b67",
+              "score": 0.619027
+            },
+            {
+              "row": 423,
+              "recordId": "r_31a06d1c0342885f47f42027",
+              "score": 0.604962
+            },
+            {
+              "row": 156,
+              "recordId": "r_cd5a9b5d6c43c5a71fc596b6",
+              "score": 0.59715
+            },
+            {
+              "row": 398,
+              "recordId": "r_acf15e79b3c2088f1cae1119",
+              "score": 0.571654
+            },
+            {
+              "row": 181,
+              "recordId": "r_d2ba4a37b13cc1107b04472b",
+              "score": 0.549367
+            },
+            {
+              "row": 267,
+              "recordId": "r_ee3b17854ab3bfb7abda9751",
+              "score": 0.546282
+            },
+            {
+              "row": 194,
+              "recordId": "r_0a8cd82cb2c64e0c2223103a",
+              "score": 0.54475
+            },
+            {
+              "row": 411,
+              "recordId": "r_db60e062d6760ef626e1e53f",
+              "score": 0.542439
+            },
+            {
+              "row": 239,
+              "recordId": "r_f005502056cfa50ff5826952",
+              "score": 0.538708
+            }
+          ]
+        },
+        {
+          "queryIndex": 2,
+          "recordId": "r_fdc1c04b89d01c02b8a96943",
+          "topK": [
+            {
+              "row": 15,
+              "recordId": "r_173b886418a68464d4376512",
+              "score": 0.835384
+            },
+            {
+              "row": 156,
+              "recordId": "r_cd5a9b5d6c43c5a71fc596b6",
+              "score": 0.80759
+            },
+            {
+              "row": 408,
+              "recordId": "r_fdd5e6e6c2be4a0110622b67",
+              "score": 0.788277
+            },
+            {
+              "row": 410,
+              "recordId": "r_03d4ce313284f7219b7d0896",
+              "score": 0.753782
+            },
+            {
+              "row": 56,
+              "recordId": "r_22e64912630e097f19c00f06",
+              "score": 0.722383
+            },
+            {
+              "row": 396,
+              "recordId": "r_094e1a1412572122456a02ac",
+              "score": 0.720658
+            },
+            {
+              "row": 114,
+              "recordId": "r_2515dd8faa274d258139a439",
+              "score": 0.720307
+            },
+            {
+              "row": 93,
+              "recordId": "r_322fffbdf35cbee7cf256de6",
+              "score": 0.72017
+            },
+            {
+              "row": 41,
+              "recordId": "r_c40a4b088719caf01db1eafc",
+              "score": 0.714943
+            },
+            {
+              "row": 225,
+              "recordId": "r_1b3d01bf7258142c06a08d61",
+              "score": 0.703806
+            }
+          ],
+          "approxTopK": [
+            {
+              "row": 15,
+              "recordId": "r_173b886418a68464d4376512",
+              "score": 0.835384
+            },
+            {
+              "row": 156,
+              "recordId": "r_cd5a9b5d6c43c5a71fc596b6",
+              "score": 0.80759
+            },
+            {
+              "row": 408,
+              "recordId": "r_fdd5e6e6c2be4a0110622b67",
+              "score": 0.788277
+            },
+            {
+              "row": 410,
+              "recordId": "r_03d4ce313284f7219b7d0896",
+              "score": 0.753782
+            },
+            {
+              "row": 56,
+              "recordId": "r_22e64912630e097f19c00f06",
+              "score": 0.722383
+            },
+            {
+              "row": 396,
+              "recordId": "r_094e1a1412572122456a02ac",
+              "score": 0.720658
+            },
+            {
+              "row": 114,
+              "recordId": "r_2515dd8faa274d258139a439",
+              "score": 0.720307
+            },
+            {
+              "row": 93,
+              "recordId": "r_322fffbdf35cbee7cf256de6",
+              "score": 0.72017
+            },
+            {
+              "row": 41,
+              "recordId": "r_c40a4b088719caf01db1eafc",
+              "score": 0.714943
+            },
+            {
+              "row": 225,
+              "recordId": "r_1b3d01bf7258142c06a08d61",
+              "score": 0.703806
+            }
+          ]
+        }
+      ]
+    },
+    "notes": [
+      "图谱 nodes/edges/cypher 见 graph_nodes.jsonl、graph_edges.jsonl、neo4j_import.cypher。",
+      "索引与检索见 index/、query_results.jsonl；服务状态见 metrics.services。"
+    ],
+    "cached": false
+  }
+}

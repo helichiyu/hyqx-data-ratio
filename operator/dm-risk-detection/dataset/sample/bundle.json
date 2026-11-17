@@ -1,0 +1,9 @@
+{
+  "operator_results": {
+    "OP-08": "operator/dm-risk-detection/dataset/sample/OP-08",
+    "OP-09": "operator/dm-risk-detection/dataset/sample/OP-09",
+    "OP-14": "operator/dm-risk-detection/dataset/sample/OP-14",
+    "OP-15": "operator/dm-risk-detection/dataset/sample/OP-15",
+    "OP-18": "operator/dm-risk-detection/dataset/sample/OP-18"
+  }
+}

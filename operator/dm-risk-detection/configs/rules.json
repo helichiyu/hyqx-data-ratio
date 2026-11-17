@@ -1,0 +1,95 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S6 联调初值：风险规则/阈值/抑制策略待业务确认（H-03）；过时知识库未提供（H-11）时 unavailable。",
+  "rules": [
+    {
+      "id": "R-01",
+      "type": "时效过时",
+      "operator": "OP-09",
+      "metric": "time.freshnessMean",
+      "op": "lt",
+      "warn": 0.4,
+      "critical": 0.2,
+      "minSample": 0,
+      "scope": "corpus",
+      "suggestion": "补充近 1–3 年语料，或提高新鲜度权重后重算配比。"
+    },
+    {
+      "id": "R-02",
+      "type": "领域覆盖不足",
+      "operator": "OP-08",
+      "metric": "domainCoverage.coverage.level1",
+      "op": "lt",
+      "warn": 0.9,
+      "critical": 0.8,
+      "minSample": 100,
+      "scope": "corpus",
+      "suggestion": "按未覆盖一级领域补采或降低该领域配比目标。"
+    },
+    {
+      "id": "R-03",
+      "type": "标签分布失衡",
+      "operator": "OP-14",
+      "metric": "gini.gini",
+      "op": "gt",
+      "warn": 0.6,
+      "critical": 0.8,
+      "minSample": 100,
+      "scope": "corpus",
+      "suggestion": "对头部标签降权、对长尾标签补数，复查基尼系数。"
+    },
+    {
+      "id": "R-04",
+      "type": "配比校验未通过",
+      "operator": "OP-15",
+      "metric": "checksPassed",
+      "op": "lt",
+      "warn": 6,
+      "critical": 4,
+      "minSample": 100,
+      "scope": "plan",
+      "suggestion": "按校验单失败项（覆盖率/库存/合计）补充语料或调整阈值后重跑 OP-15。"
+    },
+    {
+      "id": "R-05",
+      "type": "合规命中",
+      "operator": "OP-18",
+      "metric": "compliance.hitRate",
+      "op": "gt",
+      "warn": 0.0,
+      "critical": 0.05,
+      "minSample": 100,
+      "scope": "sample",
+      "suggestion": "对命中样本下钻复核，按平台合规策略过滤或降权。"
+    },
+    {
+      "id": "R-06",
+      "type": "效果未验证",
+      "operator": "OP-18",
+      "metric": "truth.status",
+      "op": "eq",
+      "warn": "unavailable",
+      "critical": null,
+      "level": "info",
+      "minSample": 0,
+      "scope": "evaluation",
+      "suggestion": "提供人工真值（H-05）后重跑 OP-18，避免以代理指标替代效果评测。"
+    }
+  ],
+  "severity": {"critical": 3, "warning": 2, "info": 1},
+  "samplePaths": {
+    "OP-08": ["scale.recordCount"],
+    "OP-14": ["gini.instanceCount", "records"],
+    "OP-15": ["totalEffective", "labelCount"],
+    "OP-18": ["population", "sampleSize"]
+  },
+  "dedupe": {"key": "operator+type", "keep": "highest_level"},
+  "suppression": {"enabled": true, "maxPerType": 10},
+  "outdated": {
+    "status": "unavailable",
+    "reasonCode": "KNOWLEDGE_BASE_REQUIRED",
+    "note": "过时知识检测需要知识库/时间敏感领域清单（H-11），未提供时不计算过时率。"
+  },
+  "limits": {"maxOperatorResults": 32, "maxRisks": 500}
+}

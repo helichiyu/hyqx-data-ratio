@@ -324,7 +324,7 @@
         "OP-03"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-21",
@@ -339,8 +339,8 @@
         "OP-05",
         "OP-18"
       ],
-      "version": "0.1.0",
-      "status": "scaffold"
+      "version": "0.1.1",
+      "status": "implemented"
     },
     {
       "opId": "OP-22",
@@ -366,7 +366,7 @@
         "OP-19"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     }
   ]
 }

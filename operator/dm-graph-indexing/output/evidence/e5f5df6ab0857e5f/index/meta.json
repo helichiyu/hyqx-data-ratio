@@ -1,0 +1,25 @@
+{
+  "buildSeconds": 0.155408,
+  "count": 426,
+  "dimension": 768,
+  "files": [
+    "index/vectors.npy",
+    "index/centroids.npy",
+    "index/assignments.npy",
+    "index/meta.json"
+  ],
+  "indexVersion": "1f976f5f5b5d835b",
+  "method": "IVF (MiniBatchKMeans) + exact-inner-product baseline",
+  "nlist": 16,
+  "normalize": "l2",
+  "nprobe": 4,
+  "qps": 6666.62,
+  "queryCount": 20,
+  "recallAtK": {
+    "1": 0.95,
+    "10": 0.875,
+    "5": 0.92
+  },
+  "seed": 42,
+  "topK": 10
+}

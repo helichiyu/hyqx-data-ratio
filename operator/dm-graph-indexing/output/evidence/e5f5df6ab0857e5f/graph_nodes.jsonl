@@ -1,0 +1,1309 @@
+{"id": "entity:date:2017-10-18", "name": "2017-10-18", "properties": {"entityType": "date"}, "type": "entity"}
+{"id": "entity:date:2018-11-23", "name": "2018-11-23", "properties": {"entityType": "date"}, "type": "entity"}
+{"id": "entity:date:2023-04-06", "name": "2023-04-06", "properties": {"entityType": "date"}, "type": "entity"}
+{"id": "entity:number:000", "name": "000", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:00006", "name": "00006", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:00113892", "name": "00113892", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:0015198", "name": "0015198", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:0036", "name": "0036", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:004", "name": "004", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:0048", "name": "0048", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:00541", "name": "00541", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:00674", "name": "00674", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:008", "name": "008", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:009", "name": "009", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:00935", "name": "00935", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:0099", "name": "0099", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:00994018", "name": "00994018", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:010", "name": "010", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:011", "name": "011", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:012", "name": "012", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:01243", "name": "01243", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:0134610993", "name": "0134610993", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:01363", "name": "01363", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:0137903955", "name": "0137903955", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:01450", "name": "01450", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:01646", "name": "01646", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:01825", "name": "01825", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:019", "name": "019", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:0193", "name": "0193", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:01969720118145", "name": "01969720118145", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:020", "name": "020", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:0226880", "name": "0226880", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:023", "name": "023", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:024", "name": "024", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:0279", "name": "0279", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:028", "name": "028", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:030", "name": "030", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:032118", "name": "032118", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:04", "name": "04", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:042807", "name": "042807", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:04682", "name": "04682", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:05353", "name": "05353", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:05669", "name": "05669", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:06", "name": "06", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:06570", "name": "06570", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:07", "name": "07", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:0740", "name": "0740", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:07402775", "name": "07402775", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:09669582.2021", "name": "09669582.2021", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:09775", "name": "09775", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1.00014", "name": "1.00014", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1.318", "name": "1.318", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1.368", "name": "1.368", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1.40", "name": "1.40", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1.627", "name": "1.627", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1.977", "name": "1.977", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10", "name": "10", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1", "name": "10.1", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1007", "name": "10.1007", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1016", "name": "10.1016", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1038", "name": "10.1038", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1039", "name": "10.1039", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1056", "name": "10.1056", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1080", "name": "10.1080", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1103", "name": "10.1103", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1105", "name": "10.1105", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1109", "name": "10.1109", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1126", "name": "10.1126", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1145", "name": "10.1145", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1147", "name": "10.1147", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1155", "name": "10.1155", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1177", "name": "10.1177", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1186", "name": "10.1186", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1214", "name": "10.1214", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1215", "name": "10.1215", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.1371", "name": "10.1371", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.18653", "name": "10.18653", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.23919", "name": "10.23919", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.26782", "name": "10.26782", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.3389", "name": "10.3389", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.3390", "name": "10.3390", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10.64628", "name": "10.64628", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:100", "name": "100", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:100001", "name": "100001", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:100024", "name": "100024", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10037", "name": "10037", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1009213726", "name": "1009213726", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:101", "name": "101", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10110972", "name": "10110972", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10179", "name": "10179", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:102", "name": "102", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:103", "name": "103", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:103140", "name": "103140", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10356", "name": "10356", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:104", "name": "104", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10462", "name": "10462", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1049", "name": "1049", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:105", "name": "105", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10538128", "name": "10538128", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1054", "name": "1054", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:106", "name": "106", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10614", "name": "10614", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:106591296401700364", "name": "106591296401700364", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10676", "name": "10676", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10694", "name": "10694", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:107", "name": "107", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:108", "name": "108", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10866337", "name": "10866337", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:109", "name": "109", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:109458", "name": "109458", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:109888", "name": "109888", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:10994", "name": "10994", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:11", "name": "11", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:110", "name": "110", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:111", "name": "111", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:111.088153", "name": "111.088153", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:11125150", "name": "11125150", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1114192", "name": "1114192", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:112", "name": "112", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1124273", "name": "1124273", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:113", "name": "113", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:114", "name": "114", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:115", "name": "115", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:117", "name": "117", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:119", "name": "119", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:12", "name": "12", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:120", "name": "120", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1206.5538", "name": "1206.5538", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:121", "name": "121", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1215", "name": "1215", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:122", "name": "122", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:12272", "name": "12272", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:123", "name": "123", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:12311412", "name": "12311412", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:124", "name": "124", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:125", "name": "125", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:126", "name": "126", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:127", "name": "127", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1289", "name": "1289", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:129", "name": "129", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:13", "name": "13", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1301.3781", "name": "1301.3781", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:131", "name": "131", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:132", "name": "132", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1327", "name": "1327", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:133", "name": "133", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:13342762", "name": "13342762", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:134", "name": "134", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:135", "name": "135", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:136", "name": "136", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:13643", "name": "13643", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:137", "name": "137", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1374012240", "name": "1374012240", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:13753", "name": "13753", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:138", "name": "138", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:139", "name": "139", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:14", "name": "14", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:140", "name": "140", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1405.6664", "name": "1405.6664", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:141", "name": "141", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:14192", "name": "14192", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:142", "name": "142", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:14205", "name": "14205", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:143", "name": "143", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:143390", "name": "143390", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:144", "name": "144", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:145", "name": "145", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:14539", "name": "14539", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:146", "name": "146", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:147", "name": "147", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:148", "name": "148", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:149", "name": "149", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:15", "name": "15", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:150", "name": "150", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:151", "name": "151", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:151595343", "name": "151595343", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:152", "name": "152", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:153", "name": "153", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1532", "name": "1532", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1538", "name": "1538", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:154", "name": "154", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1540", "name": "1540", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1541880.1541882", "name": "1541880.1541882", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:155", "name": "155", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1551", "name": "1551", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:156", "name": "156", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:157", "name": "157", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1572", "name": "1572", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:158", "name": "158", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:159", "name": "159", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:16", "name": "16", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:16.1", "name": "16.1", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:16.4", "name": "16.4", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:160", "name": "160", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1608.07187", "name": "1608.07187", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:161", "name": "161", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:162", "name": "162", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:163", "name": "163", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:164", "name": "164", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:165", "name": "165", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:166", "name": "166", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:167", "name": "167", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:168", "name": "168", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1687", "name": "1687", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:169", "name": "169", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:16961", "name": "16961", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:17", "name": "17", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:170", "name": "170", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:170035.170072", "name": "170035.170072", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1704.04760", "name": "1704.04760", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1706.06083", "name": "1706.06083", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:171", "name": "171", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1714229", "name": "1714229", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:172", "name": "172", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:17234503", "name": "17234503", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1728", "name": "1728", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:173", "name": "173", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:17315", "name": "17315", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1733", "name": "1733", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:174", "name": "174", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:175", "name": "175", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:176", "name": "176", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1761", "name": "1761", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:177", "name": "177", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1770", "name": "1770", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:178", "name": "178", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:178586107", "name": "178586107", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:179", "name": "179", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1798", "name": "1798", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:18", "name": "18", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:180", "name": "180", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1803.10019", "name": "1803.10019", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1809.02208", "name": "1809.02208", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:181", "name": "181", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:182", "name": "182", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1822", "name": "1822", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1828", "name": "1828", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:183", "name": "183", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:18304", "name": "18304", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:18305", "name": "18305", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:184", "name": "184", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:185", "name": "185", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:186", "name": "186", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:187", "name": "187", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1878", "name": "1878", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:188", "name": "188", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1887878", "name": "1887878", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:189", "name": "189", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:19", "name": "19", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:190", "name": "190", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1902.07501", "name": "1902.07501", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1903", "name": "1903", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1904", "name": "1904", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1905", "name": "1905", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1906", "name": "1906", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:191", "name": "191", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1912.01991", "name": "1912.01991", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1919", "name": "1919", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:19192912", "name": "19192912", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:192", "name": "192", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:19218", "name": "19218", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:193", "name": "193", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:194", "name": "194", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1949", "name": "1949", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:195", "name": "195", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1950", "name": "1950", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1956", "name": "1956", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1959", "name": "1959", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:196", "name": "196", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1960", "name": "1960", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1961", "name": "1961", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1964", "name": "1964", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1965", "name": "1965", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:197", "name": "197", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1970", "name": "1970", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:19715", "name": "19715", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1973", "name": "1973", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:198", "name": "198", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1980", "name": "1980", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1981", "name": "1981", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1982", "name": "1982", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1983", "name": "1983", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1988", "name": "1988", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:199", "name": "199", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1990", "name": "1990", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1991", "name": "1991", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1993", "name": "1993", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1994", "name": "1994", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1995", "name": "1995", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1996", "name": "1996", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1997", "name": "1997", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1998", "name": "1998", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:1999", "name": "1999", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2.4", "name": "2.4", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:20", "name": "20", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:200", "name": "200", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2000", "name": "2000", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2001", "name": "2001", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2002", "name": "2002", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2003", "name": "2003", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2004", "name": "2004", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2004.03640", "name": "2004.03640", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2005.853280", "name": "2005.853280", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2006", "name": "2006", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2006.09965", "name": "2006.09965", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2006.13", "name": "2006.13", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2008", "name": "2008", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2009", "name": "2009", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:201", "name": "201", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2010", "name": "2010", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2011", "name": "2011", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2011.00362", "name": "2011.00362", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2011.01", "name": "2011.01", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2011.942584", "name": "2011.942584", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2012", "name": "2012", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2013", "name": "2013", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2013.50", "name": "2013.50", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2014", "name": "2014", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2014.11", "name": "2014.11", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2014.2345761", "name": "2014.2345761", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2015", "name": "2015", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2016", "name": "2016", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2017", "name": "2017", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2017.01", "name": "2017.01", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2018", "name": "2018", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2018.8355116", "name": "2018.8355116", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2018.8617877", "name": "2018.8617877", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2019", "name": "2019", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2019.04", "name": "2019.04", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2019.1596678", "name": "2019.1596678", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:202", "name": "202", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2020", "name": "2020", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2020.02", "name": "2020.02", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2020.04", "name": "2020.04", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2020.103140", "name": "2020.103140", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2020.624273", "name": "2020.624273", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2021", "name": "2021", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2022", "name": "2022", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2022.100001", "name": "2022.100001", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2023", "name": "2023", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2023.100024", "name": "2023.100024", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2023.109458", "name": "2023.109458", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2023.3340858", "name": "2023.3340858", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2024", "name": "2024", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2024.109888", "name": "2024.109888", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2025", "name": "2025", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2026", "name": "2026", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:203", "name": "203", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:204", "name": "204", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2041", "name": "2041", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2046", "name": "2046", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:205", "name": "205", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:206", "name": "206", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:207", "name": "207", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:207172599", "name": "207172599", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2079", "name": "2079", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:208", "name": "208", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:209", "name": "209", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:21", "name": "21", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:210", "name": "210", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:210928161", "name": "210928161", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:211", "name": "211", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2110.10819", "name": "2110.10819", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2118", "name": "2118", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:212", "name": "212", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2126705", "name": "2126705", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:213", "name": "213", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:214", "name": "214", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:215", "name": "215", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:21896882", "name": "21896882", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2192", "name": "2192", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:219858480", "name": "219858480", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:22", "name": "22", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:22.4", "name": "22.4", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:220069113", "name": "220069113", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2204.06974", "name": "2204.06974", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2227", "name": "2227", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2254", "name": "2254", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:229", "name": "229", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:23", "name": "23", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:23.3101", "name": "23.3101", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:23.7774", "name": "23.7774", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2303.06557", "name": "2303.06557", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2304.08637", "name": "2304.08637", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2307.01850", "name": "2307.01850", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2309.10668", "name": "2309.10668", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:23163324", "name": "23163324", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:23187774", "name": "23187774", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2323", "name": "2323", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2326", "name": "2326", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:233", "name": "233", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:234", "name": "234", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:235", "name": "235", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:236", "name": "236", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:23787338", "name": "23787338", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:239", "name": "239", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:24", "name": "24", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:24073", "name": "24073", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2409.00764", "name": "2409.00764", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2410", "name": "2410", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2424", "name": "2424", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:243", "name": "243", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2479", "name": "2479", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:249022386", "name": "249022386", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:24941344", "name": "24941344", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:25", "name": "25", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:250", "name": "250", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2505", "name": "2505", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2507.07484", "name": "2507.07484", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:254", "name": "254", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2545", "name": "2545", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:255", "name": "255", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:258552400", "name": "258552400", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:26", "name": "26", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:260", "name": "260", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:26185243", "name": "26185243", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:262", "name": "262", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:263", "name": "263", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:26545017", "name": "26545017", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2672", "name": "2672", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:268", "name": "268", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2680", "name": "2680", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:269", "name": "269", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:27", "name": "27", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:271", "name": "271", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:273", "name": "273", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:274", "name": "274", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:275", "name": "275", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:27644", "name": "27644", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:27645", "name": "27645", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:2775", "name": "2775", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:28", "name": "28", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:28408601", "name": "28408601", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:287", "name": "287", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:29", "name": "29", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:290", "name": "290", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:290.2323", "name": "290.2323", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:290.5500", "name": "290.5500", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:294", "name": "294", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:29539284", "name": "29539284", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:297", "name": "297", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:29776109", "name": "29776109", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:298", "name": "298", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:3.2", "name": "3.2", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:3.4", "name": "3.4", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:30", "name": "30", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:300", "name": "300", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:30100822", "name": "30100822", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:303", "name": "303", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:3079856.3080246", "name": "3079856.3080246", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:31", "name": "31", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:3101", "name": "3101", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:31073", "name": "31073", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:3116", "name": "3116", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:315", "name": "315", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:31896135", "name": "31896135", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:319", "name": "319", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:32", "name": "32", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:320", "name": "320", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:3203449", "name": "3203449", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:32305024", "name": "32305024", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:325", "name": "325", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:33", "name": "33", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:33.0210", "name": "33.0210", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:33076975", "name": "33076975", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:332", "name": "332", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:33228143", "name": "33228143", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:335", "name": "335", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:33510761", "name": "33510761", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:336", "name": "336", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:33609458", "name": "33609458", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:337", "name": "337", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:339", "name": "339", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:34", "name": "34", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:346", "name": "346", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:349", "name": "349", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:35", "name": "35", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:35.1798", "name": "35.1798", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:35506513", "name": "35506513", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:35546178", "name": "35546178", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:356", "name": "356", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:35603010", "name": "35603010", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:36", "name": "36", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:360", "name": "360", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:3689492.3689816", "name": "3689492.3689816", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:36997714", "name": "36997714", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:37", "name": "37", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:374856", "name": "374856", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:3751", "name": "3751", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:37765831", "name": "37765831", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:378", "name": "378", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:38", "name": "38", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:381", "name": "381", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:3813015", "name": "3813015", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:38362410", "name": "38362410", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:387", "name": "387", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:388", "name": "388", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:39", "name": "39", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:393948", "name": "393948", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:397", "name": "397", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4.0", "name": "4.0", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:40", "name": "40", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4007", "name": "4007", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:402", "name": "402", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4020", "name": "4020", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4023", "name": "4023", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:404", "name": "404", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4053", "name": "4053", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:41", "name": "41", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:41586", "name": "41586", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:419", "name": "419", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:42", "name": "42", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:42256", "name": "42256", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4230", "name": "4230", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:42600.2020", "name": "42600.2020", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:43", "name": "43", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:43.4", "name": "43.4", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4304", "name": "4304", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:431", "name": "431", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4311", "name": "4311", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4322", "name": "4322", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:436", "name": "436", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:44", "name": "44", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:44.1540", "name": "44.1540", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:444", "name": "444", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:45", "name": "45", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:450", "name": "450", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4503", "name": "4503", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:457", "name": "457", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:46", "name": "46", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:461099", "name": "461099", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:462", "name": "462", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4642", "name": "4642", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:465", "name": "465", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:467", "name": "467", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4673", "name": "4673", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:47", "name": "47", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:470", "name": "470", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:471", "name": "471", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:48", "name": "48", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:484", "name": "484", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:48585.2020", "name": "48585.2020", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:488", "name": "488", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:489", "name": "489", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4892", "name": "4892", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4899", "name": "4899", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:49", "name": "49", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:490415", "name": "490415", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:4955393", "name": "4955393", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:50", "name": "50", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:51", "name": "51", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:510270", "name": "510270", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:512", "name": "512", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:5127162", "name": "5127162", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:52", "name": "52", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:521", "name": "521", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:5242", "name": "5242", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:529", "name": "529", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:53", "name": "53", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:534", "name": "534", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:5386", "name": "5386", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:54", "name": "54", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:540", "name": "540", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:55", "name": "55", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:5500", "name": "5500", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:550626", "name": "550626", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:55544", "name": "55544", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:55860", "name": "55860", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:56", "name": "56", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:57", "name": "57", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:58", "name": "58", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:58146", "name": "58146", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:58147", "name": "58147", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:58488", "name": "58488", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:58670712", "name": "58670712", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:59", "name": "59", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:592", "name": "592", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:5962261", "name": "5962261", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:59941878", "name": "59941878", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:5998", "name": "5998", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:60", "name": "60", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6008", "name": "6008", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:60198", "name": "60198", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:604259", "name": "604259", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6082636", "name": "6082636", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:61", "name": "61", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:611", "name": "611", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:62", "name": "62", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6229", "name": "6229", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:624273", "name": "624273", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6245", "name": "6245", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:62521", "name": "62521", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:62729017", "name": "62729017", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:63", "name": "63", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6334", "name": "6334", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:637", "name": "637", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6384", "name": "6384", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6395", "name": "6395", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:64", "name": "64", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:642", "name": "642", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:64298", "name": "64298", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:65", "name": "65", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6520", "name": "6520", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:66", "name": "66", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6610", "name": "6610", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:669", "name": "669", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:67", "name": "67", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6707", "name": "6707", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6708", "name": "6708", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6717", "name": "6717", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6760276", "name": "6760276", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:677218", "name": "677218", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:68", "name": "68", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:69", "name": "69", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6940144", "name": "6940144", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:6984", "name": "6984", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:70", "name": "70", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:708", "name": "708", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7080", "name": "7080", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7091", "name": "7091", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:71", "name": "71", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:710", "name": "710", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7114", "name": "7114", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7195043", "name": "7195043", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:72", "name": "72", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:73", "name": "73", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:73262", "name": "73262", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:736398", "name": "736398", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:74", "name": "74", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:75", "name": "75", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:755", "name": "755", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7553", "name": "7553", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7574591", "name": "7574591", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7587", "name": "7587", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:76", "name": "76", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7695", "name": "7695", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7699346", "name": "7699346", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:77", "name": "77", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7774", "name": "7774", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:78", "name": "78", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7835636", "name": "7835636", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:79", "name": "79", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:790", "name": "790", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:790395", "name": "790395", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:793", "name": "793", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:7993", "name": "7993", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:80", "name": "80", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:80719", "name": "80719", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:8075", "name": "8075", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:8099", "name": "8099", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:81", "name": "81", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:8111289", "name": "8111289", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:82", "name": "82", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:824073", "name": "824073", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:825", "name": "825", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:83", "name": "83", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:83364", "name": "83364", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:84", "name": "84", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:8415", "name": "8415", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:8418480", "name": "8418480", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:845", "name": "845", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:848", "name": "848", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:84858", "name": "84858", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:85", "name": "85", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:853864", "name": "853864", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:86", "name": "86", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:86488", "name": "86488", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:87", "name": "87", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:8733", "name": "8733", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:88", "name": "88", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:89", "name": "89", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:89791", "name": "89791", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:90", "name": "90", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9010002", "name": "9010002", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:91", "name": "91", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9116294", "name": "9116294", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9116317", "name": "9116317", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9122117", "name": "9122117", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9153", "name": "9153", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:92", "name": "92", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9292", "name": "9292", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:93", "name": "93", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9376086", "name": "9376086", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:94", "name": "94", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:942", "name": "942", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:95", "name": "95", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:95284", "name": "95284", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9562", "name": "9562", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:96", "name": "96", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9660", "name": "9660", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:97", "name": "97", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:97.032118", "name": "97.032118", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:972", "name": "972", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:978", "name": "978", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9780262018258", "name": "9780262018258", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9780262043793", "name": "9780262043793", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9781108883658", "name": "9781108883658", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:979", "name": "979", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:98", "name": "98", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:981", "name": "981", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9819263", "name": "9819263", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:983", "name": "983", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:99", "name": "99", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:991", "name": "991", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9944", "name": "9944", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:number:9995795", "name": "9995795", "properties": {"entityType": "number"}, "type": "entity"}
+{"id": "entity:quoted: or ", "name": " or ", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:AI and compute", "name": "AI and compute", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:AI cannibalism", "name": "AI cannibalism", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:AI hallucination", "name": "AI hallucination", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:AI inbreeding", "name": "AI inbreeding", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:Can machines think?", "name": "Can machines think?", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:ChatGPT is bullshit", "name": "ChatGPT is bullshit", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:Deep learning", "name": "Deep learning", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:Glossary of terms", "name": "Glossary of terms", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:Habsburg AI", "name": "Habsburg AI", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:Learning Machines", "name": "Learning Machines", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:Neural Networks", "name": "Neural Networks", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:Outlier Detection", "name": "Outlier Detection", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:Statistical learning", "name": "Statistical learning", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:abnormal", "name": "abnormal", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:adversarial", "name": "adversarial", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:algorithmic model", "name": "algorithmic model", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:artificial neurons", "name": "artificial neurons", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:black box", "name": "black box", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:black box theory", "name": "black box theory", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:connectionism", "name": "connectionism", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:edges", "name": "edges", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:feedback", "name": "feedback", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:general intelligence", "name": "general intelligence", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:goof", "name": "goof", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:intelligence system", "name": "intelligence system", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:interestingness", "name": "interestingness", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:learn", "name": "learn", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:learning machine", "name": "learning machine", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:machine learning", "name": "machine learning", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:model", "name": "model", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:neural networks", "name": "neural networks", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:normal", "name": "normal", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:not spam", "name": "not spam", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:number of features", "name": "number of features", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:rules", "name": "rules", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:signal", "name": "signal", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:spam", "name": "spam", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:teacher", "name": "teacher", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "entity:quoted:trained", "name": "trained", "properties": {"entityType": "quoted"}, "type": "entity"}
+{"id": "label:三维与空间", "name": "三维与空间", "properties": {}, "type": "label"}
+{"id": "label:三维与空间/三维模型", "name": "三维与空间/三维模型", "properties": {}, "type": "label"}
+{"id": "label:三维与空间/三维模型/三维建模", "name": "三维与空间/三维模型/三维建模", "properties": {"level2": "三维与空间/三维模型"}, "type": "label"}
+{"id": "label:三维与空间/数字孪生", "name": "三维与空间/数字孪生", "properties": {}, "type": "label"}
+{"id": "label:三维与空间/数字孪生/元宇宙", "name": "三维与空间/数字孪生/元宇宙", "properties": {"level2": "三维与空间/数字孪生"}, "type": "label"}
+{"id": "label:三维与空间/数字孪生/空间场景", "name": "三维与空间/数字孪生/空间场景", "properties": {"level2": "三维与空间/数字孪生"}, "type": "label"}
+{"id": "label:专业与行业文档", "name": "专业与行业文档", "properties": {}, "type": "label"}
+{"id": "label:专业与行业文档/业务系统记录", "name": "专业与行业文档/业务系统记录", "properties": {}, "type": "label"}
+{"id": "label:专业与行业文档/业务系统记录/业务报表与操作日志", "name": "专业与行业文档/业务系统记录/业务报表与操作日志", "properties": {"level2": "专业与行业文档/业务系统记录"}, "type": "label"}
+{"id": "label:专业与行业文档/业务系统记录/流程记录", "name": "专业与行业文档/业务系统记录/流程记录", "properties": {"level2": "专业与行业文档/业务系统记录"}, "type": "label"}
+{"id": "label:专业与行业文档/医疗文档", "name": "专业与行业文档/医疗文档", "properties": {}, "type": "label"}
+{"id": "label:专业与行业文档/医疗文档/病历与诊断报告", "name": "专业与行业文档/医疗文档/病历与诊断报告", "properties": {"level2": "专业与行业文档/医疗文档"}, "type": "label"}
+{"id": "label:专业与行业文档/学术论文与科研资料", "name": "专业与行业文档/学术论文与科研资料", "properties": {}, "type": "label"}
+{"id": "label:专业与行业文档/学术论文与科研资料/学术论文", "name": "专业与行业文档/学术论文与科研资料/学术论文", "properties": {"level2": "专业与行业文档/学术论文与科研资料"}, "type": "label"}
+{"id": "label:专业与行业文档/学术论文与科研资料/实验报告", "name": "专业与行业文档/学术论文与科研资料/实验报告", "properties": {"level2": "专业与行业文档/学术论文与科研资料"}, "type": "label"}
+{"id": "label:专业与行业文档/法律文书", "name": "专业与行业文档/法律文书", "properties": {}, "type": "label"}
+{"id": "label:专业与行业文档/法律文书/合同与协议", "name": "专业与行业文档/法律文书/合同与协议", "properties": {"level2": "专业与行业文档/法律文书"}, "type": "label"}
+{"id": "label:专业影像", "name": "专业影像", "properties": {}, "type": "label"}
+{"id": "label:专业影像/医学影像", "name": "专业影像/医学影像", "properties": {}, "type": "label"}
+{"id": "label:专业影像/医学影像/MRI与超声", "name": "专业影像/医学影像/MRI与超声", "properties": {"level2": "专业影像/医学影像"}, "type": "label"}
+{"id": "label:专业影像/科研实验影像", "name": "专业影像/科研实验影像", "properties": {}, "type": "label"}
+{"id": "label:专业影像/科研实验影像/显微图像", "name": "专业影像/科研实验影像/显微图像", "properties": {"level2": "专业影像/科研实验影像"}, "type": "label"}
+{"id": "label:专业影像/科研实验影像/材料与实验记录图", "name": "专业影像/科研实验影像/材料与实验记录图", "properties": {"level2": "专业影像/科研实验影像"}, "type": "label"}
+{"id": "label:专业过程视频", "name": "专业过程视频", "properties": {}, "type": "label"}
+{"id": "label:专业过程视频/自动驾驶与车载", "name": "专业过程视频/自动驾驶与车载", "properties": {}, "type": "label"}
+{"id": "label:专业过程视频/自动驾驶与车载/车载前视与环视视频", "name": "专业过程视频/自动驾驶与车载/车载前视与环视视频", "properties": {"level2": "专业过程视频/自动驾驶与车载"}, "type": "label"}
+{"id": "label:专业过程视频/自动驾驶与车载/道路事件与驾驶行为", "name": "专业过程视频/自动驾驶与车载/道路事件与驾驶行为", "properties": {"level2": "专业过程视频/自动驾驶与车载"}, "type": "label"}
+{"id": "label:人文与历史", "name": "人文与历史", "properties": {}, "type": "label"}
+{"id": "label:人文与历史/历史", "name": "人文与历史/历史", "properties": {}, "type": "label"}
+{"id": "label:人文与历史/历史/断代史", "name": "人文与历史/历史/断代史", "properties": {"level2": "人文与历史/历史"}, "type": "label"}
+{"id": "label:人文与历史/哲学", "name": "人文与历史/哲学", "properties": {}, "type": "label"}
+{"id": "label:人文与历史/哲学/伦理学", "name": "人文与历史/哲学/伦理学", "properties": {"level2": "人文与历史/哲学"}, "type": "label"}
+{"id": "label:人文与历史/哲学/哲学思想", "name": "人文与历史/哲学/哲学思想", "properties": {"level2": "人文与历史/哲学"}, "type": "label"}
+{"id": "label:人文与历史/宗教", "name": "人文与历史/宗教", "properties": {}, "type": "label"}
+{"id": "label:人文与历史/宗教/宗教文化", "name": "人文与历史/宗教/宗教文化", "properties": {"level2": "人文与历史/宗教"}, "type": "label"}
+{"id": "label:人物与人体", "name": "人物与人体", "properties": {}, "type": "label"}
+{"id": "label:人物与人体/人像与表情", "name": "人物与人体/人像与表情", "properties": {}, "type": "label"}
+{"id": "label:人物与人体/人像与表情/表情与面部特征", "name": "人物与人体/人像与表情/表情与面部特征", "properties": {"level2": "人物与人体/人像与表情"}, "type": "label"}
+{"id": "label:代码与技术文档", "name": "代码与技术文档", "properties": {}, "type": "label"}
+{"id": "label:代码与技术文档/技术文档与手册", "name": "代码与技术文档/技术文档与手册", "properties": {}, "type": "label"}
+{"id": "label:代码与技术文档/技术文档与手册/API文档", "name": "代码与技术文档/技术文档与手册/API文档", "properties": {"level2": "代码与技术文档/技术文档与手册"}, "type": "label"}
+{"id": "label:代码与技术文档/技术文档与手册/数据库文档", "name": "代码与技术文档/技术文档与手册/数据库文档", "properties": {"level2": "代码与技术文档/技术文档与手册"}, "type": "label"}
+{"id": "label:代码与技术文档/程序代码", "name": "代码与技术文档/程序代码", "properties": {}, "type": "label"}
+{"id": "label:代码与技术文档/程序代码/各语言源代码与脚本", "name": "代码与技术文档/程序代码/各语言源代码与脚本", "properties": {"level2": "代码与技术文档/程序代码"}, "type": "label"}
+{"id": "label:代码与技术文档/配置与标记语言", "name": "代码与技术文档/配置与标记语言", "properties": {}, "type": "label"}
+{"id": "label:代码与技术文档/配置与标记语言/标记语言文档", "name": "代码与技术文档/配置与标记语言/标记语言文档", "properties": {"level2": "代码与技术文档/配置与标记语言"}, "type": "label"}
+{"id": "label:图表与界面图像", "name": "图表与界面图像", "properties": {}, "type": "label"}
+{"id": "label:图表与界面图像/界面截图", "name": "图表与界面图像/界面截图", "properties": {}, "type": "label"}
+{"id": "label:图表与界面图像/界面截图/表单页", "name": "图表与界面图像/界面截图/表单页", "properties": {"level2": "图表与界面图像/界面截图"}, "type": "label"}
+{"id": "label:对话与交互", "name": "对话与交互", "properties": {}, "type": "label"}
+{"id": "label:对话与交互/会议讨论", "name": "对话与交互/会议讨论", "properties": {}, "type": "label"}
+{"id": "label:对话与交互/会议讨论/头脑风暴记录", "name": "对话与交互/会议讨论/头脑风暴记录", "properties": {"level2": "对话与交互/会议讨论"}, "type": "label"}
+{"id": "label:对话与交互/指令与训练", "name": "对话与交互/指令与训练", "properties": {}, "type": "label"}
+{"id": "label:对话与交互/指令与训练/RLHF数据", "name": "对话与交互/指令与训练/RLHF数据", "properties": {"level2": "对话与交互/指令与训练"}, "type": "label"}
+{"id": "label:对话与交互/指令与训练/人机训练对话", "name": "对话与交互/指令与训练/人机训练对话", "properties": {"level2": "对话与交互/指令与训练"}, "type": "label"}
+{"id": "label:对话与交互/指令与训练/指令数据", "name": "对话与交互/指令与训练/指令数据", "properties": {"level2": "对话与交互/指令与训练"}, "type": "label"}
+{"id": "label:影视与娱乐", "name": "影视与娱乐", "properties": {}, "type": "label"}
+{"id": "label:影视与娱乐/短视频内容", "name": "影视与娱乐/短视频内容", "properties": {}, "type": "label"}
+{"id": "label:影视与娱乐/短视频内容/探店与带货", "name": "影视与娱乐/短视频内容/探店与带货", "properties": {"level2": "影视与娱乐/短视频内容"}, "type": "label"}
+{"id": "label:教育与培训", "name": "教育与培训", "properties": {}, "type": "label"}
+{"id": "label:教育与培训/儿童与亲子", "name": "教育与培训/儿童与亲子", "properties": {}, "type": "label"}
+{"id": "label:教育与培训/儿童与亲子/儿童读物", "name": "教育与培训/儿童与亲子/儿童读物", "properties": {"level2": "教育与培训/儿童与亲子"}, "type": "label"}
+{"id": "label:教育与培训/实验与操作演示", "name": "教育与培训/实验与操作演示", "properties": {}, "type": "label"}
+{"id": "label:教育与培训/实验与操作演示/物理与化学实验", "name": "教育与培训/实验与操作演示/物理与化学实验", "properties": {"level2": "教育与培训/实验与操作演示"}, "type": "label"}
+{"id": "label:教育与培训/教材与课程内容", "name": "教育与培训/教材与课程内容", "properties": {}, "type": "label"}
+{"id": "label:教育与培训/教材与课程内容/教材与教案", "name": "教育与培训/教材与课程内容/教材与教案", "properties": {"level2": "教育与培训/教材与课程内容"}, "type": "label"}
+{"id": "label:教育与培训/教材与课程内容/课程讲义与在线课程", "name": "教育与培训/教材与课程内容/课程讲义与在线课程", "properties": {"level2": "教育与培训/教材与课程内容"}, "type": "label"}
+{"id": "label:教育与培训/试题与测评", "name": "教育与培训/试题与测评", "properties": {}, "type": "label"}
+{"id": "label:教育与培训/试题与测评/试题与答案解析", "name": "教育与培训/试题与测评/试题与答案解析", "properties": {"level2": "教育与培训/试题与测评"}, "type": "label"}
+{"id": "label:文学与创作内容", "name": "文学与创作内容", "properties": {}, "type": "label"}
+{"id": "label:文学与创作内容/韵文与剧本", "name": "文学与创作内容/韵文与剧本", "properties": {}, "type": "label"}
+{"id": "label:文学与创作内容/韵文与剧本/诗歌", "name": "文学与创作内容/韵文与剧本/诗歌", "properties": {"level2": "文学与创作内容/韵文与剧本"}, "type": "label"}
+{"id": "label:新闻与资讯", "name": "新闻与资讯", "properties": {}, "type": "label"}
+{"id": "label:新闻与资讯/科技新闻", "name": "新闻与资讯/科技新闻", "properties": {}, "type": "label"}
+{"id": "label:新闻与资讯/科技新闻/产品发布与行业动态", "name": "新闻与资讯/科技新闻/产品发布与行业动态", "properties": {"level2": "新闻与资讯/科技新闻"}, "type": "label"}
+{"id": "label:日志与遥测", "name": "日志与遥测", "properties": {}, "type": "label"}
+{"id": "label:日志与遥测/传感器与设备遥测", "name": "日志与遥测/传感器与设备遥测", "properties": {}, "type": "label"}
+{"id": "label:日志与遥测/传感器与设备遥测/传感器数据与IoT数据", "name": "日志与遥测/传感器与设备遥测/传感器数据与IoT数据", "properties": {"level2": "日志与遥测/传感器与设备遥测"}, "type": "label"}
+{"id": "label:日志与遥测/告警与事件记录", "name": "日志与遥测/告警与事件记录", "properties": {}, "type": "label"}
+{"id": "label:日志与遥测/告警与事件记录/告警记录", "name": "日志与遥测/告警与事件记录/告警记录", "properties": {"level2": "日志与遥测/告警与事件记录"}, "type": "label"}
+{"id": "label:日志与遥测/告警与事件记录/异常事件记录", "name": "日志与遥测/告警与事件记录/异常事件记录", "properties": {"level2": "日志与遥测/告警与事件记录"}, "type": "label"}
+{"id": "label:知识与参考", "name": "知识与参考", "properties": {}, "type": "label"}
+{"id": "label:知识与参考/产品说明与操作指南", "name": "知识与参考/产品说明与操作指南", "properties": {}, "type": "label"}
+{"id": "label:知识与参考/产品说明与操作指南/说明书与帮助文档", "name": "知识与参考/产品说明与操作指南/说明书与帮助文档", "properties": {"level2": "知识与参考/产品说明与操作指南"}, "type": "label"}
+{"id": "label:知识与参考/百科词条", "name": "知识与参考/百科词条", "properties": {}, "type": "label"}
+{"id": "label:知识与参考/百科词条/百科条目", "name": "知识与参考/百科词条/百科条目", "properties": {"level2": "知识与参考/百科词条"}, "type": "label"}
+{"id": "label:知识与参考/百科词条/知识库条目", "name": "知识与参考/百科词条/知识库条目", "properties": {"level2": "知识与参考/百科词条"}, "type": "label"}
+{"id": "label:知识与参考/科普与专著", "name": "知识与参考/科普与专著", "properties": {}, "type": "label"}
+{"id": "label:知识与参考/科普与专著/学术专著", "name": "知识与参考/科普与专著/学术专著", "properties": {"level2": "知识与参考/科普与专著"}, "type": "label"}
+{"id": "label:知识与参考/科普与专著/工具书与年鉴", "name": "知识与参考/科普与专著/工具书与年鉴", "properties": {"level2": "知识与参考/科普与专著"}, "type": "label"}
+{"id": "label:知识与参考/科普与专著/科普读物", "name": "知识与参考/科普与专著/科普读物", "properties": {"level2": "知识与参考/科普与专著"}, "type": "label"}
+{"id": "label:知识与参考/网页与博客", "name": "知识与参考/网页与博客", "properties": {}, "type": "label"}
+{"id": "label:知识与参考/网页与博客/网页正文", "name": "知识与参考/网页与博客/网页正文", "properties": {"level2": "知识与参考/网页与博客"}, "type": "label"}
+{"id": "label:社交与社区内容", "name": "社交与社区内容", "properties": {}, "type": "label"}
+{"id": "label:社交与社区内容/论坛与社区帖子", "name": "社交与社区内容/论坛与社区帖子", "properties": {}, "type": "label"}
+{"id": "label:社交与社区内容/论坛与社区帖子/问答社区帖子", "name": "社交与社区内容/论坛与社区帖子/问答社区帖子", "properties": {"level2": "社交与社区内容/论坛与社区帖子"}, "type": "label"}
+{"id": "label:社会与群体", "name": "社会与群体", "properties": {}, "type": "label"}
+{"id": "label:社会与群体/群体与活动", "name": "社会与群体/群体与活动", "properties": {}, "type": "label"}
+{"id": "label:社会与群体/群体与活动/群体活动与社交场景", "name": "社会与群体/群体与活动/群体活动与社交场景", "properties": {"level2": "社会与群体/群体与活动"}, "type": "label"}
+{"id": "label:社会与群体/群体与活动/职业形象", "name": "社会与群体/群体与活动/职业形象", "properties": {"level2": "社会与群体/群体与活动"}, "type": "label"}
+{"id": "label:结构化数据", "name": "结构化数据", "properties": {}, "type": "label"}
+{"id": "label:结构化数据/交易与行为记录", "name": "结构化数据/交易与行为记录", "properties": {}, "type": "label"}
+{"id": "label:结构化数据/交易与行为记录/交易记录与订单数据", "name": "结构化数据/交易与行为记录/交易记录与订单数据", "properties": {"level2": "结构化数据/交易与行为记录"}, "type": "label"}
+{"id": "label:结构化数据/交易与行为记录/用户行为日志与点击流", "name": "结构化数据/交易与行为记录/用户行为日志与点击流", "properties": {"level2": "结构化数据/交易与行为记录"}, "type": "label"}
+{"id": "label:结构化数据/指标口径与数据字典", "name": "结构化数据/指标口径与数据字典", "properties": {}, "type": "label"}
+{"id": "label:结构化数据/指标口径与数据字典/字段说明", "name": "结构化数据/指标口径与数据字典/字段说明", "properties": {"level2": "结构化数据/指标口径与数据字典"}, "type": "label"}
+{"id": "label:结构化数据/指标口径与数据字典/指标定义与数据字典", "name": "结构化数据/指标口径与数据字典/指标定义与数据字典", "properties": {"level2": "结构化数据/指标口径与数据字典"}, "type": "label"}
+{"id": "label:结构化数据/表格与数据库记录", "name": "结构化数据/表格与数据库记录", "properties": {}, "type": "label"}
+{"id": "label:结构化数据/表格与数据库记录/CSV表格与数据库记录", "name": "结构化数据/表格与数据库记录/CSV表格与数据库记录", "properties": {"level2": "结构化数据/表格与数据库记录"}, "type": "label"}
+{"id": "label:结构化数据/表格与数据库记录/统计表", "name": "结构化数据/表格与数据库记录/统计表", "properties": {"level2": "结构化数据/表格与数据库记录"}, "type": "label"}
+{"id": "label:自然与生态", "name": "自然与生态", "properties": {}, "type": "label"}
+{"id": "label:自然与生态/动植物", "name": "自然与生态/动植物", "properties": {}, "type": "label"}
+{"id": "label:自然与生态/动植物/植物与花卉", "name": "自然与生态/动植物/植物与花卉", "properties": {"level2": "自然与生态/动植物"}, "type": "label"}
+{"id": "label:自然与生态/天文地理", "name": "自然与生态/天文地理", "properties": {}, "type": "label"}
+{"id": "label:自然与生态/天文地理/卫星自然影像", "name": "自然与生态/天文地理/卫星自然影像", "properties": {"level2": "自然与生态/天文地理"}, "type": "label"}
+{"id": "label:自然与生态/天文地理/地图与地貌影像", "name": "自然与生态/天文地理/地图与地貌影像", "properties": {"level2": "自然与生态/天文地理"}, "type": "label"}
+{"id": "label:艺术与设计", "name": "艺术与设计", "properties": {}, "type": "label"}
+{"id": "label:艺术与设计/合成与生成图像", "name": "艺术与设计/合成与生成图像", "properties": {}, "type": "label"}
+{"id": "label:艺术与设计/合成与生成图像/数据增强与仿真图", "name": "艺术与设计/合成与生成图像/数据增强与仿真图", "properties": {"level2": "艺术与设计/合成与生成图像"}, "type": "label"}
+{"id": "label:艺术与设计/合成与生成图像/风格迁移图", "name": "艺术与设计/合成与生成图像/风格迁移图", "properties": {"level2": "艺术与设计/合成与生成图像"}, "type": "label"}
+{"id": "label:行为与事件", "name": "行为与事件", "properties": {}, "type": "label"}
+{"id": "label:行为与事件/事件检测", "name": "行为与事件/事件检测", "properties": {}, "type": "label"}
+{"id": "label:行为与事件/事件检测/流程异常", "name": "行为与事件/事件检测/流程异常", "properties": {"level2": "行为与事件/事件检测"}, "type": "label"}
+{"id": "label:行为与事件/事件检测/设备异常与自然灾害", "name": "行为与事件/事件检测/设备异常与自然灾害", "properties": {"level2": "行为与事件/事件检测"}, "type": "label"}
+{"id": "label:行为与事件/人体动作", "name": "行为与事件/人体动作", "properties": {}, "type": "label"}
+{"id": "label:行为与事件/人体动作/挥手与跌倒", "name": "行为与事件/人体动作/挥手与跌倒", "properties": {"level2": "行为与事件/人体动作"}, "type": "label"}
+{"id": "label:行为与事件/人体动作/搬运与交互动作", "name": "行为与事件/人体动作/搬运与交互动作", "properties": {"level2": "行为与事件/人体动作"}, "type": "label"}
+{"id": "label:语音与人声", "name": "语音与人声", "properties": {}, "type": "label"}
+{"id": "label:语音与人声/人声属性", "name": "语音与人声/人声属性", "properties": {}, "type": "label"}
+{"id": "label:语音与人声/人声属性/年龄与性别属性", "name": "语音与人声/人声属性/年龄与性别属性", "properties": {"level2": "语音与人声/人声属性"}, "type": "label"}
+{"id": "label:语音与人声/人声属性/情绪属性", "name": "语音与人声/人声属性/情绪属性", "properties": {"level2": "语音与人声/人声属性"}, "type": "label"}
+{"id": "record:r_024f680b3132680bbf3388bd", "name": "r_024f680b3132680bbf3388bd", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_027e8578b2bbd1cef264507f", "name": "r_027e8578b2bbd1cef264507f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_032e1ae85b3ab2997b2bcb8f", "name": "r_032e1ae85b3ab2997b2bcb8f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_0336542ad81f68b474e191f8", "name": "r_0336542ad81f68b474e191f8", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_03a6966b7beb9900c0667200", "name": "r_03a6966b7beb9900c0667200", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_03d4ce313284f7219b7d0896", "name": "r_03d4ce313284f7219b7d0896", "properties": {"dt": "2026-11-16", "modal": "text", "source": "wiki"}, "type": "record"}
+{"id": "record:r_03f2443b0d9324f1b15101f1", "name": "r_03f2443b0d9324f1b15101f1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_04577aa4870f2cf4b8653a2e", "name": "r_04577aa4870f2cf4b8653a2e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_04801802ca2d4a36b7e56013", "name": "r_04801802ca2d4a36b7e56013", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_05757e6f8c6d3fdc00cc1315", "name": "r_05757e6f8c6d3fdc00cc1315", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_05f5e1073ffc4ea213a05e5f", "name": "r_05f5e1073ffc4ea213a05e5f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_0617799430439e551fa28842", "name": "r_0617799430439e551fa28842", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_06684c6627caa440a8e260e6", "name": "r_06684c6627caa440a8e260e6", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_070b0149848b7b33fd7f532c", "name": "r_070b0149848b7b33fd7f532c", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_07266758e636c4bf3f725ef6", "name": "r_07266758e636c4bf3f725ef6", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_087451bee2ff273528233254", "name": "r_087451bee2ff273528233254", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_08d4e51efe0e0e9756467bcf", "name": "r_08d4e51efe0e0e9756467bcf", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_091de049733064caeba1f927", "name": "r_091de049733064caeba1f927", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_093b4bceeb2d2d979758dd28", "name": "r_093b4bceeb2d2d979758dd28", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_094e1a1412572122456a02ac", "name": "r_094e1a1412572122456a02ac", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_09dee07ae176f0d41e37c79c", "name": "r_09dee07ae176f0d41e37c79c", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_0a438764fab33c9d0d03339a", "name": "r_0a438764fab33c9d0d03339a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_0a8cd82cb2c64e0c2223103a", "name": "r_0a8cd82cb2c64e0c2223103a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_0b8b926eb6d83a7f166af51f", "name": "r_0b8b926eb6d83a7f166af51f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_0b99ebacf7b439a80f40dc58", "name": "r_0b99ebacf7b439a80f40dc58", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_0bd7cdc94c6611c2b41acd3a", "name": "r_0bd7cdc94c6611c2b41acd3a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_0db2e1a54413dde024f5ac80", "name": "r_0db2e1a54413dde024f5ac80", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_0e4ab1a9db10fcb8ec6373d7", "name": "r_0e4ab1a9db10fcb8ec6373d7", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_0ed52197a90f5b31c5a3aee9", "name": "r_0ed52197a90f5b31c5a3aee9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_0f4244eaea11deb0550ad7d2", "name": "r_0f4244eaea11deb0550ad7d2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_0fa598aacba7d856790f92ef", "name": "r_0fa598aacba7d856790f92ef", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_1165fba9337ec40750cdb6e9", "name": "r_1165fba9337ec40750cdb6e9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_118e3c5b6f2f72e040a35d04", "name": "r_118e3c5b6f2f72e040a35d04", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_1198739b61eb72a1e56c4a4b", "name": "r_1198739b61eb72a1e56c4a4b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_11e55cf5643058c9ce0d0942", "name": "r_11e55cf5643058c9ce0d0942", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_11e6488057e88e490ad6c58f", "name": "r_11e6488057e88e490ad6c58f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_1265ab99d15288e34734ec35", "name": "r_1265ab99d15288e34734ec35", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_1281dbcd42a35ef4f31b0cdc", "name": "r_1281dbcd42a35ef4f31b0cdc", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_128e875646076a15d9a88e4d", "name": "r_128e875646076a15d9a88e4d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_136526d422472d3304023db4", "name": "r_136526d422472d3304023db4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_16048eb0777d560503ad17da", "name": "r_16048eb0777d560503ad17da", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_16aa06b60439f0c46c82ea64", "name": "r_16aa06b60439f0c46c82ea64", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_173b886418a68464d4376512", "name": "r_173b886418a68464d4376512", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_175a840ac1040f2b076d04ac", "name": "r_175a840ac1040f2b076d04ac", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_17cf896369edc9a9eb9be37f", "name": "r_17cf896369edc9a9eb9be37f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_190c607975835f063b097f3e", "name": "r_190c607975835f063b097f3e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_197c031b6f9860210b8ae7f5", "name": "r_197c031b6f9860210b8ae7f5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_1b3d01bf7258142c06a08d61", "name": "r_1b3d01bf7258142c06a08d61", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_1b7715509888a2a41fc699d2", "name": "r_1b7715509888a2a41fc699d2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_1c8072181e52bc3c2ef70596", "name": "r_1c8072181e52bc3c2ef70596", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_1c98e9edc88c9518fc805bbf", "name": "r_1c98e9edc88c9518fc805bbf", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_1daccbbd6760d74a1edb9903", "name": "r_1daccbbd6760d74a1edb9903", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_1dccd9a345728f623fd1e662", "name": "r_1dccd9a345728f623fd1e662", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_1ef6ccbc86c1690aba802624", "name": "r_1ef6ccbc86c1690aba802624", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_1f71cc35f95db952a9458865", "name": "r_1f71cc35f95db952a9458865", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_1ff53a10ca4c071c3f91b236", "name": "r_1ff53a10ca4c071c3f91b236", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2062f7e05e0095d38175d8c0", "name": "r_2062f7e05e0095d38175d8c0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_209fe6d94855238fa2a8cd86", "name": "r_209fe6d94855238fa2a8cd86", "properties": {"dt": "2026-11-16", "modal": "text", "source": "wiki"}, "type": "record"}
+{"id": "record:r_22351a3d84069b0d59566cd2", "name": "r_22351a3d84069b0d59566cd2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_22e64912630e097f19c00f06", "name": "r_22e64912630e097f19c00f06", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_22e724cbd99d012e6a86a521", "name": "r_22e724cbd99d012e6a86a521", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2341d3337d4edf49d20ed4bb", "name": "r_2341d3337d4edf49d20ed4bb", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2391eb06b0d3a8b52f0753d1", "name": "r_2391eb06b0d3a8b52f0753d1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2483d3341e6a87cf556867d1", "name": "r_2483d3341e6a87cf556867d1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2515dd8faa274d258139a439", "name": "r_2515dd8faa274d258139a439", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_25b4d1cbc87fb3710802d4b2", "name": "r_25b4d1cbc87fb3710802d4b2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_26189d0d2a6fb2a8dbd83a01", "name": "r_26189d0d2a6fb2a8dbd83a01", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_27526a5294e8ce77ed148f56", "name": "r_27526a5294e8ce77ed148f56", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_28bcbfb754a1aa8021d0245e", "name": "r_28bcbfb754a1aa8021d0245e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_29ad724da9c872f844e74060", "name": "r_29ad724da9c872f844e74060", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_29d114f9da66a73dc09e3f45", "name": "r_29d114f9da66a73dc09e3f45", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2bf23b3a6ef8c46241223854", "name": "r_2bf23b3a6ef8c46241223854", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2c3a3f7514d83d39a4452bc0", "name": "r_2c3a3f7514d83d39a4452bc0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2d5e677cf550e5119a3b71d5", "name": "r_2d5e677cf550e5119a3b71d5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2e64db4d9e3b19114ebcfca0", "name": "r_2e64db4d9e3b19114ebcfca0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2e799574bcb575f0b208977c", "name": "r_2e799574bcb575f0b208977c", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2f2392b37df275ce7a3f4a70", "name": "r_2f2392b37df275ce7a3f4a70", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_2fc14087ba18de989c2a1763", "name": "r_2fc14087ba18de989c2a1763", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_306d764bcb058e28df434995", "name": "r_306d764bcb058e28df434995", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_30dab39b84178278f551ac5f", "name": "r_30dab39b84178278f551ac5f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_31a06d1c0342885f47f42027", "name": "r_31a06d1c0342885f47f42027", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_31ee577f90a283dc8c8b5b02", "name": "r_31ee577f90a283dc8c8b5b02", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_31f17402ce98f3f0a6b4881f", "name": "r_31f17402ce98f3f0a6b4881f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_322fffbdf35cbee7cf256de6", "name": "r_322fffbdf35cbee7cf256de6", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_32ade4aab26e7b28680dfbc1", "name": "r_32ade4aab26e7b28680dfbc1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_3426f9ca67cfa6d20deb559c", "name": "r_3426f9ca67cfa6d20deb559c", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_3448edb9467bd3fb2da08ad5", "name": "r_3448edb9467bd3fb2da08ad5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_349c72c61846d87ace530474", "name": "r_349c72c61846d87ace530474", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_34ed82dc67489db208e93670", "name": "r_34ed82dc67489db208e93670", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_3588b8ac64de03b837d32fe2", "name": "r_3588b8ac64de03b837d32fe2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_361449e25016350dfd01d4e9", "name": "r_361449e25016350dfd01d4e9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_3672d9e9e34b2ec699f9a86c", "name": "r_3672d9e9e34b2ec699f9a86c", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_3755c45461b7fbde9fbf2cfd", "name": "r_3755c45461b7fbde9fbf2cfd", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_37e2c979e77e55dac32706c7", "name": "r_37e2c979e77e55dac32706c7", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_3877edcc73364f24ff09091d", "name": "r_3877edcc73364f24ff09091d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_38a50a0f623887056df0eee2", "name": "r_38a50a0f623887056df0eee2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_39229cf9bf99694074db9090", "name": "r_39229cf9bf99694074db9090", "properties": {"dt": "2026-11-16", "modal": "audio", "source": "web_text"}, "type": "record"}
+{"id": "record:r_39c03ff14998ff72100a0f4b", "name": "r_39c03ff14998ff72100a0f4b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_3a1872b3476c661595da81ad", "name": "r_3a1872b3476c661595da81ad", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_3b96afa94f06366a33ac263f", "name": "r_3b96afa94f06366a33ac263f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_3bc530c46f2d632f9717273c", "name": "r_3bc530c46f2d632f9717273c", "properties": {"dt": "2026-11-16", "modal": "text", "source": "wiki"}, "type": "record"}
+{"id": "record:r_3c4feccb313df036f784e647", "name": "r_3c4feccb313df036f784e647", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_3d7cbdedd5dff9490a0ca9d4", "name": "r_3d7cbdedd5dff9490a0ca9d4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_3e1ce59ea0b6aeffde4d3b18", "name": "r_3e1ce59ea0b6aeffde4d3b18", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_3e622dc84d3bb579dd2d220c", "name": "r_3e622dc84d3bb579dd2d220c", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_3e653d1fdcd4b2d3f3f6a0d2", "name": "r_3e653d1fdcd4b2d3f3f6a0d2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_3ee3895b20de64f1b0991443", "name": "r_3ee3895b20de64f1b0991443", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_3f2c160a9df8b19681b4ad72", "name": "r_3f2c160a9df8b19681b4ad72", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_3f567494a2a5b61023966b99", "name": "r_3f567494a2a5b61023966b99", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_3f83758d448239e68329d12b", "name": "r_3f83758d448239e68329d12b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_41044c44315db8da8858a049", "name": "r_41044c44315db8da8858a049", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_415378ae8a96a7a7f797af86", "name": "r_415378ae8a96a7a7f797af86", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_41748e712a2f0e3371b8ea92", "name": "r_41748e712a2f0e3371b8ea92", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_418f9f3d1f8838346c79506b", "name": "r_418f9f3d1f8838346c79506b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_42094a5bd3f4d7ca587d527d", "name": "r_42094a5bd3f4d7ca587d527d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_421372398a72cceb24813965", "name": "r_421372398a72cceb24813965", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_429dcd7bd2407a765960c91d", "name": "r_429dcd7bd2407a765960c91d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4325d1703d6f0642999c27c4", "name": "r_4325d1703d6f0642999c27c4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_437cdaa404a5507e8477ec36", "name": "r_437cdaa404a5507e8477ec36", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_43aa6ad392cfe81268ad6d0d", "name": "r_43aa6ad392cfe81268ad6d0d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_44decedfaeb1f2632ce242cb", "name": "r_44decedfaeb1f2632ce242cb", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_456f770573cccfe4b5c86604", "name": "r_456f770573cccfe4b5c86604", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_461dd1cbd7ab4b671f038da0", "name": "r_461dd1cbd7ab4b671f038da0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4644fb0c87c2043507de3cfa", "name": "r_4644fb0c87c2043507de3cfa", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_46746303576a4bb17b63a5a3", "name": "r_46746303576a4bb17b63a5a3", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_46a84dd89551c9bc9a4f8870", "name": "r_46a84dd89551c9bc9a4f8870", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4706f2bbe34bb1932763bfbc", "name": "r_4706f2bbe34bb1932763bfbc", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_48048c72ffdfec3051c48a6f", "name": "r_48048c72ffdfec3051c48a6f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_4915546b8853466cb1a996d8", "name": "r_4915546b8853466cb1a996d8", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4987793a27b6cc5c220ebed5", "name": "r_4987793a27b6cc5c220ebed5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4a6112a435e1521c883061d1", "name": "r_4a6112a435e1521c883061d1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4a72eb5ce69bd625d6143cfc", "name": "r_4a72eb5ce69bd625d6143cfc", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4c05a374db3dec7b5987cab2", "name": "r_4c05a374db3dec7b5987cab2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4d36b53b0365c33eccf1de90", "name": "r_4d36b53b0365c33eccf1de90", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4e6024e4f227128d3870d25e", "name": "r_4e6024e4f227128d3870d25e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4f9ba34d5b9263ab0bb59d99", "name": "r_4f9ba34d5b9263ab0bb59d99", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_4fb129fcaa30c5609d6684ed", "name": "r_4fb129fcaa30c5609d6684ed", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_506e8adafc067d6866d09bac", "name": "r_506e8adafc067d6866d09bac", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_50a288e9cb5a4826da205007", "name": "r_50a288e9cb5a4826da205007", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_51de28c27c260b3795c9a4b1", "name": "r_51de28c27c260b3795c9a4b1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_52be94f53052940e91357be9", "name": "r_52be94f53052940e91357be9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_53249fdb397193d65185fbb3", "name": "r_53249fdb397193d65185fbb3", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_5397faaf15d3b4c691d8a1a4", "name": "r_5397faaf15d3b4c691d8a1a4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_54f208f584db331fc24a9fd3", "name": "r_54f208f584db331fc24a9fd3", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_55040d8717c2bd26e4e9bb59", "name": "r_55040d8717c2bd26e4e9bb59", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_5505d59f3692c034bd03baa4", "name": "r_5505d59f3692c034bd03baa4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_558d6cad0c075b1e01ef9a7a", "name": "r_558d6cad0c075b1e01ef9a7a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_559213e4602e72d380bc1c5a", "name": "r_559213e4602e72d380bc1c5a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_55d3f68f8c251ce8d0289701", "name": "r_55d3f68f8c251ce8d0289701", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_56914dcb0c83b8ce08cbe702", "name": "r_56914dcb0c83b8ce08cbe702", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_5808a951b1a01c9d52bc3b31", "name": "r_5808a951b1a01c9d52bc3b31", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_58ef49f3d749069e090935f4", "name": "r_58ef49f3d749069e090935f4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_5979da042c7cac36656b9e6a", "name": "r_5979da042c7cac36656b9e6a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_59c8d7955a4fa9e2ac6d12d1", "name": "r_59c8d7955a4fa9e2ac6d12d1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_5aadcecdf268992412a0ca7d", "name": "r_5aadcecdf268992412a0ca7d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_5b99e7ea16c11d13384ed12f", "name": "r_5b99e7ea16c11d13384ed12f", "properties": {"dt": "2026-11-16", "modal": "audio", "source": "web_text"}, "type": "record"}
+{"id": "record:r_5c527cd6a65bfa05cbd62a65", "name": "r_5c527cd6a65bfa05cbd62a65", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_5c61c6244b820a7c8f7f164b", "name": "r_5c61c6244b820a7c8f7f164b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_5d4705859bd1fd944cc578d3", "name": "r_5d4705859bd1fd944cc578d3", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_5d930d0ad332e905c708f09f", "name": "r_5d930d0ad332e905c708f09f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_5e0500431789af30a8c37258", "name": "r_5e0500431789af30a8c37258", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_5e54b889a16a3ed83e4a04c7", "name": "r_5e54b889a16a3ed83e4a04c7", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_5ebe7b8ce9432a9c60c259b8", "name": "r_5ebe7b8ce9432a9c60c259b8", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_5ecf11fa9b110ec90b91729b", "name": "r_5ecf11fa9b110ec90b91729b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_5fa44a945ab6e67296e2b87d", "name": "r_5fa44a945ab6e67296e2b87d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_60381780e1852007bb7e5c76", "name": "r_60381780e1852007bb7e5c76", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_6038c4967a115cdf776e16ed", "name": "r_6038c4967a115cdf776e16ed", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_60b037180ff2e5e0311c3ad5", "name": "r_60b037180ff2e5e0311c3ad5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_64d9ebccadf937390ddf87a1", "name": "r_64d9ebccadf937390ddf87a1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_6590572cbcad614b0440dd9e", "name": "r_6590572cbcad614b0440dd9e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_65bff8c663abe2bf1e1d3a30", "name": "r_65bff8c663abe2bf1e1d3a30", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_65e21de28efed64a1c3af736", "name": "r_65e21de28efed64a1c3af736", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_67cd49deb712eaf6e41b820b", "name": "r_67cd49deb712eaf6e41b820b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_6841eacda9ed6033d2c93134", "name": "r_6841eacda9ed6033d2c93134", "properties": {"dt": "2026-11-16", "modal": "video", "source": "web_text"}, "type": "record"}
+{"id": "record:r_68c1ef6f48ff25e879013508", "name": "r_68c1ef6f48ff25e879013508", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_68f1199d7e453784909db5de", "name": "r_68f1199d7e453784909db5de", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_6a2959d3871239583c8e7f74", "name": "r_6a2959d3871239583c8e7f74", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_6b24bf5957c5235a8742e718", "name": "r_6b24bf5957c5235a8742e718", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_6b75da07b3db629b618c3160", "name": "r_6b75da07b3db629b618c3160", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_6db28fe082ab5ccd550976e0", "name": "r_6db28fe082ab5ccd550976e0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_6f4f156d1ccfc11d9117cf44", "name": "r_6f4f156d1ccfc11d9117cf44", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_6fb25c6746f4caee2d125320", "name": "r_6fb25c6746f4caee2d125320", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_7183403fd367a3911bc02260", "name": "r_7183403fd367a3911bc02260", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_73ba08048872e38fdcc2adff", "name": "r_73ba08048872e38fdcc2adff", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_73fd31c607a4925c7cdbf4d7", "name": "r_73fd31c607a4925c7cdbf4d7", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_748ae9988433c42579b28ab4", "name": "r_748ae9988433c42579b28ab4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_74bd734f1abd804c87b8a57b", "name": "r_74bd734f1abd804c87b8a57b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_74bda1840d52a87eba893ae0", "name": "r_74bda1840d52a87eba893ae0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_75bf6e4011889e3ac6144143", "name": "r_75bf6e4011889e3ac6144143", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_75d50b5f9134a9730f3af9c7", "name": "r_75d50b5f9134a9730f3af9c7", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_75dedfa9afd9fa68608156d1", "name": "r_75dedfa9afd9fa68608156d1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_76d45c6fcf8c3f756d80691a", "name": "r_76d45c6fcf8c3f756d80691a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_779e9d444ee8dbad78d95910", "name": "r_779e9d444ee8dbad78d95910", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_780c01ee6005ec0db7a70d29", "name": "r_780c01ee6005ec0db7a70d29", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_78359a549aa65fa3e9f2fa89", "name": "r_78359a549aa65fa3e9f2fa89", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_78b14004ded87af5815891d5", "name": "r_78b14004ded87af5815891d5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_78ef5f338e4ac86901fa8f9e", "name": "r_78ef5f338e4ac86901fa8f9e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_790ff32a7254a2db579e2143", "name": "r_790ff32a7254a2db579e2143", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_797928a36df2772c6f934e05", "name": "r_797928a36df2772c6f934e05", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_797bceea9854c5fda110642f", "name": "r_797bceea9854c5fda110642f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_79a4262df713790dc22ae730", "name": "r_79a4262df713790dc22ae730", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_79a519cb825dfc19d8b3a4f0", "name": "r_79a519cb825dfc19d8b3a4f0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_79a6b363f79387f6eb0c95d9", "name": "r_79a6b363f79387f6eb0c95d9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_7aec272b14099a737c7d016e", "name": "r_7aec272b14099a737c7d016e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_7bb2feab18699f26f5ad0b22", "name": "r_7bb2feab18699f26f5ad0b22", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_7bb50fcfabe164b9b95e7755", "name": "r_7bb50fcfabe164b9b95e7755", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_7bdc85870e34d7921e4b4ff5", "name": "r_7bdc85870e34d7921e4b4ff5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_7cb0db995f43375b8c0ef14b", "name": "r_7cb0db995f43375b8c0ef14b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_7cbc59a8848e403ea9488366", "name": "r_7cbc59a8848e403ea9488366", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_7cddaa67090e12738facdd98", "name": "r_7cddaa67090e12738facdd98", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_7d0678563be938ae7f1e03d0", "name": "r_7d0678563be938ae7f1e03d0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_7ff9c0e2157f64aee3d1b2e4", "name": "r_7ff9c0e2157f64aee3d1b2e4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "wiki"}, "type": "record"}
+{"id": "record:r_8018c52eb08a653abc9a5d14", "name": "r_8018c52eb08a653abc9a5d14", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_8033c84b00c3a5c6dbfd6e7d", "name": "r_8033c84b00c3a5c6dbfd6e7d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_80fdb24153e3acbd6d038853", "name": "r_80fdb24153e3acbd6d038853", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_81460a18d652faf1d5826329", "name": "r_81460a18d652faf1d5826329", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_816f88c01596800bbefbc415", "name": "r_816f88c01596800bbefbc415", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_82203937e522e3f6a8ea7055", "name": "r_82203937e522e3f6a8ea7055", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_83796d0d0332616a0f79f110", "name": "r_83796d0d0332616a0f79f110", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_842190a0cbb037a86f4a0ca4", "name": "r_842190a0cbb037a86f4a0ca4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_84c82e200d4a5d599e4d7eab", "name": "r_84c82e200d4a5d599e4d7eab", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_84d907f05078e75fda9b0368", "name": "r_84d907f05078e75fda9b0368", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_84e9d9504a75616d2ba6e55e", "name": "r_84e9d9504a75616d2ba6e55e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_851415b27c42b9481916f51b", "name": "r_851415b27c42b9481916f51b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_870b133073a1271589cd25df", "name": "r_870b133073a1271589cd25df", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_873b260bbb9682b30075b70e", "name": "r_873b260bbb9682b30075b70e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_8a34e3617683e8703a742845", "name": "r_8a34e3617683e8703a742845", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_8a3a51deedcda4040056b78f", "name": "r_8a3a51deedcda4040056b78f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_8a4a6ea5029018b15b58de9d", "name": "r_8a4a6ea5029018b15b58de9d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_8aa0d7044f362cc5ac09df81", "name": "r_8aa0d7044f362cc5ac09df81", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_8b0fdc8daeb7a9d86f04aff5", "name": "r_8b0fdc8daeb7a9d86f04aff5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_8b6ad3fb40d8ba74225558bd", "name": "r_8b6ad3fb40d8ba74225558bd", "properties": {"dt": "2026-11-16", "modal": "video", "source": "web_text"}, "type": "record"}
+{"id": "record:r_8db033423610f4278b58d7d2", "name": "r_8db033423610f4278b58d7d2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_8ea61750ba83142d81b847c8", "name": "r_8ea61750ba83142d81b847c8", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9021229a0863dacafae0505a", "name": "r_9021229a0863dacafae0505a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_90ad67f693c91c78fa1a4b65", "name": "r_90ad67f693c91c78fa1a4b65", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9106ad411709588905a4b489", "name": "r_9106ad411709588905a4b489", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_920e8cb1bb9bc6c1750ec857", "name": "r_920e8cb1bb9bc6c1750ec857", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_92de647bc343059ecca5cafa", "name": "r_92de647bc343059ecca5cafa", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9356a6feb7bf523f844af1c0", "name": "r_9356a6feb7bf523f844af1c0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "wiki"}, "type": "record"}
+{"id": "record:r_93d4968b9919ade7b31bd4d1", "name": "r_93d4968b9919ade7b31bd4d1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_943559a48f9f1688cbac64d2", "name": "r_943559a48f9f1688cbac64d2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_94cae32ec6e29ee5dea253ef", "name": "r_94cae32ec6e29ee5dea253ef", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_95e8dc48f9ef28babf75c70e", "name": "r_95e8dc48f9ef28babf75c70e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9607ca8c4f9277aa430dbe7f", "name": "r_9607ca8c4f9277aa430dbe7f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9664da0d40eab4368ac548d1", "name": "r_9664da0d40eab4368ac548d1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_973ba093d23fdffb94ecab3d", "name": "r_973ba093d23fdffb94ecab3d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_97f3c5e40a6ccc47d7ec97ce", "name": "r_97f3c5e40a6ccc47d7ec97ce", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_984203a7ebc6f21fc635e963", "name": "r_984203a7ebc6f21fc635e963", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_987c84c12eaf4cc084c5ee90", "name": "r_987c84c12eaf4cc084c5ee90", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9891505a723097c6ecd13cbc", "name": "r_9891505a723097c6ecd13cbc", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_98bbaeb35c23dfd3c9ef964b", "name": "r_98bbaeb35c23dfd3c9ef964b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9906b31861b4ed2cfde32947", "name": "r_9906b31861b4ed2cfde32947", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9ae59c6715b056f42a7b3917", "name": "r_9ae59c6715b056f42a7b3917", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9af122c14cb5053c1b94778b", "name": "r_9af122c14cb5053c1b94778b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_9b2dc87d7a80156e8b15e8d6", "name": "r_9b2dc87d7a80156e8b15e8d6", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9befc57e2c1049ddf1149e3b", "name": "r_9befc57e2c1049ddf1149e3b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9c47ca71d5b736e15a0ff2f0", "name": "r_9c47ca71d5b736e15a0ff2f0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_9c54e2471373571e0b6a6f1c", "name": "r_9c54e2471373571e0b6a6f1c", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9cc35fb7a7c207c5a8f12f07", "name": "r_9cc35fb7a7c207c5a8f12f07", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9d4b4d97968e44b469a652e1", "name": "r_9d4b4d97968e44b469a652e1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_9d84d504f16cf6665cc23a49", "name": "r_9d84d504f16cf6665cc23a49", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_9e2f14e5b1b176ab5c91e42d", "name": "r_9e2f14e5b1b176ab5c91e42d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_9f58e00975cba92475d7964f", "name": "r_9f58e00975cba92475d7964f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_a0f97bfaaebebb4c86b6b662", "name": "r_a0f97bfaaebebb4c86b6b662", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_a21f9b1da39d5ef0ac57246d", "name": "r_a21f9b1da39d5ef0ac57246d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_a25615c444700d97b82372b3", "name": "r_a25615c444700d97b82372b3", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_a38924075cd5589ad71a1d5f", "name": "r_a38924075cd5589ad71a1d5f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_a64fc1f6501ad46b286051c1", "name": "r_a64fc1f6501ad46b286051c1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_a6978e57aad0d939be2f7daa", "name": "r_a6978e57aad0d939be2f7daa", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_a6f5e9c673dd380eb3a083b8", "name": "r_a6f5e9c673dd380eb3a083b8", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_a7dd431540b31b67e79bcb8e", "name": "r_a7dd431540b31b67e79bcb8e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_a7eb0f634092f8f725acff48", "name": "r_a7eb0f634092f8f725acff48", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_a81d356bfcb352904ef88f04", "name": "r_a81d356bfcb352904ef88f04", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_a83f2bd2eda16b2def69ddfd", "name": "r_a83f2bd2eda16b2def69ddfd", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_a91da975b12ee9d2a1dfbd6d", "name": "r_a91da975b12ee9d2a1dfbd6d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_a94a30b00a76e63cbe656f20", "name": "r_a94a30b00a76e63cbe656f20", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_aa6293b306195646565bb454", "name": "r_aa6293b306195646565bb454", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_aa683e09b57400f3d6314a69", "name": "r_aa683e09b57400f3d6314a69", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_aaa41abb93d28c5592d9bb00", "name": "r_aaa41abb93d28c5592d9bb00", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ab145815f709014dedc92a35", "name": "r_ab145815f709014dedc92a35", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ab53ab795d73845a53298f50", "name": "r_ab53ab795d73845a53298f50", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ac72b2e01a676455f38178ef", "name": "r_ac72b2e01a676455f38178ef", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_acf15e79b3c2088f1cae1119", "name": "r_acf15e79b3c2088f1cae1119", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_ad10a02ee2e4a5923f98eb78", "name": "r_ad10a02ee2e4a5923f98eb78", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_ad206f3b62de9c23782f2726", "name": "r_ad206f3b62de9c23782f2726", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ad84d1b7638de34c2ded8ee1", "name": "r_ad84d1b7638de34c2ded8ee1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_adf8b51bb9bee41c8a26393b", "name": "r_adf8b51bb9bee41c8a26393b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_af9afea89aeddc1ecaa5ebdf", "name": "r_af9afea89aeddc1ecaa5ebdf", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_afe86f5f8e06edaf299656ba", "name": "r_afe86f5f8e06edaf299656ba", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_b032322fb9480be08c6dc3e0", "name": "r_b032322fb9480be08c6dc3e0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_b0ccceaef2b6cf5a5fb9d3a9", "name": "r_b0ccceaef2b6cf5a5fb9d3a9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_b0f29812d93bbf673106acc1", "name": "r_b0f29812d93bbf673106acc1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_b130ce31cae75c62d944ab01", "name": "r_b130ce31cae75c62d944ab01", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_b2b56ec5b60f5e603d036c87", "name": "r_b2b56ec5b60f5e603d036c87", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_b40a2831e9a303f532d85537", "name": "r_b40a2831e9a303f532d85537", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_b49d7653265d1d2e4526a086", "name": "r_b49d7653265d1d2e4526a086", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_b59208b790eb0ee4ad91229b", "name": "r_b59208b790eb0ee4ad91229b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_b5a0fcaecb683d038d65f9c1", "name": "r_b5a0fcaecb683d038d65f9c1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_b72a022bf6a9b0cba623ff14", "name": "r_b72a022bf6a9b0cba623ff14", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_b8ddfc4efa47a7b091a86b33", "name": "r_b8ddfc4efa47a7b091a86b33", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_b9c8d914ad26f22ae9395bac", "name": "r_b9c8d914ad26f22ae9395bac", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_ba0e7ccb8a52287bf695defe", "name": "r_ba0e7ccb8a52287bf695defe", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_baec2d7a4ffe7df608275a87", "name": "r_baec2d7a4ffe7df608275a87", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_bb6a613f0c906b7d8fd41cfe", "name": "r_bb6a613f0c906b7d8fd41cfe", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_bbc64858cda7d8d8d7453c34", "name": "r_bbc64858cda7d8d8d7453c34", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_bc2aa56cf67f2a5533461f6d", "name": "r_bc2aa56cf67f2a5533461f6d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_bce3e4724a54411b87c54c46", "name": "r_bce3e4724a54411b87c54c46", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_bd7cdb0b191937bda23c94b3", "name": "r_bd7cdb0b191937bda23c94b3", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_bda027beb2c8aad7320bd10a", "name": "r_bda027beb2c8aad7320bd10a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_be3bd9c85a95480250db6e99", "name": "r_be3bd9c85a95480250db6e99", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_bef32509341c9b05cedfa237", "name": "r_bef32509341c9b05cedfa237", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_bf53d8153dd88630884df339", "name": "r_bf53d8153dd88630884df339", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_bf9faec545d2700c155b74f9", "name": "r_bf9faec545d2700c155b74f9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c02ee5bba11654e2f865fcf7", "name": "r_c02ee5bba11654e2f865fcf7", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_c1190fae9901f3ba0e860e6e", "name": "r_c1190fae9901f3ba0e860e6e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c161274d0cc22f39687d99cd", "name": "r_c161274d0cc22f39687d99cd", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c197d8b968bb56f326d79173", "name": "r_c197d8b968bb56f326d79173", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_c20cbc18c37045367c944a93", "name": "r_c20cbc18c37045367c944a93", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_c2aa4af8c4cddc4c7f5f52ba", "name": "r_c2aa4af8c4cddc4c7f5f52ba", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c2b223265827b0a0ec32c315", "name": "r_c2b223265827b0a0ec32c315", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c3bbf37fe2ee06426546b53d", "name": "r_c3bbf37fe2ee06426546b53d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c3eb6256462bdaab2787435e", "name": "r_c3eb6256462bdaab2787435e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c40a4b088719caf01db1eafc", "name": "r_c40a4b088719caf01db1eafc", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c5443cda1010115450d9fce0", "name": "r_c5443cda1010115450d9fce0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c54a99b8c2146fcb8cb6bf7e", "name": "r_c54a99b8c2146fcb8cb6bf7e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_c60ef4e82c6713e60ffa77e9", "name": "r_c60ef4e82c6713e60ffa77e9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c6a4e90578964621f517dab2", "name": "r_c6a4e90578964621f517dab2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c8a20cbe0ff3d174b9a118a8", "name": "r_c8a20cbe0ff3d174b9a118a8", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_c92666787ee930ac6c733309", "name": "r_c92666787ee930ac6c733309", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_c96aea833096afb81994c49e", "name": "r_c96aea833096afb81994c49e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_c9c51a19238fdff2913a514c", "name": "r_c9c51a19238fdff2913a514c", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_cb8dd7e3b99783f7e39fdf33", "name": "r_cb8dd7e3b99783f7e39fdf33", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_cca59117ee61285087d1c245", "name": "r_cca59117ee61285087d1c245", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ccb10a45e59e979e7da5f1ca", "name": "r_ccb10a45e59e979e7da5f1ca", "properties": {"dt": "2026-11-16", "modal": "image", "source": "web_text"}, "type": "record"}
+{"id": "record:r_cd5a9b5d6c43c5a71fc596b6", "name": "r_cd5a9b5d6c43c5a71fc596b6", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_cd6343ed8c599292a05cc387", "name": "r_cd6343ed8c599292a05cc387", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_cd71fae15a15364b47c19d60", "name": "r_cd71fae15a15364b47c19d60", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_cd9f5e4bdc80c39927f3bbd6", "name": "r_cd9f5e4bdc80c39927f3bbd6", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_cdba39c5976f3d5bb365a257", "name": "r_cdba39c5976f3d5bb365a257", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_cf60f08c2e0aaecfc16aa6fe", "name": "r_cf60f08c2e0aaecfc16aa6fe", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_cfe73d1df384fa5312aeaa45", "name": "r_cfe73d1df384fa5312aeaa45", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_d03aff6d7bca4bd63703ebd6", "name": "r_d03aff6d7bca4bd63703ebd6", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_d0a78afb2784209ba1f36784", "name": "r_d0a78afb2784209ba1f36784", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_d0bde9398cc6d7aab82f9627", "name": "r_d0bde9398cc6d7aab82f9627", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_d2ba4a37b13cc1107b04472b", "name": "r_d2ba4a37b13cc1107b04472b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_d340865302da53389f73ddb4", "name": "r_d340865302da53389f73ddb4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_d4be1b7c293e2a0eb5e5b656", "name": "r_d4be1b7c293e2a0eb5e5b656", "properties": {"dt": "2026-11-16", "modal": "audio", "source": "web_text"}, "type": "record"}
+{"id": "record:r_d52395deb7b0b68d8cababf2", "name": "r_d52395deb7b0b68d8cababf2", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_d53afd5e520baea4d0a8b259", "name": "r_d53afd5e520baea4d0a8b259", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_d64804756c7d1fd36dc42051", "name": "r_d64804756c7d1fd36dc42051", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_d6bd0135d86fe3bb959cd633", "name": "r_d6bd0135d86fe3bb959cd633", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_d7d522de370caaa4c7fc7a3d", "name": "r_d7d522de370caaa4c7fc7a3d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_d7f6987fe66cbb4d22554aa5", "name": "r_d7f6987fe66cbb4d22554aa5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_d82585154d56fc88d4b3c219", "name": "r_d82585154d56fc88d4b3c219", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_d8e044a69d06345b2d7511fb", "name": "r_d8e044a69d06345b2d7511fb", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_d97b6aeb58769d1e7841b4b7", "name": "r_d97b6aeb58769d1e7841b4b7", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_dab3dc77ccc7229c87ff947f", "name": "r_dab3dc77ccc7229c87ff947f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_db2f9d890c6c47987ae3cfb5", "name": "r_db2f9d890c6c47987ae3cfb5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_db60e062d6760ef626e1e53f", "name": "r_db60e062d6760ef626e1e53f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_dbea59630f1a26050447a964", "name": "r_dbea59630f1a26050447a964", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_dcabbf21566b3ccf4eaf5430", "name": "r_dcabbf21566b3ccf4eaf5430", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ddb9278570d16630f5e704a6", "name": "r_ddb9278570d16630f5e704a6", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_dea758e6ac5f3589d0f11215", "name": "r_dea758e6ac5f3589d0f11215", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_dedf4bbe5f0cbc491ea00d8a", "name": "r_dedf4bbe5f0cbc491ea00d8a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_df098d3a02fad00d8a222528", "name": "r_df098d3a02fad00d8a222528", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_dfd99dc649f8d52bf62a8503", "name": "r_dfd99dc649f8d52bf62a8503", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e060b43d0680d0727bd90c4f", "name": "r_e060b43d0680d0727bd90c4f", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e13617bd21a00dfd092a499e", "name": "r_e13617bd21a00dfd092a499e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e1752afaa3644667a7621321", "name": "r_e1752afaa3644667a7621321", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e1ab3da35921afd1c6f82e6b", "name": "r_e1ab3da35921afd1c6f82e6b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "wiki"}, "type": "record"}
+{"id": "record:r_e2a0261b94a657c7f340aaa8", "name": "r_e2a0261b94a657c7f340aaa8", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_e2b12e69f9b05e90bced19ab", "name": "r_e2b12e69f9b05e90bced19ab", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e351b3becb4ccae79942ce32", "name": "r_e351b3becb4ccae79942ce32", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e535b97c9240ccd171400ed4", "name": "r_e535b97c9240ccd171400ed4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "wiki"}, "type": "record"}
+{"id": "record:r_e5bd49a59a0187ea2c092990", "name": "r_e5bd49a59a0187ea2c092990", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e62cb9d7ee4a5d06eab1d1d3", "name": "r_e62cb9d7ee4a5d06eab1d1d3", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_e679d70cc35c94ea651770a1", "name": "r_e679d70cc35c94ea651770a1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e67ee12b07434d293bf0fa41", "name": "r_e67ee12b07434d293bf0fa41", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e88c114b56e4fed54e682e98", "name": "r_e88c114b56e4fed54e682e98", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e8a21491367b892ac18e439e", "name": "r_e8a21491367b892ac18e439e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e8b45943388c8a26e29a55b8", "name": "r_e8b45943388c8a26e29a55b8", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e8bdf93aa1775521f70b4860", "name": "r_e8bdf93aa1775521f70b4860", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_e8c9eb12e166231ba80425f9", "name": "r_e8c9eb12e166231ba80425f9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e8e412bca80cc2a445057056", "name": "r_e8e412bca80cc2a445057056", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e965dc1f56993dd552d9087e", "name": "r_e965dc1f56993dd552d9087e", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_e977ff429d74684595ce17ab", "name": "r_e977ff429d74684595ce17ab", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_eb08878437aa7f0afbd616c4", "name": "r_eb08878437aa7f0afbd616c4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_eb8f69a66c1ed4b1f20d4b1d", "name": "r_eb8f69a66c1ed4b1f20d4b1d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ebb36261a4691b76424b33d0", "name": "r_ebb36261a4691b76424b33d0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_ec4b5b4e805208c9165a3ee1", "name": "r_ec4b5b4e805208c9165a3ee1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ec814a759ab706e5308ff19d", "name": "r_ec814a759ab706e5308ff19d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_ed115d0d500ef9ee1ea7d1e9", "name": "r_ed115d0d500ef9ee1ea7d1e9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ed227757c80213db6375fad1", "name": "r_ed227757c80213db6375fad1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ed2f586a3bc3b9abcc7f8c9b", "name": "r_ed2f586a3bc3b9abcc7f8c9b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ed31053fdc89fb0d4a32f4e1", "name": "r_ed31053fdc89fb0d4a32f4e1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ed3e75383d5c56c7330165e4", "name": "r_ed3e75383d5c56c7330165e4", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_ed8019c413f5cb8956d1cafa", "name": "r_ed8019c413f5cb8956d1cafa", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ede665510e11438d703e83d0", "name": "r_ede665510e11438d703e83d0", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_edf343fd8550fa081c49734d", "name": "r_edf343fd8550fa081c49734d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_ee3b17854ab3bfb7abda9751", "name": "r_ee3b17854ab3bfb7abda9751", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_eeec067a567e474ab4cde7fb", "name": "r_eeec067a567e474ab4cde7fb", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_efeeec2c1d72f9b83d2db355", "name": "r_efeeec2c1d72f9b83d2db355", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_f005502056cfa50ff5826952", "name": "r_f005502056cfa50ff5826952", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_f01914da83258e0225156343", "name": "r_f01914da83258e0225156343", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_f0386538db92cea6fdcd5890", "name": "r_f0386538db92cea6fdcd5890", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_f1c0c7b21e20dfa327fb790d", "name": "r_f1c0c7b21e20dfa327fb790d", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_f2f9321659cafdabe1f181b5", "name": "r_f2f9321659cafdabe1f181b5", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_f3b95be7341cb9e49b96cc97", "name": "r_f3b95be7341cb9e49b96cc97", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_f440d7afa8e0d5ed176f17eb", "name": "r_f440d7afa8e0d5ed176f17eb", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_f531ad83d226dbc53f647af7", "name": "r_f531ad83d226dbc53f647af7", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_f5be237cdc3bf436c0bfb473", "name": "r_f5be237cdc3bf436c0bfb473", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_f62a2d0064897db7866361bf", "name": "r_f62a2d0064897db7866361bf", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_f7aa9872f310cb0b62a12adf", "name": "r_f7aa9872f310cb0b62a12adf", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_f89438483f8fcfd737125331", "name": "r_f89438483f8fcfd737125331", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_f8e0a3d91d97b48805149c4c", "name": "r_f8e0a3d91d97b48805149c4c", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_f97e6393a1f09cb4f9d7184b", "name": "r_f97e6393a1f09cb4f9d7184b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fa2ad04344d6565517fab97a", "name": "r_fa2ad04344d6565517fab97a", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_faae60db69a4466e82b29be3", "name": "r_faae60db69a4466e82b29be3", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fb2ff33a52896b22e8ea105b", "name": "r_fb2ff33a52896b22e8ea105b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "books"}, "type": "record"}
+{"id": "record:r_fb30be1c1cdcf29ddf17440b", "name": "r_fb30be1c1cdcf29ddf17440b", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fb40568403a5ad46a6445852", "name": "r_fb40568403a5ad46a6445852", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fbd5b9ad5e0e78a5b2af6938", "name": "r_fbd5b9ad5e0e78a5b2af6938", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fc7337cc6d4bc94d1d41d6eb", "name": "r_fc7337cc6d4bc94d1d41d6eb", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fcff37c5b67bf575f507fec1", "name": "r_fcff37c5b67bf575f507fec1", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fd108a77723eb2bac68d64e9", "name": "r_fd108a77723eb2bac68d64e9", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_fd5c64eda19a026bf233c387", "name": "r_fd5c64eda19a026bf233c387", "properties": {"dt": "2026-11-16", "modal": "text", "source": "science"}, "type": "record"}
+{"id": "record:r_fd5f4ae46aefadef6c92a746", "name": "r_fd5f4ae46aefadef6c92a746", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fdc1c04b89d01c02b8a96943", "name": "r_fdc1c04b89d01c02b8a96943", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fdd5e6e6c2be4a0110622b67", "name": "r_fdd5e6e6c2be4a0110622b67", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fe96a2bd9bafaecef6a16afd", "name": "r_fe96a2bd9bafaecef6a16afd", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
+{"id": "record:r_fed916ce06003f35a2e69668", "name": "r_fed916ce06003f35a2e69668", "properties": {"dt": "2026-11-16", "modal": "text", "source": "web_text"}, "type": "record"}
