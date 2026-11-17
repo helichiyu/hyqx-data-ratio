@@ -1,0 +1,12 @@
+{
+  "inputFingerprint": "sha256:255357b6b3a7b9675bcf5bb9a198962468e3c16311129b782ad296dc5d9beb1e",
+  "labelCount": 66,
+  "mappingStatus": "provisional",
+  "mappingVersion": "0.1.0",
+  "note": "能力映射来自 FGW 12.1 可解释默认映射；Q-05 权威库到位后按版本替换。",
+  "planBytes": 31737,
+  "planFingerprint": "sha256:97a462a33dd56a0e1bf784a1ca5ca754a6c276f048bcdb5c0cfc523b2d007898",
+  "planPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-computation/cab32b6cd497cac3/plan.json",
+  "targetTotal": 100000,
+  "treeVersion": "taxonomy-1013-pending"
+}

@@ -20,6 +20,7 @@ from .utils.common import (
     ensure_under_roots,
     environment_roots,
     fingerprint_file,
+    fingerprint_path,
     load_config,
     locate_records,
     now_iso,
@@ -31,7 +32,7 @@ from .utils.common import (
 
 OPERATOR_ID = "dm-ratio-computation"
 SEMANTIC_CODE = "ratio_weighted_plan_v1"
-OPERATOR_VERSION = "0.1.0"
+OPERATOR_VERSION = "0.1.2"
 DEFAULT_SEED = 42
 
 
@@ -78,12 +79,14 @@ def run(
     write_json(validation_path, validation)
 
     fingerprint, records_bytes = fingerprint_file(records_path)
+    input_fingerprint = fingerprint_path(input_path)
     write_json(
         input_manifest_path,
         {
             "recordsPath": records_path.as_posix(),
             "recordsRoot": records_root.as_posix(),
             "recordsFingerprint": f"sha256:{fingerprint}",
+            "inputFingerprint": f"sha256:{input_fingerprint}",
             "recordsBytes": records_bytes,
             "labelsPath": labels_path.as_posix() if labels_path else None,
             "inventory": summary,
@@ -92,7 +95,15 @@ def run(
     )
 
     failed_checks = [item["id"] for item in validation["checks"] if not item["passed"]]
+    run_id = _run_id(input_fingerprint, resolved, resolved_seed)
     metrics = {
+        "operatorId": OPERATOR_ID,
+        "semanticCode": SEMANTIC_CODE,
+        "operatorVersion": OPERATOR_VERSION,
+        "modelVersion": None,
+        "runId": run_id,
+        "paramsHash": f"sha256:{params_hash(resolved)}",
+        "seed": resolved_seed,
         "inventory": summary,
         "labelCount": len(rows),
         "totalEffective": normalization["total"],
@@ -119,8 +130,8 @@ def run(
     artifacts = _collect_artifacts(output, exclude={"manifest.json", "summary.json", "result.json", "error.log"})
     output_bytes = sum(item["bytes"] for item in artifacts)
     manifest = {
-        "runId": _run_id(fingerprint, resolved, resolved_seed),
-        "inputFingerprint": f"sha256:{fingerprint}",
+        "runId": run_id,
+        "inputFingerprint": f"sha256:{input_fingerprint}",
         "operatorId": OPERATOR_ID,
         "semanticCode": SEMANTIC_CODE,
         "operatorVersion": OPERATOR_VERSION,

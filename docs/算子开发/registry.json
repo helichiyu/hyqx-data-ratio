@@ -274,9 +274,9 @@
       ],
       "status": "待评审",
       "statusUpdatedAt": "2026-11-17",
-      "evidencePath": "operator/dm-ratio-computation/output/evidence/f979e048a3250253/",
+      "evidencePath": "operator/dm-ratio-computation/output/evidence/cab32b6cd497cac3/",
       "publishId": null,
-      "note": "S4 完成：66 标签；占比合计 1.0（误差 0）；核心占比 0.5608；一级 0.7333/二级 0.3772 未达标（小批次）；库存缺口 99722；权重默认 1.0 待 Q-04。"
+      "note": "S4 完成（0.1.2）：66 标签；占比合计 1.0（误差 0）；核心占比 0.5608；一级 0.7333/二级 0.3772 未达标（小批次）；库存缺口 99722；每标签×来源 bySource 供 OP-16；权重默认 1.0 待 Q-04。"
     },
     {
       "opId": "OP-16",
@@ -289,11 +289,11 @@
       "dependsOn": [
         "OP-15"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-ratio-analysis/output/evidence/d3cc21958ec443d6/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S4 P1 完成（0.1.2）：66 标签；六维能力合计 1；均衡目标达成度 0.7414→0.7629；约束 3/3；补数缺口 99722（sourceTotals 合计一致）；映射库/目标模板待 Q-05/H-12。"
     },
     {
       "opId": "OP-17",

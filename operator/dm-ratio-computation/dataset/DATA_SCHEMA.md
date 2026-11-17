@@ -15,8 +15,12 @@
 
 ```json
 {"label": "新闻与资讯/科技新闻/产品发布与行业动态", "level1": "新闻与资讯", "level2": "新闻与资讯/科技新闻",
- "count": 10, "labelWeight": 1.0, "effectiveCount": 10.0, "share": 0.6667, "sharePercent": 66.67, "feedCount": 66667}
+ "count": 10, "labelWeight": 1.0, "effectiveCount": 10.0, "share": 0.6667, "sharePercent": 66.67, "feedCount": 66667,
+ "bySource": {"web_text": {"count": 8, "effectiveCount": 8.0}, "books": {"count": 2, "effectiveCount": 2.0}}}
 ```
+
+`bySource` 为 0.1.1 追加字段（只增不改）：每个来源的条数与加权后有效条数，供 OP-16 按
+FGW 12.1「六类来源→能力」映射计算能力分与补数来源。
 
 `validation.json`（校验单）每项结构：
 

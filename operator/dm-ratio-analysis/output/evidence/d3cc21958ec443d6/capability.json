@@ -1,0 +1,1016 @@
+{
+  "achievement": {
+    "current": {
+      "dimensions": {
+        "coding": {
+          "actual": 0.0359724674,
+          "gap": 0.1306275326,
+          "ratio": 0.215921,
+          "target": 0.1666
+        },
+        "dialogue": {
+          "actual": 0.0764369277,
+          "gap": 0.0902630723,
+          "ratio": 0.45853,
+          "target": 0.1667
+        },
+        "expertise": {
+          "actual": 0.1289679382,
+          "gap": 0.0377320618,
+          "ratio": 0.773653,
+          "target": 0.1667
+        },
+        "knowledge": {
+          "actual": 0.2447701946,
+          "gap": -0.0780701946,
+          "ratio": 1.468328,
+          "target": 0.1667
+        },
+        "language": {
+          "actual": 0.2600657436,
+          "gap": -0.0933657436,
+          "ratio": 1.560082,
+          "target": 0.1667
+        },
+        "reasoning": {
+          "actual": 0.2537867284,
+          "gap": -0.0871867284,
+          "ratio": 1.52333,
+          "target": 0.1666
+        }
+      },
+      "l1Distance": 0.5172453333,
+      "overall": 0.7413773333
+    },
+    "recommended": {
+      "dimensions": {
+        "coding": {
+          "actual": 0.0305821674,
+          "gap": 0.1360178326,
+          "ratio": 0.183566,
+          "target": 0.1666
+        },
+        "dialogue": {
+          "actual": 0.0656563277,
+          "gap": 0.1010436723,
+          "ratio": 0.393859,
+          "target": 0.1667
+        },
+        "expertise": {
+          "actual": 0.1667000382,
+          "gap": -3.82e-08,
+          "ratio": 1.0,
+          "target": 0.1667
+        },
+        "knowledge": {
+          "actual": 0.2393798946,
+          "gap": -0.0726798946,
+          "ratio": 1.435992,
+          "target": 0.1667
+        },
+        "language": {
+          "actual": 0.2385045436,
+          "gap": -0.0718045436,
+          "ratio": 1.430741,
+          "target": 0.1667
+        },
+        "reasoning": {
+          "actual": 0.2591770284,
+          "gap": -0.0925770284,
+          "ratio": 1.555684,
+          "target": 0.1666
+        }
+      },
+      "l1Distance": 0.4741230098,
+      "overall": 0.7629384951
+    }
+  },
+  "bias": {
+    "definition": "基尼/HHI/归一化熵对来源（固定六类，未知来源单列）与内容树一级领域分布计算",
+    "domain": {
+      "biasLevel": "high",
+      "categoryCount": 30,
+      "gini": 0.7195333333,
+      "hhi": 0.1199126,
+      "normalizedEntropy": 0.7086224266,
+      "thresholds": {
+        "entropyMedium": 0.6,
+        "giniHigh": 0.6,
+        "giniMedium": 0.4,
+        "hhiHigh": 0.5,
+        "hhiMedium": 0.35
+      },
+      "topShare": 0.1904
+    },
+    "source": {
+      "biasLevel": "high",
+      "gini": 0.7014910412,
+      "hhi": 0.5587963491,
+      "normalizedEntropy": 0.4591254077,
+      "shares": {
+        "books": 0.0647034965,
+        "code": 0.0,
+        "dialogue": 0.0,
+        "science": 0.1907107925,
+        "web_text": 0.7194493473,
+        "wiki": 0.0251363636
+      },
+      "thresholds": {
+        "entropyMedium": 0.6,
+        "giniHigh": 0.6,
+        "giniMedium": 0.4,
+        "hhiHigh": 0.5,
+        "hhiMedium": 0.35
+      },
+      "topShare": 0.7194493474,
+      "unknownShare": 0.0
+    }
+  },
+  "current": {
+    "contributions": [
+      {
+        "coding": 0.00054,
+        "dialogue": 0.00108,
+        "expertise": 0.00198,
+        "knowledge": 0.00342,
+        "label": "三维与空间/三维模型/三维建模",
+        "language": 0.0036,
+        "reasoning": 0.00378
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "三维与空间/数字孪生/元宇宙",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "三维与空间/数字孪生/空间场景",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "专业与行业文档/业务系统记录/业务报表与操作日志",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "专业与行业文档/业务系统记录/流程记录",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "专业与行业文档/医疗文档/病历与诊断报告",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00162,
+        "knowledge": 0.00162,
+        "label": "专业与行业文档/学术论文与科研资料/学术论文",
+        "language": 0.00144,
+        "reasoning": 0.00198
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.0117,
+        "knowledge": 0.00666,
+        "label": "专业与行业文档/学术论文与科研资料/实验报告",
+        "language": 0.00396,
+        "reasoning": 0.00954
+      },
+      {
+        "coding": 0.00072,
+        "dialogue": 0.00144,
+        "expertise": 0.00072,
+        "knowledge": 0.0036,
+        "label": "专业与行业文档/法律文书/合同与协议",
+        "language": 0.00432,
+        "reasoning": 0.0036
+      },
+      {
+        "coding": 0.0,
+        "dialogue": 0.0,
+        "expertise": 0.00144,
+        "knowledge": 0.00072,
+        "label": "专业影像/医学影像/MRI与超声",
+        "language": 0.00036,
+        "reasoning": 0.00108
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "专业影像/科研实验影像/显微图像",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.0,
+        "dialogue": 0.0,
+        "expertise": 0.00288,
+        "knowledge": 0.00144,
+        "label": "专业影像/科研实验影像/材料与实验记录图",
+        "language": 0.00072,
+        "reasoning": 0.00216
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "专业过程视频/自动驾驶与车载/车载前视与环视视频",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "专业过程视频/自动驾驶与车载/道路事件与驾驶行为",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "人文与历史/历史/断代史",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "人文与历史/哲学/伦理学",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "人文与历史/哲学/哲学思想",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "人文与历史/宗教/宗教文化",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "人物与人体/人像与表情/表情与面部特征",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "代码与技术文档/技术文档与手册/API文档",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00162,
+        "knowledge": 0.00162,
+        "label": "代码与技术文档/技术文档与手册/数据库文档",
+        "language": 0.00144,
+        "reasoning": 0.00198
+      },
+      {
+        "coding": 0.00126,
+        "dialogue": 0.00252,
+        "expertise": 0.00558,
+        "knowledge": 0.00846,
+        "label": "代码与技术文档/程序代码/各语言源代码与脚本",
+        "language": 0.00864,
+        "reasoning": 0.00954
+      },
+      {
+        "coding": 0.0,
+        "dialogue": 0.0,
+        "expertise": 0.00144,
+        "knowledge": 0.00072,
+        "label": "代码与技术文档/配置与标记语言/标记语言文档",
+        "language": 0.00036,
+        "reasoning": 0.00108
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "图表与界面图像/界面截图/表单页",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.00054,
+        "dialogue": 0.00108,
+        "expertise": 0.00054,
+        "knowledge": 0.0027,
+        "label": "对话与交互/会议讨论/头脑风暴记录",
+        "language": 0.00324,
+        "reasoning": 0.0027
+      },
+      {
+        "coding": 0.0050365,
+        "dialogue": 0.010073,
+        "expertise": 0.0223045,
+        "knowledge": 0.0338165,
+        "label": "对话与交互/指令与训练/RLHF数据",
+        "language": 0.034536,
+        "reasoning": 0.0381335
+      },
+      {
+        "coding": 0.0009,
+        "dialogue": 0.0018,
+        "expertise": 0.0009,
+        "knowledge": 0.0045,
+        "label": "对话与交互/指令与训练/人机训练对话",
+        "language": 0.0054,
+        "reasoning": 0.0045
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "对话与交互/指令与训练/指令数据",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "影视与娱乐/短视频内容/探店与带货",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.0,
+        "dialogue": 0.0009,
+        "expertise": 0.0036,
+        "knowledge": 0.0036,
+        "label": "教育与培训/儿童与亲子/儿童读物",
+        "language": 0.0063,
+        "reasoning": 0.0036
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "教育与培训/实验与操作演示/物理与化学实验",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00054,
+        "dialogue": 0.00108,
+        "expertise": 0.00054,
+        "knowledge": 0.0027,
+        "label": "教育与培训/教材与课程内容/教材与教案",
+        "language": 0.00324,
+        "reasoning": 0.0027
+      },
+      {
+        "coding": 0.0,
+        "dialogue": 0.0,
+        "expertise": 0.00144,
+        "knowledge": 0.00072,
+        "label": "教育与培训/教材与课程内容/课程讲义与在线课程",
+        "language": 0.00036,
+        "reasoning": 0.00108
+      },
+      {
+        "coding": 0.0009,
+        "dialogue": 0.0018,
+        "expertise": 0.0009,
+        "knowledge": 0.0045,
+        "label": "教育与培训/试题与测评/试题与答案解析",
+        "language": 0.0054,
+        "reasoning": 0.0045
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "文学与创作内容/韵文与剧本/诗歌",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "新闻与资讯/科技新闻/产品发布与行业动态",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00468,
+        "knowledge": 0.00396,
+        "label": "日志与遥测/传感器与设备遥测/传感器数据与IoT数据",
+        "language": 0.00324,
+        "reasoning": 0.00504
+      },
+      {
+        "coding": 0.002875,
+        "dialogue": 0.00575,
+        "expertise": 0.002875,
+        "knowledge": 0.014375,
+        "label": "日志与遥测/告警与事件记录/告警记录",
+        "language": 0.01725,
+        "reasoning": 0.014375
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "日志与遥测/告警与事件记录/异常事件记录",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "知识与参考/产品说明与操作指南/说明书与帮助文档",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.001975,
+        "dialogue": 0.00395,
+        "expertise": 0.001975,
+        "knowledge": 0.009875,
+        "label": "知识与参考/百科词条/百科条目",
+        "language": 0.01185,
+        "reasoning": 0.009875
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "知识与参考/百科词条/知识库条目",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.001077272727,
+        "dialogue": 0.002693181818,
+        "expertise": 0.006104545455,
+        "knowledge": 0.008977272727,
+        "label": "知识与参考/科普与专著/学术专著",
+        "language": 0.010952272727,
+        "reasoning": 0.009695454545
+      },
+      {
+        "coding": 0.000538846154,
+        "dialogue": 0.002694230769,
+        "expertise": 0.008441923077,
+        "knowledge": 0.009878846154,
+        "label": "知识与参考/科普与专著/工具书与年鉴",
+        "language": 0.014908076923,
+        "reasoning": 0.010238076923
+      },
+      {
+        "coding": 0.0,
+        "dialogue": 0.00018,
+        "expertise": 0.0036,
+        "knowledge": 0.00216,
+        "label": "知识与参考/科普与专著/科普读物",
+        "language": 0.00198,
+        "reasoning": 0.00288
+      },
+      {
+        "coding": 0.000718181818,
+        "dialogue": 0.002693181818,
+        "expertise": 0.004488636364,
+        "knowledge": 0.017415909091,
+        "label": "知识与参考/网页与博客/网页正文",
+        "language": 0.006822727273,
+        "reasoning": 0.007361363636
+      },
+      {
+        "coding": 0.0,
+        "dialogue": 0.0,
+        "expertise": 0.00144,
+        "knowledge": 0.00072,
+        "label": "社交与社区内容/论坛与社区帖子/问答社区帖子",
+        "language": 0.00036,
+        "reasoning": 0.00108
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "社会与群体/群体与活动/群体活动与社交场景",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "社会与群体/群体与活动/职业形象",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "结构化数据/交易与行为记录/交易记录与订单数据",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.005035757576,
+        "dialogue": 0.010071515152,
+        "expertise": 0.01222969697,
+        "knowledge": 0.028775757576,
+        "label": "结构化数据/交易与行为记录/用户行为日志与点击流",
+        "language": 0.032013030303,
+        "reasoning": 0.030574242424
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "结构化数据/指标口径与数据字典/字段说明",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00054,
+        "dialogue": 0.00108,
+        "expertise": 0.00054,
+        "knowledge": 0.0027,
+        "label": "结构化数据/指标口径与数据字典/指标定义与数据字典",
+        "language": 0.00324,
+        "reasoning": 0.0027
+      },
+      {
+        "coding": 0.00108,
+        "dialogue": 0.00216,
+        "expertise": 0.00108,
+        "knowledge": 0.0054,
+        "label": "结构化数据/表格与数据库记录/CSV表格与数据库记录",
+        "language": 0.00648,
+        "reasoning": 0.0054
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "结构化数据/表格与数据库记录/统计表",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "自然与生态/动植物/植物与花卉",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00306,
+        "knowledge": 0.00234,
+        "label": "自然与生态/天文地理/卫星自然影像",
+        "language": 0.0018,
+        "reasoning": 0.00306
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "自然与生态/天文地理/地图与地貌影像",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.0,
+        "dialogue": 0.0,
+        "expertise": 0.00144,
+        "knowledge": 0.00072,
+        "label": "艺术与设计/合成与生成图像/数据增强与仿真图",
+        "language": 0.00036,
+        "reasoning": 0.00108
+      },
+      {
+        "coding": 0.0,
+        "dialogue": 0.0,
+        "expertise": 0.00144,
+        "knowledge": 0.00072,
+        "label": "艺术与设计/合成与生成图像/风格迁移图",
+        "language": 0.00036,
+        "reasoning": 0.00108
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "行为与事件/事件检测/流程异常",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      },
+      {
+        "coding": 0.0009,
+        "dialogue": 0.0018,
+        "expertise": 0.00378,
+        "knowledge": 0.00594,
+        "label": "行为与事件/事件检测/设备异常与自然灾害",
+        "language": 0.00612,
+        "reasoning": 0.00666
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "行为与事件/人体动作/挥手与跌倒",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.001615909091,
+        "dialogue": 0.003231818182,
+        "expertise": 0.004488636364,
+        "knowledge": 0.009515909091,
+        "label": "行为与事件/人体动作/搬运与交互动作",
+        "language": 0.010413636364,
+        "reasoning": 0.010234090909
+      },
+      {
+        "coding": 0.00036,
+        "dialogue": 0.00072,
+        "expertise": 0.00036,
+        "knowledge": 0.0018,
+        "label": "语音与人声/人声属性/年龄与性别属性",
+        "language": 0.00216,
+        "reasoning": 0.0018
+      },
+      {
+        "coding": 0.00018,
+        "dialogue": 0.00036,
+        "expertise": 0.00018,
+        "knowledge": 0.0009,
+        "label": "语音与人声/人声属性/情绪属性",
+        "language": 0.00108,
+        "reasoning": 0.0009
+      }
+    ],
+    "score10": {
+      "coding": 0.3597,
+      "dialogue": 0.7644,
+      "expertise": 1.2897,
+      "knowledge": 2.4477,
+      "language": 2.6007,
+      "reasoning": 2.5379
+    },
+    "vector": {
+      "coding": 0.0359724674,
+      "dialogue": 0.0764369277,
+      "expertise": 0.1289679382,
+      "knowledge": 0.2447701946,
+      "language": 0.2600657436,
+      "reasoning": 0.2537867284
+    }
+  },
+  "definition": "能力分 = Σ_label 占比 × 标签能力向量；贡献度逐标签可加总回能力分；能力向量合计 1",
+  "dimensions": [
+    {
+      "key": "language",
+      "nameZh": "语言理解与生成",
+      "source": "FGW 12.1 一/二：网络文本提供广泛语言与多种文本风格；书籍提供正式语言风格"
+    },
+    {
+      "key": "knowledge",
+      "nameZh": "知识广度",
+      "source": "FGW 12.1 一/五：网络文本覆盖广泛主题；维基百科提供百科全书式事实知识"
+    },
+    {
+      "key": "reasoning",
+      "nameZh": "推理能力",
+      "source": "FGW 12.1 一/二/四：网络文本的常识推理、书籍的长距离依赖、科学文献的复杂推理"
+    },
+    {
+      "key": "expertise",
+      "nameZh": "专业深度",
+      "source": "FGW 12.1 二/四：书籍与科学文献提供技术知识与正式专业写作"
+    },
+    {
+      "key": "coding",
+      "nameZh": "编码能力",
+      "source": "FGW 12.1 三：代码库直接影响编码辅助能力"
+    },
+    {
+      "key": "dialogue",
+      "nameZh": "对话交互",
+      "source": "FGW 12.1 一/六：网络文本支撑通用会话；对话数据提供会话流程与轮流发言"
+    }
+  ],
+  "domain": {
+    "level1Coverage": 0.733333,
+    "level1Shares": {
+      "三维与空间": 0.0216,
+      "专业与行业文档": 0.072,
+      "专业影像": 0.0144,
+      "专业过程视频": 0.0072,
+      "人文与历史": 0.0144,
+      "人物与人体": 0.0072,
+      "代码与技术文档": 0.054,
+      "图表与界面图像": 0.0072,
+      "对话与交互": 0.1763,
+      "影视与娱乐": 0.0036,
+      "教育与培训": 0.054,
+      "文学与创作内容": 0.0036,
+      "新闻与资讯": 0.0036,
+      "日志与遥测": 0.0827,
+      "知识与参考": 0.1904,
+      "社交与社区内容": 0.0036,
+      "社会与群体": 0.0072,
+      "结构化数据": 0.1655,
+      "自然与生态": 0.018,
+      "艺术与设计": 0.0072,
+      "行为与事件": 0.0755,
+      "语音与人声": 0.0108
+    },
+    "level2Coverage": 0.377193,
+    "level2Shares": {
+      "三维与空间/三维模型": 0.0144,
+      "三维与空间/数字孪生": 0.0072,
+      "专业与行业文档/业务系统记录": 0.0108,
+      "专业与行业文档/医疗文档": 0.0072,
+      "专业与行业文档/学术论文与科研资料": 0.0396,
+      "专业与行业文档/法律文书": 0.0144,
+      "专业影像/医学影像": 0.0036,
+      "专业影像/科研实验影像": 0.0108,
+      "专业过程视频/自动驾驶与车载": 0.0072,
+      "人文与历史/历史": 0.0036,
+      "人文与历史/哲学": 0.0072,
+      "人文与历史/宗教": 0.0036,
+      "人物与人体/人像与表情": 0.0072,
+      "代码与技术文档/技术文档与手册": 0.0144,
+      "代码与技术文档/程序代码": 0.036,
+      "代码与技术文档/配置与标记语言": 0.0036,
+      "图表与界面图像/界面截图": 0.0072,
+      "对话与交互/会议讨论": 0.0108,
+      "对话与交互/指令与训练": 0.1655,
+      "影视与娱乐/短视频内容": 0.0036,
+      "教育与培训/儿童与亲子": 0.018,
+      "教育与培训/实验与操作演示": 0.0036,
+      "教育与培训/教材与课程内容": 0.0144,
+      "教育与培训/试题与测评": 0.018,
+      "文学与创作内容/韵文与剧本": 0.0036,
+      "新闻与资讯/科技新闻": 0.0036,
+      "日志与遥测/传感器与设备遥测": 0.018,
+      "日志与遥测/告警与事件记录": 0.0647,
+      "知识与参考/产品说明与操作指南": 0.0072,
+      "知识与参考/百科词条": 0.0467,
+      "知识与参考/科普与专著": 0.097,
+      "知识与参考/网页与博客": 0.0395,
+      "社交与社区内容/论坛与社区帖子": 0.0036,
+      "社会与群体/群体与活动": 0.0072,
+      "结构化数据/交易与行为记录": 0.1259,
+      "结构化数据/指标口径与数据字典": 0.0144,
+      "结构化数据/表格与数据库记录": 0.0252,
+      "自然与生态/动植物": 0.0036,
+      "自然与生态/天文地理": 0.0144,
+      "艺术与设计/合成与生成图像": 0.0072,
+      "行为与事件/事件检测": 0.0288,
+      "行为与事件/人体动作": 0.0467,
+      "语音与人声/人声属性": 0.0108
+    },
+    "treeLevel1Count": 30,
+    "treeLevel2Count": 114,
+    "uncoveredLevel1": [
+      "专业音频",
+      "农业与水利",
+      "场所与设施",
+      "政务与军事",
+      "文档与证照图像",
+      "物品与器物",
+      "生活与纪实",
+      "音乐与环境音"
+    ],
+    "uncoveredLevel2": [
+      "三维与空间/VR/AR",
+      "三维与空间/点云扫描",
+      "专业与行业文档/政策法规与标准规范",
+      "专业与行业文档/金融研报",
+      "专业影像/安防监控影像",
+      "专业影像/遥感与地理影像",
+      "专业过程视频/医疗手术与检查",
+      "专业过程视频/工业生产与质检",
+      "专业过程视频/航拍与无人机",
+      "专业音频/医疗生理音",
+      "专业音频/工业设备音",
+      "专业音频/通信与录音",
+      "人文与历史/人文",
+      "人物与人体/姿态与动作",
+      "代码与技术文档/硬件资料",
+      "农业与水利/农业种植",
+      "农业与水利/林业",
+      "农业与水利/水利水文",
+      "农业与水利/渔业水产",
+      "农业与水利/畜牧养殖",
+      "图表与界面图像/图表与可视化",
+      "场所与设施/交通与城市",
+      "场所与设施/建筑与场所",
+      "对话与交互/客服咨询",
+      "对话与交互/日常闲聊",
+      "对话与交互/职场沟通",
+      "对话与交互/访谈与演讲",
+      "影视与娱乐/游戏与虚拟场景",
+      "影视与娱乐/电影电视剧与动漫",
+      "影视与娱乐/综艺与直播",
+      "政务与军事/公共管理",
+      "政务与军事/军事国防",
+      "政务与军事/政务公文",
+      "教育与培训/讲座与培训",
+      "文学与创作内容/叙事文学",
+      "文学与创作内容/应用写作与文案",
+      "文档与证照图像/扫描件与文档页面",
+      "文档与证照图像/票据与证照",
+      "新闻与资讯/体育与娱乐新闻",
+      "新闻与资讯/国际新闻",
+      "新闻与资讯/时政新闻",
+      "新闻与资讯/社会民生",
+      "新闻与资讯/财经新闻",
+      "日志与遥测/系统日志",
+      "日志与遥测/网络日志",
+      "物品与器物/工业与设备",
+      "物品与器物/日用品与商品",
+      "生活与纪实/Vlog与日常生活",
+      "生活与纪实/公共场景",
+      "生活与纪实/工作生产场景",
+      "生活与纪实/纪录片",
+      "知识与参考/FAQ与问答",
+      "社交与社区内容/用户评价与反馈",
+      "社交与社区内容/短视频文案",
+      "社交与社区内容/社交媒体短文",
+      "社会与群体/人群与密度",
+      "结构化数据/统计报表",
+      "自然与生态/自然景观",
+      "自然与生态/自然灾害",
+      "艺术与设计/艺术作品",
+      "艺术与设计/设计素材",
+      "行为与事件/交通出行行为",
+      "行为与事件/体育运动",
+      "行为与事件/安防监控行为",
+      "语音与人声/语言与方言",
+      "语音与人声/语音场景",
+      "语音与人声/语音质量状态",
+      "音乐与环境音/事件音",
+      "音乐与环境音/环境音",
+      "音乐与环境音/音乐作品",
+      "音乐与环境音/音效与合成音"
+    ]
+  },
+  "mapping": {
+    "note": "FGW 12.1 六类来源→能力映射；Q-05 权威映射库未提供，按可解释默认映射执行并标 provisional",
+    "sourceWeights": {
+      "books": {
+        "coding": 0.0,
+        "dialogue": 0.05,
+        "expertise": 0.2,
+        "knowledge": 0.2,
+        "language": 0.35,
+        "reasoning": 0.2
+      },
+      "code": {
+        "coding": 0.55,
+        "dialogue": 0.0,
+        "expertise": 0.1,
+        "knowledge": 0.1,
+        "language": 0.05,
+        "reasoning": 0.2
+      },
+      "dialogue": {
+        "coding": 0.0,
+        "dialogue": 0.6,
+        "expertise": 0.05,
+        "knowledge": 0.05,
+        "language": 0.2,
+        "reasoning": 0.1
+      },
+      "science": {
+        "coding": 0.0,
+        "dialogue": 0.0,
+        "expertise": 0.4,
+        "knowledge": 0.2,
+        "language": 0.1,
+        "reasoning": 0.3
+      },
+      "unknown": {
+        "coding": 0.1666,
+        "dialogue": 0.1667,
+        "expertise": 0.1667,
+        "knowledge": 0.1667,
+        "language": 0.1667,
+        "reasoning": 0.1666
+      },
+      "web_text": {
+        "coding": 0.05,
+        "dialogue": 0.1,
+        "expertise": 0.05,
+        "knowledge": 0.25,
+        "language": 0.3,
+        "reasoning": 0.25
+      },
+      "wiki": {
+        "coding": 0.0,
+        "dialogue": 0.05,
+        "expertise": 0.15,
+        "knowledge": 0.55,
+        "language": 0.1,
+        "reasoning": 0.15
+      }
+    },
+    "status": "provisional",
+    "statusNote": "S4 P1 联调初值：能力维度、来源→能力映射、目标能力模板、约束与偏见阈值待业务确认（Q-04/Q-05/H-03）；权威映射库到位后按版本替换，不改写历史结果。",
+    "version": "0.1.0"
+  },
+  "recommended": {
+    "score10": {
+      "coding": 0.3058,
+      "dialogue": 0.6566,
+      "expertise": 1.667,
+      "knowledge": 2.3938,
+      "language": 2.385,
+      "reasoning": 2.5918
+    },
+    "vector": {
+      "coding": 0.0305821674,
+      "dialogue": 0.0656563277,
+      "expertise": 0.1667000382,
+      "knowledge": 0.2393798946,
+      "language": 0.2385045436,
+      "reasoning": 0.2591770284
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "achievement": {
+    "currentOverall": 0.7413773333,
+    "gain": 0.0215611618,
+    "recommendedOverall": 0.7629384951
+  },
+  "benchmark": {
+    "achievements": {
+      "balanced": {
+        "balanced": 0.7629384951,
+        "general": 0.8341229333,
+        "professional": 0.7229385333
+      },
+      "current": {
+        "balanced": 0.7413773333,
+        "general": 0.8724751387,
+        "professional": 0.7013773333
+      },
+      "general": {
+        "balanced": 0.7171310244,
+        "general": 0.9171310032,
+        "professional": 0.6657054644
+      },
+      "professional": {
+        "balanced": 0.708927686,
+        "general": 0.6834080485,
+        "professional": 0.7982959758
+      }
+    },
+    "orientation": "balanced",
+    "recommendedScenario": "balanced"
+  },
+  "bias": {
+    "domain": {
+      "biasLevel": "high",
+      "categoryCount": 30,
+      "gini": 0.7195333333,
+      "hhi": 0.1199126,
+      "normalizedEntropy": 0.7086224266,
+      "topShare": 0.1904
+    },
+    "source": {
+      "biasLevel": "high",
+      "gini": 0.7014910412,
+      "hhi": 0.5587963491,
+      "normalizedEntropy": 0.4591254077,
+      "topShare": 0.7194493474,
+      "unknownShare": 0.0
+    }
+  },
+  "capability": {
+    "current": {
+      "coding": 0.0359724674,
+      "dialogue": 0.0764369277,
+      "expertise": 0.1289679382,
+      "knowledge": 0.2447701946,
+      "language": 0.2600657436,
+      "reasoning": 0.2537867284
+    },
+    "currentScore10": {
+      "coding": 0.3597,
+      "dialogue": 0.7644,
+      "expertise": 1.2897,
+      "knowledge": 2.4477,
+      "language": 2.6007,
+      "reasoning": 2.5379
+    },
+    "recommended": {
+      "coding": 0.0305821674,
+      "dialogue": 0.0656563277,
+      "expertise": 0.1667000382,
+      "knowledge": 0.2393798946,
+      "language": 0.2385045436,
+      "reasoning": 0.2591770284
+    },
+    "recommendedScore10": {
+      "coding": 0.3058,
+      "dialogue": 0.6566,
+      "expertise": 1.667,
+      "knowledge": 2.3938,
+      "language": 2.385,
+      "reasoning": 2.5918
+    }
+  },
+  "deterministic": true,
+  "domain": {
+    "level1Coverage": 0.733333,
+    "level1Shares": {
+      "三维与空间": 0.0216,
+      "专业与行业文档": 0.072,
+      "专业影像": 0.0144,
+      "专业过程视频": 0.0072,
+      "人文与历史": 0.0144,
+      "人物与人体": 0.0072,
+      "代码与技术文档": 0.054,
+      "图表与界面图像": 0.0072,
+      "对话与交互": 0.1763,
+      "影视与娱乐": 0.0036,
+      "教育与培训": 0.054,
+      "文学与创作内容": 0.0036,
+      "新闻与资讯": 0.0036,
+      "日志与遥测": 0.0827,
+      "知识与参考": 0.1904,
+      "社交与社区内容": 0.0036,
+      "社会与群体": 0.0072,
+      "结构化数据": 0.1655,
+      "自然与生态": 0.018,
+      "艺术与设计": 0.0072,
+      "行为与事件": 0.0755,
+      "语音与人声": 0.0108
+    },
+    "level2Coverage": 0.377193,
+    "uncoveredLevel1Count": 8,
+    "uncoveredLevel2Count": 71
+  },
+  "generatedAt": "2026-11-17T12:10:29+08:00",
+  "mappingStatus": "provisional",
+  "mappingVersion": "0.1.0",
+  "modelVersion": null,
+  "operatorId": "dm-ratio-analysis",
+  "operatorVersion": "0.1.2",
+  "paramsHash": "sha256:75e6622bf553edb56b4c62f36c9b20ecb34c8961a940311f40670dff31268c58",
+  "provisional": true,
+  "recommendation": {
+    "changeClipped": false,
+    "changeL1": 0.107806,
+    "checks": [
+      {
+        "actual": 1.0,
+        "id": "sum_100",
+        "passed": true,
+        "source": "任务书 S4 门禁：占比合计 100%",
+        "threshold": 1.0,
+        "tolerance": 1e-09
+      },
+      {
+        "actual": {
+          "max": 0.1439,
+          "min": 0.0001
+        },
+        "id": "label_bounds",
+        "passed": true,
+        "source": "configs/analysis.json constraints.minLabelShare/maxLabelShare",
+        "threshold": {
+          "max": 1.0,
+          "min": 0.0001
+        }
+      },
+      {
+        "actual": 0.107806,
+        "id": "change_limit",
+        "passed": true,
+        "source": "configs/analysis.json constraints.maxTotalChangeL1（联调初值）",
+        "threshold": 0.5
+      }
+    ],
+    "constraintsPassed": true,
+    "converged": true,
+    "iterations": 19,
+    "objectiveFinal": 0.039504551083,
+    "objectiveInitial": 0.04309933578,
+    "orientation": "balanced",
+    "reverted": false,
+    "targetSource": "config:profile:balanced"
+  },
+  "runId": "d3cc21958ec443d6",
+  "runtimeSec": 0.115,
+  "seed": 42,
+  "semanticCode": "ratio_analysis_recommend_v1",
+  "topUp": {
+    "gapLabelCount": 66,
+    "predictedOverall": 0.8105413618,
+    "sourceTotals": {
+      "books": 0,
+      "code": 50573,
+      "dialogue": 37482,
+      "science": 0,
+      "unknown": 0,
+      "web_text": 11667,
+      "wiki": 0
+    },
+    "totalGap": 99722,
+    "uncoveredLevel1Count": 8,
+    "uncoveredLevel2Count": 71
+  },
+  "treeVersion": "taxonomy-1013-pending"
+}

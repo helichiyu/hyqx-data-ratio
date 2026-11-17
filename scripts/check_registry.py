@@ -112,6 +112,19 @@ def main() -> int:
             problems.append(f"{op_id}.publishId 应为 null")
         if registry_row.get("status") == "已验收":
             problems.append(f"{op_id} 不应由脚本标记已验收")
+        map_status = map_row.get("status")
+        registry_status = registry_row.get("status")
+        if map_status == "scaffold" and registry_status not in {"未开始", "阻塞"}:
+            problems.append(f"{op_id} map=scaffold 但 registry={registry_status!r}")
+        if map_status == "implemented" and registry_status in {"未开始", "阻塞"}:
+            problems.append(f"{op_id} map=implemented 但 registry={registry_status!r}")
+        evidence_path = registry_row.get("evidencePath")
+        if evidence_path:
+            evidence_dir = ROOT / evidence_path.rstrip("/")
+            if not evidence_dir.is_dir():
+                problems.append(f"{op_id}.evidencePath 不存在：{evidence_path}")
+        elif registry_status not in {"未开始", "阻塞"}:
+            problems.append(f"{op_id} status={registry_status!r} 但 evidencePath 为空")
 
     known = set(map_by_op)
     for op_id, map_row in map_by_op.items():

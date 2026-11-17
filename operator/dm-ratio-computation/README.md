@@ -2,7 +2,7 @@
 
 - 语义编码：`ratio_weighted_plan_v1`
 - 阶段/优先级：S4 / P0
-- 版本：`0.1.0`
+- 版本：`0.1.2`（0.1.1 追加 `bySource`；0.1.2 让 manifest.runId 与 HTTP 运行目录名同口径）
 - 模型：无
 
 ## 1. 用途与边界
@@ -27,7 +27,8 @@
 
 - 全部系数默认 1.0（Q-04 未提供），结果标 `provisional`；
 - 归一化：最大余数法，单位 `10^-4`（0.01%），长尾至少 1 个单位，不置零；
-- 校验单：`sum_100`、`core_label_coverage`、`level1_coverage`、`level2_coverage`、`min_sample`、`inventory_gap`，每项带实测值、阈值与来源。
+- 校验单：`sum_100`、`core_label_coverage`、`level1_coverage`、`level2_coverage`、`min_sample`、`inventory_gap`，每项带实测值、阈值与来源；
+- 0.1.1 起每行附带 `bySource`（`{来源: {count, effectiveCount}}`），供 OP-16 能力映射与补数来源推荐使用。
 
 ## 3. 接口与参数
 
@@ -52,5 +53,5 @@
 
 ## 6. 版本与证据
 
-`operatorVersion=0.1.0`、`modelVersion=null`、`treeVersion=taxonomy-1013-pending`；
+`operatorVersion=0.1.2`、`modelVersion=null`、`treeVersion=taxonomy-1013-pending`；
 证据目录 `operator/dm-ratio-computation/output/evidence/<runId>/`。

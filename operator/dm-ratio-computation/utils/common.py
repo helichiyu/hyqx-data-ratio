@@ -70,6 +70,39 @@ def fingerprint_file(path: Path) -> tuple[str, int]:
     return digest.hexdigest(), path.stat().st_size
 
 
+def fingerprint_path(path: str | Path) -> str:
+    """与 HTTP 层 ``inference._fingerprint`` 同口径的输入指纹。
+
+    目录：相对路径 + 大小 + 文件 SHA-256 排序聚合；文件：大小 + SHA-256。
+    保证 ``core`` 写出的 ``manifest.runId`` 与 HTTP 层的运行目录名一致。
+    """
+
+    target = Path(path).resolve()
+    digest = hashlib.sha256()
+    if target.is_dir():
+        digest.update(b"dir\0")
+        for item in sorted(target.rglob("*"), key=lambda p: p.relative_to(target).as_posix()):
+            relative = item.relative_to(target).as_posix()
+            if item.is_symlink():
+                raise ValueError(f"输入目录包含符号链接，拒绝处理：{relative}")
+            if not item.is_file():
+                continue
+            digest.update(relative.encode("utf-8"))
+            digest.update(b"\0")
+            digest.update(str(item.stat().st_size).encode("ascii"))
+            digest.update(b"\0")
+            digest.update(file_hashes(item)[1].encode("ascii"))
+            digest.update(b"\0")
+    elif target.is_file():
+        digest.update(b"file\0")
+        digest.update(str(target.stat().st_size).encode("ascii"))
+        digest.update(b"\0")
+        digest.update(file_hashes(target)[1].encode("ascii"))
+    else:
+        raise FileNotFoundError(str(target))
+    return digest.hexdigest()
+
+
 def ensure_output_dir(output_dir: str | Path | None) -> Path:
     target = Path(output_dir or "runtime/output").resolve()
     target.mkdir(parents=True, exist_ok=True)
@@ -101,6 +134,9 @@ def locate_records(input_path: str) -> tuple[Path, Path]:
         if candidate.is_file():
             return candidate, candidate.parent
     matches = sorted(root.glob("*.jsonl"))
+    preferred = [path for path in matches if "record" in path.name.lower()]
+    if preferred:
+        return preferred[0], preferred[0].parent
     if matches:
         return matches[0], matches[0].parent
     raise FileNotFoundError(f"目录中没有 records.jsonl：{root}")

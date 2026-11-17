@@ -236,7 +236,7 @@
         "OP-08",
         "OP-14"
       ],
-      "version": "0.1.0",
+      "version": "0.1.2",
       "status": "implemented"
     },
     {
@@ -247,12 +247,12 @@
       "stage": "S4",
       "priority": "P1",
       "group": "④配比引擎",
-      "requiresWeights": true,
+      "requiresWeights": false,
       "dependsOn": [
         "OP-15"
       ],
-      "version": "0.1.0",
-      "status": "scaffold"
+      "version": "0.1.2",
+      "status": "implemented"
     },
     {
       "opId": "OP-17",

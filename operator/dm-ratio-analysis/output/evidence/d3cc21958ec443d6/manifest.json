@@ -1,0 +1,61 @@
+{
+  "artifacts": [
+    {
+      "bytes": 5206,
+      "path": "benchmark.json",
+      "sha256": "25b3e2238807293febd79790f7461969b880051f7658ac973b33d1d78c2b8ffe"
+    },
+    {
+      "bytes": 31851,
+      "path": "capability.json",
+      "sha256": "c111ba247e5b9b206dc6dff0963e5bb4c328875f85abd0fbbd84ead7a595108a"
+    },
+    {
+      "bytes": 607,
+      "path": "input_manifest.json",
+      "sha256": "da322ba88d246cdf82d832d91d388f35b4ce57e902d062a9e0075d41e8d3bc33"
+    },
+    {
+      "bytes": 5065,
+      "path": "metrics.json",
+      "sha256": "cda5c4f67ef5ecd28f4865f0d889149f5746d931b9b355aab142071211bf8c84"
+    },
+    {
+      "bytes": 7382,
+      "path": "recommendation.json",
+      "sha256": "cce600ac8f59487072942eeae4d49935d924779238d2faf444329b1602e7f4f4"
+    },
+    {
+      "bytes": 46575,
+      "path": "result.jsonl",
+      "sha256": "9b2a998c94f8d2a3268073d7a09804733a54af2e1011f942a85ebd2d213c1a74"
+    },
+    {
+      "bytes": 60382,
+      "path": "topup.json",
+      "sha256": "dbebe06b6379ad21a33c5ec51d125b49ad4b040c4cf97352b8cf5cd10c34a673"
+    }
+  ],
+  "compressionRatio": 4.94905,
+  "createdAt": "2026-11-17T12:10:29+08:00",
+  "failedCount": 0,
+  "inputBytes": 31737,
+  "inputFingerprint": "sha256:255357b6b3a7b9675bcf5bb9a198962468e3c16311129b782ad296dc5d9beb1e",
+  "modelVersion": null,
+  "notes": [
+    "能力映射 = FGW 12.1 六类来源→能力可解释默认映射（Q-05 权威库待提供），结果标 provisional。",
+    "建议配比在合计 100%、标签上下限与总改动上限约束下用确定性 Frank-Wolfe 求解，取整用最大余数法。",
+    "补数按真实库存缺口计算；目标能力模板为 FGW 12.4-4 应用导向联调初值。",
+    "不编造人工标注/专家真值；效果类指标不在此算子计算。"
+  ],
+  "operatorId": "dm-ratio-analysis",
+  "operatorVersion": "0.1.2",
+  "outputBytes": 157068,
+  "paramsHash": "sha256:75e6622bf553edb56b4c62f36c9b20ecb34c8961a940311f40670dff31268c58",
+  "runId": "d3cc21958ec443d6",
+  "sampleCount": 66,
+  "seed": 42,
+  "semanticCode": "ratio_analysis_recommend_v1",
+  "successCount": 66,
+  "treeVersion": "taxonomy-1013-pending"
+}

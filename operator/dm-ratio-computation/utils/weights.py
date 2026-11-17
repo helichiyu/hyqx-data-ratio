@@ -28,6 +28,7 @@ def compute_effective(
         bucket = inventory[label_path]
         count = sum(value for key, value in bucket.items() if not key.startswith("__"))
         source_effective = 0.0
+        by_source: dict[str, dict[str, float]] = {}
         for source, value in bucket.items():
             if source.startswith("__"):
                 continue
@@ -39,6 +40,10 @@ def compute_effective(
                 * _coefficient(weights["stageCoefficients"], source)
             )
             source_effective += contribution
+            by_source[source] = {
+                "count": int(value),
+                "effectiveCount": round(contribution, 6),
+            }
         label_weight = float(label_weights.get(label_path, weights["defaultLabel"]))
         effective = source_effective * label_weight
         rows.append(
@@ -49,6 +54,8 @@ def compute_effective(
                 "count": int(count),
                 "labelWeight": label_weight,
                 "effectiveCount": round(effective, 6),
+                # 0.1.1 追加：每标签×来源的有效条数，供 OP-16 来源→能力映射使用。
+                "bySource": by_source,
             }
         )
     return rows

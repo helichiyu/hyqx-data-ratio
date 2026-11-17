@@ -1,0 +1,181 @@
+{
+  "definition": "达成度 = Σ_dim min(实际, 目标) / Σ_dim 目标（等价于 1 − 0.5·L1）；通用占比 = web_text+books+wiki+dialogue，专业占比 = code+science；改动量 = 0.5·Σ|建议占比−当前占比|。",
+  "orientation": "balanced",
+  "recommendedScenario": "balanced",
+  "rows": [
+    {
+      "achievement": {
+        "balanced": 0.7413773333,
+        "general": 0.8724751387,
+        "professional": 0.7013773333
+      },
+      "capability": {
+        "coding": 0.0359724674,
+        "dialogue": 0.0764369277,
+        "expertise": 0.1289679382,
+        "knowledge": 0.2447701946,
+        "language": 0.2600657436,
+        "reasoning": 0.2537867284
+      },
+      "capabilityScore10": {
+        "coding": 0.3597,
+        "dialogue": 0.7644,
+        "expertise": 1.2897,
+        "knowledge": 2.4477,
+        "language": 2.6007,
+        "reasoning": 2.5379
+      },
+      "changeL1": 0.0,
+      "description": "OP-15 当前方案",
+      "generalShare": 0.8092892074,
+      "level1Coverage": 0.733333,
+      "level2Coverage": 0.377193,
+      "professionalShare": 0.1907107925,
+      "scenario": "current",
+      "selected": false,
+      "sourceShares": {
+        "books": 0.0647034965,
+        "science": 0.1907107925,
+        "web_text": 0.7194493473,
+        "wiki": 0.0251363636
+      }
+    },
+    {
+      "achievement": {
+        "balanced": 0.7629384951,
+        "general": 0.8341229333,
+        "professional": 0.7229385333
+      },
+      "capability": {
+        "coding": 0.0305821674,
+        "dialogue": 0.0656563277,
+        "expertise": 0.1667000382,
+        "knowledge": 0.2393798946,
+        "language": 0.2385045436,
+        "reasoning": 0.2591770284
+      },
+      "capabilityScore10": {
+        "coding": 0.3058,
+        "dialogue": 0.6566,
+        "expertise": 1.667,
+        "knowledge": 2.3938,
+        "language": 2.385,
+        "reasoning": 2.5918
+      },
+      "changeL1": 0.107806,
+      "description": "均衡目标（六维等权）",
+      "generalShare": 0.7014832074,
+      "level1Coverage": 0.733333,
+      "level2Coverage": 0.377193,
+      "professionalShare": 0.2985167925,
+      "scenario": "balanced",
+      "selected": true,
+      "sourceShares": {
+        "books": 0.0647034965,
+        "science": 0.2985167925,
+        "web_text": 0.6116433473,
+        "wiki": 0.0251363636
+      }
+    },
+    {
+      "achievement": {
+        "balanced": 0.7171310244,
+        "general": 0.9171310032,
+        "professional": 0.6657054644
+      },
+      "capability": {
+        "coding": 0.0457054432,
+        "dialogue": 0.09142556,
+        "expertise": 0.0800000212,
+        "knowledge": 0.2457277159,
+        "language": 0.282879232,
+        "reasoning": 0.2542620277
+      },
+      "capabilityScore10": {
+        "coding": 0.4571,
+        "dialogue": 0.9143,
+        "expertise": 0.8,
+        "knowledge": 2.4573,
+        "language": 2.8288,
+        "reasoning": 2.5426
+      },
+      "changeL1": 0.275357,
+      "description": "通用/基座目标（语言、知识、推理、对话优先）",
+      "generalShare": 0.914402337,
+      "level1Coverage": 0.733333,
+      "level2Coverage": 0.377193,
+      "professionalShare": 0.085597663,
+      "scenario": "general",
+      "selected": false,
+      "sourceShares": {
+        "books": 0.0002298368,
+        "science": 0.085597663,
+        "web_text": 0.9141088638,
+        "wiki": 6.36364e-05
+      }
+    },
+    {
+      "achievement": {
+        "balanced": 0.708927686,
+        "general": 0.6834080485,
+        "professional": 0.7982959758
+      },
+      "capability": {
+        "coding": 0.0129964431,
+        "dialogue": 0.0292312429,
+        "expertise": 0.2960682897,
+        "knowledge": 0.2130187159,
+        "language": 0.1681616466,
+        "reasoning": 0.2805236618
+      },
+      "capabilityScore10": {
+        "coding": 0.13,
+        "dialogue": 0.2923,
+        "expertise": 2.9607,
+        "knowledge": 2.1302,
+        "language": 1.6816,
+        "reasoning": 2.8052
+      },
+      "changeL1": 0.499967,
+      "description": "行业/专业目标（专业深度、推理、编码优先）",
+      "generalShare": 0.3246959954,
+      "level1Coverage": 0.733333,
+      "level2Coverage": 0.377193,
+      "professionalShare": 0.6753040047,
+      "scenario": "professional",
+      "selected": false,
+      "sourceShares": {
+        "books": 0.0647034965,
+        "science": 0.6753040047,
+        "web_text": 0.2599288625,
+        "wiki": 6.36364e-05
+      }
+    }
+  ],
+  "targetProfiles": {
+    "balanced": {
+      "coding": 0.1666,
+      "dialogue": 0.1667,
+      "expertise": 0.1667,
+      "knowledge": 0.1667,
+      "language": 0.1667,
+      "reasoning": 0.1666
+    },
+    "general": {
+      "coding": 0.06,
+      "dialogue": 0.16,
+      "expertise": 0.08,
+      "knowledge": 0.24,
+      "language": 0.28,
+      "reasoning": 0.18
+    },
+    "professional": {
+      "coding": 0.16,
+      "dialogue": 0.08,
+      "expertise": 0.3,
+      "knowledge": 0.14,
+      "language": 0.1,
+      "reasoning": 0.22
+    }
+  }
+}

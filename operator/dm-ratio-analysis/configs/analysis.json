@@ -1,0 +1,81 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S4 P1 联调初值：能力维度、来源→能力映射、目标能力模板、约束与偏见阈值待业务确认（Q-04/Q-05/H-03）；权威映射库到位后按版本替换，不改写历史结果。",
+  "tree": {
+    "relativePath": "baseline/tree-snapshot.json",
+    "_source": "S0 树快照：内容树 30 个一级、114 个二级；领域相对占比按一级 rollup"
+  },
+  "capability": {
+    "dimensions": [
+      {"key": "language", "nameZh": "语言理解与生成", "source": "FGW 12.1 一/二：网络文本提供广泛语言与多种文本风格；书籍提供正式语言风格"},
+      {"key": "knowledge", "nameZh": "知识广度", "source": "FGW 12.1 一/五：网络文本覆盖广泛主题；维基百科提供百科全书式事实知识"},
+      {"key": "reasoning", "nameZh": "推理能力", "source": "FGW 12.1 一/二/四：网络文本的常识推理、书籍的长距离依赖、科学文献的复杂推理"},
+      {"key": "expertise", "nameZh": "专业深度", "source": "FGW 12.1 二/四：书籍与科学文献提供技术知识与正式专业写作"},
+      {"key": "coding", "nameZh": "编码能力", "source": "FGW 12.1 三：代码库直接影响编码辅助能力"},
+      {"key": "dialogue", "nameZh": "对话交互", "source": "FGW 12.1 一/六：网络文本支撑通用会话；对话数据提供会话流程与轮流发言"}
+    ],
+    "sources": ["web_text", "books", "code", "science", "wiki", "dialogue", "unknown"],
+    "sourceWeights": {
+      "web_text": {"language": 0.30, "knowledge": 0.25, "reasoning": 0.25, "expertise": 0.05, "coding": 0.05, "dialogue": 0.10},
+      "books": {"language": 0.35, "knowledge": 0.20, "reasoning": 0.20, "expertise": 0.20, "coding": 0.00, "dialogue": 0.05},
+      "code": {"language": 0.05, "knowledge": 0.10, "reasoning": 0.20, "expertise": 0.10, "coding": 0.55, "dialogue": 0.00},
+      "science": {"language": 0.10, "knowledge": 0.20, "reasoning": 0.30, "expertise": 0.40, "coding": 0.00, "dialogue": 0.00},
+      "wiki": {"language": 0.10, "knowledge": 0.55, "reasoning": 0.15, "expertise": 0.15, "coding": 0.00, "dialogue": 0.05},
+      "dialogue": {"language": 0.20, "knowledge": 0.05, "reasoning": 0.10, "expertise": 0.05, "coding": 0.00, "dialogue": 0.60},
+      "unknown": {"language": 0.1667, "knowledge": 0.1667, "reasoning": 0.1666, "expertise": 0.1667, "coding": 0.1666, "dialogue": 0.1667}
+    },
+    "scaleMax": 10,
+    "_source": "Q-05 能力/领域映射库未提供：由 FGW 12.1 六类来源对能力的文字描述转为可解释权重，每行合计 1；unknown 按均匀分配；结果标 provisional，不冒充权威 fit 向量"
+  },
+  "targets": {
+    "profiles": {
+      "balanced": {"language": 0.1667, "knowledge": 0.1667, "reasoning": 0.1666, "expertise": 0.1667, "coding": 0.1666, "dialogue": 0.1667},
+      "general": {"language": 0.28, "knowledge": 0.24, "reasoning": 0.18, "expertise": 0.08, "coding": 0.06, "dialogue": 0.16},
+      "professional": {"language": 0.10, "knowledge": 0.14, "reasoning": 0.22, "expertise": 0.30, "coding": 0.16, "dialogue": 0.08}
+    },
+    "defaultOrientation": "balanced",
+    "defaultTargetTotal": 100000,
+    "_source": "FGW 12.4-4 应用导向模板（基座→多样配比、行业→聚焦配比）与均衡模式；均为联调初值，待业务确认目标能力后替换（H-12）"
+  },
+  "objectiveWeights": {
+    "language": 0.1667,
+    "knowledge": 0.1667,
+    "reasoning": 0.1666,
+    "expertise": 0.1667,
+    "coding": 0.1666,
+    "dialogue": 0.1667
+  },
+  "constraints": {
+    "minLabelShare": 0.0001,
+    "maxLabelShare": 1.0,
+    "maxTotalChangeL1": 0.5,
+    "decimals": 6,
+    "maxIterations": 600,
+    "initialStep": 1.0,
+    "minStep": 1e-12,
+    "tolerance": 1e-12,
+    "_source": "长尾下限与 OP-15 minShare 一致；单标签改动上限 50%（L1/2）为联调初值；推荐占比保留 6 位小数（0.0001%）"
+  },
+  "topUp": {
+    "topN": 20,
+    "recommendedSourcesPerLabel": 3,
+    "priorityHighRatio": 0.01,
+    "priorityMediumRatio": 0.002,
+    "_source": "补数优先级 = 缺口 / 目标总量；≥1% 高、≥0.2% 中、其余低；联调初值"
+  },
+  "bias": {
+    "giniThreshold": 0.6,
+    "giniMedium": 0.4,
+    "hhiHigh": 0.5,
+    "hhiMedium": 0.35,
+    "entropyMedium": 0.6,
+    "_source": "基尼阈值沿用 baseline quality.gini_threshold=0.6（H-03）；HHI/熵与中档阈值为联调初值"
+  },
+  "benchmark": {
+    "generalSources": ["web_text", "books", "wiki", "dialogue"],
+    "professionalSources": ["code", "science"],
+    "_source": "FGW 12.4 配比 A（侧重通用）/配比 B（侧重代码）的通用-专业口径"
+  },
+  "limits": {"maxLabels": 5000, "maxRecords": 1000000}
+}

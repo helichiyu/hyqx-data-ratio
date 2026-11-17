@@ -1,0 +1,274 @@
+{
+  "achievement": {
+    "current": {
+      "dimensions": {
+        "coding": {
+          "actual": 0.0359724674,
+          "gap": 0.1306275326,
+          "ratio": 0.215921,
+          "target": 0.1666
+        },
+        "dialogue": {
+          "actual": 0.0764369277,
+          "gap": 0.0902630723,
+          "ratio": 0.45853,
+          "target": 0.1667
+        },
+        "expertise": {
+          "actual": 0.1289679382,
+          "gap": 0.0377320618,
+          "ratio": 0.773653,
+          "target": 0.1667
+        },
+        "knowledge": {
+          "actual": 0.2447701946,
+          "gap": -0.0780701946,
+          "ratio": 1.468328,
+          "target": 0.1667
+        },
+        "language": {
+          "actual": 0.2600657436,
+          "gap": -0.0933657436,
+          "ratio": 1.560082,
+          "target": 0.1667
+        },
+        "reasoning": {
+          "actual": 0.2537867284,
+          "gap": -0.0871867284,
+          "ratio": 1.52333,
+          "target": 0.1666
+        }
+      },
+      "l1Distance": 0.5172453333,
+      "overall": 0.7413773333
+    },
+    "gain": 0.0215611618,
+    "recommended": {
+      "dimensions": {
+        "coding": {
+          "actual": 0.0305821674,
+          "gap": 0.1360178326,
+          "ratio": 0.183566,
+          "target": 0.1666
+        },
+        "dialogue": {
+          "actual": 0.0656563277,
+          "gap": 0.1010436723,
+          "ratio": 0.393859,
+          "target": 0.1667
+        },
+        "expertise": {
+          "actual": 0.1667000382,
+          "gap": -3.82e-08,
+          "ratio": 1.0,
+          "target": 0.1667
+        },
+        "knowledge": {
+          "actual": 0.2393798946,
+          "gap": -0.0726798946,
+          "ratio": 1.435992,
+          "target": 0.1667
+        },
+        "language": {
+          "actual": 0.2385045436,
+          "gap": -0.0718045436,
+          "ratio": 1.430741,
+          "target": 0.1667
+        },
+        "reasoning": {
+          "actual": 0.2591770284,
+          "gap": -0.0925770284,
+          "ratio": 1.555684,
+          "target": 0.1666
+        }
+      },
+      "l1Distance": 0.4741230098,
+      "overall": 0.7629384951
+    }
+  },
+  "constraints": {
+    "allPassed": true,
+    "checks": [
+      {
+        "actual": 1.0,
+        "id": "sum_100",
+        "passed": true,
+        "source": "任务书 S4 门禁：占比合计 100%",
+        "threshold": 1.0,
+        "tolerance": 1e-09
+      },
+      {
+        "actual": {
+          "max": 0.1439,
+          "min": 0.0001
+        },
+        "id": "label_bounds",
+        "passed": true,
+        "source": "configs/analysis.json constraints.minLabelShare/maxLabelShare",
+        "threshold": {
+          "max": 1.0,
+          "min": 0.0001
+        }
+      },
+      {
+        "actual": 0.107806,
+        "id": "change_limit",
+        "passed": true,
+        "source": "configs/analysis.json constraints.maxTotalChangeL1（联调初值）",
+        "threshold": 0.5
+      }
+    ],
+    "orientation": "balanced"
+  },
+  "definition": "目标：min Σ_dim objectiveWeights·max(0, target-achieved)，约束为合计 100%、单标签占比 ≥ minLabelShare、总改动 ≤ maxTotalChangeL1；求解为确定性 Frank-Wolfe（供体→受体转移 + 三分线搜索），结果用最大余数法取整。",
+  "optimization": {
+    "changeClipped": false,
+    "changeL1": 0.107806,
+    "converged": true,
+    "iterations": 19,
+    "objectiveDrop": 0.003594784697,
+    "objectiveFinal": 0.039504551083,
+    "objectiveInitial": 0.04309933578,
+    "reverted": false
+  },
+  "orientation": "balanced",
+  "target": {
+    "coding": 0.1666,
+    "dialogue": 0.1667,
+    "expertise": 0.1667,
+    "knowledge": 0.1667,
+    "language": 0.1667,
+    "reasoning": 0.1666
+  },
+  "targetProfiles": {
+    "balanced": {
+      "coding": 0.1666,
+      "dialogue": 0.1667,
+      "expertise": 0.1667,
+      "knowledge": 0.1667,
+      "language": 0.1667,
+      "reasoning": 0.1666
+    },
+    "general": {
+      "coding": 0.06,
+      "dialogue": 0.16,
+      "expertise": 0.08,
+      "knowledge": 0.24,
+      "language": 0.28,
+      "reasoning": 0.18
+    },
+    "professional": {
+      "coding": 0.16,
+      "dialogue": 0.08,
+      "expertise": 0.3,
+      "knowledge": 0.14,
+      "language": 0.1,
+      "reasoning": 0.22
+    }
+  },
+  "targetSource": "config:profile:balanced",
+  "topDecreases": [
+    {
+      "delta": -0.0143,
+      "label": "专业与行业文档/法律文书/合同与协议",
+      "recommendedShare": 0.0001
+    },
+    {
+      "delta": -0.012306,
+      "label": "对话与交互/指令与训练/人机训练对话",
+      "recommendedShare": 0.005694
+    },
+    {
+      "delta": -0.0107,
+      "label": "对话与交互/会议讨论/头脑风暴记录",
+      "recommendedShare": 0.0001
+    },
+    {
+      "delta": -0.0071,
+      "label": "专业与行业文档/业务系统记录/流程记录",
+      "recommendedShare": 0.0001
+    },
+    {
+      "delta": -0.0071,
+      "label": "专业与行业文档/医疗文档/病历与诊断报告",
+      "recommendedShare": 0.0001
+    },
+    {
+      "delta": -0.0071,
+      "label": "人物与人体/人像与表情/表情与面部特征",
+      "recommendedShare": 0.0001
+    },
+    {
+      "delta": -0.0071,
+      "label": "代码与技术文档/技术文档与手册/API文档",
+      "recommendedShare": 0.0001
+    },
+    {
+      "delta": -0.0071,
+      "label": "图表与界面图像/界面截图/表单页",
+      "recommendedShare": 0.0001
+    },
+    {
+      "delta": -0.0035,
+      "label": "三维与空间/数字孪生/元宇宙",
+      "recommendedShare": 0.0001
+    },
+    {
+      "delta": -0.0035,
+      "label": "三维与空间/数字孪生/空间场景",
+      "recommendedShare": 0.0001
+    }
+  ],
+  "topIncreases": [
+    {
+      "delta": 0.107806,
+      "label": "专业影像/医学影像/MRI与超声",
+      "recommendedShare": 0.111406
+    },
+    {
+      "delta": 0.0,
+      "label": "三维与空间/三维模型/三维建模",
+      "recommendedShare": 0.0144
+    },
+    {
+      "delta": 0.0,
+      "label": "专业与行业文档/学术论文与科研资料/学术论文",
+      "recommendedShare": 0.0072
+    },
+    {
+      "delta": 0.0,
+      "label": "专业与行业文档/学术论文与科研资料/实验报告",
+      "recommendedShare": 0.0324
+    },
+    {
+      "delta": 0.0,
+      "label": "专业影像/科研实验影像/材料与实验记录图",
+      "recommendedShare": 0.0072
+    },
+    {
+      "delta": 0.0,
+      "label": "代码与技术文档/技术文档与手册/数据库文档",
+      "recommendedShare": 0.0072
+    },
+    {
+      "delta": 0.0,
+      "label": "代码与技术文档/程序代码/各语言源代码与脚本",
+      "recommendedShare": 0.036
+    },
+    {
+      "delta": 0.0,
+      "label": "代码与技术文档/配置与标记语言/标记语言文档",
+      "recommendedShare": 0.0036
+    },
+    {
+      "delta": 0.0,
+      "label": "对话与交互/指令与训练/RLHF数据",
+      "recommendedShare": 0.1439
+    },
+    {
+      "delta": 0.0,
+      "label": "对话与交互/指令与训练/指令数据",
+      "recommendedShare": 0.0036
+    }
+  ]
+}
