@@ -552,6 +552,16 @@ def create_app(
         probes = [_healthz(runtime) for runtime in runtimes.values()]
         ready = sum(1 for probe in probes if probe["code"] == 0 and probe["data"]["ready"])
         status = "ok" if ready == len(probes) else "degraded"
+        try:
+            from model_gateway import backend_status
+
+            gateway = backend_status()
+        except Exception:  # noqa: BLE001 - 探针只报告状态，不中断
+            gateway = {
+                "backend": os.getenv("MODEL_BACKEND", "idg"),
+                "credentialsOk": False,
+                "missing": ["model_gateway"],
+            }
         return _envelope(
             0 if status == "ok" else 1,
             "success" if status == "ok" else "部分算子未就绪",
@@ -561,6 +571,7 @@ def create_app(
                 "status": status,
                 "operatorCount": len(probes),
                 "readyCount": ready,
+                "modelBackend": gateway,
             },
         )
 

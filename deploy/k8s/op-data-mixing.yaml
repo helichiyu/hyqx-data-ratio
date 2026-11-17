@@ -1,0 +1,98 @@
+# 数据配比中心算子服务（op-data-mixing）K8s 部署模板。
+#
+# 结构与 env 写法参考 docs/参考记录/anomalypattern.yaml（obu-ai-cloud 命名空间的
+# 算子部署单元）。团队约定：
+#   - 固定默认值写在镜像里（Dockerfile ENV）：MODEL_BACKEND=idg、MODEL_APP_ID=audioasr、
+#     SILICONFLOW_BASE_URL、INPUT_DIR/OUTPUT_DIR/PORT；
+#   - 非固定环境变量在 Deployment 的 env 里按 "- name: / value:" 格式依次往后添加
+#     （联调切硅基流动时：MODEL_BACKEND=siliconflow + SILICONFLOW_API_KEY）；
+#   - 密钥一律 secretKeyRef 引用 Secret，不写明文、不进镜像、不进 git。
+#
+# 使用前按环境修改：image tag、MODEL_GATEWAY_BASE_URL、nodePort、nodeName。
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: op-data-mixing
+    publish-type: "1"
+  name: op-data-mixing
+  namespace: obu-ai-cloud
+spec:
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: op-data-mixing
+  template:
+    metadata:
+      annotations:
+        sidecar.istio.io/inject: "false"
+      labels:
+        app: op-data-mixing
+    spec:
+      # 算子池节点（交接文档：后训练算子 Pod 在 192.168.1.110）；按实际调度调整
+      nodeName: "192.168.1.110"
+      containers:
+      - image: owl-harbor.corp.lsattr.cn:580/obu-ai-cloud/op-data-mixing:0.1.0
+        imagePullPolicy: Always
+        name: op-data-mixing
+        ports:
+        - containerPort: 17025
+          protocol: TCP
+        env:
+        # —— 非固定环境变量：按此格式依次往后添加 ——
+        - name: MODEL_BACKEND
+          value: idg
+        - name: MODEL_GATEWAY_BASE_URL
+          value: "http://<磐智网关IP>:<端口>"
+        - name: MODEL_APP_KEY
+          valueFrom:
+            secretKeyRef:
+              name: model-gateway-secret
+              key: app-key
+        - name: SILICONFLOW_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: model-gateway-secret
+              key: siliconflow-key
+        - name: DEVICE
+          value: auto
+        # 上传/解压限额如需调整也在此追加（镜像内默认 10MiB / 100MiB）
+        - name: MAX_UPLOAD_BYTES
+          value: "10485760"
+        - name: MAX_EXTRACT_BYTES
+          value: "104857600"
+        resources:
+          limits:
+            cpu: "8"
+            memory: 16Gi
+          requests:
+            cpu: "1"
+            memory: 2Gi
+        # GPU 节点部署时追加（需节点装 nvidia-container-toolkit，镜像 torch 为 cu124）：
+        #   - name: NVIDIA_VISIBLE_DEVICES
+        #     value: all
+        # resources.limits 增加 nvidia.com/gpu: "1"
+      dnsPolicy: ClusterFirst
+      imagePullSecrets:
+      - name: aliyun-acr-login
+      - name: harbor-admin-login
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: op-data-mixing
+  name: op-data-mixing
+  namespace: obu-ai-cloud
+spec:
+  ports:
+  - name: http
+    port: 17025
+    protocol: TCP
+    targetPort: 17025
+    nodePort: 30725   # NodePort 号段按平台规划调整（参考：后训练池用 30054-30057）
+  selector:
+    app: op-data-mixing
+  type: NodePort

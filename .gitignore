@@ -21,3 +21,6 @@ operator/weights/**/*
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# 参考记录含网关凭据与内部地址，本地留存，不入库
+docs/参考记录/

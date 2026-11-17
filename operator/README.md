@@ -29,12 +29,48 @@ python scripts/check_healthz.py --base-url http://127.0.0.1:17025
 # 契约测试（仓库根）
 python -m pytest tests operator/_template/tests
 
-# 单镜像
-docker build -t op-data-mixing:0.1.0 .
-docker compose up -d
+# 单镜像（构建前先暂存权重：python scripts/stage_weights.py）
+docker compose up -d --build
 ```
 
-协议、错误码、路径闸门、幂等与 Schema 见 [`docs/算子开发/算子工程契约.md`](../docs/算子开发/算子工程契约.md)。
+> 网络受限环境：`registry-1.docker.io` 直连可能超时（`load metadata ... EOF`）。
+> 先从镜像仓拉基础镜像再重打标签，无需改 Dockerfile：
+> `docker pull docker.m.daocloud.io/library/python:3.12-slim-bookworm && docker tag docker.m.daocloud.io/library/python:3.12-slim-bookworm python:3.12-slim-bookworm`
+
+协议、错误码、路径闸门、幂等与 Schema 见 [`docs/算子开发/算子工程契约.md`](../docs/算子开发/算子工程契约.md)；模型选型、测试平替与下载清单见 [`docs/算子开发/模型选型与使用决策.md`](../docs/算子开发/模型选型与使用决策.md)。
+
+## 运行设备
+
+- 设备优先级：环境变量 `DEVICE` > 算子 `configs/*.json` 的 `device` > `auto`。`auto` 在 CUDA 可用时使用 `cuda:0`，否则回落 CPU；显式 `cuda` 但 CUDA 不可用时同样回落，不阻塞启动。
+- 镜像内 torch 的 CUDA runtime 不高于生产驱动上限（当前 12.4，由 Dockerfile 构建参数 `MAX_CUDA_RUNTIME` 在构建期校验，构建机无需 GPU）。12.8 驱动的开发/测试机可直接运行同一镜像，驱动向后兼容。
+- 镜像不安装 CUDA toolkit，CUDA runtime 随 torch wheel 提供；宿主机只需满足驱动版本并安装 `nvidia-container-toolkit`。
+- GPU 启动（不改变基础 compose，CPU 节点仍可直接启动）：
+
+  ```bash
+  docker compose -f docker-compose.yml -f docker-compose.gpu.yml up -d
+  ```
+
+- `/{operatorId}/healthz` 的 `device` 是实际设备；`deviceRequested`、`cudaAvailable`、`gpuName`、`cudaRuntime`、`deviceFallbackReason` 说明请求值与回落原因。
+- 权重解析：`WEIGHTS_DIR` > 本机/构建机模型仓（Windows `D:\models`、Linux `/models`，需含 `shared/`）> 镜像内 `weights/`。本机权重统一放 `D:\models\shared\<model>`，项目目录不放权重；构建镜像前执行 `python scripts/stage_weights.py` 把 `shared/` 暂存到 `operator/weights/` 并校验 SHA256SUMS。
+
+## 模型网关后端（idg / siliconflow）
+
+- 生产默认磐智（idg）签名网关，联调阶段用硅基流动平替。双后端配置在 `operator/model_gateway.py`，**启动时用环境变量切换，不改代码、不重建镜像**（compose 已透传）：
+
+  ```bash
+  python scripts/stage_weights.py                  # 构建前暂存权重并校验
+  docker compose up -d --build                     # 默认磐智（idg）
+
+  # 切硅基流动（联调）：
+  MODEL_BACKEND=siliconflow SILICONFLOW_API_KEY=sk-xxx docker compose up -d
+
+  # 切回磐智：
+  MODEL_BACKEND=idg docker compose up -d
+  ```
+
+- 变量：`MODEL_BACKEND`（`idg` 默认 / `siliconflow`）、`MODEL_GATEWAY_BASE_URL` + `MODEL_APP_ID` + `MODEL_APP_KEY`（idg）、`SILICONFLOW_BASE_URL` + `SILICONFLOW_API_KEY`（siliconflow）。密钥一律启动时注入，不写进代码与镜像。**固定默认值已写入镜像 ENV**（`MODEL_BACKEND=idg`、`MODEL_APP_ID`、`SILICONFLOW_BASE_URL`）；可变项部署时注入，K8s 按 `- name: / value:` 依次添加（模板见 `deploy/k8s/op-data-mixing.yaml`）。
+- `GET /health` 返回 `modelBackend`（后端名、凭据是否就绪、缺失变量），用于确认切换生效；通路验证用 `scripts/model_gateway_smoke.py`（默认跟随 `MODEL_BACKEND`）。
+- 本机 GPU 开发使用已有 conda 环境（torch 2.9 + cu128，RTX 5060/sm_120）。**不要在该环境执行 `pip install -r requirements.txt`**：生产镜像钉的是 torch 2.6（cu124），执行后会降级 torch 并失去 50 系 GPU 支持；新增依赖时单独 `pip install <package>`。
 
 ## 算子清单
 
