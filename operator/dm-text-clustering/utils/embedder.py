@@ -1,7 +1,8 @@
 """bge-base-zh-v1.5 文本向量：mean pooling + L2 归一化。
 
 模型来自 ``operator/weights/shared/bge-base-zh-v1.5``（MIT，可商用）；运行期不联网。
-推理固定 eval 模式、CPU（可用 ``DEVICE`` 覆盖），输出 float32 供聚类，落盘可转 float16。
+设备优先级 ``DEVICE`` > 配置 > auto（CUDA 可用则 ``cuda:0``，否则 CPU）；
+推理固定 eval 模式，输出 float32 供聚类，落盘可转 float16。
 """
 
 from __future__ import annotations
@@ -11,7 +12,7 @@ from typing import Any, Sequence
 
 import numpy as np
 
-from .common import DependencyUnavailable, resolve_weights_dir
+from .common import DependencyUnavailable, resolve_device, resolve_weights_dir
 
 
 class Embedder:
@@ -31,7 +32,7 @@ class Embedder:
             raise DependencyUnavailable(f"transformers/torch 不可用：{exc}") from exc
 
         self.torch = torch
-        self.device = str(cfg["model"].get("device") or "cpu")
+        self.device = resolve_device(cfg["model"].get("device"))
         self.tokenizer = AutoTokenizer.from_pretrained(str(self.model_dir))
         self.model = AutoModel.from_pretrained(str(self.model_dir))
         self.model.eval()

@@ -5,6 +5,7 @@
   "media": {
     "standardDir": "standard/audio",
     "asrModelRelativePath": "shared/paraformer-zh",
+    "device": "auto",
     "sampleRate": 16000,
     "_source": "OP-02 标准音频目录与 shared/paraformer-zh（Apache-2.0）"
   },

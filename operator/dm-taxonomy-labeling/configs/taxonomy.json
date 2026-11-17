@@ -8,7 +8,7 @@
     "dimension": 768,
     "maxTokens": 512,
     "batchSize": 16,
-    "device": "cpu"
+    "device": "auto"
   },
   "tree": {
     "relativePath": "baseline/tree-snapshot.json",

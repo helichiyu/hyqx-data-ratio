@@ -86,10 +86,43 @@ def now_iso() -> str:
 
 
 def resolve_weights_dir() -> Path:
+    """权重根：``WEIGHTS_DIR`` > 本机模型仓（``D:/models``、``/models``）> 镜像内 weights。"""
+
     configured = os.getenv("WEIGHTS_DIR")
     if configured:
         return Path(configured).resolve()
+    for candidate in (Path("D:/models"), Path("/models")):
+        if (candidate / "shared").is_dir():
+            return candidate.resolve()
     return OPERATOR_ROOT / "weights"
+
+
+def cuda_available() -> bool:
+    """CUDA 是否可用；torch 缺失或初始化失败时返回 ``False``。"""
+
+    try:
+        import torch
+
+        return bool(torch.cuda.is_available())
+    except Exception:  # noqa: BLE001 - 探针与回落场景不因 torch 异常中断
+        return False
+
+
+def resolve_device(configured: Any = None) -> str:
+    """解析推理设备：``DEVICE`` 环境变量 > 算子配置 > ``auto``。
+
+    ``auto`` 在 CUDA 可用时使用 ``cuda:0``，否则回落 ``cpu``；显式指定
+    ``cuda`` 但 CUDA 不可用时同样回落，保证无 GPU 节点也能启动。
+    """
+
+    requested = str(os.getenv("DEVICE") or configured or "auto").strip().lower()
+    if requested not in {"cpu", "auto"} and not requested.startswith("cuda"):
+        requested = "auto"
+    if requested == "auto":
+        return "cuda:0" if cuda_available() else "cpu"
+    if requested.startswith("cuda") and not cuda_available():
+        return "cpu"
+    return requested
 
 
 def resolve_operator_path(relative: str) -> Path:

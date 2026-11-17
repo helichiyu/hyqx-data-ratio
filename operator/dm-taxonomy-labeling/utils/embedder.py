@@ -11,7 +11,7 @@ from typing import Sequence
 
 import numpy as np
 
-from .common import DependencyUnavailable, resolve_weights_dir
+from .common import DependencyUnavailable, resolve_device, resolve_weights_dir
 
 
 class Embedder:
@@ -31,7 +31,7 @@ class Embedder:
             raise DependencyUnavailable(f"transformers/torch 不可用：{exc}") from exc
 
         self.torch = torch
-        self.device = str(cfg["model"].get("device") or "cpu")
+        self.device = resolve_device(cfg["model"].get("device"))
         self.tokenizer = AutoTokenizer.from_pretrained(str(self.model_dir))
         self.model = AutoModel.from_pretrained(str(self.model_dir))
         self.model.eval()

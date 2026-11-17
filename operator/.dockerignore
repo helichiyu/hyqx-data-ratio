@@ -5,6 +5,7 @@
 !.dockerignore
 !docker-compose.yml
 !inference.py
+!model_gateway.py
 !requirements.txt
 !map.json
 !baseline
@@ -16,8 +17,8 @@ dm-*/*
 !dm-*/configs
 !dm-*/utils
 
-# 权重目录的 README 属于仓库说明，不进入运行时镜像
-weights/**/README.md
+# 仓库级权重说明不进镜像；模型自带的 README 在 SHA256SUMS 清单内，须随权重进入
+weights/README.md
 # 任何层级都不进镜像
 **/__pycache__
 **/*.pyc

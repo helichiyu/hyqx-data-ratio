@@ -8,7 +8,7 @@
     "dimension": 768,
     "maxTokens": 512,
     "batchSize": 16,
-    "device": "cpu",
+    "device": "auto",
     "_source": "与 OP-03 共用权重；MIT 可商用"
   },
   "tree": {

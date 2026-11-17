@@ -1,6 +1,7 @@
 """FunASR paraformer-zh 转写（来源：OP-05 ``utils/asr.py`` 0.1.0 精简版，注明来源）。
 
-权重 ``operator/weights/shared/paraformer-zh``（Apache-2.0），CPU，运行期不联网；
+权重 ``operator/weights/shared/paraformer-zh``（Apache-2.0），运行期不联网；
+设备优先级 ``DEVICE`` > 配置 > auto（CUDA 可用则 ``cuda:0``，否则 CPU）；
 超过单次上限需平台分片，返回明确异常，不伪造文本。
 """
 
@@ -11,7 +12,7 @@ import tempfile
 from pathlib import Path
 from typing import Any
 
-from .common import DependencyUnavailable, resolve_weights_dir
+from .common import DependencyUnavailable, resolve_device, resolve_weights_dir
 
 _MODEL = None
 
@@ -30,7 +31,13 @@ def _model(cfg: dict[str, Any]):
             from funasr import AutoModel
         except ImportError as exc:  # pragma: no cover
             raise DependencyUnavailable(f"funasr 不可用：{exc}") from exc
-        _MODEL = AutoModel(model=str(model_dir), disable_update=True, disable_pbar=True, device="cpu")
+        media_cfg = cfg.get("media") if isinstance(cfg.get("media"), dict) else {}
+        _MODEL = AutoModel(
+            model=str(model_dir),
+            disable_update=True,
+            disable_pbar=True,
+            device=resolve_device(media_cfg.get("device")),
+        )
     return _MODEL
 
 

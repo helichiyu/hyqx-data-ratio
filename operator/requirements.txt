@@ -7,7 +7,9 @@ pyarrow==26.0.0
 pymupdf==1.28.2
 pillow==12.0.0
 numpy==2.2.6
-torch==2.9.0
+# PyPI 默认 wheel 为 CUDA 12.4 构建：生产 12.4 驱动原生可用，12.8 驱动向后兼容。
+# 不要追加 +cuXXX 后缀或 pytorch 索引，否则会破坏 12.4 兼容（见 operator/README.md）。
+torch==2.6.0
 transformers==4.43.4
 funasr==1.4.16
 modelscope==1.40.1

@@ -14,7 +14,21 @@ services:
       MAX_EXTRACT_BYTES: "104857600"
       DEFAULT_SEED: "42"
       REQUIRE_X_TOKEN: "false"
-      DEVICE: "cpu"
+      # auto：CUDA 可用则用 GPU，否则回落 CPU；显式 cpu/cuda/cuda:N 覆盖
+      DEVICE: "${DEVICE:-auto}"
+      # 模型网关后端：idg（磐智生产网关，默认）/ siliconflow（硅基流动平替）。
+      # 切换只改启动环境变量，不改代码、不重建镜像：
+      #   docker compose up -d --build                                                  # 默认磐智
+      #   MODEL_BACKEND=siliconflow SILICONFLOW_API_KEY=sk-xxx docker compose up -d
+      #   MODEL_BACKEND=idg docker compose up -d
+      MODEL_BACKEND: "${MODEL_BACKEND:-idg}"
+      # 磐智（idg）凭据：APPKEY 只从环境变量/Secret 注入，不写入代码与镜像
+      MODEL_GATEWAY_BASE_URL: "${MODEL_GATEWAY_BASE_URL:-}"
+      MODEL_APP_ID: "${MODEL_APP_ID:-audioasr}"
+      MODEL_APP_KEY: "${MODEL_APP_KEY:-}"
+      # 硅基流动（siliconflow）凭据
+      SILICONFLOW_BASE_URL: "${SILICONFLOW_BASE_URL:-https://api.siliconflow.cn/v1}"
+      SILICONFLOW_API_KEY: "${SILICONFLOW_API_KEY:-}"
     volumes:
       # 宿主机路径由部署环境注入，不写死在镜像里
       - ${INPUT_DIR_HOST:-./runtime/input}:/app/runtime/transport/input

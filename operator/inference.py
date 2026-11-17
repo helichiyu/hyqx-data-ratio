@@ -145,9 +145,10 @@ class OperatorRuntime:
     def weights_ok(self) -> bool:
         if not self.requires_weights:
             return True
-        if _has_weight_files(SHARED_WEIGHT_DIR / "shared"):
+        root = _resolve_weights_root()
+        if _has_weight_files(root / "shared"):
             return True
-        return _has_weight_files(SHARED_WEIGHT_DIR / self.operator_id)
+        return _has_weight_files(root / self.operator_id)
 
 
 def _import_operator_core(operator_id: str) -> Any:
@@ -178,6 +179,18 @@ def _import_operator_core(operator_id: str) -> Any:
     return importlib.import_module(f"{operator_id}.core")
 
 
+def _resolve_weights_root() -> Path:
+    """权重根：``WEIGHTS_DIR`` > 本机模型仓（``D:/models``、``/models``）> 镜像内 weights。"""
+
+    configured = os.getenv("WEIGHTS_DIR")
+    if configured:
+        return Path(configured).resolve()
+    for candidate in (Path("D:/models"), Path("/models")):
+        if (candidate / "shared").is_dir():
+            return candidate.resolve()
+    return SHARED_WEIGHT_DIR
+
+
 def _has_weight_files(directory: Path) -> bool:
     if not directory.is_dir():
         return False
@@ -191,6 +204,52 @@ def _load_registry() -> dict[str, dict[str, Any]]:
     if len(operators) != 22:
         raise RuntimeError(f"map.json 应有 22 个算子，实际 {len(operators)} 个")
     return {str(item["operatorId"]): dict(item) for item in operators}
+
+
+def _device_info() -> dict[str, Any]:
+    """运行期设备：请求值、实际值、CUDA 可用性与回落原因。
+
+    以 ``torch`` 的真实状态为准，不做"假装 GPU"；torch 缺失或 CUDA 不可用时
+    返回 ``device=cpu`` 并给出 ``fallbackReason``。
+    """
+
+    requested = (os.getenv("DEVICE") or "auto").strip().lower()
+    if requested not in {"cpu", "auto"} and not requested.startswith("cuda"):
+        requested = "auto"
+    info: dict[str, Any] = {
+        "requested": requested,
+        "device": "cpu",
+        "cudaAvailable": False,
+    }
+    try:
+        import torch
+    except Exception as exc:  # noqa: BLE001 - 探针只报告状态，不中断
+        info["fallbackReason"] = f"torch 不可用：{type(exc).__name__}"
+        return info
+
+    info["torchVersion"] = torch.__version__
+    info["cudaRuntime"] = torch.version.cuda
+    try:
+        available = bool(torch.cuda.is_available())
+    except Exception as exc:  # noqa: BLE001
+        info["fallbackReason"] = f"CUDA 初始化失败：{type(exc).__name__}"
+        return info
+    info["cudaAvailable"] = available
+    if requested == "cpu":
+        return info
+    if not available:
+        if requested != "auto":
+            info["fallbackReason"] = "CUDA 不可用，回落 CPU"
+        return info
+
+    device = requested if ":" in requested else "cuda:0"
+    try:
+        index = int(device.split(":", 1)[1]) if ":" in device else 0
+        info["gpuName"] = torch.cuda.get_device_name(index)
+    except Exception:  # noqa: BLE001 - 设备名仅用于展示
+        pass
+    info["device"] = device
+    return info
 
 
 def _envelope(code: int, msg: str, data: Mapping[str, Any] | None = None) -> dict[str, Any]:
@@ -415,6 +474,8 @@ def create_app(
     upload_limit = int(max_upload_bytes if max_upload_bytes is not None else DEFAULT_MAX_UPLOAD_BYTES)
     extract_limit = int(max_extract_bytes if max_extract_bytes is not None else DEFAULT_MAX_EXTRACT_BYTES)
     runtimes = {key: OperatorRuntime(meta) for key, meta in (registry or _load_registry()).items()}
+    # 启动期探测一次设备：healthz 只读结果，避免首次探针在请求内初始化 CUDA 导致超时。
+    device_info = _device_info()
     run_locks: dict[str, threading.Lock] = {}
     locks_guard = threading.Lock()
 
@@ -460,12 +521,15 @@ def create_app(
         ready = core_status == "ok" and input_root.is_dir() and output_root.is_dir()
         weights_ok = runtime.weights_ok()
         ffmpeg_ok = shutil.which("ffmpeg") is not None
+        device = device_info
         data = {
             "ready": ready,
             "operatorId": runtime.operator_id,
             "semanticCode": runtime.semantic_code,
             "version": runtime.version,
-            "device": os.getenv("DEVICE", "cpu"),
+            "device": device["device"],
+            "deviceRequested": device["requested"],
+            "cudaAvailable": device["cudaAvailable"],
             "weightsOk": weights_ok,
             "dependencyStatus": {
                 "core": core_status,
@@ -475,6 +539,11 @@ def create_app(
             "inputDir": input_root.as_posix(),
             "outputDir": output_root.as_posix(),
         }
+        for key in ("gpuName", "cudaRuntime", "torchVersion"):
+            if key in device:
+                data[key] = device[key]
+        if "fallbackReason" in device:
+            data["deviceFallbackReason"] = device["fallbackReason"]
         if runtime.import_error:
             data["importError"] = runtime.import_error
         return _envelope(0 if ready else 1, "success" if ready else "算子未就绪", data)

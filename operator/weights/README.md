@@ -2,6 +2,10 @@
 
 > 权重本身不进 git；`SHA256SUMS` 进 git，Docker 构建期逐项校验。
 > 约定见 `docs/算子开发/权重目录约定.md`。
+>
+> **本地/构建机模型仓**：Windows `D:\models`，Linux `/models`。项目目录不放权重；
+> 解析顺序 `WEIGHTS_DIR` > 模型仓（含 `shared/`）> 本目录。构建镜像前把模型仓的
+> `shared/` 拷入 `operator/weights/`，再执行 `docker build`。
 
 ```text
 weights/

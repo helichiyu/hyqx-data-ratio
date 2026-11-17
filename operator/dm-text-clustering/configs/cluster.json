@@ -9,7 +9,7 @@
     "maxTokens": 512,
     "batchSize": 16,
     "normalize": true,
-    "device": "cpu",
+    "device": "auto",
     "storageDtype": "float16",
     "_source": "任务书 OP-03（512 token、bge、L2 归一化、float16）；模型改为 MIT 的 bge-base-zh-v1.5"
   },

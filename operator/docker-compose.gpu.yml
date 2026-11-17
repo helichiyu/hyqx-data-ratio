@@ -1,0 +1,17 @@
+# GPU 覆盖层：不改变基础 compose，CPU 节点可直接用 docker-compose.yml 启动。
+#
+#   docker compose -f docker-compose.yml -f docker-compose.gpu.yml up -d
+#
+# 前置条件：宿主机 NVIDIA 驱动 >= 12.4、已安装 nvidia-container-toolkit。
+# 镜像自带 CUDA 12.4 版 torch，不需要在容器内安装 CUDA toolkit。
+services:
+  op-data-mixing:
+    environment:
+      DEVICE: "${DEVICE:-auto}"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
