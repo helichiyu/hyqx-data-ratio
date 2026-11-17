@@ -1,0 +1,7 @@
+{
+  "inputBytes": 731771,
+  "inputFingerprint": "sha256:955b74c24fe157dad27492e01a7c130457f93bf00ef13106f7a472cd5e24bc9c",
+  "inputPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-labeling/e53b5d9093388fe5/result.jsonl",
+  "inputRoot": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-labeling/e53b5d9093388fe5",
+  "note": "治理只读标签结果与树快照，不修改上游产物。"
+}

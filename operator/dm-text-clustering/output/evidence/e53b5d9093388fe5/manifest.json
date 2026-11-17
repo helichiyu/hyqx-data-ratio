@@ -1,0 +1,75 @@
+{
+  "artifacts": [
+    {
+      "bytes": 46208,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-text-clustering/e53b5d9093388fe5/centroids.npy",
+      "sha256": "08ef47fe0344967fb4d36df34bfd1653189ee0156d2f80f80ab466a32bc721dd",
+      "type": "vectors"
+    },
+    {
+      "bytes": 8362,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-text-clustering/e53b5d9093388fe5/cluster_summary.json",
+      "sha256": "acf522fb0f8a40f06e8e4c2ba15e72dce4052dad040e84b9a11ab3f79bebb10c",
+      "type": "json"
+    },
+    {
+      "bytes": 0,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-text-clustering/e53b5d9093388fe5/failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 472,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-text-clustering/e53b5d9093388fe5/input_manifest.json",
+      "sha256": "af758f3a288d8899f31e70447a06f763fa828a9b61fdc114ea4b80e53c85791c",
+      "type": "json"
+    },
+    {
+      "bytes": 685,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-text-clustering/e53b5d9093388fe5/metrics.json",
+      "sha256": "7ddea6552507cc4c921ab458a014051efa9dfaf2075d48e9d06c736d55629b54",
+      "type": "json"
+    },
+    {
+      "bytes": 54931,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-text-clustering/e53b5d9093388fe5/result.jsonl",
+      "sha256": "9d22f3fd5f2cd8dd67582706925fb915e989f12f47a64310e5d982dc2bf1a83d",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 23746,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-text-clustering/e53b5d9093388fe5/vector_ids.jsonl",
+      "sha256": "e309cab42c1efa6820c2002aa388c233bb0e1fd99485ada4da5e3c532e8b6063",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 654464,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-text-clustering/e53b5d9093388fe5/vectors.npy",
+      "sha256": "a6da1582c95605d2f6c37c7f9baa41f4804a2833d7d144ea6db95526a3c5aaf9",
+      "type": "vectors"
+    }
+  ],
+  "compressionRatio": 0.897699,
+  "createdAt": "2026-11-17T10:21:50+08:00",
+  "failedCount": 0,
+  "failedSamples": [],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": "bge-base-zh-v1.5",
+  "notes": [
+    "模型 bge-base-zh-v1.5（MIT），权重在 operator/weights/shared/，运行期不联网。",
+    "treeVersion=null：聚类不消费分类树。",
+    "向量落盘 float16；聚类在 float32 上执行，固定 seed。",
+    "跨硬件浮点差异可能导致簇边界微调；确定性以同机复算为准。"
+  ],
+  "operatorId": "dm-text-clustering",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 788868,
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "runId": "7c549c29811c8574",
+  "sampleCount": 426,
+  "seed": 42,
+  "semanticCode": "corpus_shard_embed_cluster_v1",
+  "successCount": 426,
+  "treeVersion": null
+}

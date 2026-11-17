@@ -1,0 +1,104 @@
+{
+  "artifacts": [
+    {
+      "bytes": 978,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-taxonomy-labeling/e53b5d9093388fe5/failures.jsonl",
+      "sha256": "f15570abe8dc6cfa7c51e0cf535478de73bb723de558ef7c831e47f3ad267932",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 452,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-taxonomy-labeling/e53b5d9093388fe5/input_manifest.json",
+      "sha256": "54aa3abf844c4fba1eaa2a46882ee66b979ed303be50ea795a2134e47085b534",
+      "type": "json"
+    },
+    {
+      "bytes": 15064,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-taxonomy-labeling/e53b5d9093388fe5/label_ids_ability.jsonl",
+      "sha256": "d639367ca41d12181a331d7fce97cab84526db6fbd6080129878b81f8f1b072d",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 41796,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-taxonomy-labeling/e53b5d9093388fe5/label_ids_domain.jsonl",
+      "sha256": "79c7b1d0ab7c4772d665e7785cad584bdd8331712ea7e2d55575f57bc0b94648",
+      "type": "jsonl"
+    },
+    {
+      "bytes": 99968,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-taxonomy-labeling/e53b5d9093388fe5/label_vectors_ability.npy",
+      "sha256": "a21a43fc53efea555d59239d38c9618abcad9a0e439d3ee4d8ab8d44ca13bfad",
+      "type": "vectors"
+    },
+    {
+      "bytes": 321152,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-taxonomy-labeling/e53b5d9093388fe5/label_vectors_domain.npy",
+      "sha256": "d929e368af007b1a00c1024db378b37d66b9291fb09a117d453428ed57103bb1",
+      "type": "vectors"
+    },
+    {
+      "bytes": 827,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-taxonomy-labeling/e53b5d9093388fe5/metrics.json",
+      "sha256": "f6ab3fdc16428bcda1ceb0426626b42c331388c3bc900a6ac6a9b04e247281dc",
+      "type": "json"
+    },
+    {
+      "bytes": 1683610,
+      "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-taxonomy-labeling/e53b5d9093388fe5/result.jsonl",
+      "sha256": "59dea7ed29fa79733aa61f6717845a35b66aa99e90dcbf6788dd68a09fa05ab7",
+      "type": "jsonl"
+    }
+  ],
+  "compressionRatio": 2.462367,
+  "createdAt": "2026-11-17T10:23:23+08:00",
+  "failedCount": 6,
+  "failedSamples": [
+    {
+      "detail": "领域/能力两个空间均未达到阈值，输出「未明确」",
+      "id": "r_4a72eb5ce69bd625d6143cfc",
+      "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY"
+    },
+    {
+      "detail": "领域/能力两个空间均未达到阈值，输出「未明确」",
+      "id": "r_bb6a613f0c906b7d8fd41cfe",
+      "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY"
+    },
+    {
+      "detail": "领域/能力两个空间均未达到阈值，输出「未明确」",
+      "id": "r_816f88c01596800bbefbc415",
+      "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY"
+    },
+    {
+      "detail": "领域/能力两个空间均未达到阈值，输出「未明确」",
+      "id": "r_e1752afaa3644667a7621321",
+      "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY"
+    },
+    {
+      "detail": "领域/能力两个空间均未达到阈值，输出「未明确」",
+      "id": "r_190c607975835f063b097f3e",
+      "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY"
+    },
+    {
+      "detail": "领域/能力两个空间均未达到阈值，输出「未明确」",
+      "id": "r_920e8cb1bb9bc6c1750ec857",
+      "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY"
+    }
+  ],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": "bge-base-zh-v1.5",
+  "notes": [
+    "领域树与能力树分别向量化、分别阈值裁剪，标签空间不混用。",
+    "无人工标注时不填准确率；未达阈值输出「未明确」。"
+  ],
+  "operatorId": "dm-taxonomy-labeling",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 2163847,
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "runId": "7c549c29811c8574",
+  "sampleCount": 426,
+  "seed": 42,
+  "semanticCode": "corpus_label_taxonomy_multilabel_v1",
+  "successCount": 420,
+  "treeVersion": "taxonomy-1013-pending"
+}

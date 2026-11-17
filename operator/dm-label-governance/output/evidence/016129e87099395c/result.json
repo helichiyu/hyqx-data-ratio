@@ -1,0 +1,124 @@
+{
+  "status": "succeeded",
+  "data": {
+    "operatorId": "dm-label-governance",
+    "semanticCode": "corpus_label_governance_v1",
+    "operatorVersion": "0.1.0",
+    "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "seed": 42,
+    "runId": "016129e87099395c",
+    "inputFingerprint": "sha256:09da4bd4f21d6e7e6935a751ec25a2af5361bc980cac546b48e675bb86394c29",
+    "outputDir": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c",
+    "modelVersion": null,
+    "treeVersion": "taxonomy-1013-pending",
+    "sampleCount": 432,
+    "successCount": 432,
+    "failedCount": 0,
+    "failedSamples": [],
+    "metrics": {
+      "treeVersion": "taxonomy-1013-pending",
+      "records": 432,
+      "labels": 278,
+      "illegalLabels": 0,
+      "legalRate": 1.0,
+      "conflicts": 0,
+      "piiRecords": 1,
+      "unclassifiedRecords": 154,
+      "unclassifiedByReason": {
+        "UNCLASSIFIED_LOW_CONFIDENCE": 35,
+        "UNCLASSIFIED_LOW_SIMILARITY": 4,
+        "UNCLASSIFIED_NO_SPEECH": 1,
+        "UNCLASSIFIED_SMALL_MARGIN": 114
+      },
+      "suggestionsByType": {},
+      "reviewMetrics": {
+        "kappa": null,
+        "alpha": null,
+        "accuracy": null,
+        "adoptionRate": null,
+        "modificationRate": null,
+        "blockedReason": "REVIEW_RECORDS_REQUIRED",
+        "note": "无人工审核记录（H-05）；不填 Kappa/准确率/采纳率。"
+      },
+      "modelVersion": null,
+      "provisional": true,
+      "generatedAt": "2026-11-17T10:23:23+08:00"
+    },
+    "artifacts": [
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/conflicts.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/failures.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/governance_report.json",
+        "sha256": "6f5d6edd13a6ab82f70a6d288a930b2426d365238820353124705c334e8e63af",
+        "bytes": 1599
+      },
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/illegal.jsonl",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/input_manifest.json",
+        "sha256": "dc7617dbe40e59fe6a9c22026ad007d9280aff8f3cf0b11f9e81de1bb1da45b2",
+        "bytes": 447
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/manifest.json",
+        "sha256": "f3011d06b0a52b55636d7727cb74512634d6794aaaccfc8be69960230f9c70c3",
+        "bytes": 3309
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/metrics.json",
+        "sha256": "b8dfefad698955c49cdb665562d9c533209d52e388840ff1566c3a15009e54c1",
+        "bytes": 792
+      },
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/pii.jsonl",
+        "sha256": "36e3f740f323bcbb5b487405464295ad20e58197a547700230613fd96a199b4c",
+        "bytes": 196
+      },
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/result.jsonl",
+        "sha256": "406fd390b100ef03f5e554c975ebef221e8d07c4e7320053913f1454ab76b498",
+        "bytes": 366011
+      },
+      {
+        "type": "json",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/summary.json",
+        "sha256": "4fd9e88f7b76af935678a48f2bc1d2a6922c7cbb8fc6595f936b834a2483954c",
+        "bytes": 1431
+      },
+      {
+        "type": "jsonl",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/unclassified.jsonl",
+        "sha256": "db1f39dff14e1e7222e4b4a7160dedbfeb39056fb34d5831962614dd91df2470",
+        "bytes": 109230
+      }
+    ],
+    "outputFilePath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c/result.jsonl",
+    "deterministic": true,
+    "provisional": true,
+    "notes": [
+      "治理建议只读不写；是否入库由平台决定。",
+      "无审核记录时质量指标为 null，不编造 Kappa/准确率。"
+    ],
+    "cached": false
+  }
+}

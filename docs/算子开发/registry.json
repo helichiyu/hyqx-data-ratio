@@ -57,10 +57,10 @@
         "OP-02"
       ],
       "status": "待评审",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": "operator/dm-text-clustering/output/evidence/7c549c29811c8574/",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-text-clustering/output/evidence/e53b5d9093388fe5/",
       "publishId": null,
-      "note": "S2 P0 完成：426 条文本、K=15、轮廓 0.060446、768 维；9 项测试通过；效果指标待 H-05。"
+      "note": "S2 完成：426 条文本、768 维、K=15、轮廓 0.047620、15 簇主题词齐全；同输入同 seed 重算 result 哈希一致；人工标注待 H-05，树版本待 H-02。"
     },
     {
       "opId": "OP-04",
@@ -93,10 +93,10 @@
         "OP-02"
       ],
       "status": "待评审",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": "operator/dm-multimodal-labeling/output/evidence/7c549c29811c8574/",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-multimodal-labeling/output/evidence/e53b5d9093388fe5/",
       "publishId": null,
-      "note": "S2 P0 完成：432 条四模态，打标 278/未归类 154，路径合法率 1.0；8 项测试通过；准确率待 H-05。"
+      "note": "S2 完成：432 条四模态；打标 278、未归类 154；路径合法率 1.0；准确率/Wilson/混淆矩阵 null（H-05）；模型许可待 H-06。"
     },
     {
       "opId": "OP-06",
@@ -109,11 +109,11 @@
       "dependsOn": [
         "OP-05"
       ],
-      "status": "自测通过",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": "operator/dm-taxonomy-labeling/output/evidence/7c549c29811c8574/",
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-taxonomy-labeling/output/evidence/e53b5d9093388fe5/",
       "publishId": null,
-      "note": "S2 P1 实现+测试+证据完成：领域 209/能力 65 双空间，420/426 命中；DATA_SCHEMA 与阶段证据待补。"
+      "note": "S2 完成：领域叶子 209/能力叶子 65 双空间分离；命中 领域 382/能力 400；路径合法率 1.0；准确率 null（H-05）。"
     },
     {
       "opId": "OP-07",
@@ -127,11 +127,11 @@
         "OP-05",
         "OP-06"
       ],
-      "status": "自测通过",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": "operator/dm-label-governance/output/evidence/522eb4f27eee2c3b/",
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-label-governance/output/evidence/016129e87099395c/",
       "publishId": null,
-      "note": "S2 P1 实现+测试+证据完成：432 条治理，非法 0/冲突 0/PII 1；审核指标 null；DATA_SCHEMA 与阶段证据待补。"
+      "note": "S2 完成：432 条、标签 278；非法 0、冲突 0、PII 提示 1；Kappa/准确率/采纳率 null（REVIEW_RECORDS_REQUIRED，H-05）。"
     },
     {
       "opId": "OP-08",

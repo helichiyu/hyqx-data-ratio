@@ -1,0 +1,36 @@
+{
+  "annotation": {
+    "accuracy": null,
+    "blockedReason": "MATCHING_ANNOTATION_REQUIRED",
+    "note": "无人工标注（H-05）；不填准确率/混淆矩阵。"
+  },
+  "generatedAt": "2026-11-17T10:23:23+08:00",
+  "labelSpaceSizes": {
+    "ability": 65,
+    "domain": 209
+  },
+  "labeledCounts": {
+    "ability": 400,
+    "domain": 382
+  },
+  "meanConfidence": {
+    "ability": 0.468321,
+    "domain": 0.400124
+  },
+  "meanLabelsPerRecord": {
+    "ability": 1.272,
+    "domain": 1.325
+  },
+  "modelVersion": "bge-base-zh-v1.5",
+  "pathLegalRate": 1.0,
+  "provisional": true,
+  "skippedNonText": 6,
+  "spacesSeparated": true,
+  "textRecords": 426,
+  "treeVersion": "taxonomy-1013-pending",
+  "unknownCounts": {
+    "ability": 26,
+    "domain": 44
+  },
+  "unknownLabel": "未明确"
+}

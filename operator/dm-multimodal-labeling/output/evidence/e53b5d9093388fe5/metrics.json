@@ -1,0 +1,68 @@
+{
+  "annotation": {
+    "accuracy": null,
+    "blockedReason": "MATCHING_ANNOTATION_REQUIRED",
+    "confusionMatrix": null,
+    "note": "无人工标注（H-05）；不填准确率/区间/混淆矩阵。",
+    "samplesPerModal": {},
+    "wilsonLower": null,
+    "wilsonUpper": null
+  },
+  "confidenceThreshold": 0.25,
+  "evidenceSources": {
+    "asrAudios": 3,
+    "ocrImages": 1,
+    "text": 426,
+    "videoFusion": 2
+  },
+  "generatedAt": "2026-11-17T10:22:47+08:00",
+  "labelSpaceSize": 279,
+  "labeledCounts": {
+    "audio": 1,
+    "image": 1,
+    "text": 275,
+    "video": 1
+  },
+  "labeledRate": 0.643519,
+  "marginThreshold": 0.005,
+  "meanConfidenceByModal": {
+    "audio": 0.312253,
+    "image": 0.42514,
+    "text": 0.4242,
+    "video": 0.376989
+  },
+  "meanEvidenceCharsByModal": {
+    "audio": 19.0,
+    "image": 1014.0,
+    "text": 256.716,
+    "video": 755.0
+  },
+  "modalityCounts": {
+    "audio": 3,
+    "image": 1,
+    "text": 426,
+    "video": 2
+  },
+  "modelVersion": "bge-base-zh-v1.5",
+  "pathLegalRate": 1.0,
+  "provisional": true,
+  "toolErrors": {},
+  "toolVersions": {
+    "funasr": "1.4.16",
+    "rapidocr": "1.4.4",
+    "transformers": "4.43.4"
+  },
+  "topK": 5,
+  "treeVersion": "taxonomy-1013-pending",
+  "unclassifiedByReason": {
+    "UNCLASSIFIED_LOW_CONFIDENCE": 35,
+    "UNCLASSIFIED_LOW_SIMILARITY": 4,
+    "UNCLASSIFIED_NO_SPEECH": 1,
+    "UNCLASSIFIED_SMALL_MARGIN": 114
+  },
+  "unclassifiedCounts": {
+    "audio": 2,
+    "text": 151,
+    "video": 1
+  }
+}

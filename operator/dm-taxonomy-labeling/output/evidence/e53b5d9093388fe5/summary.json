@@ -1,0 +1,52 @@
+{
+  "failedCount": 6,
+  "generatedAt": "2026-11-17T10:23:23+08:00",
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "metrics": {
+    "annotation": {
+      "accuracy": null,
+      "blockedReason": "MATCHING_ANNOTATION_REQUIRED",
+      "note": "无人工标注（H-05）；不填准确率/混淆矩阵。"
+    },
+    "generatedAt": "2026-11-17T10:23:23+08:00",
+    "labelSpaceSizes": {
+      "ability": 65,
+      "domain": 209
+    },
+    "labeledCounts": {
+      "ability": 400,
+      "domain": 382
+    },
+    "meanConfidence": {
+      "ability": 0.468321,
+      "domain": 0.400124
+    },
+    "meanLabelsPerRecord": {
+      "ability": 1.272,
+      "domain": 1.325
+    },
+    "modelVersion": "bge-base-zh-v1.5",
+    "pathLegalRate": 1.0,
+    "provisional": true,
+    "skippedNonText": 6,
+    "spacesSeparated": true,
+    "textRecords": 426,
+    "treeVersion": "taxonomy-1013-pending",
+    "unknownCounts": {
+      "ability": 26,
+      "domain": 44
+    },
+    "unknownLabel": "未明确"
+  },
+  "modelVersion": "bge-base-zh-v1.5",
+  "operatorId": "dm-taxonomy-labeling",
+  "operatorVersion": "0.1.0",
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "provisional": true,
+  "runId": "7c549c29811c8574",
+  "sampleCount": 426,
+  "seed": 42,
+  "semanticCode": "corpus_label_taxonomy_multilabel_v1",
+  "successCount": 420,
+  "treeVersion": "taxonomy-1013-pending"
+}

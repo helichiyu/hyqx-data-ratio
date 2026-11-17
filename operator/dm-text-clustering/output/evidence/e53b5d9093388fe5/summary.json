@@ -1,0 +1,47 @@
+{
+  "failedCount": 0,
+  "generatedAt": "2026-11-17T10:21:50+08:00",
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "metrics": {
+    "avgChunksPerRecord": 1.146,
+    "chunkCount": 488,
+    "clusterSizes": {
+      "max": 64,
+      "mean": 28.4,
+      "median": 27.0,
+      "min": 4
+    },
+    "clusteredRecords": 426,
+    "deterministic": true,
+    "failedCount": 0,
+    "failuresByReason": {},
+    "generatedAt": "2026-11-17T10:21:50+08:00",
+    "k": 15,
+    "modelVersion": "bge-base-zh-v1.5",
+    "provisional": true,
+    "recordsRead": 432,
+    "runtimeSec": 52.833,
+    "searchCandidates": 17,
+    "searchRange": {
+      "lower": 15,
+      "n": 426,
+      "upper": 64
+    },
+    "silhouette": 0.04762,
+    "skippedNonText": 6,
+    "storageDtype": "float16",
+    "textRecords": 426,
+    "topicClusters": 15,
+    "vectorDimension": 768
+  },
+  "modelVersion": "bge-base-zh-v1.5",
+  "operatorId": "dm-text-clustering",
+  "operatorVersion": "0.1.0",
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "provisional": true,
+  "runId": "7c549c29811c8574",
+  "sampleCount": 426,
+  "seed": 42,
+  "semanticCode": "corpus_shard_embed_cluster_v1",
+  "successCount": 426
+}
