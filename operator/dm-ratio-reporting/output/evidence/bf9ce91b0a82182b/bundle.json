@@ -1,0 +1,13 @@
+{
+  "operator_results": {
+    "OP-05": "E:\\HYQX\\数据配比\\operator\\runtime\\transport\\output\\dm-multimodal-labeling\\e53b5d9093388fe5",
+    "OP-07": "E:\\HYQX\\数据配比\\operator\\runtime\\transport\\output\\dm-label-governance\\016129e87099395c",
+    "OP-08": "E:\\HYQX\\数据配比\\operator\\runtime\\transport\\output\\dm-corpus-profiling\\73e001cb4f8e5aed",
+    "OP-09": "E:\\HYQX\\数据配比\\operator\\runtime\\transport\\output\\dm-language-profiling\\e53b5d9093388fe5",
+    "OP-10": "E:\\HYQX\\数据配比\\operator\\runtime\\transport\\output\\dm-text-profiling\\73e001cb4f8e5aed",
+    "OP-14": "E:\\HYQX\\数据配比\\operator\\runtime\\transport\\output\\dm-quality-analysis\\f979e048a3250253",
+    "OP-15": "E:\\HYQX\\数据配比\\operator\\runtime\\transport\\output\\dm-ratio-computation\\cab32b6cd497cac3",
+    "OP-17": "E:\\HYQX\\数据配比\\operator\\runtime\\transport\\output\\dm-dataset-packaging\\347d6365d8457c91",
+    "OP-18": "E:\\HYQX\\数据配比\\operator\\runtime\\transport\\output\\dm-dataset-evaluation\\020fe881d78849c0"
+  }
+}

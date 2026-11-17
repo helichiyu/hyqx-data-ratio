@@ -1,0 +1,8 @@
+{
+  "checksPassed": 5,
+  "checksTotal": 6,
+  "failedChecks": [
+    "inventory_gap"
+  ],
+  "operatorVersion": "demo"
+}

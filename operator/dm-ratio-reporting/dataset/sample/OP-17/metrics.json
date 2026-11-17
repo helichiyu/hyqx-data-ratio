@@ -1,0 +1,10 @@
+{
+  "duplicateRecords": 0,
+  "dataset": {
+    "rows": 100
+  },
+  "selectedCount": 100,
+  "selectionRate": 0.5,
+  "inventoryGap": 10,
+  "operatorVersion": "demo"
+}

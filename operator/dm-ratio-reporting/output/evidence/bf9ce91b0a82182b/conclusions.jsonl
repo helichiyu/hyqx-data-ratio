@@ -1,0 +1,10 @@
+{"key": "scale_source", "severity": "critical", "text": "规模与来源：得分 0.4597（fail），来源 OP-08 · sourceDistribution.classes。"}
+{"key": "domain_coverage", "severity": "warning", "text": "领域覆盖：得分 0.8125（pass），来源 OP-08 · domainCoverage.coverage.level1。"}
+{"key": "language_time", "severity": "critical", "text": "语言、地域与时效：得分 0.1365（fail），来源 OP-09 · time.freshnessMean。"}
+{"key": "text_taskfit", "severity": "critical", "text": "文本属性与任务适配：得分 0.4688（fail），来源 OP-10 · distributions.overall.p50。"}
+{"key": "quality_consistency", "severity": "info", "text": "质量与一致性：得分 0.7910（good），来源 OP-14 · completeness.mean / (1-gini.gini) / polarity.balance。"}
+{"key": "label_legality", "severity": "info", "text": "标签合法与治理：得分 1.0000（excellent），来源 OP-05/OP-07 · pathLegalRate / legalRate。"}
+{"key": "ratio_compliance", "severity": "critical", "text": "配比合规：得分 0.5000（fail），来源 OP-15 · checksPassed / checksTotal。"}
+{"key": "assembly_integrity", "severity": "info", "text": "组装与打包一致性：得分 1.0000（excellent），来源 OP-17 · duplicateRecords / dataset.rows / selectedCount。"}
+{"key": "evaluation_quality", "severity": "warning", "text": "评测与风险：得分 1.0000（excellent），来源 OP-18 · score.score（无人工真值，proxy_only，不等价于准确率）。"}
+{"key": "overall", "severity": "warning", "text": "综合评分 0.6889（pass），使用 9/9 个维度。"}

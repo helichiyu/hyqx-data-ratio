@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "label": "新闻与资讯/科技新闻/产品发布与行业动态",
+      "level1": "新闻与资讯",
+      "level2": "新闻与资讯/科技新闻",
+      "feedCount": 2,
+      "bySource": {
+        "web_text": {
+          "effectiveCount": 2
+        }
+      }
+    },
+    {
+      "label": "知识与参考/百科词条/百科条目",
+      "level1": "知识与参考",
+      "level2": "知识与参考/百科词条",
+      "feedCount": 1,
+      "bySource": {
+        "wiki": {
+          "effectiveCount": 1
+        }
+      }
+    }
+  ],
+  "normalization": {
+    "targetTotal": 3
+  }
+}

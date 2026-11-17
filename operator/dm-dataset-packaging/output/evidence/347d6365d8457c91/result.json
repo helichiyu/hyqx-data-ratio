@@ -1,0 +1,1156 @@
+{
+  "status": "succeeded",
+  "data": {
+    "operatorId": "dm-dataset-packaging",
+    "semanticCode": "prod_assembly_package_v1",
+    "operatorVersion": "0.1.1",
+    "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "seed": 42,
+    "runId": "347d6365d8457c91",
+    "inputFingerprint": "sha256:255357b6b3a7b9675bcf5bb9a198962468e3c16311129b782ad296dc5d9beb1e",
+    "outputDir": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-packaging/347d6365d8457c91",
+    "modelVersion": "bge-base-zh-v1.5",
+    "treeVersion": "taxonomy-1013-pending",
+    "sampleCount": 278,
+    "successCount": 278,
+    "failedCount": 0,
+    "failedSamples": [
+      {
+        "id": "r_d4be1b7c293e2a0eb5e5b656",
+        "reasonCode": "UNCLASSIFIED_NO_SPEECH",
+        "stage": "selection"
+      },
+      {
+        "id": "r_5b99e7ea16c11d13384ed12f",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_6841eacda9ed6033d2c93134",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_05757e6f8c6d3fdc00cc1315",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_b8ddfc4efa47a7b091a86b33",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_efeeec2c1d72f9b83d2db355",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_2e64db4d9e3b19114ebcfca0",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_e977ff429d74684595ce17ab",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_75dedfa9afd9fa68608156d1",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_7cbc59a8848e403ea9488366",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_748ae9988433c42579b28ab4",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_08d4e51efe0e0e9756467bcf",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_7d0678563be938ae7f1e03d0",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_c60ef4e82c6713e60ffa77e9",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_51de28c27c260b3795c9a4b1",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_ac72b2e01a676455f38178ef",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_2483d3341e6a87cf556867d1",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_842190a0cbb037a86f4a0ca4",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_9d84d504f16cf6665cc23a49",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_4915546b8853466cb1a996d8",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_4a6112a435e1521c883061d1",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_c40a4b088719caf01db1eafc",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_65e21de28efed64a1c3af736",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_22351a3d84069b0d59566cd2",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_558d6cad0c075b1e01ef9a7a",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_d82585154d56fc88d4b3c219",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_4325d1703d6f0642999c27c4",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_22e64912630e097f19c00f06",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_3f2c160a9df8b19681b4ad72",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_5c61c6244b820a7c8f7f164b",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_eeec067a567e474ab4cde7fb",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_46a84dd89551c9bc9a4f8870",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_437cdaa404a5507e8477ec36",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_03a6966b7beb9900c0667200",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_d53afd5e520baea4d0a8b259",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_fed916ce06003f35a2e69668",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_5505d59f3692c034bd03baa4",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_dbea59630f1a26050447a964",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_fbd5b9ad5e0e78a5b2af6938",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_2341d3337d4edf49d20ed4bb",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_9106ad411709588905a4b489",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_af9afea89aeddc1ecaa5ebdf",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_75d50b5f9134a9730f3af9c7",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_fcff37c5b67bf575f507fec1",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_4a72eb5ce69bd625d6143cfc",
+        "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY",
+        "stage": "selection"
+      },
+      {
+        "id": "r_1b7715509888a2a41fc699d2",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_07266758e636c4bf3f725ef6",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_2391eb06b0d3a8b52f0753d1",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_0bd7cdc94c6611c2b41acd3a",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_4c05a374db3dec7b5987cab2",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_16048eb0777d560503ad17da",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_d0a78afb2784209ba1f36784",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_27526a5294e8ce77ed148f56",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_456f770573cccfe4b5c86604",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_987c84c12eaf4cc084c5ee90",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_1ff53a10ca4c071c3f91b236",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_418f9f3d1f8838346c79506b",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_cdba39c5976f3d5bb365a257",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_c2b223265827b0a0ec32c315",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_c3bbf37fe2ee06426546b53d",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_8b0fdc8daeb7a9d86f04aff5",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_78359a549aa65fa3e9f2fa89",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_cd5a9b5d6c43c5a71fc596b6",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_306d764bcb058e28df434995",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_c161274d0cc22f39687d99cd",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_bf53d8153dd88630884df339",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_e13617bd21a00dfd092a499e",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_c96aea833096afb81994c49e",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_5c527cd6a65bfa05cbd62a65",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_75bf6e4011889e3ac6144143",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_59c8d7955a4fa9e2ac6d12d1",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_41044c44315db8da8858a049",
+        "reasonCode": "UNCLASSIFIED_LOW_SIMILARITY",
+        "stage": "selection"
+      },
+      {
+        "id": "r_0a8cd82cb2c64e0c2223103a",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_e8bdf93aa1775521f70b4860",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_46746303576a4bb17b63a5a3",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_7bdc85870e34d7921e4b4ff5",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_3426f9ca67cfa6d20deb559c",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_44decedfaeb1f2632ce242cb",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_8db033423610f4278b58d7d2",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_a6f5e9c673dd380eb3a083b8",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_43aa6ad392cfe81268ad6d0d",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_0e4ab1a9db10fcb8ec6373d7",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_bc2aa56cf67f2a5533461f6d",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_dea758e6ac5f3589d0f11215",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_c197d8b968bb56f326d79173",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_baec2d7a4ffe7df608275a87",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_1b3d01bf7258142c06a08d61",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_9e2f14e5b1b176ab5c91e42d",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_28bcbfb754a1aa8021d0245e",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_c20cbc18c37045367c944a93",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_11e6488057e88e490ad6c58f",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_0f4244eaea11deb0550ad7d2",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_5aadcecdf268992412a0ca7d",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_3448edb9467bd3fb2da08ad5",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_e965dc1f56993dd552d9087e",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_1ef6ccbc86c1690aba802624",
+        "reasonCode": "UNCLASSIFIED_LOW_CONFIDENCE",
+        "stage": "selection"
+      },
+      {
+        "id": "r_53249fdb397193d65185fbb3",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_fd5c64eda19a026bf233c387",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_ad10a02ee2e4a5923f98eb78",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      },
+      {
+        "id": "r_851415b27c42b9481916f51b",
+        "reasonCode": "UNCLASSIFIED_SMALL_MARGIN",
+        "stage": "selection"
+      }
+    ],
+    "metrics": {
+      "operatorId": "dm-dataset-packaging",
+      "semanticCode": "prod_assembly_package_v1",
+      "operatorVersion": "0.1.1",
+      "modelVersion": "bge-base-zh-v1.5",
+      "runId": "347d6365d8457c91",
+      "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "seed": 42,
+      "targetTotal": 100000,
+      "totalQuota": 100000,
+      "selectedCount": 278,
+      "selectionRate": 0.00278,
+      "labelCount": 66,
+      "labelStatus": {
+        "inventory_short": 66
+      },
+      "inventoryGap": 99722,
+      "selectedSources": {
+        "books": 18,
+        "science": 53,
+        "web_text": 200,
+        "wiki": 7
+      },
+      "selectedModals": {
+        "audio": 1,
+        "image": 1,
+        "text": 275,
+        "video": 1
+      },
+      "duplicateRecords": 0,
+      "skippedCount": 154,
+      "failures": {
+        "records": 0,
+        "labels": 0,
+        "selection": 154
+      },
+      "bias": {
+        "maxDeviation": null,
+        "maxQuotaDeviation": 0.997222,
+        "maxSourceDeviation": 6.3e-05,
+        "weightedMeanDeviation": 0.99722,
+        "warn": false
+      },
+      "dataset": {
+        "fileCount": 7,
+        "rows": 278,
+        "bytes": 173120,
+        "partitionCount": 7,
+        "compression": "zstd"
+      },
+      "checkpoint": {
+        "resumed": false,
+        "completedLabels": 66
+      },
+      "treeVersion": "taxonomy-1013-pending",
+      "provisional": true,
+      "deterministic": true,
+      "runtimeSec": 0.387,
+      "generatedAt": "2026-11-17T12:36:07+08:00"
+    },
+    "artifacts": [
+      {
+        "path": "bias.json",
+        "bytes": 13844,
+        "sha256": "7a9447dd790243a3cdc18c81bf1b40a04061bc26fca3899a080d667fdd952ba5"
+      },
+      {
+        "path": "checkpoint.json",
+        "bytes": 51880,
+        "sha256": "b758986e86217268297d1623efd6374c1c2ae41d26370adcfbce6cb8001cae15"
+      },
+      {
+        "path": "dataset/modal=audio/source=web_text/dt=2026-11-16/part-00000.parquet",
+        "bytes": 11849,
+        "sha256": "5a66fc3376a9a9c822a356e9d7b49da550b1108e28a52f5367ba9fa886758b1b"
+      },
+      {
+        "path": "dataset/modal=image/source=web_text/dt=2026-11-16/part-00000.parquet",
+        "bytes": 11056,
+        "sha256": "c022b80fc7d3045188166e901af27778a03e1d6bb8bbbfd8377a801ebecfb77c"
+      },
+      {
+        "path": "dataset/modal=text/source=books/dt=2026-11-16/part-00000.parquet",
+        "bytes": 16433,
+        "sha256": "5c33fc52086ecb47c41d324f25ba6eb7699e5c5806f946875bfee7ace965eb03"
+      },
+      {
+        "path": "dataset/modal=text/source=science/dt=2026-11-16/part-00000.parquet",
+        "bytes": 29733,
+        "sha256": "c55cfff0c06595694297b3d5d69c730d241457e465584cdec3ef040ec9fbb654"
+      },
+      {
+        "path": "dataset/modal=text/source=web_text/dt=2026-11-16/part-00000.parquet",
+        "bytes": 67735,
+        "sha256": "964c99abd58337f5e28336d9795a461b382a20608cdd55eeee814dd0fa258436"
+      },
+      {
+        "path": "dataset/modal=text/source=wiki/dt=2026-11-16/part-00000.parquet",
+        "bytes": 13116,
+        "sha256": "5a9556348562369c4ee0a2fc021bcb63c237c827e4d50a315bfcca6e3ce22a8e"
+      },
+      {
+        "path": "dataset/modal=video/source=web_text/dt=2026-11-16/part-00000.parquet",
+        "bytes": 23198,
+        "sha256": "3866f4968ef46554a6e3ea3047914e4b0695a03dbda1361f57f9f534fb2231f9"
+      },
+      {
+        "path": "failures.jsonl",
+        "bytes": 15783,
+        "sha256": "49748d222f79b7b1503527cd94d56d3d51c35a18936b5160c15769d8edec1348"
+      },
+      {
+        "path": "quota.json",
+        "bytes": 34333,
+        "sha256": "3226026790e481b51c1b56446b2a13b0e67bdf0c8d56816b8a82d1804c9f5299"
+      },
+      {
+        "path": "selected.jsonl",
+        "bytes": 64129,
+        "sha256": "1ba346744110ca88c346a361c4b4a727051ab95ddd093960dbad66f183840471"
+      }
+    ],
+    "outputFilePath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-packaging/347d6365d8457c91/selected.jsonl",
+    "deterministic": true,
+    "provisional": true,
+    "result": {
+      "targetTotal": 100000,
+      "totalQuota": 100000,
+      "selectedCount": 278,
+      "inventoryGap": 99722,
+      "dataset": {
+        "fileCount": 7,
+        "rows": 278,
+        "bytes": 173120,
+        "partitionCount": 7,
+        "compression": "zstd"
+      },
+      "bias": {
+        "perLabel": [
+          {
+            "label": "三维与空间/三维模型/三维建模",
+            "quota": 1440,
+            "selected": 4,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "三维与空间/数字孪生/元宇宙",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "三维与空间/数字孪生/空间场景",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业与行业文档/业务系统记录/业务报表与操作日志",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业与行业文档/业务系统记录/流程记录",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业与行业文档/医疗文档/病历与诊断报告",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业与行业文档/学术论文与科研资料/学术论文",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业与行业文档/学术论文与科研资料/实验报告",
+            "quota": 3240,
+            "selected": 9,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业与行业文档/法律文书/合同与协议",
+            "quota": 1440,
+            "selected": 4,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业影像/医学影像/MRI与超声",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业影像/科研实验影像/显微图像",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业影像/科研实验影像/材料与实验记录图",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业过程视频/自动驾驶与车载/车载前视与环视视频",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "专业过程视频/自动驾驶与车载/道路事件与驾驶行为",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "人文与历史/历史/断代史",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "人文与历史/哲学/伦理学",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "人文与历史/哲学/哲学思想",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "人文与历史/宗教/宗教文化",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "人物与人体/人像与表情/表情与面部特征",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "代码与技术文档/技术文档与手册/API文档",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "代码与技术文档/技术文档与手册/数据库文档",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "代码与技术文档/程序代码/各语言源代码与脚本",
+            "quota": 3600,
+            "selected": 10,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "代码与技术文档/配置与标记语言/标记语言文档",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "图表与界面图像/界面截图/表单页",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "对话与交互/会议讨论/头脑风暴记录",
+            "quota": 1080,
+            "selected": 3,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "对话与交互/指令与训练/RLHF数据",
+            "quota": 14390,
+            "selected": 40,
+            "deviation": 0.99722,
+            "status": "inventory_short"
+          },
+          {
+            "label": "对话与交互/指令与训练/人机训练对话",
+            "quota": 1800,
+            "selected": 5,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "对话与交互/指令与训练/指令数据",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "影视与娱乐/短视频内容/探店与带货",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "教育与培训/儿童与亲子/儿童读物",
+            "quota": 1800,
+            "selected": 5,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "教育与培训/实验与操作演示/物理与化学实验",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "教育与培训/教材与课程内容/教材与教案",
+            "quota": 1080,
+            "selected": 3,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "教育与培训/教材与课程内容/课程讲义与在线课程",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "教育与培训/试题与测评/试题与答案解析",
+            "quota": 1800,
+            "selected": 5,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "文学与创作内容/韵文与剧本/诗歌",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "新闻与资讯/科技新闻/产品发布与行业动态",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "日志与遥测/传感器与设备遥测/传感器数据与IoT数据",
+            "quota": 1800,
+            "selected": 5,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "日志与遥测/告警与事件记录/告警记录",
+            "quota": 5750,
+            "selected": 16,
+            "deviation": 0.997217,
+            "status": "inventory_short"
+          },
+          {
+            "label": "日志与遥测/告警与事件记录/异常事件记录",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "知识与参考/产品说明与操作指南/说明书与帮助文档",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "知识与参考/百科词条/百科条目",
+            "quota": 3950,
+            "selected": 11,
+            "deviation": 0.997215,
+            "status": "inventory_short"
+          },
+          {
+            "label": "知识与参考/百科词条/知识库条目",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "知识与参考/科普与专著/学术专著",
+            "quota": 3950,
+            "selected": 11,
+            "deviation": 0.997215,
+            "status": "inventory_short"
+          },
+          {
+            "label": "知识与参考/科普与专著/工具书与年鉴",
+            "quota": 4670,
+            "selected": 13,
+            "deviation": 0.997216,
+            "status": "inventory_short"
+          },
+          {
+            "label": "知识与参考/科普与专著/科普读物",
+            "quota": 1080,
+            "selected": 3,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "知识与参考/网页与博客/网页正文",
+            "quota": 3950,
+            "selected": 11,
+            "deviation": 0.997215,
+            "status": "inventory_short"
+          },
+          {
+            "label": "社交与社区内容/论坛与社区帖子/问答社区帖子",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "社会与群体/群体与活动/群体活动与社交场景",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "社会与群体/群体与活动/职业形象",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "结构化数据/交易与行为记录/交易记录与订单数据",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "结构化数据/交易与行为记录/用户行为日志与点击流",
+            "quota": 11870,
+            "selected": 33,
+            "deviation": 0.99722,
+            "status": "inventory_short"
+          },
+          {
+            "label": "结构化数据/指标口径与数据字典/字段说明",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "结构化数据/指标口径与数据字典/指标定义与数据字典",
+            "quota": 1080,
+            "selected": 3,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "结构化数据/表格与数据库记录/CSV表格与数据库记录",
+            "quota": 2160,
+            "selected": 6,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "结构化数据/表格与数据库记录/统计表",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "自然与生态/动植物/植物与花卉",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "自然与生态/天文地理/卫星自然影像",
+            "quota": 1080,
+            "selected": 3,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "自然与生态/天文地理/地图与地貌影像",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "艺术与设计/合成与生成图像/数据增强与仿真图",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "艺术与设计/合成与生成图像/风格迁移图",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "行为与事件/事件检测/流程异常",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "行为与事件/事件检测/设备异常与自然灾害",
+            "quota": 2520,
+            "selected": 7,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "行为与事件/人体动作/挥手与跌倒",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "行为与事件/人体动作/搬运与交互动作",
+            "quota": 3950,
+            "selected": 11,
+            "deviation": 0.997215,
+            "status": "inventory_short"
+          },
+          {
+            "label": "语音与人声/人声属性/年龄与性别属性",
+            "quota": 720,
+            "selected": 2,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          },
+          {
+            "label": "语音与人声/人声属性/情绪属性",
+            "quota": 360,
+            "selected": 1,
+            "deviation": 0.997222,
+            "status": "inventory_short"
+          }
+        ],
+        "samplingDeviations": [],
+        "weightedMeanDeviation": 0.99722,
+        "maxDeviation": null,
+        "maxQuotaDeviation": 0.997222,
+        "maxSourceDeviation": 6.3e-05,
+        "sourceDeviation": {
+          "books": 4.5e-05,
+          "science": -6.3e-05,
+          "web_text": -2.5e-05,
+          "wiki": 4.3e-05
+        },
+        "expectedSources": {
+          "books": 0.0647034965,
+          "science": 0.1907107925,
+          "web_text": 0.7194493473,
+          "wiki": 0.0251363636
+        },
+        "actualSources": {
+          "books": 0.0647482014,
+          "science": 0.190647482,
+          "web_text": 0.7194244604,
+          "wiki": 0.0251798561
+        },
+        "warnThreshold": 0.05,
+        "warn": false,
+        "definition": "逐标签偏差 = |实抽−配额| / 配额；maxDeviation 只统计配额已满足（status=ok）的层，反映抽样代表性；maxQuotaDeviation 统计全部有配额的层，包含库存不足导致的缺口；来源偏差 = 实抽来源占比 − 按配额与 OP-15 bySource 折算的期望占比。"
+      },
+      "manifestPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-packaging/347d6365d8457c91/manifest.json"
+    },
+    "notes": [
+      "选样清单 selected.jsonl；层实抽/配额 quota.json；偏差 bias.json；成品 dataset/ 与 manifest.json。",
+      "固定 seed 重跑与断点续跑均不重复、不丢样。"
+    ],
+    "cached": false
+  }
+}

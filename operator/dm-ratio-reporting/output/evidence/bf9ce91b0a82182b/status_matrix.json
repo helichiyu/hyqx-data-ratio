@@ -1,0 +1,108 @@
+{
+  "overall": {
+    "definition": "综合分 = Σ 可用维度分×权重 / Σ 可用权重；不可用维度剔除并列入 missing，不按 0 计。",
+    "dimensionsAvailable": 9,
+    "dimensionsTotal": 9,
+    "grade": "pass",
+    "missing": [],
+    "score": 0.6889305599,
+    "thresholds": {
+      "excellent": 0.9,
+      "good": 0.75,
+      "pass": 0.6
+    },
+    "weightSumUsed": 1.0
+  },
+  "rows": [
+    {
+      "grade": "fail",
+      "key": "scale_source",
+      "nameZh": "规模与来源",
+      "operator": "OP-08",
+      "reason": null,
+      "score": 0.4596903988,
+      "status": "ok",
+      "weight": 0.1
+    },
+    {
+      "grade": "pass",
+      "key": "domain_coverage",
+      "nameZh": "领域覆盖",
+      "operator": "OP-08",
+      "reason": null,
+      "score": 0.8125,
+      "status": "ok",
+      "weight": 0.12
+    },
+    {
+      "grade": "fail",
+      "key": "language_time",
+      "nameZh": "语言、地域与时效",
+      "operator": "OP-09",
+      "reason": null,
+      "score": 0.136546,
+      "status": "ok",
+      "weight": 0.1
+    },
+    {
+      "grade": "fail",
+      "key": "text_taskfit",
+      "nameZh": "文本属性与任务适配",
+      "operator": "OP-10",
+      "reason": null,
+      "score": 0.4688256,
+      "status": "ok",
+      "weight": 0.1
+    },
+    {
+      "grade": "good",
+      "key": "quality_consistency",
+      "nameZh": "质量与一致性",
+      "operator": "OP-14",
+      "reason": null,
+      "score": 0.7910363333,
+      "status": "ok",
+      "weight": 0.12
+    },
+    {
+      "grade": "excellent",
+      "key": "label_legality",
+      "nameZh": "标签合法与治理",
+      "operator": "OP-05/OP-07",
+      "reason": null,
+      "score": 1.0,
+      "status": "ok",
+      "weight": 0.1
+    },
+    {
+      "grade": "fail",
+      "key": "ratio_compliance",
+      "nameZh": "配比合规",
+      "operator": "OP-15",
+      "reason": null,
+      "score": 0.5,
+      "status": "ok",
+      "weight": 0.14
+    },
+    {
+      "grade": "excellent",
+      "key": "assembly_integrity",
+      "nameZh": "组装与打包一致性",
+      "operator": "OP-17",
+      "reason": null,
+      "score": 1.0,
+      "status": "ok",
+      "weight": 0.1
+    },
+    {
+      "grade": "excellent",
+      "key": "evaluation_quality",
+      "nameZh": "评测与风险",
+      "operator": "OP-18",
+      "reason": null,
+      "score": 1.0,
+      "status": "ok",
+      "weight": 0.12
+    }
+  ]
+}

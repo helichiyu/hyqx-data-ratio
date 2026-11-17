@@ -1,0 +1,15 @@
+{
+  "inputFingerprint": "sha256:255357b6b3a7b9675bcf5bb9a198962468e3c16311129b782ad296dc5d9beb1e",
+  "labelCount": 432,
+  "labelsFingerprint": "sha256:1b858bc2d764342afb450974060593e9f02b0c84df24ef35216ad73f8917b876",
+  "labelsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-labeling/e53b5d9093388fe5/result.jsonl",
+  "modelVersion": "bge-base-zh-v1.5",
+  "note": "records/labels 由 OP-15 input_manifest 回退解析；生产环境应由平台传入不可变的内容寻址路径。",
+  "planFingerprint": "sha256:f0364dc3802845bfc988149bd8a5462c3f35dba8c2916413f3aeadfc1814695e",
+  "planPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-computation/cab32b6cd497cac3/plan.json",
+  "recordCount": 432,
+  "recordsFingerprint": "sha256:d28dc311d642894d952c5ee875cd32c44feca4b0b12cb1bc53b09b042ad7a0e7",
+  "recordsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/records.jsonl",
+  "targetTotal": 100000,
+  "treeVersion": "taxonomy-1013-pending"
+}

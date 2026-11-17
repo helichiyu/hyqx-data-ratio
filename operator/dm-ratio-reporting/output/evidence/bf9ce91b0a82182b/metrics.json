@@ -1,0 +1,37 @@
+{
+  "deterministic": true,
+  "dimensionsAvailable": 9,
+  "dimensionsTotal": 9,
+  "generatedAt": "2026-11-17T12:36:07+08:00",
+  "missing": [],
+  "missingOperators": {},
+  "modelVersion": null,
+  "operatorId": "dm-ratio-reporting",
+  "operatorVersion": "0.1.1",
+  "operatorVersions": {
+    "OP-05": null,
+    "OP-07": null,
+    "OP-08": null,
+    "OP-09": null,
+    "OP-10": null,
+    "OP-14": null,
+    "OP-15": "0.1.2",
+    "OP-17": "0.1.1",
+    "OP-18": "0.1.1"
+  },
+  "operatorsConsumed": 9,
+  "overallGrade": "pass",
+  "overallScore": 0.6889305599,
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "provisional": true,
+  "render": {
+    "error": null,
+    "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-reporting/bf9ce91b0a82182b/report.html",
+    "status": "ok"
+  },
+  "runId": "bf9ce91b0a82182b",
+  "runtimeSec": 0.012,
+  "seed": 42,
+  "semanticCode": "prod_ratio_report_v1",
+  "treeVersion": "taxonomy-1013-pending"
+}

@@ -1,0 +1,163 @@
+{
+  "artifacts": [
+    {
+      "bytes": 13844,
+      "path": "bias.json",
+      "sha256": "7a9447dd790243a3cdc18c81bf1b40a04061bc26fca3899a080d667fdd952ba5"
+    },
+    {
+      "bytes": 51880,
+      "path": "checkpoint.json",
+      "sha256": "b758986e86217268297d1623efd6374c1c2ae41d26370adcfbce6cb8001cae15"
+    },
+    {
+      "bytes": 11849,
+      "path": "dataset/modal=audio/source=web_text/dt=2026-11-16/part-00000.parquet",
+      "sha256": "5a66fc3376a9a9c822a356e9d7b49da550b1108e28a52f5367ba9fa886758b1b"
+    },
+    {
+      "bytes": 11056,
+      "path": "dataset/modal=image/source=web_text/dt=2026-11-16/part-00000.parquet",
+      "sha256": "c022b80fc7d3045188166e901af27778a03e1d6bb8bbbfd8377a801ebecfb77c"
+    },
+    {
+      "bytes": 16433,
+      "path": "dataset/modal=text/source=books/dt=2026-11-16/part-00000.parquet",
+      "sha256": "5c33fc52086ecb47c41d324f25ba6eb7699e5c5806f946875bfee7ace965eb03"
+    },
+    {
+      "bytes": 29733,
+      "path": "dataset/modal=text/source=science/dt=2026-11-16/part-00000.parquet",
+      "sha256": "c55cfff0c06595694297b3d5d69c730d241457e465584cdec3ef040ec9fbb654"
+    },
+    {
+      "bytes": 67735,
+      "path": "dataset/modal=text/source=web_text/dt=2026-11-16/part-00000.parquet",
+      "sha256": "964c99abd58337f5e28336d9795a461b382a20608cdd55eeee814dd0fa258436"
+    },
+    {
+      "bytes": 13116,
+      "path": "dataset/modal=text/source=wiki/dt=2026-11-16/part-00000.parquet",
+      "sha256": "5a9556348562369c4ee0a2fc021bcb63c237c827e4d50a315bfcca6e3ce22a8e"
+    },
+    {
+      "bytes": 23198,
+      "path": "dataset/modal=video/source=web_text/dt=2026-11-16/part-00000.parquet",
+      "sha256": "3866f4968ef46554a6e3ea3047914e4b0695a03dbda1361f57f9f534fb2231f9"
+    },
+    {
+      "bytes": 15783,
+      "path": "failures.jsonl",
+      "sha256": "49748d222f79b7b1503527cd94d56d3d51c35a18936b5160c15769d8edec1348"
+    },
+    {
+      "bytes": 34333,
+      "path": "quota.json",
+      "sha256": "3226026790e481b51c1b56446b2a13b0e67bdf0c8d56816b8a82d1804c9f5299"
+    },
+    {
+      "bytes": 64129,
+      "path": "selected.jsonl",
+      "sha256": "1ba346744110ca88c346a361c4b4a727051ab95ddd093960dbad66f183840471"
+    }
+  ],
+  "createdAt": "2026-11-17T12:36:07+08:00",
+  "dataset": {
+    "bytes": 173120,
+    "compression": "zstd",
+    "files": [
+      {
+        "bytes": 11849,
+        "md5": "c443d722992eee1906959fdb4a56b435",
+        "partition": "modal=audio/source=web_text/dt=2026-11-16",
+        "path": "dataset/modal=audio/source=web_text/dt=2026-11-16/part-00000.parquet",
+        "rows": 1,
+        "sha256": "5a66fc3376a9a9c822a356e9d7b49da550b1108e28a52f5367ba9fa886758b1b"
+      },
+      {
+        "bytes": 11056,
+        "md5": "e4f0f3fb455d3cb776b2ebc491d4c8bb",
+        "partition": "modal=image/source=web_text/dt=2026-11-16",
+        "path": "dataset/modal=image/source=web_text/dt=2026-11-16/part-00000.parquet",
+        "rows": 1,
+        "sha256": "c022b80fc7d3045188166e901af27778a03e1d6bb8bbbfd8377a801ebecfb77c"
+      },
+      {
+        "bytes": 16433,
+        "md5": "b66215849707caf8b871bcfd64645ba0",
+        "partition": "modal=text/source=books/dt=2026-11-16",
+        "path": "dataset/modal=text/source=books/dt=2026-11-16/part-00000.parquet",
+        "rows": 18,
+        "sha256": "5c33fc52086ecb47c41d324f25ba6eb7699e5c5806f946875bfee7ace965eb03"
+      },
+      {
+        "bytes": 29733,
+        "md5": "7ebe720b16778f38cbea55cb9c69a1d3",
+        "partition": "modal=text/source=science/dt=2026-11-16",
+        "path": "dataset/modal=text/source=science/dt=2026-11-16/part-00000.parquet",
+        "rows": 53,
+        "sha256": "c55cfff0c06595694297b3d5d69c730d241457e465584cdec3ef040ec9fbb654"
+      },
+      {
+        "bytes": 67735,
+        "md5": "69f3589722e732e073d4153324a7c0b1",
+        "partition": "modal=text/source=web_text/dt=2026-11-16",
+        "path": "dataset/modal=text/source=web_text/dt=2026-11-16/part-00000.parquet",
+        "rows": 197,
+        "sha256": "964c99abd58337f5e28336d9795a461b382a20608cdd55eeee814dd0fa258436"
+      },
+      {
+        "bytes": 13116,
+        "md5": "1ede20fa37cbc6961368f59941099b2b",
+        "partition": "modal=text/source=wiki/dt=2026-11-16",
+        "path": "dataset/modal=text/source=wiki/dt=2026-11-16/part-00000.parquet",
+        "rows": 7,
+        "sha256": "5a9556348562369c4ee0a2fc021bcb63c237c827e4d50a315bfcca6e3ce22a8e"
+      },
+      {
+        "bytes": 23198,
+        "md5": "4096d00d9096360826c3172b7cab7f0b",
+        "partition": "modal=video/source=web_text/dt=2026-11-16",
+        "path": "dataset/modal=video/source=web_text/dt=2026-11-16/part-00000.parquet",
+        "rows": 1,
+        "sha256": "3866f4968ef46554a6e3ea3047914e4b0695a03dbda1361f57f9f534fb2231f9"
+      }
+    ],
+    "partitionCounts": {
+      "modal=audio/source=web_text/dt=2026-11-16": 1,
+      "modal=image/source=web_text/dt=2026-11-16": 1,
+      "modal=text/source=books/dt=2026-11-16": 18,
+      "modal=text/source=science/dt=2026-11-16": 53,
+      "modal=text/source=web_text/dt=2026-11-16": 197,
+      "modal=text/source=wiki/dt=2026-11-16": 7,
+      "modal=video/source=web_text/dt=2026-11-16": 1
+    },
+    "rowGroupRows": 50000,
+    "rows": 278
+  },
+  "failedCount": 0,
+  "inputFingerprint": "sha256:255357b6b3a7b9675bcf5bb9a198962468e3c16311129b782ad296dc5d9beb1e",
+  "modelVersion": "bge-base-zh-v1.5",
+  "notes": [
+    "每条记录只归一个标签（最高置信度），成品无重复；标签内按 sha256(seed|record_id) 选样。",
+    "Parquet 按 modal/source/dt 分区、zstd 压缩；manifest 逐文件记录 rows/bytes/MD5/SHA-256。",
+    "库存不足时入选数小于配额，缺口如实写入 quota.json 与 metrics.inventoryGap。",
+    "真值/合规资源未参与本算子；OP-18 负责评测。"
+  ],
+  "operatorId": "dm-dataset-packaging",
+  "operatorVersion": "0.1.1",
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "quota": {
+    "status": {
+      "inventory_short": 66
+    },
+    "targetTotal": 100000,
+    "totalQuota": 100000
+  },
+  "runId": "347d6365d8457c91",
+  "sampleCount": 278,
+  "seed": 42,
+  "semanticCode": "prod_assembly_package_v1",
+  "successCount": 278,
+  "treeVersion": "taxonomy-1013-pending"
+}

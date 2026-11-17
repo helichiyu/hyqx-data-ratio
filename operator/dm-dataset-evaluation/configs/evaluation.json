@@ -1,0 +1,37 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S5 联调初值：抽样比例、匹配口径、综合分权重与合规阈值待业务确认（H-03/Q-03/Q-08）；真值与合规资源待 H-05。",
+  "sampling": {
+    "ratio": 0.1,
+    "minPerModal": 1,
+    "maxRecords": 100000,
+    "orderHash": "sha256(seed|record_id)",
+    "_source": "任务书 S5：抽样 5%–10%，取 10% 联调初值；按模态分层、固定 seed、哈希排序"
+  },
+  "matching": {
+    "pathSeparator": "/",
+    "exact": true,
+    "prefix": true,
+    "maxWrongLabels": 1000,
+    "confusionTopK": 50,
+    "lowConfidenceThreshold": 0.3,
+    "_source": "精确匹配 = 完整路径一致；前缀匹配 = 一方为另一方前缀；混淆矩阵取真值频次 Top50，其余归 OTHER；低置信阈值 0.3 为联调初值"
+  },
+  "compliance": {
+    "enabled": true,
+    "maxHits": 1000,
+    "_source": "词表/版权哈希由平台提供；缺失时 unavailable，不编造"
+  },
+  "score": {
+    "weights": {
+      "labelAccuracy": 0.4,
+      "pathLegality": 0.2,
+      "completeness": 0.2,
+      "compliance": 0.2
+    },
+    "thresholds": {"excellent": 0.9, "good": 0.75, "pass": 0.6},
+    "_source": "综合分权重与分级为联调初值（H-03）；分项不可用时剔除并重归一权重"
+  },
+  "limits": {"maxTruthRecords": 1000000, "maxComplianceTerms": 100000}
+}

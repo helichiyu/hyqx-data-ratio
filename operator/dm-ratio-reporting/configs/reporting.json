@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S5 P1 联调初值：九维映射、权重与阈值为联调初值（H-03），待业务确认；缺数据的维度标 no_data，不编造。",
+  "dimensions": [
+    {
+      "key": "scale_source",
+      "nameZh": "规模与来源",
+      "operator": "OP-08",
+      "metric": "sourceDistribution.classes",
+      "weight": 0.1,
+      "thresholds": {"excellent": 0.9, "good": 0.7, "pass": 0.5},
+      "method": "六类来源占比的归一化熵（log 6）"
+    },
+    {
+      "key": "domain_coverage",
+      "nameZh": "领域覆盖",
+      "operator": "OP-08",
+      "metric": "domainCoverage.coverage.level1",
+      "weight": 0.12,
+      "thresholds": {"excellent": 1.0, "good": 0.9, "pass": 0.8},
+      "method": "内容树一级类别覆盖率"
+    },
+    {
+      "key": "language_time",
+      "nameZh": "语言、地域与时效",
+      "operator": "OP-09",
+      "metric": "time.freshnessMean",
+      "weight": 0.1,
+      "thresholds": {"excellent": 0.7, "good": 0.5, "pass": 0.4},
+      "method": "新鲜度指数（FGW 公式）；地域不可用单列"
+    },
+    {
+      "key": "text_taskfit",
+      "nameZh": "文本属性与任务适配",
+      "operator": "OP-10",
+      "metric": "distributions.overall.p50",
+      "weight": 0.1,
+      "thresholds": {"excellent": 7.0, "good": 5.5, "pass": 4.0},
+      "method": "六维任务适配总分 p50（0–10）"
+    },
+    {
+      "key": "quality_consistency",
+      "nameZh": "质量与一致性",
+      "operator": "OP-14",
+      "metric": "completeness.mean / (1-gini.gini) / polarity.balance",
+      "weight": 0.12,
+      "thresholds": {"excellent": 0.9, "good": 0.75, "pass": 0.6},
+      "method": "完整率、1−基尼、极性平衡度三者均值"
+    },
+    {
+      "key": "label_legality",
+      "nameZh": "标签合法与治理",
+      "operator": "OP-05/OP-07",
+      "metric": "pathLegalRate / legalRate",
+      "weight": 0.1,
+      "thresholds": {"excellent": 1.0, "good": 0.98, "pass": 0.95},
+      "method": "OP-05 路径合法率与 OP-07 合法率均值；标注覆盖率单列"
+    },
+    {
+      "key": "ratio_compliance",
+      "nameZh": "配比合规",
+      "operator": "OP-15",
+      "metric": "checksPassed / checksTotal",
+      "weight": 0.14,
+      "thresholds": {"excellent": 1.0, "good": 0.83, "pass": 0.67},
+      "method": "OP-15 校验单通过比例（6 项）"
+    },
+    {
+      "key": "assembly_integrity",
+      "nameZh": "组装与打包一致性",
+      "operator": "OP-17",
+      "metric": "duplicateRecords / dataset.rows / selectedCount",
+      "weight": 0.1,
+      "thresholds": {"excellent": 1.0, "good": 0.99, "pass": 0.95},
+      "method": "无重复且 Parquet 行数=选样数记 1，否则按差异比例扣减"
+    },
+    {
+      "key": "evaluation_quality",
+      "nameZh": "评测与风险",
+      "operator": "OP-18",
+      "metric": "score.score",
+      "weight": 0.12,
+      "thresholds": {"excellent": 0.9, "good": 0.75, "pass": 0.6},
+      "method": "OP-18 综合质量分（可用分项加权；真值缺失时仍需标 proxy）"
+    }
+  ],
+  "overall": {
+    "thresholds": {"excellent": 0.9, "good": 0.75, "pass": 0.6},
+    "_source": "综合分 = Σ 可用维度分×权重 / Σ 可用权重；不可用维度剔除并列入 missing"
+  },
+  "render": {
+    "html": true,
+    "title": "数据配比中心 · 配比分析报告",
+    "_source": "算子只产数据包；HTML 渲染可选，失败不影响数据包"
+  },
+  "limits": {"maxOperatorResults": 32}
+}

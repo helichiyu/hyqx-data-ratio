@@ -1,0 +1,31 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S5 联调初值：分片/row group、选样规则与最小样本待业务确认（H-03/Q-03）；真值与合规资源待 H-05/Q-08。",
+  "selection": {
+    "labelSource": "top_confidence",
+    "tieBreak": "path_asc",
+    "orderHash": "sha256(seed|record_id)",
+    "_source": "每条记录只归一个标签：OP-05 labels[] 中 confidence 最高，平票按路径升序；标签内按 sha256(seed|record_id) 排序"
+  },
+  "parquet": {
+    "compression": "zstd",
+    "partitionColumns": ["modal", "source", "dt"],
+    "maxRowsPerShard": 100000,
+    "rowGroupRows": 50000,
+    "rowGroupTargetBytes": 134217728,
+    "_source": "任务书 3.3：Parquet+zstd，按 modal/source/dt 分区，row group 约 128 MB；行数以 50k 估算"
+  },
+  "outputs": {
+    "datasetDir": "dataset",
+    "selectedFile": "selected.jsonl",
+    "quotaFile": "quota.json",
+    "biasFile": "bias.json",
+    "checkpointFile": "checkpoint.json"
+  },
+  "bias": {
+    "maxDeviationWarn": 0.05,
+    "_source": "实抽/配额最大偏差 >5% 标记 warn；联调初值"
+  },
+  "limits": {"maxRecords": 1000000, "maxShards": 10000, "maxLabels": 5000}
+}

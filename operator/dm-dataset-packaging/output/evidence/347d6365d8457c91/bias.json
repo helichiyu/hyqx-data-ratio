@@ -1,0 +1,492 @@
+{
+  "actualSources": {
+    "books": 0.0647482014,
+    "science": 0.190647482,
+    "web_text": 0.7194244604,
+    "wiki": 0.0251798561
+  },
+  "definition": "逐标签偏差 = |实抽−配额| / 配额；maxDeviation 只统计配额已满足（status=ok）的层，反映抽样代表性；maxQuotaDeviation 统计全部有配额的层，包含库存不足导致的缺口；来源偏差 = 实抽来源占比 − 按配额与 OP-15 bySource 折算的期望占比。",
+  "expectedSources": {
+    "books": 0.0647034965,
+    "science": 0.1907107925,
+    "web_text": 0.7194493473,
+    "wiki": 0.0251363636
+  },
+  "maxDeviation": null,
+  "maxQuotaDeviation": 0.997222,
+  "maxSourceDeviation": 6.3e-05,
+  "perLabel": [
+    {
+      "deviation": 0.997222,
+      "label": "三维与空间/三维模型/三维建模",
+      "quota": 1440,
+      "selected": 4,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "三维与空间/数字孪生/元宇宙",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "三维与空间/数字孪生/空间场景",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业与行业文档/业务系统记录/业务报表与操作日志",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业与行业文档/业务系统记录/流程记录",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业与行业文档/医疗文档/病历与诊断报告",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业与行业文档/学术论文与科研资料/学术论文",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业与行业文档/学术论文与科研资料/实验报告",
+      "quota": 3240,
+      "selected": 9,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业与行业文档/法律文书/合同与协议",
+      "quota": 1440,
+      "selected": 4,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业影像/医学影像/MRI与超声",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业影像/科研实验影像/显微图像",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业影像/科研实验影像/材料与实验记录图",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业过程视频/自动驾驶与车载/车载前视与环视视频",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "专业过程视频/自动驾驶与车载/道路事件与驾驶行为",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "人文与历史/历史/断代史",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "人文与历史/哲学/伦理学",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "人文与历史/哲学/哲学思想",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "人文与历史/宗教/宗教文化",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "人物与人体/人像与表情/表情与面部特征",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "代码与技术文档/技术文档与手册/API文档",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "代码与技术文档/技术文档与手册/数据库文档",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "代码与技术文档/程序代码/各语言源代码与脚本",
+      "quota": 3600,
+      "selected": 10,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "代码与技术文档/配置与标记语言/标记语言文档",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "图表与界面图像/界面截图/表单页",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "对话与交互/会议讨论/头脑风暴记录",
+      "quota": 1080,
+      "selected": 3,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.99722,
+      "label": "对话与交互/指令与训练/RLHF数据",
+      "quota": 14390,
+      "selected": 40,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "对话与交互/指令与训练/人机训练对话",
+      "quota": 1800,
+      "selected": 5,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "对话与交互/指令与训练/指令数据",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "影视与娱乐/短视频内容/探店与带货",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "教育与培训/儿童与亲子/儿童读物",
+      "quota": 1800,
+      "selected": 5,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "教育与培训/实验与操作演示/物理与化学实验",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "教育与培训/教材与课程内容/教材与教案",
+      "quota": 1080,
+      "selected": 3,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "教育与培训/教材与课程内容/课程讲义与在线课程",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "教育与培训/试题与测评/试题与答案解析",
+      "quota": 1800,
+      "selected": 5,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "文学与创作内容/韵文与剧本/诗歌",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "新闻与资讯/科技新闻/产品发布与行业动态",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "日志与遥测/传感器与设备遥测/传感器数据与IoT数据",
+      "quota": 1800,
+      "selected": 5,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997217,
+      "label": "日志与遥测/告警与事件记录/告警记录",
+      "quota": 5750,
+      "selected": 16,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "日志与遥测/告警与事件记录/异常事件记录",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "知识与参考/产品说明与操作指南/说明书与帮助文档",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997215,
+      "label": "知识与参考/百科词条/百科条目",
+      "quota": 3950,
+      "selected": 11,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "知识与参考/百科词条/知识库条目",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997215,
+      "label": "知识与参考/科普与专著/学术专著",
+      "quota": 3950,
+      "selected": 11,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997216,
+      "label": "知识与参考/科普与专著/工具书与年鉴",
+      "quota": 4670,
+      "selected": 13,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "知识与参考/科普与专著/科普读物",
+      "quota": 1080,
+      "selected": 3,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997215,
+      "label": "知识与参考/网页与博客/网页正文",
+      "quota": 3950,
+      "selected": 11,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "社交与社区内容/论坛与社区帖子/问答社区帖子",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "社会与群体/群体与活动/群体活动与社交场景",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "社会与群体/群体与活动/职业形象",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "结构化数据/交易与行为记录/交易记录与订单数据",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.99722,
+      "label": "结构化数据/交易与行为记录/用户行为日志与点击流",
+      "quota": 11870,
+      "selected": 33,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "结构化数据/指标口径与数据字典/字段说明",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "结构化数据/指标口径与数据字典/指标定义与数据字典",
+      "quota": 1080,
+      "selected": 3,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "结构化数据/表格与数据库记录/CSV表格与数据库记录",
+      "quota": 2160,
+      "selected": 6,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "结构化数据/表格与数据库记录/统计表",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "自然与生态/动植物/植物与花卉",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "自然与生态/天文地理/卫星自然影像",
+      "quota": 1080,
+      "selected": 3,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "自然与生态/天文地理/地图与地貌影像",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "艺术与设计/合成与生成图像/数据增强与仿真图",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "艺术与设计/合成与生成图像/风格迁移图",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "行为与事件/事件检测/流程异常",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "行为与事件/事件检测/设备异常与自然灾害",
+      "quota": 2520,
+      "selected": 7,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "行为与事件/人体动作/挥手与跌倒",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997215,
+      "label": "行为与事件/人体动作/搬运与交互动作",
+      "quota": 3950,
+      "selected": 11,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "语音与人声/人声属性/年龄与性别属性",
+      "quota": 720,
+      "selected": 2,
+      "status": "inventory_short"
+    },
+    {
+      "deviation": 0.997222,
+      "label": "语音与人声/人声属性/情绪属性",
+      "quota": 360,
+      "selected": 1,
+      "status": "inventory_short"
+    }
+  ],
+  "samplingDeviations": [],
+  "sourceDeviation": {
+    "books": 4.5e-05,
+    "science": -6.3e-05,
+    "web_text": -2.5e-05,
+    "wiki": 4.3e-05
+  },
+  "warn": false,
+  "warnThreshold": 0.05,
+  "weightedMeanDeviation": 0.99722
+}

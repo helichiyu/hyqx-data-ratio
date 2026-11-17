@@ -1,0 +1,17 @@
+{
+  "completeness": {
+    "mean": 1.0
+  },
+  "gini": {
+    "gini": 0.55
+  },
+  "polarity": {
+    "balance": 0.9
+  },
+  "conflict": {
+    "nearDuplicateGroups": 2,
+    "conflictRate": 0.0
+  },
+  "operatorVersion": "demo",
+  "treeVersion": "demo"
+}

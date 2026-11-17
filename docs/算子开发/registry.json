@@ -306,11 +306,11 @@
       "dependsOn": [
         "OP-15"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-dataset-packaging/output/evidence/347d6365d8457c91/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S5 完成（0.1.1）：278/100000 选样（库存不足）、7 分片/278 行/0 重复；Parquet+manifest 对账；缺口 99722。"
     },
     {
       "opId": "OP-18",
@@ -324,11 +324,11 @@
         "OP-17",
         "OP-05"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-dataset-evaluation/output/evidence/020fe881d78849c0/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S5 完成（0.1.1）：抽样 31/278；真值 unavailable（H-05）；路径合法率 1.0；合规 unavailable（Q-08）；综合分 1.0 标 proxy_only。"
     },
     {
       "opId": "OP-19",
@@ -351,11 +351,11 @@
         "OP-17",
         "OP-18"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-ratio-reporting/output/evidence/bf9ce91b0a82182b/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S5 完成（0.1.1）：九维可用 9/9；综合 0.6889（pass）；报告数据包+HTML 渲染成功；权重/阈值待 H-03。"
     },
     {
       "opId": "OP-20",

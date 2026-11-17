@@ -1,0 +1,17 @@
+{
+  "time": {
+    "freshnessMean": 0.5,
+    "knownTimeRatio": 0.8,
+    "staleShare": 0.4
+  },
+  "language": {
+    "statusCounts": {
+      "identified": 98
+    }
+  },
+  "region": {
+    "status": "unavailable"
+  },
+  "operatorVersion": "demo",
+  "treeVersion": "demo"
+}

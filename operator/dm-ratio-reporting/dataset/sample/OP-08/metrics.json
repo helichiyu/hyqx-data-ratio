@@ -1,0 +1,43 @@
+{
+  "sourceDistribution": {
+    "classes": {
+      "web_text": {
+        "count": 50,
+        "sharePercent": 50.0
+      },
+      "books": {
+        "count": 20,
+        "sharePercent": 20.0
+      },
+      "code": {
+        "count": 5,
+        "sharePercent": 5.0
+      },
+      "science": {
+        "count": 15,
+        "sharePercent": 15.0
+      },
+      "wiki": {
+        "count": 7,
+        "sharePercent": 7.0
+      },
+      "dialogue": {
+        "count": 3,
+        "sharePercent": 3.0
+      }
+    },
+    "shareSumPercent": 100.0
+  },
+  "domainCoverage": {
+    "coverage": {
+      "level1": 0.9,
+      "level2": 0.5,
+      "leaf": 0.2
+    }
+  },
+  "scale": {
+    "recordCount": 100
+  },
+  "operatorVersion": "demo",
+  "treeVersion": "demo"
+}

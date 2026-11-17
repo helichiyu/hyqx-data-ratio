@@ -1,0 +1,18 @@
+{
+  "score": {
+    "score": 0.8,
+    "grade": "good"
+  },
+  "truth": {
+    "status": "unavailable",
+    "blockedReason": "TRUTH_REQUIRED"
+  },
+  "proxy": {
+    "pathLegalityRate": 1.0
+  },
+  "compliance": {
+    "status": "unavailable"
+  },
+  "operatorVersion": "demo",
+  "treeVersion": "demo"
+}

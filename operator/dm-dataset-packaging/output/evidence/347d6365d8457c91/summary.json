@@ -1,0 +1,76 @@
+{
+  "failedCount": 0,
+  "generatedAt": "2026-11-17T12:36:07+08:00",
+  "inputFingerprint": "sha256:255357b6b3a7b9675bcf5bb9a198962468e3c16311129b782ad296dc5d9beb1e",
+  "metrics": {
+    "bias": {
+      "maxDeviation": null,
+      "maxQuotaDeviation": 0.997222,
+      "maxSourceDeviation": 6.3e-05,
+      "warn": false,
+      "weightedMeanDeviation": 0.99722
+    },
+    "checkpoint": {
+      "completedLabels": 66,
+      "resumed": false
+    },
+    "dataset": {
+      "bytes": 173120,
+      "compression": "zstd",
+      "fileCount": 7,
+      "partitionCount": 7,
+      "rows": 278
+    },
+    "deterministic": true,
+    "duplicateRecords": 0,
+    "failures": {
+      "labels": 0,
+      "records": 0,
+      "selection": 154
+    },
+    "generatedAt": "2026-11-17T12:36:07+08:00",
+    "inventoryGap": 99722,
+    "labelCount": 66,
+    "labelStatus": {
+      "inventory_short": 66
+    },
+    "modelVersion": "bge-base-zh-v1.5",
+    "operatorId": "dm-dataset-packaging",
+    "operatorVersion": "0.1.1",
+    "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "provisional": true,
+    "runId": "347d6365d8457c91",
+    "runtimeSec": 0.387,
+    "seed": 42,
+    "selectedCount": 278,
+    "selectedModals": {
+      "audio": 1,
+      "image": 1,
+      "text": 275,
+      "video": 1
+    },
+    "selectedSources": {
+      "books": 18,
+      "science": 53,
+      "web_text": 200,
+      "wiki": 7
+    },
+    "selectionRate": 0.00278,
+    "semanticCode": "prod_assembly_package_v1",
+    "skippedCount": 154,
+    "targetTotal": 100000,
+    "totalQuota": 100000,
+    "treeVersion": "taxonomy-1013-pending"
+  },
+  "modelVersion": "bge-base-zh-v1.5",
+  "operatorId": "dm-dataset-packaging",
+  "operatorVersion": "0.1.1",
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "provisional": true,
+  "runId": "347d6365d8457c91",
+  "sampleCount": 278,
+  "seed": 42,
+  "semanticCode": "prod_assembly_package_v1",
+  "successCount": 278,
+  "treeVersion": "taxonomy-1013-pending"
+}

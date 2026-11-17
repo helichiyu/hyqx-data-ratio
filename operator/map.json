@@ -266,8 +266,8 @@
       "dependsOn": [
         "OP-15"
       ],
-      "version": "0.1.0",
-      "status": "scaffold"
+      "version": "0.1.1",
+      "status": "implemented"
     },
     {
       "opId": "OP-18",
@@ -282,8 +282,8 @@
         "OP-17",
         "OP-05"
       ],
-      "version": "0.1.0",
-      "status": "scaffold"
+      "version": "0.1.1",
+      "status": "implemented"
     },
     {
       "opId": "OP-19",
@@ -307,8 +307,8 @@
         "OP-17",
         "OP-18"
       ],
-      "version": "0.1.0",
-      "status": "scaffold"
+      "version": "0.1.1",
+      "status": "implemented"
     },
     {
       "opId": "OP-20",

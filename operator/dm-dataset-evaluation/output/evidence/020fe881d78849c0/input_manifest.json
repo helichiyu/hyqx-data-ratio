@@ -1,0 +1,11 @@
+{
+  "datasetManifest": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-packaging/347d6365d8457c91/manifest.json",
+  "datasetRunDir": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-packaging/347d6365d8457c91",
+  "datasetRunId": "347d6365d8457c91",
+  "inputFingerprint": "sha256:176c77771ff4a51ec11932854b8db697c3fa52604595aa76f100fb8c2ed2feb7",
+  "modelVersion": "bge-base-zh-v1.5",
+  "note": "评测与 OP-05 共用 OP-17 透传的 modelVersion/treeVersion；真值缺失时效果指标为 null。",
+  "recordCount": 278,
+  "treeVersion": "taxonomy-1013-pending",
+  "truthPath": null
+}

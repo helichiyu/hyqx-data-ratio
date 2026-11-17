@@ -1,0 +1,3 @@
+{"record_id": "s1", "unclassified": false, "labels": [{"path": ["新闻与资讯", "科技新闻", "产品发布与行业动态"], "confidence": 0.9, "modelVersion": "demo", "treeVersion": "demo-tree"}]}
+{"record_id": "s2", "unclassified": false, "labels": [{"path": ["新闻与资讯", "科技新闻", "产品发布与行业动态"], "confidence": 0.8, "modelVersion": "demo", "treeVersion": "demo-tree"}]}
+{"record_id": "s3", "unclassified": false, "labels": [{"path": ["知识与参考", "百科词条", "百科条目"], "confidence": 0.9, "modelVersion": "demo", "treeVersion": "demo-tree"}]}
