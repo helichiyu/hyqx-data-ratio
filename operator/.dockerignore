@@ -16,6 +16,8 @@ dm-*/*
 !dm-*/configs
 !dm-*/utils
 
+# 权重目录的 README 属于仓库说明，不进入运行时镜像
+weights/**/README.md
 # 任何层级都不进镜像
 **/__pycache__
 **/*.pyc

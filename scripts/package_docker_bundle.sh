@@ -72,6 +72,8 @@ echo "版本：$VERSION"
 # 清理 Python 缓存（后续 utils/ 下会产生 __pycache__）
 find "$STAGE" -name '*.pyc' -delete
 find "$STAGE" -depth -type d -name '__pycache__' -empty -delete
+# 权重目录的 README 属于仓库说明，不进入运行时压缩包
+find "$STAGE/weights" -name '*.md' -delete 2>/dev/null || true
 
 for required in Dockerfile .dockerignore docker-compose.yml inference.py requirements.txt map.json \
                 baseline/tree-snapshot.json baseline/source-map.json baseline/thresholds.json; do

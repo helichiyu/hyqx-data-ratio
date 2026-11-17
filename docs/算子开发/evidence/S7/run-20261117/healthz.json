@@ -1,0 +1,126 @@
+{
+  "aggregate": {
+    "code": 0,
+    "data": {
+      "operatorCount": 22,
+      "readyCount": 22,
+      "service": "op-data-mixing",
+      "status": "ok",
+      "version": "0.1.0"
+    },
+    "msg": "success"
+  },
+  "log": "E:/HYQX/数据配比/operator/runtime/transport/s7-service.log",
+  "probes": {
+    "dm-corpus-normalization": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-corpus-profiling": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-dataset-evaluation": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-dataset-packaging": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-expert-validation": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-graph-indexing": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-knowledge-analysis": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-label-governance": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-language-profiling": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-multimodal-analysis": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-multimodal-labeling": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-quality-analysis": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-ratio-analysis": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-ratio-computation": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-ratio-reporting": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-risk-detection": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-speech-analysis": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-stratified-sampling": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-taxonomy-labeling": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-text-clustering": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-text-profiling": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    },
+    "dm-visual-analysis": {
+      "code": 0,
+      "http": 200,
+      "ready": true
+    }
+  }
+}

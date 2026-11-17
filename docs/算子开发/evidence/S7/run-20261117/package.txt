@@ -1,0 +1,14 @@
+{
+  "returncode": 0,
+  "tarball": "E:/HYQX/数据配比/dist/op-data-mixing-0.1.0.tar.gz",
+  "fileCount": 319,
+  "forbidden": []
+}
+
+构建上下文：/e/HYQX/数据配比/operator
+版本：0.1.0
+已生成：/e/HYQX/数据配比/dist/op-data-mixing-0.1.0.tar.gz
+大小：1159470894 字节
+SHA-256：a6481f046d15e766ce79098a3c0115c63cb3ab6d1e573d2abab9eb59c4f56f45
+文件数：319
+

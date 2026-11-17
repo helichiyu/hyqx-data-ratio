@@ -1,0 +1,587 @@
+{
+  "chainChecks": {
+    "OP-17_consumes_OP-15": true,
+    "OP-18_consumes_OP-17": true,
+    "OP-19_consumes_OP-15/17/18": true,
+    "OP-20_consumes_OP-02/03": true,
+    "OP-22_consumes_OP-08..19": true
+  },
+  "errors": [],
+  "fullChainComplete": true,
+  "generatedAt": "2026-11-17T13:24:25+0800",
+  "grep": {
+    "clean": true,
+    "hits": []
+  },
+  "healthz": {
+    "allPassed": true,
+    "detail": {
+      "aggregate": {
+        "code": 0,
+        "data": {
+          "operatorCount": 22,
+          "readyCount": 22,
+          "service": "op-data-mixing",
+          "status": "ok",
+          "version": "0.1.0"
+        },
+        "msg": "success"
+      },
+      "log": "E:/HYQX/数据配比/operator/runtime/transport/s7-service.log",
+      "probes": {
+        "dm-corpus-normalization": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-corpus-profiling": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-dataset-evaluation": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-dataset-packaging": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-expert-validation": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-graph-indexing": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-knowledge-analysis": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-label-governance": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-language-profiling": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-multimodal-analysis": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-multimodal-labeling": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-quality-analysis": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-ratio-analysis": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-ratio-computation": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-ratio-reporting": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-risk-detection": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-speech-analysis": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-stratified-sampling": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-taxonomy-labeling": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-text-clustering": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-text-profiling": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        },
+        "dm-visual-analysis": {
+          "code": 0,
+          "http": 200,
+          "ready": true
+        }
+      }
+    },
+    "passed": 22,
+    "total": 22
+  },
+  "manualGates": [
+    "H-01 Docker 构建与容器内 22 healthz",
+    "平台联调（17025/X-Token/10 MiB/超时/幂等/断点）",
+    "H-02 树版本 / H-03 阈值 / H-05 真值与专家 / H-11 本体/KG / Q-07 Neo4j/FAISS 许可"
+  ],
+  "operatorCount": 22,
+  "operators": [
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-multimodal-analysis/output/evidence/add117fbb422d09f/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": null,
+      "opId": "OP-01",
+      "operatorId": "dm-multimodal-analysis",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": [
+        "metrics.operatorVersion 缺失",
+        "metrics.modelVersion 缺失",
+        "metrics.treeVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-corpus-normalization/output/evidence/10a342ae92595ab7/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": null,
+      "opId": "OP-02",
+      "operatorId": "dm-corpus-normalization",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": [
+        "legacy manifest.runId=db3012ef2c7a4b8d 与 HTTP 目录 10a342ae92595ab7 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.modelVersion 缺失",
+        "metrics.treeVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-text-clustering/output/evidence/e53b5d9093388fe5/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": "bge-base-zh-v1.5",
+      "opId": "OP-03",
+      "operatorId": "dm-text-clustering",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": [
+        "legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.treeVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-stratified-sampling/output/evidence/f7a8cdd04268386e/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": null,
+      "opId": "OP-04",
+      "operatorId": "dm-stratified-sampling",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": [
+        "legacy manifest.runId=3c42fd5ccc582864 与 HTTP 目录 f7a8cdd04268386e 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.modelVersion 缺失",
+        "metrics.treeVersion 缺失",
+        "metrics.paramsHash 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-multimodal-labeling/output/evidence/e53b5d9093388fe5/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": "bge-base-zh-v1.5",
+      "opId": "OP-05",
+      "operatorId": "dm-multimodal-labeling",
+      "status": "待评审",
+      "treeVersion": "taxonomy-1013-pending",
+      "warnings": [
+        "legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-taxonomy-labeling/output/evidence/e53b5d9093388fe5/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": "bge-base-zh-v1.5",
+      "opId": "OP-06",
+      "operatorId": "dm-taxonomy-labeling",
+      "status": "待评审",
+      "treeVersion": "taxonomy-1013-pending",
+      "warnings": [
+        "legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-label-governance/output/evidence/016129e87099395c/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": null,
+      "opId": "OP-07",
+      "operatorId": "dm-label-governance",
+      "status": "待评审",
+      "treeVersion": "taxonomy-1013-pending",
+      "warnings": [
+        "legacy manifest.runId=522eb4f27eee2c3b 与 HTTP 目录 016129e87099395c 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-corpus-profiling/output/evidence/73e001cb4f8e5aed/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": null,
+      "opId": "OP-08",
+      "operatorId": "dm-corpus-profiling",
+      "status": "待评审",
+      "treeVersion": "taxonomy-1013-pending",
+      "warnings": [
+        "legacy manifest.runId=e1a77c2ae30df3f0 与 HTTP 目录 73e001cb4f8e5aed 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.modelVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-language-profiling/output/evidence/e53b5d9093388fe5/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": "unicode-script-heuristics-v1",
+      "opId": "OP-09",
+      "operatorId": "dm-language-profiling",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": [
+        "legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.modelVersion 缺失",
+        "metrics.treeVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-text-profiling/output/evidence/73e001cb4f8e5aed/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": "rule-based-text-metrics-v1",
+      "opId": "OP-10",
+      "operatorId": "dm-text-profiling",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": [
+        "legacy manifest.runId=e1a77c2ae30df3f0 与 HTTP 目录 73e001cb4f8e5aed 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.modelVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-speech-analysis/output/evidence/e53b5d9093388fe5/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": "paraformer-zh",
+      "opId": "OP-11",
+      "operatorId": "dm-speech-analysis",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": [
+        "legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.treeVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-visual-analysis/output/evidence/e53b5d9093388fe5/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": "opencv-heuristics-v1",
+      "opId": "OP-12",
+      "operatorId": "dm-visual-analysis",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": [
+        "legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.treeVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-knowledge-analysis/output/evidence/e53b5d9093388fe5/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": "rule-based-knowledge-v1",
+      "opId": "OP-13",
+      "operatorId": "dm-knowledge-analysis",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": [
+        "legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.modelVersion 缺失",
+        "metrics.treeVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-quality-analysis/output/evidence/f979e048a3250253/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": "rule-based-quality-v1",
+      "opId": "OP-14",
+      "operatorId": "dm-quality-analysis",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": [
+        "legacy manifest.runId=86cbf55e616d3084 与 HTTP 目录 f979e048a3250253 不一致（result.json 一致）",
+        "metrics.operatorVersion 缺失",
+        "metrics.modelVersion 缺失",
+        "metrics.paramsHash 缺失",
+        "metrics.seed 缺失"
+      ]
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-ratio-computation/output/evidence/cab32b6cd497cac3/",
+      "manifestVersion": "0.1.2",
+      "modelVersion": null,
+      "opId": "OP-15",
+      "operatorId": "dm-ratio-computation",
+      "status": "待评审",
+      "treeVersion": "taxonomy-1013-pending",
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-ratio-analysis/output/evidence/d3cc21958ec443d6/",
+      "manifestVersion": "0.1.2",
+      "modelVersion": null,
+      "opId": "OP-16",
+      "operatorId": "dm-ratio-analysis",
+      "status": "待评审",
+      "treeVersion": "taxonomy-1013-pending",
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-dataset-packaging/output/evidence/347d6365d8457c91/",
+      "manifestVersion": "0.1.1",
+      "modelVersion": "bge-base-zh-v1.5",
+      "opId": "OP-17",
+      "operatorId": "dm-dataset-packaging",
+      "status": "待评审",
+      "treeVersion": "taxonomy-1013-pending",
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-dataset-evaluation/output/evidence/020fe881d78849c0/",
+      "manifestVersion": "0.1.1",
+      "modelVersion": "bge-base-zh-v1.5",
+      "opId": "OP-18",
+      "operatorId": "dm-dataset-evaluation",
+      "status": "待评审",
+      "treeVersion": "taxonomy-1013-pending",
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-ratio-reporting/output/evidence/bf9ce91b0a82182b/",
+      "manifestVersion": "0.1.1",
+      "modelVersion": null,
+      "opId": "OP-19",
+      "operatorId": "dm-ratio-reporting",
+      "status": "待评审",
+      "treeVersion": "taxonomy-1013-pending",
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-graph-indexing/output/evidence/e5f5df6ab0857e5f/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": null,
+      "opId": "OP-20",
+      "operatorId": "dm-graph-indexing",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-expert-validation/output/evidence/8ea8159784975ebe/",
+      "manifestVersion": "0.1.1",
+      "modelVersion": null,
+      "opId": "OP-21",
+      "operatorId": "dm-expert-validation",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "evidencePath": "operator/dm-risk-detection/output/evidence/8a156871249e49f4/",
+      "manifestVersion": "0.1.0",
+      "modelVersion": null,
+      "opId": "OP-22",
+      "operatorId": "dm-risk-detection",
+      "status": "待评审",
+      "treeVersion": null,
+      "warnings": []
+    }
+  ],
+  "p0ChainComplete": true,
+  "p0ChainOperators": [
+    "OP-01",
+    "OP-02",
+    "OP-03",
+    "OP-05",
+    "OP-08",
+    "OP-09",
+    "OP-10",
+    "OP-14",
+    "OP-15",
+    "OP-17",
+    "OP-18"
+  ],
+  "p0ChainVerified": [
+    "OP-01",
+    "OP-02",
+    "OP-03",
+    "OP-05",
+    "OP-08",
+    "OP-09",
+    "OP-10",
+    "OP-14",
+    "OP-15",
+    "OP-17",
+    "OP-18"
+  ],
+  "package": {
+    "fileCount": 319,
+    "forbidden": [],
+    "log": "构建上下文：/e/HYQX/数据配比/operator\n版本：0.1.0\n已生成：/e/HYQX/数据配比/dist/op-data-mixing-0.1.0.tar.gz\n大小：1159470894 字节\nSHA-256：a6481f046d15e766ce79098a3c0115c63cb3ab6d1e573d2abab9eb59c4f56f45\n文件数：319\n\n",
+    "returncode": 0,
+    "tarball": "E:/HYQX/数据配比/dist/op-data-mixing-0.1.0.tar.gz"
+  },
+  "warnings": [
+    "OP-01: metrics.operatorVersion 缺失",
+    "OP-01: metrics.modelVersion 缺失",
+    "OP-01: metrics.treeVersion 缺失",
+    "OP-01: metrics.paramsHash 缺失",
+    "OP-01: metrics.seed 缺失",
+    "OP-02: legacy manifest.runId=db3012ef2c7a4b8d 与 HTTP 目录 10a342ae92595ab7 不一致（result.json 一致）",
+    "OP-02: metrics.operatorVersion 缺失",
+    "OP-02: metrics.modelVersion 缺失",
+    "OP-02: metrics.treeVersion 缺失",
+    "OP-02: metrics.paramsHash 缺失",
+    "OP-02: metrics.seed 缺失",
+    "OP-03: legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+    "OP-03: metrics.operatorVersion 缺失",
+    "OP-03: metrics.treeVersion 缺失",
+    "OP-03: metrics.paramsHash 缺失",
+    "OP-03: metrics.seed 缺失",
+    "OP-04: legacy manifest.runId=3c42fd5ccc582864 与 HTTP 目录 f7a8cdd04268386e 不一致（result.json 一致）",
+    "OP-04: metrics.operatorVersion 缺失",
+    "OP-04: metrics.modelVersion 缺失",
+    "OP-04: metrics.treeVersion 缺失",
+    "OP-04: metrics.paramsHash 缺失",
+    "OP-05: legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+    "OP-05: metrics.operatorVersion 缺失",
+    "OP-05: metrics.paramsHash 缺失",
+    "OP-05: metrics.seed 缺失",
+    "OP-06: legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+    "OP-06: metrics.operatorVersion 缺失",
+    "OP-06: metrics.paramsHash 缺失",
+    "OP-06: metrics.seed 缺失",
+    "OP-07: legacy manifest.runId=522eb4f27eee2c3b 与 HTTP 目录 016129e87099395c 不一致（result.json 一致）",
+    "OP-07: metrics.operatorVersion 缺失",
+    "OP-07: metrics.paramsHash 缺失",
+    "OP-07: metrics.seed 缺失",
+    "OP-08: legacy manifest.runId=e1a77c2ae30df3f0 与 HTTP 目录 73e001cb4f8e5aed 不一致（result.json 一致）",
+    "OP-08: metrics.operatorVersion 缺失",
+    "OP-08: metrics.modelVersion 缺失",
+    "OP-08: metrics.paramsHash 缺失",
+    "OP-08: metrics.seed 缺失",
+    "OP-09: legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+    "OP-09: metrics.operatorVersion 缺失",
+    "OP-09: metrics.modelVersion 缺失",
+    "OP-09: metrics.treeVersion 缺失",
+    "OP-09: metrics.paramsHash 缺失",
+    "OP-09: metrics.seed 缺失",
+    "OP-10: legacy manifest.runId=e1a77c2ae30df3f0 与 HTTP 目录 73e001cb4f8e5aed 不一致（result.json 一致）",
+    "OP-10: metrics.operatorVersion 缺失",
+    "OP-10: metrics.modelVersion 缺失",
+    "OP-10: metrics.paramsHash 缺失",
+    "OP-10: metrics.seed 缺失",
+    "OP-11: legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+    "OP-11: metrics.operatorVersion 缺失",
+    "OP-11: metrics.treeVersion 缺失",
+    "OP-11: metrics.paramsHash 缺失",
+    "OP-11: metrics.seed 缺失",
+    "OP-12: legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+    "OP-12: metrics.operatorVersion 缺失",
+    "OP-12: metrics.treeVersion 缺失",
+    "OP-12: metrics.paramsHash 缺失",
+    "OP-12: metrics.seed 缺失",
+    "OP-13: legacy manifest.runId=7c549c29811c8574 与 HTTP 目录 e53b5d9093388fe5 不一致（result.json 一致）",
+    "OP-13: metrics.operatorVersion 缺失",
+    "OP-13: metrics.modelVersion 缺失",
+    "OP-13: metrics.treeVersion 缺失",
+    "OP-13: metrics.paramsHash 缺失",
+    "OP-13: metrics.seed 缺失",
+    "OP-14: legacy manifest.runId=86cbf55e616d3084 与 HTTP 目录 f979e048a3250253 不一致（result.json 一致）",
+    "OP-14: metrics.operatorVersion 缺失",
+    "OP-14: metrics.modelVersion 缺失",
+    "OP-14: metrics.paramsHash 缺失",
+    "OP-14: metrics.seed 缺失"
+  ]
+}
