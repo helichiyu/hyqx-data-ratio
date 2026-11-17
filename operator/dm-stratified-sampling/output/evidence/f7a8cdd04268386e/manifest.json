@@ -1,0 +1,51 @@
+{
+  "artifacts": [
+    {
+      "bytes": 0,
+      "path": "failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 528,
+      "path": "input_manifest.json",
+      "sha256": "7aeab74ee8a7a1a813ed18e9ddcf80548949b5cebf754844620a62a2aae7d28a"
+    },
+    {
+      "bytes": 823,
+      "path": "metrics.json",
+      "sha256": "e42d1e8497bd7788589cb1640849e171a8574be0532d65d1c72c05808e23c77f"
+    },
+    {
+      "bytes": 15678,
+      "path": "quota_table.json",
+      "sha256": "50510932bf0e0c9393e76f782f195858e053a905713609a0c8f58416ce0eaccd"
+    },
+    {
+      "bytes": 13064,
+      "path": "result.jsonl",
+      "sha256": "bfe8c42e8aa8c01c00d3ed6fb9a21b2c302f4ecd7e90810979451d483f6c739a"
+    }
+  ],
+  "compressionRatio": 0.034245,
+  "createdAt": "2026-11-17T10:53:32+08:00",
+  "failedCount": 0,
+  "failedSamples": [],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": null,
+  "notes": [
+    "Neyman 配额 n_h = n·(N_h·CV_h)/Σ(N_h·CV_h)；CV 全为 0 时按 N_h 比例分配。",
+    "抽样按 sha256(seed|record_id) 升序取前 n_h，无放回、可复现。",
+    "缺失主题簇/质量等级时对应维度标 MISSING，不猜测。"
+  ],
+  "operatorId": "dm-stratified-sampling",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 30093,
+  "paramsHash": "sha256:031efcf546b1067cf2f86f27bdd7f82ab74da0833210a8f7603082e73916413a",
+  "runId": "3c42fd5ccc582864",
+  "sampleCount": 432,
+  "seed": 42,
+  "semanticCode": "corpus_shard_stratified_sample_v1",
+  "successCount": 86,
+  "treeVersion": null
+}

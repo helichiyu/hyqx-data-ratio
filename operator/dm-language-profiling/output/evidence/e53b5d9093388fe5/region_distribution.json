@@ -1,0 +1,5 @@
+{
+  "note": "记录未提供 region/country/timezone 字段；不做 IP 或文本推断。",
+  "reasonCode": "GEO_SOURCE_UNAVAILABLE",
+  "status": "unavailable"
+}

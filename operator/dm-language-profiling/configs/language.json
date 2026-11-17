@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S3 联调初值：无 fastText/CLD3 权重，使用文字体系 + 功能词规则分类（H-03/H-06 待确认）。",
+  "language": {
+    "minConfidence": 0.85,
+    "mixedSecondShare": 0.15,
+    "maxTextChars": 20000,
+    "minScriptShare": 0.2,
+    "kanaMinShare": 0.05,
+    "functionWords": {
+      "zh": ["的", "了", "是", "在", "和", "我", "有", "就", "不", "人", "都", "上", "也", "很", "到", "说", "要", "去", "你", "会", "着", "没有", "看", "这", "自己"],
+      "en": ["the", "be", "to", "of", "and", "a", "in", "that", "have", "it", "for", "not", "on", "with", "as", "you", "do", "at", "this", "is"],
+      "de": ["der", "die", "und", "in", "den", "von", "zu", "das", "mit", "sich", "des", "auf", "für", "ist", "im"],
+      "fr": ["le", "de", "un", "être", "et", "en", "avoir", "que", "pour", "dans", "ce", "il", "qui", "ne", "sur"],
+      "es": ["el", "la", "de", "que", "y", "en", "un", "ser", "se", "no", "haber", "por", "con", "su", "para"],
+      "ja": ["の", "に", "は", "を", "た", "が", "で", "て", "と", "し", "ある", "いる", "も", "する", "から", "こと", "ない", "この", "ため", "その"]
+    },
+    "_source": "功能词表为自建联调初值，可从真实语料复核更新；规则仅使用字符统计，不加载模型。"
+  },
+  "time": {
+    "freshnessWeights": {"last_1y": 0.6, "last_3y": 0.3, "older": 0.1},
+    "staleThreshold": 0.4,
+    "yearMin": 1900,
+    "yearMax": 2099,
+    "_source": "baseline/thresholds.json time.freshness_weights 与 time.freshness_stale（H-03 待确认）"
+  },
+  "region": {
+    "fields": ["region", "country", "timezone"],
+    "_source": "仅使用记录 metadata 中显式地域字段；无字段时 unavailable，不做 IP/文本推断。"
+  },
+  "limits": {"maxRecords": 1000000}
+}

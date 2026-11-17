@@ -1,0 +1,40 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S3 联调初值：冲突相似度、难度分档、极性词典与权重待业务确认（H-03）。",
+  "completeness": {
+    "requiredFields": ["record_id", "modal", "source", "metadata", "quality", "partitions", "hashes"],
+    "requiredMetadata": ["format", "sizeBytes"],
+    "requiredHashes": ["md5", "sha256"],
+    "lowCompleteness": 0.8,
+    "_source": "任务书 3.3 数据契约必填字段；完整率 = 存在字段数/必填字段数"
+  },
+  "conflict": {
+    "simhashBits": 64,
+    "nearDuplicateDistance": 3,
+    "minTextChars": 20,
+    "_source": "SimHash 64 位，汉明距离≤3 视为近重复；组内归一化文本不一致计为冲突"
+  },
+  "gini": {
+    "threshold": 0.6,
+    "_source": "baseline/thresholds.json quality.gini_threshold（H-03 待确认）"
+  },
+  "difficulty": {
+    "bands": [
+      {"level": "简单", "max": 25},
+      {"level": "中等", "max": 50},
+      {"level": "较难", "max": 75},
+      {"level": "困难", "max": 100}
+    ],
+    "weights": {"sentenceLength": 0.4, "clauseComplexity": 0.3, "lexicalRarity": 0.3},
+    "_source": "文本复杂度分 0–100：句长(40)+从句(30)+稀有词比例(30)，四档为联调初值"
+  },
+  "polarity": {
+    "positive": ["优秀", "良好", "提升", "稳定", "成功", "受益", "improve", "good", "excellent", "success", "benefit", "stable"],
+    "negative": ["失败", "风险", "下降", "缺陷", "问题", "损失", "错误", "fail", "risk", "decline", "defect", "problem", "loss", "error"],
+    "negations": ["不", "没有", "无", "not", "no", "never"],
+    "neutralThreshold": 0.1,
+    "_source": "自建联调词表，仅用于占比统计，不是情感模型；阀值 |score|<0.1 判中性"
+  },
+  "limits": {"maxRecords": 1000000}
+}

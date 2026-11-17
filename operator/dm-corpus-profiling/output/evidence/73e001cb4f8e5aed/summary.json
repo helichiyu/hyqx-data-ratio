@@ -1,0 +1,463 @@
+{
+  "failedCount": 0,
+  "generatedAt": "2026-11-17T10:53:31+08:00",
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "metrics": {
+    "deterministic": true,
+    "domainCoverage": {
+      "coverage": {
+        "labeledRecordRate": 0.896714,
+        "leaf": 0.244019,
+        "level1": 0.8125,
+        "level2": 0.489362
+      },
+      "definitions": "见 configs/profile.json domain.coverageDefinitions",
+      "gaps": {
+        "level1": [
+          "工业制造",
+          "建筑与地产",
+          "农林牧渔与水利"
+        ],
+        "level2Count": 24
+      },
+      "labeledRecords": 382,
+      "leaves": {
+        "covered": 51,
+        "top": [
+          {
+            "count": 118,
+            "path": "信息技术/语言智能/机器翻译"
+          },
+          {
+            "count": 113,
+            "path": "信息技术/语言智能/语义理解"
+          },
+          {
+            "count": 80,
+            "path": "信息技术/语言智能/自然语言处理"
+          },
+          {
+            "count": 30,
+            "path": "生命科学/生物/生物信息学"
+          },
+          {
+            "count": 23,
+            "path": "信息技术/语言智能/多语言处理"
+          },
+          {
+            "count": 11,
+            "path": "经济与金融/量化交易/因子研究"
+          },
+          {
+            "count": 11,
+            "path": "经济与金融/量化交易/算法交易"
+          },
+          {
+            "count": 10,
+            "path": "地球与环境/遥感/遥感图像处理"
+          },
+          {
+            "count": 10,
+            "path": "生命科学/生物/分子生物学"
+          },
+          {
+            "count": 7,
+            "path": "人文与学术/人文社科/历史学"
+          },
+          {
+            "count": 7,
+            "path": "生命科学/生物/生物制药"
+          },
+          {
+            "count": 6,
+            "path": "商贸与消费/营销与广告/用户触达"
+          },
+          {
+            "count": 6,
+            "path": "生命科学/生物/细胞生物学"
+          },
+          {
+            "count": 6,
+            "path": "经济与金融/量化交易/高频交易"
+          },
+          {
+            "count": 5,
+            "path": "教育/教学与培训/高等教育"
+          },
+          {
+            "count": 4,
+            "path": "教育/教学与培训/在线教育"
+          },
+          {
+            "count": 4,
+            "path": "法律与安全/军事/军事训练"
+          },
+          {
+            "count": 4,
+            "path": "法律与安全/法律法务/法律文书"
+          },
+          {
+            "count": 4,
+            "path": "生命科学/植物/植物学"
+          },
+          {
+            "count": 4,
+            "path": "生命科学/植物/植物育种"
+          },
+          {
+            "count": 3,
+            "path": "人文与学术/人文社科/社会学"
+          },
+          {
+            "count": 3,
+            "path": "传媒与文娱/社交媒体/内容推荐"
+          },
+          {
+            "count": 2,
+            "path": "人文与学术/人文社科/哲学"
+          },
+          {
+            "count": 2,
+            "path": "传媒与文娱/游戏/游戏数据分析"
+          },
+          {
+            "count": 2,
+            "path": "地球与环境/地理/空间分析"
+          },
+          {
+            "count": 2,
+            "path": "地球与环境/遥感/灾害遥感"
+          },
+          {
+            "count": 2,
+            "path": "地球与环境/遥感/航空遥感"
+          },
+          {
+            "count": 2,
+            "path": "法律与安全/军事/国防科技"
+          },
+          {
+            "count": 2,
+            "path": "能源与电力/能源/能源节约"
+          },
+          {
+            "count": 2,
+            "path": "通信与物流/交通出行/共享单车"
+          },
+          {
+            "count": 1,
+            "path": "人文与学术/人文社科/文学"
+          },
+          {
+            "count": 1,
+            "path": "传媒与文娱/影视娱乐/电影"
+          },
+          {
+            "count": 1,
+            "path": "传媒与文娱/影视娱乐/短视频"
+          },
+          {
+            "count": 1,
+            "path": "传媒与文娱/社交媒体/用户行为分析"
+          },
+          {
+            "count": 1,
+            "path": "信息技术/数字技术/人工智能"
+          },
+          {
+            "count": 1,
+            "path": "信息技术/数字技术/区块链"
+          },
+          {
+            "count": 1,
+            "path": "信息技术/数字技术/大数据"
+          },
+          {
+            "count": 1,
+            "path": "信息技术/数字技术/网络安全"
+          },
+          {
+            "count": 1,
+            "path": "信息技术/数字技术/边缘计算"
+          },
+          {
+            "count": 1,
+            "path": "医疗健康/公共卫生/流行病学调查"
+          },
+          {
+            "count": 1,
+            "path": "医疗健康/医疗与医药/临床医学"
+          },
+          {
+            "count": 1,
+            "path": "医疗健康/医疗与医药/生物医药"
+          },
+          {
+            "count": 1,
+            "path": "商贸与消费/餐饮/正餐与快餐"
+          },
+          {
+            "count": 1,
+            "path": "地球与环境/地理/地理信息系统"
+          },
+          {
+            "count": 1,
+            "path": "地球与环境/环境/环境评估"
+          },
+          {
+            "count": 1,
+            "path": "政务与公共管理/公共管理/公共服务"
+          },
+          {
+            "count": 1,
+            "path": "政务与公共管理/公共管理/社会组织"
+          },
+          {
+            "count": 1,
+            "path": "法律与安全/军事/情报分析"
+          },
+          {
+            "count": 1,
+            "path": "法律与安全/安防与公共安全/智能安防"
+          },
+          {
+            "count": 1,
+            "path": "生命科学/植物/药用植物"
+          }
+        ],
+        "total": 209
+      },
+      "level1": {
+        "counts": {
+          "人文与学术": 13,
+          "传媒与文娱": 8,
+          "信息技术": 339,
+          "医疗健康": 3,
+          "商贸与消费": 7,
+          "地球与环境": 18,
+          "政务与公共管理": 2,
+          "教育": 9,
+          "法律与安全": 12,
+          "生命科学": 62,
+          "经济与金融": 28,
+          "能源与电力": 2,
+          "通信与物流": 3
+        },
+        "covered": 13,
+        "missing": [
+          "工业制造",
+          "建筑与地产",
+          "农林牧渔与水利"
+        ],
+        "total": 16
+      },
+      "level2": {
+        "counts": {
+          "人文与学术/人文社科": 13,
+          "传媒与文娱/影视娱乐": 2,
+          "传媒与文娱/游戏": 2,
+          "传媒与文娱/社交媒体": 4,
+          "信息技术/数字技术": 5,
+          "信息技术/语言智能": 334,
+          "医疗健康/公共卫生": 1,
+          "医疗健康/医疗与医药": 2,
+          "商贸与消费/营销与广告": 6,
+          "商贸与消费/餐饮": 1,
+          "地球与环境/地理": 3,
+          "地球与环境/环境": 1,
+          "地球与环境/遥感": 14,
+          "政务与公共管理/公共管理": 2,
+          "教育/教学与培训": 9,
+          "法律与安全/军事": 7,
+          "法律与安全/安防与公共安全": 1,
+          "法律与安全/法律法务": 4,
+          "生命科学/植物": 9,
+          "生命科学/生物": 53,
+          "经济与金融/量化交易": 28,
+          "能源与电力/能源": 2,
+          "通信与物流/交通出行": 3
+        },
+        "covered": 23,
+        "missing": [
+          "经济与金融/经济",
+          "经济与金融/金融科技",
+          "经济与金融/证券投资",
+          "商贸与消费/商业运营",
+          "商贸与消费/电商",
+          "商贸与消费/旅游服务",
+          "工业制造/制造业",
+          "建筑与地产/建筑",
+          "建筑与地产/房地产",
+          "能源与电力/电力",
+          "通信与物流/通信",
+          "通信与物流/运输物流",
+          "地球与环境/气象",
+          "地球与环境/地质",
+          "地球与环境/海洋",
+          "传媒与文娱/新闻传媒",
+          "传媒与文娱/体育运动",
+          "教育/考试与评价",
+          "农林牧渔与水利/农业",
+          "农林牧渔与水利/林业",
+          "农林牧渔与水利/畜牧业",
+          "农林牧渔与水利/渔业",
+          "农林牧渔与水利/水利",
+          "政务与公共管理/政务"
+        ],
+        "total": 47
+      },
+      "status": "ok",
+      "textRecords": 426,
+      "treeVersion": "taxonomy-1013-pending"
+    },
+    "failedCount": 0,
+    "failuresByReason": {},
+    "generatedAt": "2026-11-17T10:53:31+08:00",
+    "provisional": true,
+    "runtimeSec": 0.032,
+    "scale": {
+      "capturedAtPresent": 0,
+      "durationSec": 36.36,
+      "frameCount": 361,
+      "modalCounts": {
+        "audio": 3,
+        "image": 1,
+        "text": 426,
+        "video": 2
+      },
+      "percentiles": {
+        "durationSec": {
+          "p50": 7.92,
+          "p90": 10.01,
+          "p99": 10.01
+        },
+        "frameCount": {
+          "p50": 121.0,
+          "p90": 240.0,
+          "p99": 240.0
+        },
+        "method": "nearest-rank：排序后取 ceil(p/100·N) 位",
+        "sizeBytes": {
+          "p50": 196.0,
+          "p90": 673.0,
+          "p99": 253642.0
+        },
+        "textChars": {
+          "p50": 189.0,
+          "p90": 612.0,
+          "p99": 1165.0
+        }
+      },
+      "recordCount": 432,
+      "sizeBytes": 6600482,
+      "standardBytes": 1661004,
+      "standardCompressionRatio": 0.251649,
+      "standardMissing": 0,
+      "textBytes": 190607,
+      "textChars": 188345
+    },
+    "sourceDistribution": {
+      "ahp": {
+        "ci": -0.0,
+        "consistencyMax": 0.1,
+        "consistent": true,
+        "cr": 0.0,
+        "dimensions": [
+          "authority",
+          "transparency",
+          "freshness",
+          "evaluation"
+        ],
+        "lambdaMax": 4.0,
+        "weights": {
+          "authority": 0.4,
+          "evaluation": 0.1,
+          "freshness": 0.2,
+          "transparency": 0.3
+        }
+      },
+      "classes": {
+        "books": {
+          "count": 32,
+          "credibility": 0.819176,
+          "dimensionScores": {
+            "authority": 0.9,
+            "evaluation": 0.991756,
+            "freshness": 0.6,
+            "transparency": 0.8
+          },
+          "sharePercent": 7.407407
+        },
+        "code": {
+          "count": 0,
+          "credibility": 0.69,
+          "dimensionScores": {
+            "authority": 0.8,
+            "evaluation": 0.0,
+            "freshness": 0.5,
+            "transparency": 0.9
+          },
+          "sharePercent": 0.0
+        },
+        "dialogue": {
+          "count": 0,
+          "credibility": 0.42,
+          "dimensionScores": {
+            "authority": 0.5,
+            "evaluation": 0.0,
+            "freshness": 0.5,
+            "transparency": 0.4
+          },
+          "sharePercent": 0.0
+        },
+        "science": {
+          "count": 86,
+          "credibility": 0.87,
+          "dimensionScores": {
+            "authority": 0.95,
+            "evaluation": 1.0,
+            "freshness": 0.6,
+            "transparency": 0.9
+          },
+          "sharePercent": 19.907407
+        },
+        "web_text": {
+          "count": 307,
+          "credibility": 0.56,
+          "dimensionScores": {
+            "authority": 0.4,
+            "evaluation": 1.0,
+            "freshness": 0.6,
+            "transparency": 0.6
+          },
+          "sharePercent": 71.064815
+        },
+        "wiki": {
+          "count": 7,
+          "credibility": 0.825,
+          "dimensionScores": {
+            "authority": 0.8,
+            "evaluation": 1.0,
+            "freshness": 0.6,
+            "transparency": 0.95
+          },
+          "sharePercent": 1.62037
+        }
+      },
+      "corpusCredibility": 0.645205,
+      "shareSumPercent": 100.0
+    },
+    "treeVersion": "taxonomy-1013-pending"
+  },
+  "modelVersion": null,
+  "operatorId": "dm-corpus-profiling",
+  "operatorVersion": "0.1.0",
+  "paramsHash": "sha256:332106052eff02f9ec0ae7aa917246d9726e2fcf0e84a3b0d726a02050acfc34",
+  "provisional": true,
+  "runId": "e1a77c2ae30df3f0",
+  "sampleCount": 432,
+  "seed": 42,
+  "semanticCode": "corpus_profile_scale_source_domain_v1",
+  "successCount": 432,
+  "treeVersion": "taxonomy-1013-pending"
+}

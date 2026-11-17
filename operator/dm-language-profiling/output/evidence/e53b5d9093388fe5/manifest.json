@@ -1,0 +1,51 @@
+{
+  "artifacts": [
+    {
+      "bytes": 0,
+      "path": "failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 500,
+      "path": "input_manifest.json",
+      "sha256": "3d79a37e63a09c0b0b9e1a49866de81d2180408c6c7aed20659b508b316130eb"
+    },
+    {
+      "bytes": 2241,
+      "path": "metrics.json",
+      "sha256": "05f125099ab91d637915c1abb2856fcab758a826fcda4be9dca861e4bc6b620c"
+    },
+    {
+      "bytes": 168,
+      "path": "region_distribution.json",
+      "sha256": "a1269aabb91273c74f64760c12f9fd1ee4b4a484f4bc483489593f85c9f50af0"
+    },
+    {
+      "bytes": 102702,
+      "path": "result.jsonl",
+      "sha256": "301f28e8a9c1e606df8d5d4cd90a00b11b4f34c88232443fbc1a065da6137f28"
+    }
+  ],
+  "compressionRatio": 0.120181,
+  "createdAt": "2026-11-17T10:51:49+08:00",
+  "failedCount": 0,
+  "failedSamples": [],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": "unicode-script-heuristics-v1",
+  "notes": [
+    "无 fastText/CLD3 权重，语种识别为文字体系 + 功能词规则，置信度=主导语言文字占比。",
+    "地域只认记录 metadata 的 region/country/timezone；缺失时 unavailable。",
+    "时间优先级 capturedAt > 正文年份 > partitions.dt（ingest_dt）；无时间标 unknown。"
+  ],
+  "operatorId": "dm-language-profiling",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 105611,
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "runId": "7c549c29811c8574",
+  "sampleCount": 432,
+  "seed": 42,
+  "semanticCode": "corpus_profile_language_region_time_v1",
+  "successCount": 432,
+  "treeVersion": null
+}

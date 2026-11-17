@@ -1,0 +1,9 @@
+{
+  "domainLabelsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-taxonomy-labeling/e53b5d9093388fe5/result.jsonl",
+  "note": "领域覆盖只读 OP-06 结果文件，不 import 其它算子代码。",
+  "recordsBytes": 878767,
+  "recordsFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "recordsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/records.jsonl",
+  "recordsRoot": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7",
+  "treePath": "E:/HYQX/数据配比/operator/baseline/tree-snapshot.json"
+}

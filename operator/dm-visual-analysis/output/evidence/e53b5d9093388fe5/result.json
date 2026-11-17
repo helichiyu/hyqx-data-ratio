@@ -1,0 +1,79 @@
+{
+  "status": "succeeded",
+  "data": {
+    "operatorId": "dm-visual-analysis",
+    "semanticCode": "corpus_profile_visual_attributes_v1",
+    "operatorVersion": "0.1.0",
+    "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "seed": 42,
+    "runId": "e53b5d9093388fe5",
+    "inputFingerprint": "sha256:aed8d3843572719e3c4589ed538a44105424573efd814d26d903618feb4e62c9",
+    "outputDir": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-visual-analysis/e53b5d9093388fe5",
+    "modelVersion": "opencv-heuristics-v1",
+    "treeVersion": null,
+    "sampleCount": 3,
+    "successCount": 3,
+    "failedCount": 0,
+    "failedSamples": [],
+    "metrics": {
+      "mediaCounts": {
+        "image": 1,
+        "video": 2
+      },
+      "processedRecords": 3,
+      "failedCount": 0,
+      "failuresByReason": {},
+      "image": {
+        "count": 1,
+        "entropyMean": 1.947062,
+        "sharpnessMean": 755.438656
+      },
+      "video": {
+        "count": 2,
+        "dynamicFrameRatioMean": 0.921053,
+        "meanShotDurationSecMean": 7.520834
+      },
+      "unavailable": {
+        "scene": "SCENE_MODEL_UNAVAILABLE",
+        "object": "OBJECT_MODEL_UNAVAILABLE",
+        "action": "ACTION_MODEL_UNAVAILABLE",
+        "audioVisualBleu": "REFERENCE_TRANSCRIPT_REQUIRED"
+      },
+      "modelVersion": "opencv-heuristics-v1",
+      "provisional": true,
+      "deterministic": true,
+      "runtimeSec": 3.14,
+      "generatedAt": "2026-11-17T10:52:02+08:00"
+    },
+    "artifacts": [
+      {
+        "path": "failures.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "input_manifest.json",
+        "bytes": 486,
+        "sha256": "aec094ca7309ab56ffa2f3842fdfe3527f669b7bdafeb158336f6978394230a3"
+      },
+      {
+        "path": "metrics.json",
+        "bytes": 728,
+        "sha256": "d56cd7441760204a2fcc895a4483e54156f57ed930821e64e685d869e5f31c96"
+      },
+      {
+        "path": "result.jsonl",
+        "bytes": 1630,
+        "sha256": "8725610ce7d95aa17798b924a6b1112edee2b6e6b1ed8ae466e7b39da823e7e9"
+      }
+    ],
+    "outputFilePath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-visual-analysis/e53b5d9093388fe5/result.jsonl",
+    "deterministic": true,
+    "provisional": true,
+    "notes": [
+      "镜头边界为 HSV 直方图相关阈值；光流用 Farneback 平均幅值。",
+      "场景/目标/动作与音画 BLEU 无模型/参考时标 unavailable。"
+    ],
+    "cached": false
+  }
+}

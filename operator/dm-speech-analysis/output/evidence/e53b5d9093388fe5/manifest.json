@@ -1,0 +1,51 @@
+{
+  "artifacts": [
+    {
+      "bytes": 0,
+      "path": "failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 526,
+      "path": "input_manifest.json",
+      "sha256": "7eae5264752668947c0072408742a124e5641c2946d1704801c1a6210eecdccc"
+    },
+    {
+      "bytes": 70,
+      "path": "low_quality.jsonl",
+      "sha256": "d56a45b8eda959576f27b63c022b08470cd65d47c210b4dc74a2cdc4504c3acb"
+    },
+    {
+      "bytes": 860,
+      "path": "metrics.json",
+      "sha256": "b4e79c589aaeb443e8a22f85dd89a150e4082de9076b2c475b8f707ce86ad1f3"
+    },
+    {
+      "bytes": 1645,
+      "path": "result.jsonl",
+      "sha256": "86fc3dc8490eef44badb2b24ef2a7a7831b11af45ecda599c47f1047c01d878f"
+    }
+  ],
+  "compressionRatio": 0.003529,
+  "createdAt": "2026-11-17T10:51:59+08:00",
+  "failedCount": 0,
+  "failedSamples": [],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": "paraformer-zh",
+  "notes": [
+    "转写使用 paraformer-zh（Apache-2.0），CPU 推理，运行期不联网。",
+    "WER/CER 只在提供参考文本时计算；无参考时 wer=null + REFERENCE_TEXT_REQUIRED。",
+    "口音分类无模型，标 unavailable。"
+  ],
+  "operatorId": "dm-speech-analysis",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 3101,
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "runId": "7c549c29811c8574",
+  "sampleCount": 3,
+  "seed": 42,
+  "semanticCode": "corpus_profile_speech_quality_v1",
+  "successCount": 3,
+  "treeVersion": null
+}

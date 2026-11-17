@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    {
+      "bytes": 0,
+      "path": "failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 522,
+      "path": "input_manifest.json",
+      "sha256": "49a9c07b06a312aa970311f19cf1a6b5157e052d9fe2de16870d1ff47d02fec6"
+    },
+    {
+      "bytes": 1307,
+      "path": "metrics.json",
+      "sha256": "2691a0ee22ddccf3e4616852255f19ddd64d3e529033e08ddee906d86106b8a6"
+    },
+    {
+      "bytes": 151683,
+      "path": "result.jsonl",
+      "sha256": "fc5471c2ac3a67c986f414d6880eb211fec0e366184d710ee53d9272a6a311e3"
+    }
+  ],
+  "compressionRatio": 0.17469,
+  "createdAt": "2026-11-17T10:53:32+08:00",
+  "failedCount": 0,
+  "failedSamples": [],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": "rule-based-knowledge-v1",
+  "notes": [
+    "术语覆盖率需要术语表；未提供时标 unavailable，不编造。",
+    "实体覆盖率需要知识图谱，标 KG_UNAVAILABLE。",
+    "事实/推理/创意与语体为关键词规则，占比可复算。"
+  ],
+  "operatorId": "dm-knowledge-analysis",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 153512,
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "runId": "7c549c29811c8574",
+  "sampleCount": 426,
+  "seed": 42,
+  "semanticCode": "corpus_profile_knowledge_style_v1",
+  "successCount": 426,
+  "treeVersion": null
+}

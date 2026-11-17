@@ -1,0 +1,46 @@
+{
+  "artifacts": [
+    {
+      "bytes": 0,
+      "path": "failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 486,
+      "path": "input_manifest.json",
+      "sha256": "aec094ca7309ab56ffa2f3842fdfe3527f669b7bdafeb158336f6978394230a3"
+    },
+    {
+      "bytes": 728,
+      "path": "metrics.json",
+      "sha256": "d56cd7441760204a2fcc895a4483e54156f57ed930821e64e685d869e5f31c96"
+    },
+    {
+      "bytes": 1630,
+      "path": "result.jsonl",
+      "sha256": "8725610ce7d95aa17798b924a6b1112edee2b6e6b1ed8ae466e7b39da823e7e9"
+    }
+  ],
+  "compressionRatio": 0.003236,
+  "createdAt": "2026-11-17T10:52:02+08:00",
+  "failedCount": 0,
+  "failedSamples": [],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": "opencv-heuristics-v1",
+  "notes": [
+    "图像熵/清晰度/色彩与视频镜头/光流全部来自 OpenCV 真实计算。",
+    "场景/目标/动作需要 CLIP/YOLO 权重（未审批），标 unavailable。",
+    "音画 BLEU 需要字幕/ASR 参考，未提供时标 unavailable。"
+  ],
+  "operatorId": "dm-visual-analysis",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 2844,
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "runId": "7c549c29811c8574",
+  "sampleCount": 3,
+  "seed": 42,
+  "semanticCode": "corpus_profile_visual_attributes_v1",
+  "successCount": 3,
+  "treeVersion": null
+}

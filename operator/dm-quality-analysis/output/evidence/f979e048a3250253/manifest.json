@@ -1,0 +1,51 @@
+{
+  "artifacts": [
+    {
+      "bytes": 0,
+      "path": "failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 632,
+      "path": "input_manifest.json",
+      "sha256": "9f09351fab534fa1a237d8ccddaa72cb12ee0bdbed733169a08a1a2577363afa"
+    },
+    {
+      "bytes": 0,
+      "path": "low_quality.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4227,
+      "path": "metrics.json",
+      "sha256": "5b966016cd5e37679f794cb2ebe2a3f9f9c45c0e6e80588300798320ac904a22"
+    },
+    {
+      "bytes": 112179,
+      "path": "result.jsonl",
+      "sha256": "8d282f59f6f277c252c745cce34469738f65e217607b3a0d72b00209232f9266"
+    }
+  ],
+  "compressionRatio": 0.133184,
+  "createdAt": "2026-11-17T10:51:50+08:00",
+  "failedCount": 0,
+  "failedSamples": [],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": "rule-based-quality-v1",
+  "notes": [
+    "冲突用 SimHash(64) 近重复组 + 组内文本不一致定义；规则写入 configs/quality.json。",
+    "基尼/覆盖需要 OP-05 标签；缺失时 unavailable，不编造。",
+    "难度为文本复杂度规则分档；极性为自建词典规则，非情感模型。"
+  ],
+  "operatorId": "dm-quality-analysis",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 117038,
+  "paramsHash": "sha256:8c383e416eb64356b8dda21151a5f0c39be2c019b78543957cb595912da92dc6",
+  "runId": "86cbf55e616d3084",
+  "sampleCount": 432,
+  "seed": 42,
+  "semanticCode": "corpus_profile_quality_difficulty_v1",
+  "successCount": 432,
+  "treeVersion": null
+}

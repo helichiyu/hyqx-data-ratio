@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S3 联调初值：镜头阈值、光流阈值与采样帧率待确认（H-03）；场景/目标/动作模型未审批（H-06）。",
+  "media": {
+    "imageDir": "standard/images",
+    "videoDir": "standard/video",
+    "imageExt": ".webp",
+    "videoExt": ".mp4",
+    "_source": "OP-02 标准产物目录约定"
+  },
+  "image": {
+    "histogramBins": 256,
+    "dominantColors": 5,
+    "_source": "香农熵用 256 灰度直方图；主色用 PIL 量化"
+  },
+  "video": {
+    "sampleFps": 2,
+    "maxFrames": 600,
+    "shotHistCorrelation": 0.5,
+    "flowMagnitudeThreshold": 0.5,
+    "_source": "镜头切换：相邻采样帧 HSV 直方图相关系数<0.5；动态帧：平均光流幅值>0.5"
+  },
+  "unavailable": {
+    "scene": "SCENE_MODEL_UNAVAILABLE",
+    "object": "OBJECT_MODEL_UNAVAILABLE",
+    "action": "ACTION_MODEL_UNAVAILABLE",
+    "audioVisualBleu": "REFERENCE_TRANSCRIPT_REQUIRED",
+    "_source": "未审批/未提供模型与参考字幕，相关字段标 unavailable，不编造"
+  },
+  "limits": {"maxRecords": 100000}
+}

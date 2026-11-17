@@ -62,7 +62,7 @@
         "OP-14"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-05",
@@ -125,7 +125,7 @@
         "OP-06"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-09",
@@ -141,7 +141,7 @@
         "OP-01"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-10",
@@ -157,7 +157,7 @@
         "OP-06"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-11",
@@ -173,7 +173,7 @@
         "OP-02"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-12",
@@ -189,7 +189,7 @@
         "OP-02"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-13",
@@ -204,7 +204,7 @@
         "OP-02"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-14",
@@ -220,7 +220,7 @@
         "OP-05"
       ],
       "version": "0.1.0",
-      "status": "scaffold"
+      "status": "implemented"
     },
     {
       "opId": "OP-15",

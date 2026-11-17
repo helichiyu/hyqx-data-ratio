@@ -1,0 +1,166 @@
+{
+  "ahp": {
+    "ci": -0.0,
+    "consistencyMax": 0.1,
+    "consistent": true,
+    "cr": 0.0,
+    "dimensions": [
+      "authority",
+      "transparency",
+      "freshness",
+      "evaluation"
+    ],
+    "lambdaMax": 4.0,
+    "weights": {
+      "authority": 0.4,
+      "evaluation": 0.1,
+      "freshness": 0.2,
+      "transparency": 0.3
+    }
+  },
+  "asOf": "2026-11-16",
+  "classes": {
+    "books": {
+      "count": 32,
+      "credibility": 0.819176,
+      "dimensionScores": {
+        "authority": 0.9,
+        "evaluation": 0.991756,
+        "freshness": 0.6,
+        "transparency": 0.8
+      },
+      "freshnessDetail": {
+        "buckets": {
+          "last_1y": 32,
+          "last_3y": 0,
+          "older": 0
+        },
+        "knownShare": 1.0,
+        "neutralUsed": false,
+        "score": 0.6,
+        "unknown": 0
+      },
+      "share": 0.074074,
+      "sharePercent": 7.407407
+    },
+    "code": {
+      "count": 0,
+      "credibility": 0.69,
+      "dimensionScores": {
+        "authority": 0.8,
+        "evaluation": 0.0,
+        "freshness": 0.5,
+        "transparency": 0.9
+      },
+      "freshnessDetail": {
+        "buckets": {
+          "last_1y": 0,
+          "last_3y": 0,
+          "older": 0
+        },
+        "knownShare": 0.0,
+        "neutralUsed": true,
+        "score": 0.5,
+        "unknown": 0
+      },
+      "share": 0.0,
+      "sharePercent": 0.0
+    },
+    "dialogue": {
+      "count": 0,
+      "credibility": 0.42,
+      "dimensionScores": {
+        "authority": 0.5,
+        "evaluation": 0.0,
+        "freshness": 0.5,
+        "transparency": 0.4
+      },
+      "freshnessDetail": {
+        "buckets": {
+          "last_1y": 0,
+          "last_3y": 0,
+          "older": 0
+        },
+        "knownShare": 0.0,
+        "neutralUsed": true,
+        "score": 0.5,
+        "unknown": 0
+      },
+      "share": 0.0,
+      "sharePercent": 0.0
+    },
+    "science": {
+      "count": 86,
+      "credibility": 0.87,
+      "dimensionScores": {
+        "authority": 0.95,
+        "evaluation": 1.0,
+        "freshness": 0.6,
+        "transparency": 0.9
+      },
+      "freshnessDetail": {
+        "buckets": {
+          "last_1y": 86,
+          "last_3y": 0,
+          "older": 0
+        },
+        "knownShare": 1.0,
+        "neutralUsed": false,
+        "score": 0.6,
+        "unknown": 0
+      },
+      "share": 0.199074,
+      "sharePercent": 19.907407
+    },
+    "web_text": {
+      "count": 307,
+      "credibility": 0.56,
+      "dimensionScores": {
+        "authority": 0.4,
+        "evaluation": 1.0,
+        "freshness": 0.6,
+        "transparency": 0.6
+      },
+      "freshnessDetail": {
+        "buckets": {
+          "last_1y": 307,
+          "last_3y": 0,
+          "older": 0
+        },
+        "knownShare": 1.0,
+        "neutralUsed": false,
+        "score": 0.6,
+        "unknown": 0
+      },
+      "share": 0.710648,
+      "sharePercent": 71.064815
+    },
+    "wiki": {
+      "count": 7,
+      "credibility": 0.825,
+      "dimensionScores": {
+        "authority": 0.8,
+        "evaluation": 1.0,
+        "freshness": 0.6,
+        "transparency": 0.95
+      },
+      "freshnessDetail": {
+        "buckets": {
+          "last_1y": 7,
+          "last_3y": 0,
+          "older": 0
+        },
+        "knownShare": 1.0,
+        "neutralUsed": false,
+        "score": 0.6,
+        "unknown": 0
+      },
+      "share": 0.016204,
+      "sharePercent": 1.62037
+    }
+  },
+  "corpusCredibility": 0.645205,
+  "shareSumOk": true,
+  "shareSumPercent": 100.0,
+  "unexpectedSourceAliases": []
+}

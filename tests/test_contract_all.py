@@ -45,15 +45,28 @@ def _upload_payload(operator_id: str) -> tuple[str, bytes, str]:
         "dm-text-clustering",
         "dm-multimodal-labeling",
         "dm-taxonomy-labeling",
+        "dm-corpus-profiling",
+        "dm-language-profiling",
+        "dm-text-profiling",
+        "dm-quality-analysis",
+        "dm-stratified-sampling",
+        "dm-knowledge-analysis",
+        "dm-speech-analysis",
+        "dm-visual-analysis",
     }:
         text = PAYLOAD.decode("utf-8")
         sha = hashlib.sha256(PAYLOAD).hexdigest()
         md5 = hashlib.md5(PAYLOAD, usedforsecurity=False).hexdigest()
+        modal = "text"
+        if operator_id == "dm-speech-analysis":
+            modal = "audio"
+        elif operator_id == "dm-visual-analysis":
+            modal = "image"
         record = {
             "record_id": "r_contract_op02",
-            "modal": "text",
+            "modal": modal,
             "source": "web_text",
-            "text": text,
+            "text": text if modal == "text" else None,
             "metadata": {
                 "format": "txt",
                 "sizeBytes": len(PAYLOAD),

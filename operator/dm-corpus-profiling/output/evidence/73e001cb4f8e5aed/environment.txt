@@ -1,0 +1,11 @@
+generatedAt: 2026-11-17T10:53:32+0800
+python: 3.12.12
+platform: Windows-11-10.0.26200-SP0
+numpy: 2.2.6
+opencv-python: 4.12.0
+pillow: 12.0.0
+librosa: 1.0.0
+soundfile: 0.14.0
+funasr: 1.4.16
+jieba: 0.42.1
+ffmpeg: ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers

@@ -1,0 +1,30 @@
+{
+  "deterministic": true,
+  "failedCount": 0,
+  "failuresByReason": {},
+  "generatedAt": "2026-11-17T10:52:02+08:00",
+  "image": {
+    "count": 1,
+    "entropyMean": 1.947062,
+    "sharpnessMean": 755.438656
+  },
+  "mediaCounts": {
+    "image": 1,
+    "video": 2
+  },
+  "modelVersion": "opencv-heuristics-v1",
+  "processedRecords": 3,
+  "provisional": true,
+  "runtimeSec": 3.14,
+  "unavailable": {
+    "action": "ACTION_MODEL_UNAVAILABLE",
+    "audioVisualBleu": "REFERENCE_TRANSCRIPT_REQUIRED",
+    "object": "OBJECT_MODEL_UNAVAILABLE",
+    "scene": "SCENE_MODEL_UNAVAILABLE"
+  },
+  "video": {
+    "count": 2,
+    "dynamicFrameRatioMean": 0.921053,
+    "meanShotDurationSecMean": 7.520834
+  }
+}

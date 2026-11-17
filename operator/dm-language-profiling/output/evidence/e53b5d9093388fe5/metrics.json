@@ -1,0 +1,109 @@
+{
+  "deterministic": true,
+  "failedCount": 0,
+  "failuresByReason": {},
+  "generatedAt": "2026-11-17T10:51:49+08:00",
+  "language": {
+    "confidenceMean": 0.986111,
+    "counts": {
+      "de": 1,
+      "en": 420,
+      "es": 2,
+      "fr": 3,
+      "unknown": 6
+    },
+    "method": "unicode-script + function-words (rule-based)",
+    "minConfidence": 0.85,
+    "shares": {
+      "de": 0.002315,
+      "en": 0.972222,
+      "es": 0.00463,
+      "fr": 0.006944,
+      "unknown": 0.013889
+    },
+    "statusCounts": {
+      "identified": 426,
+      "unknown": 6
+    }
+  },
+  "provisional": true,
+  "region": {
+    "note": "记录未提供 region/country/timezone 字段；不做 IP 或文本推断。",
+    "reasonCode": "GEO_SOURCE_UNAVAILABLE",
+    "status": "unavailable"
+  },
+  "runtimeSec": 0.053,
+  "time": {
+    "asOf": "2026-12-31",
+    "freshnessMean": 0.136546,
+    "freshnessWeights": {
+      "last_1y": 0.6,
+      "last_3y": 0.3,
+      "older": 0.1
+    },
+    "knownTimeRatio": 0.576389,
+    "quarterCounts": {
+      "2017-Q4": 1,
+      "2018-Q4": 1,
+      "2023-Q2": 1
+    },
+    "staleCount": 234,
+    "staleShare": 0.939759,
+    "staleThreshold": 0.4,
+    "timeSourceCounts": {
+      "text_iso_date": 3,
+      "text_year": 246,
+      "unknown": 183
+    },
+    "yearCounts": {
+      "1905": 1,
+      "1950": 2,
+      "1956": 1,
+      "1959": 3,
+      "1960": 1,
+      "1961": 1,
+      "1964": 1,
+      "1965": 1,
+      "1973": 1,
+      "1980": 2,
+      "1981": 2,
+      "1982": 2,
+      "1983": 1,
+      "1988": 2,
+      "1990": 1,
+      "1991": 1,
+      "1993": 2,
+      "1994": 2,
+      "1995": 4,
+      "1997": 1,
+      "1998": 4,
+      "1999": 2,
+      "2000": 2,
+      "2001": 3,
+      "2002": 3,
+      "2003": 3,
+      "2004": 4,
+      "2006": 5,
+      "2008": 2,
+      "2009": 8,
+      "2010": 7,
+      "2011": 7,
+      "2012": 9,
+      "2013": 5,
+      "2014": 2,
+      "2015": 10,
+      "2016": 11,
+      "2017": 12,
+      "2018": 16,
+      "2019": 15,
+      "2020": 18,
+      "2021": 14,
+      "2022": 10,
+      "2023": 22,
+      "2024": 8,
+      "2025": 7,
+      "2026": 8,
+      "unknown": 183
+    }
+  }
+}

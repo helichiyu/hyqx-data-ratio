@@ -1,0 +1,59 @@
+{
+  "deterministic": true,
+  "entityCoverage": {
+    "note": "未提供知识图谱/实体词表，不产出实体覆盖率。",
+    "reasonCode": "KG_UNAVAILABLE",
+    "status": "unavailable"
+  },
+  "evaluatedRecords": 426,
+  "failedCount": 0,
+  "failuresByReason": {},
+  "generatedAt": "2026-11-17T10:53:32+08:00",
+  "hotspot": {
+    "asOf": "2026-12-31",
+    "counts": {
+      "hot": 15,
+      "long_tail": 234,
+      "unknown": 177
+    },
+    "windowDays": 365
+  },
+  "knowledgeTypes": {
+    "counts": {
+      "creative": 7,
+      "fact": 2,
+      "reasoning": 1,
+      "unknown": 416
+    },
+    "method": "keyword-rule hit share",
+    "shares": {
+      "creative": 0.016432,
+      "fact": 0.004695,
+      "reasoning": 0.002347,
+      "unknown": 0.976526
+    }
+  },
+  "provisional": true,
+  "runtimeSec": 0.016,
+  "skippedNonText": 6,
+  "styles": {
+    "counts": {
+      "academic": 78,
+      "general": 348
+    },
+    "shares": {
+      "academic": 0.183099,
+      "general": 0.816901
+    }
+  },
+  "terms": {
+    "corpusCoverage": null,
+    "coverageMean": null,
+    "densityMeanPer100Chars": null,
+    "glossaryTerms": 0,
+    "matchedTerms": 0,
+    "reasonCode": "GLOSSARY_UNAVAILABLE",
+    "status": "unavailable"
+  },
+  "textRecords": 426
+}

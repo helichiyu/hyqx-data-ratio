@@ -1,0 +1,56 @@
+{
+  "artifacts": [
+    {
+      "bytes": 7926,
+      "path": "domain_coverage.json",
+      "sha256": "c624d80856edc6b6a09c128fda970b5b8b9ec3b294fae5dbdefdfbe626a45760"
+    },
+    {
+      "bytes": 0,
+      "path": "failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 675,
+      "path": "input_manifest.json",
+      "sha256": "737eb8f83573f04b0ad11859559f4f1a3017c140a36afcd0cc1e678b4f7f16bc"
+    },
+    {
+      "bytes": 11872,
+      "path": "metrics.json",
+      "sha256": "1e45b21e367b2241e30bc892f9692ade0a65ba2003e17c46be43311c0e47223d"
+    },
+    {
+      "bytes": 104114,
+      "path": "result.jsonl",
+      "sha256": "f81713f79773c73ef5c52f8ec22aba78c5d3c76e2d857d751a8ecde4529a574c"
+    },
+    {
+      "bytes": 3699,
+      "path": "source_distribution.json",
+      "sha256": "d06a1d0f65609cfafaf263841dac1d2001b23342a38e8652f9bcd4f634d7c5f9"
+    }
+  ],
+  "compressionRatio": 0.145984,
+  "createdAt": "2026-11-17T10:53:31+08:00",
+  "failedCount": 0,
+  "failedSamples": [],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": null,
+  "notes": [
+    "规模/分位数/来源占比来自真实记录；AHP 权重由判断矩阵计算，CR<0.1 才视为一致。",
+    "领域覆盖需要 OP-06 结果；缺失时 status=unavailable，不编造分布。",
+    "无人工标注，效果类指标不产出。"
+  ],
+  "operatorId": "dm-corpus-profiling",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 128286,
+  "paramsHash": "sha256:332106052eff02f9ec0ae7aa917246d9726e2fcf0e84a3b0d726a02050acfc34",
+  "runId": "e1a77c2ae30df3f0",
+  "sampleCount": 432,
+  "seed": 42,
+  "semanticCode": "corpus_profile_scale_source_domain_v1",
+  "successCount": 432,
+  "treeVersion": "taxonomy-1013-pending"
+}

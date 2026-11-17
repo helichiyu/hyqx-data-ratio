@@ -75,11 +75,11 @@
         "OP-03",
         "OP-14"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-stratified-sampling/output/evidence/f7a8cdd04268386e/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S3 完成：总体 432、目标 86、实抽 86；最大偏差 0.085；最小样本 10 万不满足（minTotalMet=false）；seed=42 可复现。"
     },
     {
       "opId": "OP-05",
@@ -146,11 +146,11 @@
         "OP-05",
         "OP-06"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-corpus-profiling/output/evidence/73e001cb4f8e5aed/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S3 完成：432 条；nearest-rank 分位数；六类来源合计 100%；AHP CR=0；领域覆盖 level1 0.8125（消费 OP-06）；阈值待 H-03。"
     },
     {
       "opId": "OP-09",
@@ -164,11 +164,11 @@
         "OP-02",
         "OP-01"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-language-profiling/output/evidence/e53b5d9093388fe5/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S3 完成：432 条；identified 426/置信度均值 0.986；地域 unavailable（无字段）；新鲜度均值 0.137（无人工时间标注）。"
     },
     {
       "opId": "OP-10",
@@ -182,11 +182,11 @@
         "OP-02",
         "OP-06"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-text-profiling/output/evidence/73e001cb4f8e5aed/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S3 完成：426 条文本；六维 overall p50 4.69；低适配 4；domainMatch 消费 OP-06；无句法模型，规则已写入 configs。"
     },
     {
       "opId": "OP-11",
@@ -200,11 +200,11 @@
         "OP-01",
         "OP-02"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-speech-analysis/output/evidence/e53b5d9093388fe5/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S3 完成：音频 3 条；转写 2；无参考文本 WER=null；低质量 1（无语音）；口音 unavailable；deterministic=false（ASR）。"
     },
     {
       "opId": "OP-12",
@@ -218,11 +218,11 @@
         "OP-01",
         "OP-02"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-visual-analysis/output/evidence/e53b5d9093388fe5/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S3 完成：图像 1/视频 2；图像熵 1.95、动态帧占比 0.92；场景/目标/动作与音画 BLEU unavailable（无模型/参考）。"
     },
     {
       "opId": "OP-13",
@@ -235,11 +235,11 @@
       "dependsOn": [
         "OP-02"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-knowledge-analysis/output/evidence/e53b5d9093388fe5/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S3 完成：426 条文本；术语 unavailable（无术语表）；热点 15/长尾 234/unknown 177；实体覆盖 KG_UNAVAILABLE。"
     },
     {
       "opId": "OP-14",
@@ -253,11 +253,11 @@
         "OP-02",
         "OP-05"
       ],
-      "status": "未开始",
-      "statusUpdatedAt": "2026-11-16",
-      "evidencePath": null,
+      "status": "待评审",
+      "statusUpdatedAt": "2026-11-17",
+      "evidencePath": "operator/dm-quality-analysis/output/evidence/f979e048a3250253/",
       "publishId": null,
-      "note": "不生成对外发布 ID，operatorId 以目录名为准；S0 仅骨架，未开始算法实现。"
+      "note": "S3 完成：432 条；完整率 1.0；近重复组 4/冲突 0；基尼与标注覆盖消费 OP-05；难度/极性为规则初值。"
     },
     {
       "opId": "OP-15",

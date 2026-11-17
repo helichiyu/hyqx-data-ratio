@@ -1,0 +1,32 @@
+{
+  "accent": {
+    "reasonCode": "ACCENT_MODEL_UNAVAILABLE",
+    "status": "unavailable"
+  },
+  "audioRecords": 3,
+  "cerMean": null,
+  "deterministic": false,
+  "deterministicNote": "ASR 为神经模型推理，CPU 上结果稳定但不同硬件可能有细微差异。",
+  "failedCount": 0,
+  "failuresByReason": {},
+  "generatedAt": "2026-11-17T10:51:59+08:00",
+  "lowQualityCount": 1,
+  "lowQualityReasons": {
+    "ASR_EMPTY": 1
+  },
+  "modelVersion": "paraformer-zh",
+  "pitchMeanHz": 222.511491,
+  "processedRecords": 3,
+  "provisional": true,
+  "runtimeSec": 9.01,
+  "speechRatioMean": 0.797561,
+  "thresholds": {
+    "cerLowQuality": 0.3,
+    "minSpeechRatio": 0.1,
+    "werLowQuality": 0.2
+  },
+  "transcribedRecords": 2,
+  "werMean": null,
+  "werReasonCode": "REFERENCE_TEXT_REQUIRED",
+  "werStatus": "unavailable"
+}

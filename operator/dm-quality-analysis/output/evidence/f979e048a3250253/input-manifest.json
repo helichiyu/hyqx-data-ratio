@@ -1,0 +1,9 @@
+{
+  "labelsMatched": 432,
+  "labelsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-labeling/e53b5d9093388fe5/result.jsonl",
+  "note": "标签只读 OP-05 结果文件；冲突/难度/极性全部由记录文本计算。",
+  "recordsBytes": 878767,
+  "recordsFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "recordsPath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7/records.jsonl",
+  "recordsRoot": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-normalization/10a342ae92595ab7"
+}

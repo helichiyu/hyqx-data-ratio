@@ -1,0 +1,163 @@
+{
+  "status": "succeeded",
+  "data": {
+    "operatorId": "dm-language-profiling",
+    "semanticCode": "corpus_profile_language_region_time_v1",
+    "operatorVersion": "0.1.0",
+    "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "seed": 42,
+    "runId": "e53b5d9093388fe5",
+    "inputFingerprint": "sha256:aed8d3843572719e3c4589ed538a44105424573efd814d26d903618feb4e62c9",
+    "outputDir": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-language-profiling/e53b5d9093388fe5",
+    "modelVersion": "unicode-script-heuristics-v1",
+    "treeVersion": null,
+    "sampleCount": 432,
+    "successCount": 432,
+    "failedCount": 0,
+    "failedSamples": [],
+    "metrics": {
+      "language": {
+        "counts": {
+          "en": 420,
+          "unknown": 6,
+          "fr": 3,
+          "es": 2,
+          "de": 1
+        },
+        "shares": {
+          "en": 0.972222,
+          "unknown": 0.013889,
+          "fr": 0.006944,
+          "es": 0.00463,
+          "de": 0.002315
+        },
+        "statusCounts": {
+          "identified": 426,
+          "unknown": 6
+        },
+        "confidenceMean": 0.986111,
+        "minConfidence": 0.85,
+        "method": "unicode-script + function-words (rule-based)"
+      },
+      "time": {
+        "yearCounts": {
+          "1905": 1,
+          "1950": 2,
+          "1956": 1,
+          "1959": 3,
+          "1960": 1,
+          "1961": 1,
+          "1964": 1,
+          "1965": 1,
+          "1973": 1,
+          "1980": 2,
+          "1981": 2,
+          "1982": 2,
+          "1983": 1,
+          "1988": 2,
+          "1990": 1,
+          "1991": 1,
+          "1993": 2,
+          "1994": 2,
+          "1995": 4,
+          "1997": 1,
+          "1998": 4,
+          "1999": 2,
+          "2000": 2,
+          "2001": 3,
+          "2002": 3,
+          "2003": 3,
+          "2004": 4,
+          "2006": 5,
+          "2008": 2,
+          "2009": 8,
+          "2010": 7,
+          "2011": 7,
+          "2012": 9,
+          "2013": 5,
+          "2014": 2,
+          "2015": 10,
+          "2016": 11,
+          "2017": 12,
+          "2018": 16,
+          "2019": 15,
+          "2020": 18,
+          "2021": 14,
+          "2022": 10,
+          "2023": 22,
+          "2024": 8,
+          "2025": 7,
+          "2026": 8,
+          "unknown": 183
+        },
+        "quarterCounts": {
+          "2017-Q4": 1,
+          "2018-Q4": 1,
+          "2023-Q2": 1
+        },
+        "timeSourceCounts": {
+          "text_iso_date": 3,
+          "text_year": 246,
+          "unknown": 183
+        },
+        "freshnessMean": 0.136546,
+        "freshnessWeights": {
+          "last_1y": 0.6,
+          "last_3y": 0.3,
+          "older": 0.1
+        },
+        "staleThreshold": 0.4,
+        "staleCount": 234,
+        "staleShare": 0.939759,
+        "knownTimeRatio": 0.576389,
+        "asOf": "2026-12-31"
+      },
+      "region": {
+        "status": "unavailable",
+        "reasonCode": "GEO_SOURCE_UNAVAILABLE",
+        "note": "记录未提供 region/country/timezone 字段；不做 IP 或文本推断。"
+      },
+      "failedCount": 0,
+      "failuresByReason": {},
+      "provisional": true,
+      "deterministic": true,
+      "runtimeSec": 0.053,
+      "generatedAt": "2026-11-17T10:51:49+08:00"
+    },
+    "artifacts": [
+      {
+        "path": "failures.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "input_manifest.json",
+        "bytes": 500,
+        "sha256": "3d79a37e63a09c0b0b9e1a49866de81d2180408c6c7aed20659b508b316130eb"
+      },
+      {
+        "path": "metrics.json",
+        "bytes": 2241,
+        "sha256": "05f125099ab91d637915c1abb2856fcab758a826fcda4be9dca861e4bc6b620c"
+      },
+      {
+        "path": "region_distribution.json",
+        "bytes": 168,
+        "sha256": "a1269aabb91273c74f64760c12f9fd1ee4b4a484f4bc483489593f85c9f50af0"
+      },
+      {
+        "path": "result.jsonl",
+        "bytes": 102702,
+        "sha256": "301f28e8a9c1e606df8d5d4cd90a00b11b4f34c88232443fbc1a065da6137f28"
+      }
+    ],
+    "outputFilePath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-language-profiling/e53b5d9093388fe5/result.jsonl",
+    "deterministic": true,
+    "provisional": true,
+    "notes": [
+      "语种置信度<0.85 或第二文字占比>=0.15 时标 mixed/unknown，不强行归类。",
+      "新鲜度 = 近1年×0.6+近3年×0.3+3年以上×0.1；<0.4 计为过时风险。"
+    ],
+    "cached": false
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S3 联调初值：术语表来源、热点窗口与语体规则待确认（H-03）；KG 未提供。",
+  "terms": {
+    "glossaryPath": null,
+    "maxTerms": 20000,
+    "_source": "术语表由平台/业务提供（params.glossary_path，jsonl: {term, category}）；未提供时 unavailable"
+  },
+  "knowledge": {
+    "ratioRules": {
+      "fact": ["据统计", "数据显示", "研究显示", "年", "％", "%", "第.条", "规定", "报告"],
+      "reasoning": ["因为", "所以", "如果", "因此", "推导", "证明", "implies", "therefore", "because"],
+      "creative": ["故事", "诗歌", "想象", "创作", "小说", "character", "story", "poem"]
+    },
+    "_source": "事实/推理/创意三类为关键词命中计数，占比=类命中/总命中；全部未命中标 unknown"
+  },
+  "hotspot": {
+    "windowDays": 365,
+    "yearRegex": "(?<!\\d)((?:19|20)\\d{2})(?!\\d)",
+    "_source": "热点 = 距批次最大日期 365 天内的记录；窗口可配置"
+  },
+  "style": {
+    "rules": {
+      "academic": ["参考文献", "研究表明", "et al", "doi", "摘要"],
+      "news": ["记者", "报道", "昨日", "今日"],
+      "dialogue": ["说道", "问道", "回答", "：\""],
+      "legal": ["第.条", "本法", "规定", "处罚"],
+      "instruction": ["请点击", "步骤", "操作如下", "第一步"]
+    },
+    "default": "general",
+    "_source": "语体关键词规则；与 OP-10 保持同口径"
+  },
+  "limits": {"maxRecords": 100000, "maxTextChars": 50000}
+}

@@ -1,0 +1,48 @@
+{
+  "failedCount": 0,
+  "generatedAt": "2026-11-17T10:51:59+08:00",
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "metrics": {
+    "accent": {
+      "reasonCode": "ACCENT_MODEL_UNAVAILABLE",
+      "status": "unavailable"
+    },
+    "audioRecords": 3,
+    "cerMean": null,
+    "deterministic": false,
+    "deterministicNote": "ASR 为神经模型推理，CPU 上结果稳定但不同硬件可能有细微差异。",
+    "failedCount": 0,
+    "failuresByReason": {},
+    "generatedAt": "2026-11-17T10:51:59+08:00",
+    "lowQualityCount": 1,
+    "lowQualityReasons": {
+      "ASR_EMPTY": 1
+    },
+    "modelVersion": "paraformer-zh",
+    "pitchMeanHz": 222.511491,
+    "processedRecords": 3,
+    "provisional": true,
+    "runtimeSec": 9.01,
+    "speechRatioMean": 0.797561,
+    "thresholds": {
+      "cerLowQuality": 0.3,
+      "minSpeechRatio": 0.1,
+      "werLowQuality": 0.2
+    },
+    "transcribedRecords": 2,
+    "werMean": null,
+    "werReasonCode": "REFERENCE_TEXT_REQUIRED",
+    "werStatus": "unavailable"
+  },
+  "modelVersion": "paraformer-zh",
+  "operatorId": "dm-speech-analysis",
+  "operatorVersion": "0.1.0",
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "provisional": true,
+  "runId": "7c549c29811c8574",
+  "sampleCount": 3,
+  "seed": 42,
+  "semanticCode": "corpus_profile_speech_quality_v1",
+  "successCount": 3,
+  "treeVersion": null
+}

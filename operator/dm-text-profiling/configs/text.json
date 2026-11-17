@@ -1,0 +1,43 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S3 联调初值：无依存句法模型，从句深度/语体为可解释规则；六维权重与低适配阈值待确认（H-03）。",
+  "segment": {
+    "sentenceTerminators": ["。", "！", "？", "!", "?", "；", ";", "\n"],
+    "clauseSeparators": ["，", ",", "、", "：", ":"],
+    "maxTextChars": 50000,
+    "_source": "中文标点分句/分句规则；英文标点兼容"
+  },
+  "lexical": {
+    "msttrWindow": 50,
+    "_source": "MSTTR 标准窗口 50；TTR 对长度敏感，报告同时给出 MSTTR 与 MTLD"
+  },
+  "syntax": {
+    "subordinators": ["虽然", "但是", "因为", "所以", "如果", "尽管", "然而", "因此", "只要", "除非", "即使", "并且", "以及"],
+    "passivePatterns": ["被", "为...所", "受到", "遭到", "给"],
+    "_source": "连词/介词规则近似从句深度与被动句；无句法分析模型"
+  },
+  "genre": {
+    "rules": {
+      "dialogue": ["说道", "问道", "回答", "“", "”", "：\""],
+      "academic": ["参考文献", "研究表明", "et al", "doi", "摘要", "实验"],
+      "news": ["记者", "报道", "昨日", "今日", "通讯员"],
+      "instruction": ["请点击", "步骤", "操作如下", "第一步", "注意事项"],
+      "legal": ["第.条", "本法", "规定", "处罚", "条例"]
+    },
+    "default": "general",
+    "_source": "语体关键词规则（联调初值），置信度=命中关键词种类/全部规则种类"
+  },
+  "taskfit": {
+    "groupWeights": {"structure": 0.4, "semantic": 0.3, "domain": 0.3},
+    "subWeights": {
+      "structure": {"sentenceCompleteness": 0.5, "clauseComplexity": 0.5},
+      "semantic": {"lexicalRichness": 0.6, "informationDensity": 0.4},
+      "domain": {"domainMatch": 0.7, "genreFit": 0.3}
+    },
+    "idealSentenceChars": {"min": 8, "max": 60},
+    "lowFitThreshold": 3.0,
+    "_source": "baseline/thresholds.json taskfit.weights 结构 0.4/语义 0.3/领域 0.3；子权重与低适配阈值 3.0 为联调初值"
+  },
+  "limits": {"maxRecords": 1000000}
+}

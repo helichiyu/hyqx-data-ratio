@@ -1,0 +1,44 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S3 联调初值；分位数口径、AHP 判断矩阵与来源分值待业务确认（H-03 / Q-02）。",
+  "percentiles": [50, 90, 99],
+  "sourceClasses": ["web_text", "books", "code", "science", "wiki", "dialogue"],
+  "ahp": {
+    "dimensions": ["authority", "transparency", "freshness", "evaluation"],
+    "matrix": [
+      [1.0, 1.333333, 2.0, 4.0],
+      [0.75, 1.0, 1.5, 3.0],
+      [0.5, 0.666667, 1.0, 2.0],
+      [0.25, 0.333333, 0.5, 1.0]
+    ],
+    "consistencyMax": 0.1,
+    "sourceScores": {
+      "web_text": {"authority": 0.40, "transparency": 0.60},
+      "books": {"authority": 0.90, "transparency": 0.80},
+      "code": {"authority": 0.80, "transparency": 0.90},
+      "science": {"authority": 0.95, "transparency": 0.90},
+      "wiki": {"authority": 0.80, "transparency": 0.95},
+      "dialogue": {"authority": 0.50, "transparency": 0.40}
+    },
+    "_source": "维度权重按任务书 40/30/20/10 构造判断矩阵并由代码求特征向量与 CR；authority/transparency 为可解释联调初值（H-03）；freshness 由数据 dt 实时计算；evaluation 取 quality.completeness 均值。"
+  },
+  "freshness": {
+    "weights": {"last_1y": 0.6, "last_3y": 0.3, "older": 0.1},
+    "neutral": 0.5,
+    "_source": "baseline/thresholds.json time.freshness_weights（H-03 待确认）；无时间数据的来源类取中性值 0.5 并记录"
+  },
+  "domain": {
+    "treeRelativePath": "baseline/tree-snapshot.json",
+    "treeVersionFromSnapshot": true,
+    "coverageDefinitions": {
+      "level1": "出现至少一条记录的一级领域数 / 一级领域总数",
+      "level2": "出现的二级领域路径数 / 二级领域总数",
+      "leaf": "出现的三级叶子数 / 三级叶子总数",
+      "labeledRecordRate": "至少命中一个领域标签的记录数 / 文本记录数"
+    }
+  },
+  "limits": {
+    "maxRecords": 1000000
+  }
+}

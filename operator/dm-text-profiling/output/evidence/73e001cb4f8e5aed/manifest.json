@@ -1,0 +1,51 @@
+{
+  "artifacts": [
+    {
+      "bytes": 0,
+      "path": "failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 629,
+      "path": "input_manifest.json",
+      "sha256": "703dd13e06e5e499fbce93add6f773cc116765a7b2ede79ac8d150029194db3f"
+    },
+    {
+      "bytes": 1008,
+      "path": "low_fit.jsonl",
+      "sha256": "252d69e178c1488cc039c28346a31a9686a2a98ec99533695beb1a1f8da2470b"
+    },
+    {
+      "bytes": 1598,
+      "path": "metrics.json",
+      "sha256": "723d6b2b496cc1a3b9b3944db8c786d536c5ad4d9db9d5fdd7e84bf69f74ba3e"
+    },
+    {
+      "bytes": 302175,
+      "path": "result.jsonl",
+      "sha256": "bede62b9685e6973ce14bda426768baf048fd58e9846932a2c49b9cb15535858"
+    }
+  ],
+  "compressionRatio": 0.347544,
+  "createdAt": "2026-11-17T10:53:32+08:00",
+  "failedCount": 0,
+  "failedSamples": [],
+  "inputBytes": 878767,
+  "inputFingerprint": "sha256:120048edd403aded7083105601f9e2957f077762ad66bf934270b0444b6ef2ec",
+  "modelVersion": "rule-based-text-metrics-v1",
+  "notes": [
+    "无依存句法模型：从句数按标点分句，从句深度按从属连词近似，规则写入 configs/text.json。",
+    "TTR 对长度敏感，同时输出 MSTTR(50) 与近似 MTLD(0.72)。",
+    "domainMatch 依赖 OP-06；缺失时 domain 组不参与，权重重归一化并写 reasonCode。"
+  ],
+  "operatorId": "dm-text-profiling",
+  "operatorVersion": "0.1.0",
+  "outputBytes": 305410,
+  "paramsHash": "sha256:332106052eff02f9ec0ae7aa917246d9726e2fcf0e84a3b0d726a02050acfc34",
+  "runId": "e1a77c2ae30df3f0",
+  "sampleCount": 426,
+  "seed": 42,
+  "semanticCode": "corpus_profile_text_taskfit_v1",
+  "successCount": 426,
+  "treeVersion": null
+}

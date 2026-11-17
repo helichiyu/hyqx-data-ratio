@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "status": "provisional",
+  "statusNote": "S3 联调初值：WER 阈值、VAD、基频范围与口音口径待确认（H-03/H-06）。",
+  "media": {
+    "standardDir": "standard/audio",
+    "asrModelRelativePath": "shared/paraformer-zh",
+    "sampleRate": 16000,
+    "_source": "OP-02 标准音频目录与 shared/paraformer-zh（Apache-2.0）"
+  },
+  "vad": {
+    "frameSec": 0.03,
+    "energyPercentile": 20,
+    "minSpeechRatio": 0.1,
+    "_source": "能量 VAD：帧能量低于 P20 视为静音；有效语音占比<0.1 判无语音"
+  },
+  "quality": {
+    "werLowQuality": 0.2,
+    "cerLowQuality": 0.3,
+    "pitchMinHz": 60,
+    "pitchMaxHz": 400,
+    "_source": "baseline/thresholds.json speech.wer_low_quality=0.2（H-03）；CER 0.3 与基频范围联调初值"
+  },
+  "limits": {
+    "maxRecords": 100000,
+    "maxAudioSeconds": 1800,
+    "asrChunkSec": 60
+  }
+}

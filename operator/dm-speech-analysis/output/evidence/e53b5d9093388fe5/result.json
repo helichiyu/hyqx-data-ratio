@@ -1,0 +1,86 @@
+{
+  "status": "succeeded",
+  "data": {
+    "operatorId": "dm-speech-analysis",
+    "semanticCode": "corpus_profile_speech_quality_v1",
+    "operatorVersion": "0.1.0",
+    "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "seed": 42,
+    "runId": "e53b5d9093388fe5",
+    "inputFingerprint": "sha256:aed8d3843572719e3c4589ed538a44105424573efd814d26d903618feb4e62c9",
+    "outputDir": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-speech-analysis/e53b5d9093388fe5",
+    "modelVersion": "paraformer-zh",
+    "treeVersion": null,
+    "sampleCount": 3,
+    "successCount": 3,
+    "failedCount": 0,
+    "failedSamples": [],
+    "metrics": {
+      "audioRecords": 3,
+      "processedRecords": 3,
+      "failedCount": 0,
+      "failuresByReason": {},
+      "transcribedRecords": 2,
+      "speechRatioMean": 0.797561,
+      "pitchMeanHz": 222.511491,
+      "werMean": null,
+      "cerMean": null,
+      "werStatus": "unavailable",
+      "werReasonCode": "REFERENCE_TEXT_REQUIRED",
+      "lowQualityCount": 1,
+      "lowQualityReasons": {
+        "ASR_EMPTY": 1
+      },
+      "thresholds": {
+        "werLowQuality": 0.2,
+        "cerLowQuality": 0.3,
+        "minSpeechRatio": 0.1
+      },
+      "accent": {
+        "status": "unavailable",
+        "reasonCode": "ACCENT_MODEL_UNAVAILABLE"
+      },
+      "modelVersion": "paraformer-zh",
+      "provisional": true,
+      "deterministic": false,
+      "deterministicNote": "ASR 为神经模型推理，CPU 上结果稳定但不同硬件可能有细微差异。",
+      "runtimeSec": 9.01,
+      "generatedAt": "2026-11-17T10:51:59+08:00"
+    },
+    "artifacts": [
+      {
+        "path": "failures.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "input_manifest.json",
+        "bytes": 526,
+        "sha256": "7eae5264752668947c0072408742a124e5641c2946d1704801c1a6210eecdccc"
+      },
+      {
+        "path": "low_quality.jsonl",
+        "bytes": 70,
+        "sha256": "d56a45b8eda959576f27b63c022b08470cd65d47c210b4dc74a2cdc4504c3acb"
+      },
+      {
+        "path": "metrics.json",
+        "bytes": 860,
+        "sha256": "b4e79c589aaeb443e8a22f85dd89a150e4082de9076b2c475b8f707ce86ad1f3"
+      },
+      {
+        "path": "result.jsonl",
+        "bytes": 1645,
+        "sha256": "86fc3dc8490eef44badb2b24ef2a7a7831b11af45ecda599c47f1047c01d878f"
+      }
+    ],
+    "outputFilePath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-speech-analysis/e53b5d9093388fe5/result.jsonl",
+    "deterministic": false,
+    "provisional": true,
+    "notes": [
+      "WER/CER 需参考文本；无参考只产出转写与声学统计。",
+      "低质量规则：无语音、ASR 空、WER>0.2、CER>0.3。"
+    ],
+    "cached": false
+  }
+}
