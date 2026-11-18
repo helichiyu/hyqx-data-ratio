@@ -6,7 +6,25 @@
 
 ---
 
-## 0. 前置条件
+## 0. 当前已启动环境（2026-11-18）
+
+| 组件 | 地址 | 状态 |
+| --- | --- | --- |
+| 后端 | `http://127.0.0.1:8082/hs-api` | 已启动，`local-dev`，Liquibase 已执行 |
+| 前端 | `http://localhost:9851/#/data-mixing/dataset/index` | 已启动，Vite 代理到 8082 |
+| UAP 菜单/资源 | 测试 UAP | 已创建：12 菜单、89 资源，重复执行全部复用 |
+| UAP 角色授权 | — | **待执行**：当前会话 `/role/list`、`/auth/selectedTree` 返回 403，无角色管理权限 |
+
+- 后端日志：`C:\Users\Aurora\AppData\Local\Temp\dm_scan\dm_runtime_backend.log`
+- 前端日志：`C:\Users\Aurora\AppData\Local\Temp\dm_scan\dm_runtime_frontend.log`
+- 本地前端环境文件：`hsmty-web/.env.development.local`（已被 `*.local` 忽略）
+- UAP 抓包文件：`hsmty-module-dm-server/uap.curl`（已被 `.gitignore` 忽略）
+
+> 当前 `local-dev` 模式下页面无需 Cookie；UAP 角色授权需在有角色管理权限的会话中执行（见 3.3）。
+
+---
+
+## 1. 前置条件
 
 | 项 | 要求 |
 | --- | --- |
@@ -45,6 +63,7 @@ mvn -o clean package -DskipTests -s settings.xml \
 
 ```bash
 java -jar hsmty-module-dm-start/target/hsmty-module-dm-start.jar \
+  --server.port=8082 \
   --spring.profiles.active=local-dev \
   --spring.liquibase.enabled=true
 ```
@@ -61,11 +80,12 @@ java -jar hsmty-module-dm-start/target/hsmty-module-dm-start.jar \
 ### 1.3 验证
 
 ```bash
-curl -s http://127.0.0.1:8080/hs-api/actuator/health
-curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:8080/hs-api/v3/api-docs/data-mixing
+curl -s http://127.0.0.1:8082/hs-api/actuator/health
+curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:8082/hs-api/v3/api-docs/data-mixing
+curl -s -o /dev/null -w "%{http_code}\n" "http://127.0.0.1:8082/hs-api/data-mixing/taxonomy/tree?treeType=content"
 ```
 
-预期：health `UP`；OpenAPI 200（当前 101 条路径）。
+预期：health `{"status":"UP"}`；OpenAPI 200（当前 101 条路径）；分类树 200。
 
 数据库核对：
 
@@ -87,22 +107,29 @@ SELECT COUNT(*) FROM hs_data_mixing_taxonomy_version WHERE status='active'; -- 1
 ```bash
 cd hsmty-web
 corepack pnpm install
-VITE_API_PROXY_TARGET=http://127.0.0.1:8080 corepack pnpm dev
+
+# 本机已创建 .env.development.local（被 *.local 忽略），内容：
+# VITE_PORT=9851
+# VITE_API_PROXY_TARGET=http://127.0.0.1:8082
+# VITE_OPEN=false
+# VITE_LOCAL_MODULES=data-mixing
+corepack pnpm dev
 ```
 
 访问：
 
 ```text
-http://localhost:9848/#/data-mixing/dataset/index
-http://localhost:9848/#/data-mixing/taxonomy/index
+http://localhost:9851/#/data-mixing/dataset/index
+http://localhost:9851/#/data-mixing/taxonomy/index
 ...
 ```
 
 说明：
 
+- 如不使用本地 env 文件，也可用 `VITE_PORT=9851 VITE_API_PROXY_TARGET=http://127.0.0.1:8082 corepack pnpm dev`。
 - `VITE_API_PROXY_TARGET` 是 Vite 代理目标；不设置时 `/hs-api` 请求不会转发到本地后端。
+- `VITE_LOCAL_MODULES=data-mixing` 只在本机独立壳显示 DM 模块，避免加载其它模块的菜单/接口。
 - 后端使用 `local-dev` 时，`/data-mixing/**` 免登录并注入全部 DM 权限；前端在独立壳中 `can()` 默认放行。
-- 若 9848 被占用，以终端实际端口为准；浏览器访问 `/#/data-mixing/...`。
 
 ### 2.2 主应用（qiankun）联调
 
@@ -144,6 +171,15 @@ python tools/uap/import_dm.py --curl-file uap.curl
 ```bash
 python tools/uap/import_dm.py --curl-file uap.curl --role-name test001 --execute
 ```
+
+> **本次已执行（2026-11-18）**：12 个菜单、89 个资源已创建，资源 code/value 已校正为权限码；重复执行全部复用。
+> **角色授权未执行**：当前会话访问 `/role/list`、`/auth/selectedTree` 返回 403，无角色管理权限。
+> 请在 UAP「角色管理 → 分配菜单」给测试角色勾选「数据配比」及 11 个页面；或换有权限的会话执行：
+>
+> ```bash
+> python tools/uap/import_dm.py --curl-file uap.curl --role-name <角色名> --execute
+> python tools/uap/import_dm.py --curl-file uap.curl --role-id <角色ID> --execute
+> ```
 
 - 角色也可用 `--role-id <uuid>`；不指定角色则只创建菜单/资源，不授权。
 - 脚本会先读取 `auth/selectedTree` 的已选菜单并合并，避免覆盖其它模块菜单。
