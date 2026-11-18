@@ -318,7 +318,7 @@
     "OP-17": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-packaging/347d6365d8457c91",
     "OP-18": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-evaluation/58eca6093ec0227c"
   },
-  "generatedAt": "2026-11-18T11:35:53+08:00",
+  "generatedAt": "2026-11-18T14:22:18+08:00",
   "missingOperators": {},
   "operatorId": "dm-ratio-reporting",
   "operatorVersion": "0.1.1",
@@ -331,7 +331,7 @@
     "OP-14": null,
     "OP-15": "0.1.2",
     "OP-17": "0.1.1",
-    "OP-18": "0.1.2"
+    "OP-18": "0.1.3"
   },
   "overall": {
     "definition": "综合分 = Σ 可用维度分×权重 / Σ 可用权重；不可用维度剔除并列入 missing，不按 0 计。",

@@ -1,12 +1,12 @@
 {
   "failedCount": 0,
-  "generatedAt": "2026-11-18T11:35:53+08:00",
+  "generatedAt": "2026-11-18T14:22:18+08:00",
   "inputFingerprint": "sha256:4df0680aa5c933931394129f1f0d2bed7ea8df316e8b258e840c1acee16933bb",
   "metrics": {
     "deterministic": true,
     "dimensionsAvailable": 9,
     "dimensionsTotal": 9,
-    "generatedAt": "2026-11-18T11:35:53+08:00",
+    "generatedAt": "2026-11-18T14:22:18+08:00",
     "missing": [],
     "missingOperators": {},
     "modelVersion": null,
@@ -21,7 +21,7 @@
       "OP-14": null,
       "OP-15": "0.1.2",
       "OP-17": "0.1.1",
-      "OP-18": "0.1.2"
+      "OP-18": "0.1.3"
     },
     "operatorsConsumed": 9,
     "overallGrade": "pass",
@@ -34,7 +34,7 @@
       "status": "ok"
     },
     "runId": "97ed001cc0ab02da",
-    "runtimeSec": 0.01,
+    "runtimeSec": 0.011,
     "seed": 42,
     "semanticCode": "prod_ratio_report_v1",
     "treeVersion": "taxonomy-1013-pending"
