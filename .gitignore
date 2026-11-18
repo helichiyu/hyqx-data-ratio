@@ -21,3 +21,6 @@ operator/weights/**/*
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# 本地算子运行环境（三端联调用，不入库）
+.venv-operator/

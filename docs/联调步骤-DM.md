@@ -12,7 +12,8 @@
 | --- | --- | --- |
 | 后端 | `http://127.0.0.1:8082/hs-api` | 已启动，`local-dev`，Liquibase 已执行 |
 | 前端 | `http://localhost:9851/#/data-mixing/dataset/index` | 已启动，Vite 代理到 8082 |
-| UAP 菜单/资源 | 测试 UAP | 已创建：12 菜单、89 资源，重复执行全部复用 |
+| 算法 | `http://127.0.0.1:8092` | 已启动，`op-data-mixing`，21/22 算子 ready（speech 缺 torch） |
+| UAP 菜单/资源 | 测试 UAP | 旧结构 12 菜单、89 资源已创建；新结构 3 分组 + 11 页面待重跑导入 |
 | UAP 角色授权 | — | **待执行**：当前会话 `/role/list`、`/auth/selectedTree` 返回 403，无角色管理权限 |
 
 - 后端日志：`C:\Users\Aurora\AppData\Local\Temp\dm_scan\dm_runtime_backend.log`
@@ -34,7 +35,7 @@
 | 数据库 | `idg_db`：`192.168.1.102:13306`，账号 `ai`（密码走 Jasypt 配置） |
 | Redis | `192.168.1.102:26391-26393` Sentinel |
 | UAP | 测试环境可登录，拥有菜单/资源维护权限 |
-| 算法 | 同事开发中；未接入时 `data-mixing.algorithm.enabled=false`，异步任务会明确失败（预期行为） |
+| 算法 | `operator/` 已完成；本地按 2.3 启动 8092，后端用 `DM_ALGORITHM_ENABLED=true` 接入；未部署时保持 false，异步任务会明确失败 |
 
 > 本机 Node 24 可运行，但 `vue-tsc` 默认堆内存会 OOM，见第 6 节。
 
@@ -134,8 +135,67 @@ http://localhost:9851/#/data-mixing/taxonomy/index
 ### 2.2 主应用（qiankun）联调
 
 - 后端**不要**加 `--spring.profiles.active=local-dev`，使用平台 SSO Cookie。
-- UAP 菜单导入并授权后，从主应用进入「数据配比」分组。
+- UAP 菜单导入并授权后，从主应用进入「数据治理」「配比生产」「质量与合规」分组。
 - 页面 URL 形如 `/sdom-hsmty/#/data-mixing/ratio-plan/index`。
+
+### 2.3 算法服务（本地 8092）
+
+算法工程 `operator/` 已完成 22 个算子；本地用独立 venv 启动，端口约定 **8092**（ASC 8090、LTP 8091）。
+
+```bash
+cd hsmty-module-dm-server/..
+python -m venv .venv-operator
+.venv-operator/Scripts/python.exe -m pip install \
+  fastapi==0.116.1 uvicorn==0.51.0 python-multipart==0.0.32 \
+  jsonschema==4.26.0 numpy==2.2.6 pyarrow==26.0.0 \
+  pillow==12.0.0 opencv-python==4.12.0.88 jieba==0.42.1
+
+cd operator
+PORT=8092 DEVICE=cpu MODEL_BACKEND=idg MAX_UPLOAD_BYTES=1073741824 \
+  ../.venv-operator/Scripts/python.exe inference.py
+```
+
+验证：
+
+```bash
+curl -s http://127.0.0.1:8092/health
+curl -s http://127.0.0.1:8092/dm-ratio-computation/healthz
+```
+
+预期：`/health` 返回 200（`status=degraded` 也可接受，表示部分算子缺依赖）；
+`dm-ratio-computation`、`dm-multimodal-analysis`、`dm-corpus-normalization`、`dm-corpus-profiling`、
+`dm-quality-analysis` 的 `ready=true`。
+
+> 本机未放模型权重时：`dm-multimodal-labeling` 会返回 `DEPENDENCY_UNAVAILABLE`（缺 bge-base-zh-v1.5），
+> 打标任务会明确失败；画像 `basic`/`quality` 不依赖权重，可完整跑通。
+> 需要打标时，把模型仓放到 `D:\models\shared\`（含 bge-base-zh-v1.5），或设置 `WEIGHTS_DIR`，
+> 再执行 `python scripts/stage_weights.py` 暂存并校验。
+
+后端启动时打开算法开关（默认关闭，未部署算子池的环境保持关闭）：
+
+```bash
+DM_ALGORITHM_ENABLED=true \
+DM_ALGORITHM_BASE_URL=http://127.0.0.1:8092 \
+DM_ALGORITHM_MAX_UPLOAD_BYTES=1073741824 \
+java -jar hsmty-module-dm-start/target/hsmty-module-dm-start.jar \
+  --server.port=8082 --spring.profiles.active=local-dev --spring.liquibase.enabled=false
+```
+
+接入后的执行链：
+
+| 业务动作 | 算子链 | 结果落库 |
+| --- | --- | --- |
+| 数据打标 | OP-01 多模态解析 → OP-02 标准化 → OP-05 多模态打标 | `hs_data_mixing_sample_label` |
+| 语料画像 basic | OP-01 → OP-02 → OP-08 规模/来源/领域画像 | `hs_data_mixing_profile_result` |
+| 语料画像 language | OP-01 → OP-02 → OP-09 语言/地域/时效 | 同上 |
+| 语料画像 text | OP-01 → OP-02 → OP-10 文本属性/任务适配 | 同上 |
+| 语料画像 knowledge | OP-01 → OP-02 → OP-13 知识/热点/风格 | 同上 |
+| 语料画像 quality | OP-01 → OP-02 → OP-14 质量/一致性/难度 | 同上 |
+| 语料画像 visual | OP-01 → OP-02 → OP-12 图像/视频属性 | 同上 |
+| 语料画像 speech | OP-01 → OP-02 → OP-11 语音质量/声学属性 | 同上（需 torch/funasr） |
+
+数据集文件由后端打包 zip 后上传到算子池 `INPUT_DIR/<datasetId>/`，OP-01/OP-02 的中间产物
+通过算子池 `outputDir` 传递给下游；业务库只保存最终结果与任务状态。
 
 ---
 
@@ -161,7 +221,7 @@ python tools/uap/import_dm.py --curl-file uap.curl
 
 预期输出：
 
-- `菜单: 12 条；资源: 89 条`（1 个分组 + 11 个页面；89 个权限码）；
+- `菜单: 14 条；资源: 89 条`（3 个分组 + 11 个页面；89 个权限码）；
 - 根菜单 `YD数据平台` 解析成功；
 - 逐条打印 `[将创建菜单]` / `[复用菜单]`、`[将创建资源]` / `[复用资源]`；
 - 不写任何数据。
@@ -172,9 +232,12 @@ python tools/uap/import_dm.py --curl-file uap.curl
 python tools/uap/import_dm.py --curl-file uap.curl --role-name test001 --execute
 ```
 
-> **本次已执行（2026-11-18）**：12 个菜单、89 个资源已创建，资源 code/value 已校正为权限码；重复执行全部复用。
+> **本次已执行（2026-11-18）**：旧结构 12 个菜单（1 个「数据配比」分组 + 11 个页面）、89 个资源已创建，资源 code/value 已校正为权限码。
+> 新结构改为 3 个分组 + 11 个页面：重跑脚本会创建「数据治理」「配比生产」「质量与合规」三个分组，
+> 并在这三个分组下按名称复用/创建页面菜单。旧「数据配比」分组及其 11 个页面菜单不会自动删除，
+> 导入后请在 UAP 菜单管理中手工删除旧分组，避免侧边栏出现重复入口。
 > **角色授权未执行**：当前会话访问 `/role/list`、`/auth/selectedTree` 返回 403，无角色管理权限。
-> 请在 UAP「角色管理 → 分配菜单」给测试角色勾选「数据配比」及 11 个页面；或换有权限的会话执行：
+> 请在 UAP「角色管理 → 分配菜单」给测试角色勾选「数据治理」「配比生产」「质量与合规」及各自页面；或换有权限的会话执行：
 >
 > ```bash
 > python tools/uap/import_dm.py --curl-file uap.curl --role-name <角色名> --execute
@@ -197,7 +260,7 @@ python tools/uap/check_permissions.py
 
 1. 退出并重新登录平台；
 2. `permissions/verify` 返回包含 `data-mixing:*`；
-3. `auth/selectedTree?roleId=<角色ID>` 勾选「数据配比」及 11 个页面；
+3. `auth/selectedTree?roleId=<角色ID>` 勾选「数据治理」「配比生产」「质量与合规」及各自页面；
 4. 侧边菜单可见，逐页打开无白屏。
 
 ### 3.5 常见失败
@@ -215,29 +278,57 @@ python tools/uap/check_permissions.py
 
 ## 4. 页面联调顺序与预期
 
-> 算法未接入时，打标/画像/仿真/生产/分析的异步任务会进入 `failed`，`errorCode=ALGORITHM_UNAVAILABLE`，这是**预期行为**，用于验证失败语义与状态机，不是缺陷。
+> 算法已接入（2.3）：数据打标、语料画像会真实调用算子池。
+> 本机未放模型权重时，打标在 OP-05 返回 `DEPENDENCY_UNAVAILABLE`，任务会**明确失败**而不是悬挂；
+> 画像 `basic`/`quality` 不依赖权重，可跑通并落库。
+> 仿真/生产/分析仍只保留网关抽象（上游算子链未接），任务会明确失败，属当前预期。
 
 | # | 页面 | 操作 | 预期 |
 | --- | --- | --- | --- |
 | 1 | 分类体系管理 | 切换内容/领域/能力树；新增根节点/子节点；编辑；启停；删除 | 内容树 30 根、领域 272 根、能力 99 根；路径唯一校验生效；删除有子节点被拒 |
 | 2 | 分类体系管理 | 版本管理 → 新建版本快照 → 设为生效 → 版本差异 | 节点数 794；切换后树正常；差异计数正确 |
 | 3 | 数据接入与标准化 | 新建数据集 → 上传 `.jsonl/.txt` → 查看文件 → 下载 → 启用 | 文件 SHA-256 去重；重复上传 409；统计文件数/大小正确 |
-| 4 | 数据打标 | 选可用数据集 → 新建任务（自动初标）→ 启动 | 任务约 1 秒 `failed`，错误信息可读；不悬挂在 running |
-| 5 | 数据打标 | 查看详情/进度/统计/样本 | 统计卡为 0；样本列表为空（算法未接入） |
-| 6 | 语料画像分析 | 选数据集 → 查看 7 类画像卡 → 创建并启动 | 文本数据集返回 5 个适用类型；任务明确失败 |
-| 7 | 场景管理 | 新建场景 → 勾选标签树（任意层级）→ 启停 → 删除 | 非法标签 400；停用后 options 为空 |
-| 8 | 配比方案设计 | 新建方案（2 行 40/60，core≥30）→ 保存 → 详情 → 校验 | 比例合计 100；核心占比、覆盖率校验通过；行库存 0、缺口按目标计算 |
-| 9 | 配比方案设计 | 比例 50/30、核心 20%、覆盖 50%、总量超限 | 分别返回 400，消息含具体规则 |
-| 10 | 配比方案设计 | 启用 → 复制 → 停用 → 删除 | 启用前强制校验；复制生成“（副本）”草稿 |
-| 11 | 配方包管理 | 新建配方包（绑定已启用方案）→ 生成版本 → 发布 → 封存 → 回滚 | 版本快照/差异正确；currentVersion 跟随发布/回滚 |
-| 12 | 配方包管理 | 版本行“仿真” → 发起仿真 → 停止/重跑 → 提交判定 | 仿真明确失败；`pass/reject` 在未完成时被拒；`pending` 可记录 |
-| 13 | 配比生产任务 | 选配方版本 → 新建并启动 → 详情 Tabs → 重跑 | 执行记录 attempt 1/2；产物/算子/流转为空；任务与执行同为 failed |
-| 14 | 配比分析任务 | 新建（绑定数据集）→ 启动 → 详情 | 任务失败；无结果时提示“该任务尚无分析结果”；报告按钮禁用 |
-| 15 | 风险预警 | 登记 → 编辑 → 处置（handling/closed/ignored）→ 统计 | KPI 与列表状态同步；详情 JSON 正确 |
-| 16 | 工具链与专家校验 | 新建校验任务（需已打标样本）→ 复核 → 完成 | 抽样数量正确；复核一致/改判；完成后 Kappa/Alpha/准确率有值 |
-| 17 | 全页面 | 无权限账号 | 菜单不可见；直接调接口 403；按钮不可见 |
+| 4 | 数据打标 | 选可用数据集 → 新建任务（自动初标）→ 启动 | 有 bge 权重时 completed，样本落库；无权重时 `failed` + `DEPENDENCY_UNAVAILABLE`，不悬挂在 running |
+| 5 | 数据打标 | 查看详情/进度/统计/样本 | 成功时按置信度统计标签、未归类；失败时统计为 0 |
+| 6 | 语料画像分析 | 选数据集 → 画像类型 `basic`/`quality` → 创建并启动 | 任务 completed；结果弹窗显示指标数与 `profile` JSON；画像卡出现摘要 |
+| 7 | 语料画像分析 | 查看任务列表 → 结果 → 画像总览 | 列表状态 completed；`metricCount`、`summary` 与算子 metrics 一致 |
+| 8 | 场景管理 | 新建场景 → 勾选标签树（任意层级）→ 启停 → 删除 | 非法标签 400；停用后 options 为空 |
+| 9 | 配比方案设计 | 新建方案（2 行 40/60，core≥30）→ 保存 → 详情 → 校验 | 比例合计 100；核心占比、覆盖率校验通过；行库存 0、缺口按目标计算 |
+| 10 | 配比方案设计 | 比例 50/30、核心 20%、覆盖 50%、总量超限 | 分别返回 400，消息含具体规则 |
+| 11 | 配比方案设计 | 启用 → 复制 → 停用 → 删除 | 启用前强制校验；复制生成“（副本）”草稿 |
+| 12 | 配方包管理 | 新建配方包（绑定已启用方案）→ 生成版本 → 发布 → 封存 → 回滚 | 版本快照/差异正确；currentVersion 跟随发布/回滚 |
+| 13 | 配方包管理 | 版本行“仿真” → 发起仿真 → 停止/重跑 → 提交判定 | 仿真明确失败；`pass/reject` 在未完成时被拒；`pending` 可记录 |
+| 14 | 配比生产任务 | 选配方版本 → 新建并启动 → 详情 Tabs → 重跑 | 执行记录 attempt 1/2；产物/算子/流转为空；任务与执行同为 failed |
+| 15 | 配比分析任务 | 新建（绑定数据集）→ 启动 → 详情 | 任务失败；无结果时提示“该任务尚无分析结果”；报告按钮禁用 |
+| 16 | 风险预警 | 登记 → 编辑 → 处置（handling/closed/ignored）→ 统计 | KPI 与列表状态同步；详情 JSON 正确 |
+| 17 | 工具链与专家校验 | 新建校验任务（需已打标样本）→ 复核 → 完成 | 抽样数量正确；复核一致/改判；完成后 Kappa/Alpha/准确率有值 |
+| 18 | 全页面 | 无权限账号 | 菜单不可见；直接调接口 403；按钮不可见 |
 
-### 算法未接入时的成功路径演示（仅测试库）
+### 算法三端联调验收（8092）
+
+1. 新建并启用数据集，上传 `docs/算子开发/samples/text/machine_learning.jsonl`（425 条文本）。
+2. 创建画像任务：
+
+```bash
+curl -s -X POST http://127.0.0.1:8082/hs-api/data-mixing/profile \
+  -H "Content-Type: application/json; charset=UTF-8" \
+  -d '{"datasetId":<id>,"profileTypes":["basic","quality"],"startNow":true}'
+```
+
+3. 轮询进度：`GET /hs-api/data-mixing/profile/{id}/progress`。
+   - 预期 20–60 秒内 `completed`、`progress=100`；
+   - 算子日志可见 `POST /dm-multimodal-analysis/predict`、`/dm-corpus-normalization/predict`、`/dm-corpus-profiling/predict`、`/dm-quality-analysis/predict`。
+4. 查看结果：`GET /hs-api/data-mixing/profile/{id}/result`。
+   - `basic`：`scale.recordCount=425`、`sourceDistribution`、`domainCoverage`；
+   - `quality`：`completeness`、`gini`、`difficulty`、`polarity` 等 16 项指标。
+5. 打标任务：`POST /hs-api/data-mixing/labeling`，`startNow=true`。
+   - 有权重：`completed`，`GET /labeling/{id}/samples` 返回样本；
+   - 无权重：`failed`，`errorMessage` 包含 `DEPENDENCY_UNAVAILABLE` 与缺失模型路径。
+
+> 本机已实测：画像 `basic` 10 项指标、`quality` 16 项指标，任务 completed 并落库；
+> 打标在无 bge 权重时按预期失败。
+
+### 其它未接算子链的演示（仅测试库）
 
 以下 SQL 用于演示“已完成”状态，**不要在生产执行**。请先通过页面创建对应任务，再把 `<id>` 替换为实际 ID。
 
@@ -340,6 +431,10 @@ python tools/uap/check_permissions.py
 | Liquibase 锁表 | 上次进程中断；确认无运行实例后 `UPDATE databasechangeloglock SET LOCKED=0,...` |
 | 上传 413 | `spring.servlet.multipart.max-file-size` 或网关上限；默认 1GB |
 | 数据打标/生产一直 running | 不应发生；检查算法网关与残留恢复日志（2 分钟心跳） |
+| 画像/打标失败 `TRANSPORT_ERROR` | 算子池未启动或端口不符；`curl http://127.0.0.1:8092/health`，核对 `DM_ALGORITHM_BASE_URL` |
+| 打标失败 `DEPENDENCY_UNAVAILABLE` | 缺 bge-base-zh-v1.5 / torch 等依赖；按 2.3 放权重或改用画像流程 |
+| 上传失败 `UPLOAD_TOO_LARGE` | 后端 `DM_ALGORITHM_MAX_UPLOAD_BYTES` 与算子池 `MAX_UPLOAD_BYTES` 要同时调大 |
+| 画像 completed 但无结果 | 查 `hs_data_mixing_profile_result.task_id`；解析失败会转 task failed，不会 completed |
 | 页面白屏 | `register.ts` key 与 UAP URL 不一致；运行 `check_permissions.py` |
 | 长 ID 精度 | 前端类型统一 string，不要 `Number(id)` |
 | `pnpm install` 改写 workspace 配置 | 固定 pnpm 10.17.1，禁止提交 `allowBuilds` 占位符 |

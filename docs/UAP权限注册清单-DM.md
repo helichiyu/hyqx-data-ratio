@@ -21,22 +21,27 @@
 
 ---
 
-## 1. 菜单（1 个分组 + 11 个页面）
+## 1. 菜单（3 个分组 + 11 个页面）
+
+> 左侧菜单按原型拆成「数据治理」「配比生产」两个大菜单；原型中的「质量与合规」保留为第三组，
+> 承载风险预警与专家校验，避免这两个页面从菜单消失。
 
 | # | 名称 | 层级 | 上级 | URL | 排序 | 图标建议 |
 | --- | --- | ---: | --- | --- | ---: | --- |
-| 1 | 数据配比 | 4 | `YD数据平台` | — | 20 | `DataAnalysis` |
-| 2 | 数据接入与标准化 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/dataset/index` | 1 | — |
-| 3 | 分类体系管理 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/taxonomy/index` | 2 | — |
-| 4 | 数据打标 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/labeling/index` | 3 | — |
-| 5 | 语料画像分析 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/profile/index` | 4 | — |
-| 6 | 场景管理 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/scene/index` | 5 | — |
-| 7 | 配比方案设计 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/ratio-plan/index` | 6 | — |
-| 8 | 配方包管理 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/recipe/index` | 7 | — |
-| 9 | 配比生产任务 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/production/index` | 8 | — |
-| 10 | 配比分析任务 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/analysis/index` | 9 | — |
-| 11 | 风险预警 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/risk/index` | 10 | — |
-| 12 | 工具链与专家校验 | 5 | 数据配比 | `/sdom-hsmty/#/data-mixing/expert/index` | 11 | — |
+| 1 | 数据治理 | 4 | `YD数据平台` | — | 20 | `Collection` |
+| 2 | 数据接入与标准化 | 5 | 数据治理 | `/sdom-hsmty/#/data-mixing/dataset/index` | 1 | — |
+| 3 | 分类体系管理 | 5 | 数据治理 | `/sdom-hsmty/#/data-mixing/taxonomy/index` | 2 | — |
+| 4 | 数据打标 | 5 | 数据治理 | `/sdom-hsmty/#/data-mixing/labeling/index` | 3 | — |
+| 5 | 语料画像分析 | 5 | 数据治理 | `/sdom-hsmty/#/data-mixing/profile/index` | 4 | — |
+| 6 | 配比生产 | 4 | `YD数据平台` | — | 21 | `Operation` |
+| 7 | 场景管理 | 5 | 配比生产 | `/sdom-hsmty/#/data-mixing/scene/index` | 1 | — |
+| 8 | 配比方案设计 | 5 | 配比生产 | `/sdom-hsmty/#/data-mixing/ratio-plan/index` | 2 | — |
+| 9 | 配方包管理 | 5 | 配比生产 | `/sdom-hsmty/#/data-mixing/recipe/index` | 3 | — |
+| 10 | 配比生产任务 | 5 | 配比生产 | `/sdom-hsmty/#/data-mixing/production/index` | 4 | — |
+| 11 | 配比分析任务 | 5 | 配比生产 | `/sdom-hsmty/#/data-mixing/analysis/index` | 5 | — |
+| 12 | 质量与合规 | 4 | `YD数据平台` | — | 22 | `Warning` |
+| 13 | 风险预警 | 5 | 质量与合规 | `/sdom-hsmty/#/data-mixing/risk/index` | 1 | — |
+| 14 | 工具链与专家校验 | 5 | 质量与合规 | `/sdom-hsmty/#/data-mixing/expert/index` | 2 | — |
 
 `component` 必须与前端 `src/modules/data-mixing/register.ts` 的 key 一致：
 
@@ -256,7 +261,7 @@
    ```
 3. 重新登录平台，确认：
    - `permissions/verify` 返回包含 `data-mixing:*`；
-   - `auth/selectedTree?roleId=...` 勾选「数据配比」及 11 个页面；
+   - `auth/selectedTree?roleId=...` 勾选「数据治理」「配比生产」「质量与合规」及各自页面；
    - 侧边菜单可见，页面无白屏。
 4. 任一步失败时，脚本会打印 HTTP 状态与响应体（不含 Cookie），按响应修正后重跑；重复执行按名称复用，不会重复创建。
 
