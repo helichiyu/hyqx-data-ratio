@@ -66,7 +66,8 @@ mvn -o clean package -DskipTests -s settings.xml \
 java -jar hsmty-module-dm-start/target/hsmty-module-dm-start.jar \
   --server.port=8082 \
   --spring.profiles.active=local-dev \
-  --spring.liquibase.enabled=true
+  --spring.liquibase.enabled=true \
+  --spring.threads.virtual.enabled=false
 ```
 
 预期：
@@ -178,8 +179,12 @@ DM_ALGORITHM_ENABLED=true \
 DM_ALGORITHM_BASE_URL=http://127.0.0.1:8092 \
 DM_ALGORITHM_MAX_UPLOAD_BYTES=1073741824 \
 java -jar hsmty-module-dm-start/target/hsmty-module-dm-start.jar \
-  --server.port=8082 --spring.profiles.active=local-dev --spring.liquibase.enabled=false
+  --server.port=8082 --spring.profiles.active=local-dev --spring.liquibase.enabled=false \
+  --spring.threads.virtual.enabled=false
 ```
+
+> 本机实测：JDK 21.0.7 + 虚拟线程在高频查询画像总览时出现过 JVM SIGSEGV（exit 139），
+> 本地联调先关闭虚拟线程；已用 70+ 次 `/profile/overview` 压测确认稳定。生产是否开启需另做评估。
 
 接入后的执行链：
 
@@ -303,6 +308,10 @@ python tools/uap/check_permissions.py
 | 16 | 风险预警 | 登记 → 编辑 → 处置（handling/closed/ignored）→ 统计 | KPI 与列表状态同步；详情 JSON 正确 |
 | 17 | 工具链与专家校验 | 新建校验任务（需已打标样本）→ 复核 → 完成 | 抽样数量正确；复核一致/改判；完成后 Kappa/Alpha/准确率有值 |
 | 18 | 全页面 | 无权限账号 | 菜单不可见；直接调接口 403；按钮不可见 |
+
+> 画像页交互：首屏自动选中「最近有画像任务」的数据集，不再空白；任务运行中每 3 秒自动轮询，
+> 完成后 KPI 卡与任务列表同步刷新。结果弹窗除指标 JSON 外，按画像类型展示来源占比、模态记录数、
+> 难度分布、情感极性、语体分布、文本属性 p50 等图表；领域覆盖等缺失指标会明确标注不可用原因。
 
 ### 算法三端联调验收（8092）
 
