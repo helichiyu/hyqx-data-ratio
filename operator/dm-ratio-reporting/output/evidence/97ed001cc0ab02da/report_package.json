@@ -1,0 +1,452 @@
+{
+  "conclusions": [
+    {
+      "key": "scale_source",
+      "severity": "critical",
+      "text": "规模与来源：得分 0.4597（fail），来源 OP-08 · sourceDistribution.classes。"
+    },
+    {
+      "key": "domain_coverage",
+      "severity": "warning",
+      "text": "领域覆盖：得分 0.8125（pass），来源 OP-08 · domainCoverage.coverage.level1。"
+    },
+    {
+      "key": "language_time",
+      "severity": "critical",
+      "text": "语言、地域与时效：得分 0.1365（fail），来源 OP-09 · time.freshnessMean。"
+    },
+    {
+      "key": "text_taskfit",
+      "severity": "critical",
+      "text": "文本属性与任务适配：得分 0.4688（fail），来源 OP-10 · distributions.overall.p50。"
+    },
+    {
+      "key": "quality_consistency",
+      "severity": "info",
+      "text": "质量与一致性：得分 0.7910（good），来源 OP-14 · completeness.mean / (1-gini.gini) / polarity.balance。"
+    },
+    {
+      "key": "label_legality",
+      "severity": "info",
+      "text": "标签合法与治理：得分 1.0000（excellent），来源 OP-05/OP-07 · pathLegalRate / legalRate。"
+    },
+    {
+      "key": "ratio_compliance",
+      "severity": "critical",
+      "text": "配比合规：得分 0.5000（fail），来源 OP-15 · checksPassed / checksTotal。"
+    },
+    {
+      "key": "assembly_integrity",
+      "severity": "info",
+      "text": "组装与打包一致性：得分 1.0000（excellent），来源 OP-17 · duplicateRecords / dataset.rows / selectedCount。"
+    },
+    {
+      "key": "evaluation_quality",
+      "severity": "warning",
+      "text": "评测与风险：得分 1.0000（excellent），来源 OP-18 · score.score（无人工真值，proxy_only，不等价于准确率）。"
+    },
+    {
+      "key": "overall",
+      "severity": "warning",
+      "text": "综合评分 0.6889（pass），使用 9/9 个维度。"
+    }
+  ],
+  "deterministic": true,
+  "dimensions": [
+    {
+      "grade": "fail",
+      "key": "scale_source",
+      "method": "六类来源占比的归一化熵（log 6）",
+      "metric": "sourceDistribution.classes",
+      "nameZh": "规模与来源",
+      "operator": "OP-08",
+      "raw": {
+        "classes": {
+          "books": {
+            "count": 32,
+            "sharePercent": 7.407407
+          },
+          "code": {
+            "count": 0,
+            "sharePercent": 0.0
+          },
+          "dialogue": {
+            "count": 0,
+            "sharePercent": 0.0
+          },
+          "science": {
+            "count": 86,
+            "sharePercent": 19.907407
+          },
+          "web_text": {
+            "count": 307,
+            "sharePercent": 71.064815
+          },
+          "wiki": {
+            "count": 7,
+            "sharePercent": 1.62037
+          }
+        },
+        "recordCount": 432,
+        "shareSumPercent": 100.0
+      },
+      "reason": null,
+      "score": 0.4596903988,
+      "status": "ok",
+      "thresholds": {
+        "excellent": 0.9,
+        "good": 0.7,
+        "pass": 0.5
+      },
+      "weight": 0.1
+    },
+    {
+      "grade": "pass",
+      "key": "domain_coverage",
+      "method": "内容树一级类别覆盖率",
+      "metric": "domainCoverage.coverage.level1",
+      "nameZh": "领域覆盖",
+      "operator": "OP-08",
+      "raw": {
+        "gaps": {
+          "level1": [
+            "工业制造",
+            "建筑与地产",
+            "农林牧渔与水利"
+          ],
+          "level2Count": 24
+        },
+        "leaf": 0.244019,
+        "level1": 0.8125,
+        "level2": 0.489362
+      },
+      "reason": null,
+      "score": 0.8125,
+      "status": "ok",
+      "thresholds": {
+        "excellent": 1.0,
+        "good": 0.9,
+        "pass": 0.8
+      },
+      "weight": 0.12
+    },
+    {
+      "grade": "fail",
+      "key": "language_time",
+      "method": "新鲜度指数（FGW 公式）；地域不可用单列",
+      "metric": "time.freshnessMean",
+      "nameZh": "语言、地域与时效",
+      "operator": "OP-09",
+      "raw": {
+        "freshnessMean": 0.136546,
+        "knownTimeRatio": 0.576389,
+        "languageStatus": {
+          "identified": 426,
+          "unknown": 6
+        },
+        "regionStatus": "unavailable",
+        "staleShare": 0.939759
+      },
+      "reason": null,
+      "score": 0.136546,
+      "status": "ok",
+      "thresholds": {
+        "excellent": 0.7,
+        "good": 0.5,
+        "pass": 0.4
+      },
+      "weight": 0.1
+    },
+    {
+      "grade": "fail",
+      "key": "text_taskfit",
+      "method": "六维任务适配总分 p50（0–10）归一化",
+      "metric": "distributions.overall.p50",
+      "nameZh": "文本属性与任务适配",
+      "operator": "OP-10",
+      "raw": {
+        "evaluatedRecords": 426,
+        "lowFitCount": 4,
+        "overallP50": 4.688256,
+        "overallP90": 5.709307
+      },
+      "reason": null,
+      "score": 0.4688256,
+      "status": "ok",
+      "thresholds": {
+        "excellent": 7.0,
+        "good": 5.5,
+        "pass": 4.0
+      },
+      "weight": 0.1
+    },
+    {
+      "grade": "good",
+      "key": "quality_consistency",
+      "method": "完整率、1−基尼、极性平衡度三者均值",
+      "metric": "completeness.mean / (1-gini.gini) / polarity.balance",
+      "nameZh": "质量与一致性",
+      "operator": "OP-14",
+      "raw": {
+        "completenessMean": 1.0,
+        "conflictRate": 0.25,
+        "gini": 0.586985,
+        "nearDuplicateGroups": 4,
+        "polarityBalance": 0.960094
+      },
+      "reason": null,
+      "score": 0.7910363333,
+      "status": "ok",
+      "thresholds": {
+        "excellent": 0.9,
+        "good": 0.75,
+        "pass": 0.6
+      },
+      "weight": 0.12
+    },
+    {
+      "grade": "excellent",
+      "key": "label_legality",
+      "method": "OP-05 路径合法率与 OP-07 合法率均值；标注覆盖率单列",
+      "metric": "pathLegalRate / legalRate",
+      "nameZh": "标签合法与治理",
+      "operator": "OP-05/OP-07",
+      "raw": {
+        "illegalLabels": 0,
+        "labeledRate": 0.643519,
+        "legalRate": 1.0,
+        "pathLegalRate": 1.0,
+        "unclassifiedRecords": 154
+      },
+      "reason": null,
+      "score": 1.0,
+      "status": "ok",
+      "thresholds": {
+        "excellent": 1.0,
+        "good": 0.98,
+        "pass": 0.95
+      },
+      "weight": 0.1
+    },
+    {
+      "grade": "fail",
+      "key": "ratio_compliance",
+      "method": "OP-15 校验单通过比例（6 项）",
+      "metric": "checksPassed / checksTotal",
+      "nameZh": "配比合规",
+      "operator": "OP-15",
+      "raw": {
+        "checksPassed": 3.0,
+        "checksTotal": 6.0,
+        "coreCoverage": 0.5608,
+        "failedChecks": [
+          "level1_coverage",
+          "level2_coverage",
+          "inventory_gap"
+        ],
+        "shareSum": 1.0
+      },
+      "reason": null,
+      "score": 0.5,
+      "status": "ok",
+      "thresholds": {
+        "excellent": 1.0,
+        "good": 0.83,
+        "pass": 0.67
+      },
+      "weight": 0.14
+    },
+    {
+      "grade": "excellent",
+      "key": "assembly_integrity",
+      "method": "无重复且 Parquet 行数=选样数记 1，否则按差异比例扣减",
+      "metric": "duplicateRecords / dataset.rows / selectedCount",
+      "nameZh": "组装与打包一致性",
+      "operator": "OP-17",
+      "raw": {
+        "datasetRows": 278.0,
+        "duplicateRecords": 0.0,
+        "inventoryGap": 99722,
+        "selectedCount": 278.0,
+        "selectionRate": 0.00278
+      },
+      "reason": null,
+      "score": 1.0,
+      "status": "ok",
+      "thresholds": {
+        "excellent": 1.0,
+        "good": 0.99,
+        "pass": 0.95
+      },
+      "weight": 0.1
+    },
+    {
+      "grade": "excellent",
+      "key": "evaluation_quality",
+      "method": "OP-18 综合质量分（可用分项加权；真值缺失时仍需标 proxy）",
+      "metric": "score.score",
+      "nameZh": "评测与风险",
+      "operator": "OP-18",
+      "raw": {
+        "complianceStatus": "ok",
+        "grade": "proxy_excellent",
+        "pathLegalityRate": 1.0,
+        "score": 1.0,
+        "scoreScope": "proxy_only",
+        "truthBlockedReason": "TRUTH_REQUIRED",
+        "truthStatus": "unavailable"
+      },
+      "reason": null,
+      "score": 1.0,
+      "status": "ok",
+      "thresholds": {
+        "excellent": 0.9,
+        "good": 0.75,
+        "pass": 0.6
+      },
+      "weight": 0.12
+    }
+  ],
+  "evidence": {
+    "OP-05": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-multimodal-labeling/e53b5d9093388fe5",
+    "OP-07": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-label-governance/016129e87099395c",
+    "OP-08": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-corpus-profiling/73e001cb4f8e5aed",
+    "OP-09": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-language-profiling/e53b5d9093388fe5",
+    "OP-10": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-text-profiling/73e001cb4f8e5aed",
+    "OP-14": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-quality-analysis/f979e048a3250253",
+    "OP-15": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-computation/cab32b6cd497cac3",
+    "OP-17": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-packaging/347d6365d8457c91",
+    "OP-18": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-evaluation/58eca6093ec0227c"
+  },
+  "generatedAt": "2026-11-18T11:35:53+08:00",
+  "missingOperators": {},
+  "operatorId": "dm-ratio-reporting",
+  "operatorVersion": "0.1.1",
+  "operatorVersions": {
+    "OP-05": null,
+    "OP-07": null,
+    "OP-08": null,
+    "OP-09": null,
+    "OP-10": null,
+    "OP-14": null,
+    "OP-15": "0.1.2",
+    "OP-17": "0.1.1",
+    "OP-18": "0.1.2"
+  },
+  "overall": {
+    "definition": "综合分 = Σ 可用维度分×权重 / Σ 可用权重；不可用维度剔除并列入 missing，不按 0 计。",
+    "dimensionsAvailable": 9,
+    "dimensionsTotal": 9,
+    "grade": "pass",
+    "missing": [],
+    "score": 0.6889305599,
+    "thresholds": {
+      "excellent": 0.9,
+      "good": 0.75,
+      "pass": 0.6
+    },
+    "weightSumUsed": 1.0
+  },
+  "provisional": true,
+  "render": {
+    "error": null,
+    "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-reporting/97ed001cc0ab02da/report.html",
+    "status": "ok"
+  },
+  "runId": "97ed001cc0ab02da",
+  "seed": 42,
+  "semanticCode": "prod_ratio_report_v1",
+  "statusMatrix": [
+    {
+      "grade": "fail",
+      "key": "scale_source",
+      "nameZh": "规模与来源",
+      "operator": "OP-08",
+      "reason": null,
+      "score": 0.4596903988,
+      "status": "ok",
+      "weight": 0.1
+    },
+    {
+      "grade": "pass",
+      "key": "domain_coverage",
+      "nameZh": "领域覆盖",
+      "operator": "OP-08",
+      "reason": null,
+      "score": 0.8125,
+      "status": "ok",
+      "weight": 0.12
+    },
+    {
+      "grade": "fail",
+      "key": "language_time",
+      "nameZh": "语言、地域与时效",
+      "operator": "OP-09",
+      "reason": null,
+      "score": 0.136546,
+      "status": "ok",
+      "weight": 0.1
+    },
+    {
+      "grade": "fail",
+      "key": "text_taskfit",
+      "nameZh": "文本属性与任务适配",
+      "operator": "OP-10",
+      "reason": null,
+      "score": 0.4688256,
+      "status": "ok",
+      "weight": 0.1
+    },
+    {
+      "grade": "good",
+      "key": "quality_consistency",
+      "nameZh": "质量与一致性",
+      "operator": "OP-14",
+      "reason": null,
+      "score": 0.7910363333,
+      "status": "ok",
+      "weight": 0.12
+    },
+    {
+      "grade": "excellent",
+      "key": "label_legality",
+      "nameZh": "标签合法与治理",
+      "operator": "OP-05/OP-07",
+      "reason": null,
+      "score": 1.0,
+      "status": "ok",
+      "weight": 0.1
+    },
+    {
+      "grade": "fail",
+      "key": "ratio_compliance",
+      "nameZh": "配比合规",
+      "operator": "OP-15",
+      "reason": null,
+      "score": 0.5,
+      "status": "ok",
+      "weight": 0.14
+    },
+    {
+      "grade": "excellent",
+      "key": "assembly_integrity",
+      "nameZh": "组装与打包一致性",
+      "operator": "OP-17",
+      "reason": null,
+      "score": 1.0,
+      "status": "ok",
+      "weight": 0.1
+    },
+    {
+      "grade": "excellent",
+      "key": "evaluation_quality",
+      "nameZh": "评测与风险",
+      "operator": "OP-18",
+      "reason": null,
+      "score": 1.0,
+      "status": "ok",
+      "weight": 0.12
+    }
+  ],
+  "treeVersion": "taxonomy-1013-pending"
+}

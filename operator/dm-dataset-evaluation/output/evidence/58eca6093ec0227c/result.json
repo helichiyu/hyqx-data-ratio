@@ -1,0 +1,262 @@
+{
+  "status": "succeeded",
+  "data": {
+    "operatorId": "dm-dataset-evaluation",
+    "semanticCode": "prod_evaluation_v1",
+    "operatorVersion": "0.1.1",
+    "paramsHash": "sha256:8c383e416eb64356b8dda21151a5f0c39be2c019b78543957cb595912da92dc6",
+    "seed": 42,
+    "runId": "58eca6093ec0227c",
+    "inputFingerprint": "sha256:ebd465ccf09875836d9980fac33ce2f77617ed02425cf348d31b7c0e75495cd9",
+    "outputDir": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-evaluation/58eca6093ec0227c",
+    "modelVersion": "bge-base-zh-v1.5",
+    "treeVersion": "taxonomy-1013-pending",
+    "sampleCount": 31,
+    "successCount": 31,
+    "failedCount": 0,
+    "failedSamples": [],
+    "metrics": {
+      "operatorId": "dm-dataset-evaluation",
+      "semanticCode": "prod_evaluation_v1",
+      "operatorVersion": "0.1.2",
+      "modelVersion": "bge-base-zh-v1.5",
+      "runId": "b4b8b9ecaf9d6026",
+      "paramsHash": "sha256:8c383e416eb64356b8dda21151a5f0c39be2c019b78543957cb595912da92dc6",
+      "seed": 42,
+      "treeVersion": "taxonomy-1013-pending",
+      "sampleSize": 31,
+      "population": 278,
+      "sampling": {
+        "ratioRequested": 0.1,
+        "ratioEffective": 0.111511,
+        "population": 278,
+        "sampled": 31,
+        "perModal": {
+          "audio": {
+            "population": 1,
+            "sampled": 1,
+            "ratio": 1.0
+          },
+          "image": {
+            "population": 1,
+            "sampled": 1,
+            "ratio": 1.0
+          },
+          "text": {
+            "population": 275,
+            "sampled": 28,
+            "ratio": 0.101818
+          },
+          "video": {
+            "population": 1,
+            "sampled": 1,
+            "ratio": 1.0
+          }
+        },
+        "orderHash": "sha256(seed|record_id)"
+      },
+      "truth": {
+        "status": "unavailable",
+        "blockedReason": "TRUTH_REQUIRED",
+        "accuracy": null,
+        "prefixAccuracy": null,
+        "macroF1": null,
+        "evaluated": 0,
+        "missingTruth": null
+      },
+      "proxy": {
+        "proxy": true,
+        "pathLegalityRate": 1.0,
+        "meanConfidence": 0.4608194839,
+        "medianConfidence": 0.438309,
+        "lowConfidenceRate": 0.0967741935,
+        "meanCompleteness": 1.0,
+        "emptyTextRate": 0.0967741935,
+        "lowConfidenceThreshold": 0.3,
+        "note": "代理指标只反映标签合法性与数据完整性，不等价于人工真值准确率（H-05）。"
+      },
+      "compliance": {
+        "status": "ok",
+        "reasonCode": null,
+        "hitCount": 0,
+        "hitRate": 0.0,
+        "passRate": 1.0
+      },
+      "score": {
+        "score": 1.0,
+        "grade": "proxy_excellent",
+        "scope": "proxy_only",
+        "note": "无人工真值，综合分仅由路径合法率/完整率等代理指标构成，不等价于模型准确率（H-05）。",
+        "components": {
+          "labelAccuracy": {
+            "value": null,
+            "weight": 0.4,
+            "available": false
+          },
+          "pathLegality": {
+            "value": 1.0,
+            "weight": 0.2,
+            "available": true
+          },
+          "completeness": {
+            "value": 1.0,
+            "weight": 0.2,
+            "available": true
+          },
+          "compliance": {
+            "value": 1.0,
+            "weight": 0.2,
+            "available": true
+          }
+        },
+        "weightSumUsed": 0.6,
+        "thresholds": {
+          "excellent": 0.9,
+          "good": 0.75,
+          "pass": 0.6
+        },
+        "definition": "综合分 = Σ 可用分项×权重 / Σ 可用权重；不可用分项剔除，不按 0 计。"
+      },
+      "versionCheck": {
+        "status": "ok",
+        "datasetModelVersion": "bge-base-zh-v1.5",
+        "datasetTreeVersion": "taxonomy-1013-pending",
+        "labelsModelVersion": "bge-base-zh-v1.5",
+        "labelsTreeVersion": "taxonomy-1013-pending"
+      },
+      "provisional": true,
+      "deterministic": true,
+      "runtimeSec": 0.152,
+      "generatedAt": "2026-11-18T11:35:53+08:00"
+    },
+    "artifacts": [
+      {
+        "path": "compliance.json",
+        "bytes": 444,
+        "sha256": "a9858c4e3fb77b7a830d2deb62cfda46228d743f8733404db33c2fd4df2a0194"
+      },
+      {
+        "path": "evaluation.json",
+        "bytes": 3004,
+        "sha256": "e8afe62939d1b887d7c4a21d12dc17172728459dcfd88e15aa1fcfc6ef1038b4"
+      },
+      {
+        "path": "failures.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "sampled.jsonl",
+        "bytes": 5150,
+        "sha256": "2275fc4decec51a08eaf786e38878f004143699d6d35fe2fa5c71b5aee70b2c3"
+      },
+      {
+        "path": "wrong_labels.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "outputFilePath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-dataset-evaluation/58eca6093ec0227c/sampled.jsonl",
+    "deterministic": true,
+    "provisional": true,
+    "result": {
+      "sampleSize": 31,
+      "sampling": {
+        "ratioRequested": 0.1,
+        "ratioEffective": 0.111511,
+        "population": 278,
+        "sampled": 31,
+        "perModal": {
+          "audio": {
+            "population": 1,
+            "sampled": 1,
+            "ratio": 1.0
+          },
+          "image": {
+            "population": 1,
+            "sampled": 1,
+            "ratio": 1.0
+          },
+          "text": {
+            "population": 275,
+            "sampled": 28,
+            "ratio": 0.101818
+          },
+          "video": {
+            "population": 1,
+            "sampled": 1,
+            "ratio": 1.0
+          }
+        },
+        "orderHash": "sha256(seed|record_id)"
+      },
+      "truth": {
+        "status": "unavailable",
+        "blockedReason": "TRUTH_REQUIRED",
+        "accuracy": null,
+        "prefixAccuracy": null,
+        "macroF1": null,
+        "evaluated": 0,
+        "missingTruth": null
+      },
+      "proxy": {
+        "proxy": true,
+        "pathLegalityRate": 1.0,
+        "meanConfidence": 0.4608194839,
+        "medianConfidence": 0.438309,
+        "lowConfidenceRate": 0.0967741935,
+        "meanCompleteness": 1.0,
+        "emptyTextRate": 0.0967741935,
+        "lowConfidenceThreshold": 0.3,
+        "note": "代理指标只反映标签合法性与数据完整性，不等价于人工真值准确率（H-05）。"
+      },
+      "compliance": {
+        "status": "ok",
+        "reasonCode": null,
+        "hitCount": 0,
+        "hitRate": 0.0,
+        "passRate": 1.0
+      },
+      "score": {
+        "score": 1.0,
+        "grade": "proxy_excellent",
+        "scope": "proxy_only",
+        "note": "无人工真值，综合分仅由路径合法率/完整率等代理指标构成，不等价于模型准确率（H-05）。",
+        "components": {
+          "labelAccuracy": {
+            "value": null,
+            "weight": 0.4,
+            "available": false
+          },
+          "pathLegality": {
+            "value": 1.0,
+            "weight": 0.2,
+            "available": true
+          },
+          "completeness": {
+            "value": 1.0,
+            "weight": 0.2,
+            "available": true
+          },
+          "compliance": {
+            "value": 1.0,
+            "weight": 0.2,
+            "available": true
+          }
+        },
+        "weightSumUsed": 0.6,
+        "thresholds": {
+          "excellent": 0.9,
+          "good": 0.75,
+          "pass": 0.6
+        },
+        "definition": "综合分 = Σ 可用分项×权重 / Σ 可用权重；不可用分项剔除，不按 0 计。"
+      }
+    },
+    "notes": [
+      "抽样清单 sampled.jsonl；评测 evaluation.json；混淆 confusion.json；错标 wrong_labels.jsonl；合规 compliance.json。",
+      "真值/合规资源缺失时如实标 null/unavailable，不编造。"
+    ],
+    "cached": false
+  }
+}

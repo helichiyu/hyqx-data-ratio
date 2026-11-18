@@ -1,0 +1,48 @@
+{
+  "artifacts": [
+    {
+      "bytes": 444,
+      "path": "compliance.json",
+      "sha256": "a9858c4e3fb77b7a830d2deb62cfda46228d743f8733404db33c2fd4df2a0194"
+    },
+    {
+      "bytes": 3004,
+      "path": "evaluation.json",
+      "sha256": "e8afe62939d1b887d7c4a21d12dc17172728459dcfd88e15aa1fcfc6ef1038b4"
+    },
+    {
+      "bytes": 0,
+      "path": "failures.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5150,
+      "path": "sampled.jsonl",
+      "sha256": "2275fc4decec51a08eaf786e38878f004143699d6d35fe2fa5c71b5aee70b2c3"
+    },
+    {
+      "bytes": 0,
+      "path": "wrong_labels.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "createdAt": "2026-11-18T11:35:53+08:00",
+  "failedCount": 0,
+  "inputFingerprint": "sha256:ebd465ccf09875836d9980fac33ce2f77617ed02425cf348d31b7c0e75495cd9",
+  "modelVersion": "bge-base-zh-v1.5",
+  "notes": [
+    "抽样按模态分层、sha256(seed|record_id) 排序，比例 5%–10%。",
+    "无真值时准确率/F1/混淆矩阵为 null，代理指标明确 proxy=true。",
+    "合规/版权资源缺失时 unavailable，不编造命中。",
+    "综合分只聚合可用分项并重归一权重。"
+  ],
+  "operatorId": "dm-dataset-evaluation",
+  "operatorVersion": "0.1.2",
+  "paramsHash": "sha256:8c383e416eb64356b8dda21151a5f0c39be2c019b78543957cb595912da92dc6",
+  "runId": "b4b8b9ecaf9d6026",
+  "sampleCount": 31,
+  "seed": 42,
+  "semanticCode": "prod_evaluation_v1",
+  "successCount": 31,
+  "treeVersion": "taxonomy-1013-pending"
+}

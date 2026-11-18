@@ -129,9 +129,21 @@ def test_no_truth_is_null(tmp_path: Path, monkeypatch):
 
 def test_compliance_missing_and_provided(tmp_path: Path, monkeypatch):
     run_dir = _build_run(tmp_path, count=10)
-    result = _run(tmp_path, monkeypatch, run_dir, {"ratio": 1.0})
+    # 显式传入不存在的词表路径 → unavailable（原语义保留）
+    result = _run(
+        tmp_path,
+        monkeypatch,
+        run_dir,
+        {"ratio": 1.0, "compliance_terms_path": str(tmp_path / "nope.txt")},
+    )
     assert result["metrics"]["compliance"]["status"] == "unavailable"
     assert result["metrics"]["compliance"]["hitRate"] is None
+
+    # 未提供词表 → 使用配置默认开源中文词表（Q-08，2026-11-18）
+    result = _run(tmp_path, monkeypatch, run_dir, {"ratio": 1.0})
+    compliance = result["metrics"]["compliance"]
+    assert compliance["status"] == "ok"
+    assert compliance["hitRate"] is not None
 
     terms = tmp_path / "terms.json"
     terms.write_text(json.dumps(["敏感词"], ensure_ascii=False), encoding="utf-8")
@@ -155,10 +167,12 @@ def test_composite_score_formula(tmp_path: Path, monkeypatch):
         {"ratio": 1.0, "truth_path": str(tmp_path / "truth.jsonl")},
     )
     score = result["metrics"]["score"]
-    # 可用：accuracy 0.8 (0.4)、path 1.0 (0.2)、completeness 1.0 (0.2)；compliance 不可用。
-    expected = (0.4 * 0.8 + 0.2 * 1.0 + 0.2 * 1.0) / 0.8
+    # 可用：accuracy 0.8 (0.4)、path 1.0 (0.2)、completeness 1.0 (0.2)、
+    # compliance 默认开源词表 passRate (0.2)——权重和 1.0。
+    pass_rate = result["metrics"]["compliance"]["passRate"]
+    assert score["components"]["compliance"]["available"] is True
+    expected = 0.4 * 0.8 + 0.2 * 1.0 + 0.2 * 1.0 + 0.2 * pass_rate
     assert score["score"] == pytest.approx(expected)
-    assert score["components"]["compliance"]["available"] is False
 
 
 def test_sampling_deterministic(tmp_path: Path, monkeypatch):

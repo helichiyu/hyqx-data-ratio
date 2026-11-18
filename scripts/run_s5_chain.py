@@ -286,7 +286,7 @@ def main() -> int:
             "| 抽样 5–10% 可复现 | 通过 | `evaluation.json.sampling`；固定 seed |",
             "| 准确率/F1/混淆矩阵 | 无真值 | `truth.status=unavailable`，`blockedReason=TRUTH_REQUIRED` |",
             "| 模型/树版本与 OP-05 一致 | 通过 | `versionCheck`（labels_path 校验） |",
-            "| 合规证据可下钻 | 资源缺失 | `compliance.status=unavailable`（Q-08） |",
+            f"| 合规证据可下钻 | {op18['metrics']['compliance']['status']} | `compliance.json`（Q-08：开源中文词表垫底，版权哈希待平台） |",
             "",
             "## 门禁核对（OP-19）",
             "",

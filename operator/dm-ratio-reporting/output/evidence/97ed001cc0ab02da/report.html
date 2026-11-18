@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>数据配比中心 · 配比分析报告</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:32px;color:#1f2933}
+h1{font-size:22px} h2{font-size:17px;margin-top:24px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border:1px solid #d9e2ec;padding:6px 8px;text-align:left;vertical-align:top}
+th{background:#f0f4f8} .critical{color:#b42318} .warning{color:#b54708} .info{color:#334e68}
+</style></head><body>
+<h1>数据配比中心 · 配比分析报告</h1>
+<p>综合评分：<strong>0.6889（pass）</strong></p>
+<p>版本：operator 0.1.1 · tree taxonomy-1013-pending · seed 42</p>
+<h2>九维状态矩阵</h2>
+<table><thead><tr><th>维度</th><th>来源</th><th>等级</th><th>得分</th><th>权重</th><th>缺数据原因</th></tr></thead>
+<tbody><tr><td>规模与来源</td><td>OP-08</td><td>fail</td><td>0.4597</td><td>0.1</td><td></td></tr><tr><td>领域覆盖</td><td>OP-08</td><td>pass</td><td>0.8125</td><td>0.12</td><td></td></tr><tr><td>语言、地域与时效</td><td>OP-09</td><td>fail</td><td>0.1365</td><td>0.1</td><td></td></tr><tr><td>文本属性与任务适配</td><td>OP-10</td><td>fail</td><td>0.4688</td><td>0.1</td><td></td></tr><tr><td>质量与一致性</td><td>OP-14</td><td>good</td><td>0.7910</td><td>0.12</td><td></td></tr><tr><td>标签合法与治理</td><td>OP-05/OP-07</td><td>excellent</td><td>1.0000</td><td>0.1</td><td></td></tr><tr><td>配比合规</td><td>OP-15</td><td>fail</td><td>0.5000</td><td>0.14</td><td></td></tr><tr><td>组装与打包一致性</td><td>OP-17</td><td>excellent</td><td>1.0000</td><td>0.1</td><td></td></tr><tr><td>评测与风险</td><td>OP-18</td><td>excellent</td><td>1.0000</td><td>0.12</td><td></td></tr></tbody></table>
+<h2>结论摘要</h2><ul><li class='critical'>规模与来源：得分 0.4597（fail），来源 OP-08 · sourceDistribution.classes。</li><li class='warning'>领域覆盖：得分 0.8125（pass），来源 OP-08 · domainCoverage.coverage.level1。</li><li class='critical'>语言、地域与时效：得分 0.1365（fail），来源 OP-09 · time.freshnessMean。</li><li class='critical'>文本属性与任务适配：得分 0.4688（fail），来源 OP-10 · distributions.overall.p50。</li><li class='info'>质量与一致性：得分 0.7910（good），来源 OP-14 · completeness.mean / (1-gini.gini) / polarity.balance。</li><li class='info'>标签合法与治理：得分 1.0000（excellent），来源 OP-05/OP-07 · pathLegalRate / legalRate。</li><li class='critical'>配比合规：得分 0.5000（fail），来源 OP-15 · checksPassed / checksTotal。</li><li class='info'>组装与打包一致性：得分 1.0000（excellent），来源 OP-17 · duplicateRecords / dataset.rows / selectedCount。</li><li class='warning'>评测与风险：得分 1.0000（excellent），来源 OP-18 · score.score（无人工真值，proxy_only，不等价于准确率）。</li><li class='warning'>综合评分 0.6889（pass），使用 9/9 个维度。</li></ul>
+<p>本页由算子数据包渲染；渲染失败不影响 `report_package.json`。</p>
+</body></html>

@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "status": "provisional",
-  "statusNote": "S5 联调初值：抽样比例、匹配口径、综合分权重与合规阈值待业务确认（H-03/Q-03/Q-08）；真值与合规资源待 H-05。",
+  "statusNote": "S5 联调初值：抽样比例、匹配口径、综合分权重与合规阈值待业务确认（H-03/Q-03）；真值待 H-05；合规词表自 2026-11-18 起用开源中文词表垫底（Q-08），版权哈希/原创性 API 仍待平台。",
   "sampling": {
     "ratio": 0.1,
     "minPerModal": 1,
@@ -21,7 +21,8 @@
   "compliance": {
     "enabled": true,
     "maxHits": 1000,
-    "_source": "词表/版权哈希由平台提供；缺失时 unavailable，不编造"
+    "termsPath": "baseline/compliance/sensitive-words-zh.txt",
+    "_source": "Q-08（2026-11-18 用户口径）：默认开源中文词表 houbb/sensitive-word dict_v20240407（Apache-2.0，65,143 词条）垫底；平台正式词表经 params.compliance_terms_path 覆盖；版权哈希库/原创性 API 仍待平台，缺失时相应分项 unavailable"
   },
   "score": {
     "weights": {

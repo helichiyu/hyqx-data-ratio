@@ -1,0 +1,42 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1603,
+      "path": "conclusions.jsonl",
+      "sha256": "cfc52efbc980594ac134ea42ed618ac3473ae5cf10ea56c35941b8fa73c5e6a9"
+    },
+    {
+      "bytes": 3191,
+      "path": "report.html",
+      "sha256": "8eeaceee346252d53c9bc135a6ef5a3a075960f6604c2157c3015b2d77fb0836"
+    },
+    {
+      "bytes": 12993,
+      "path": "report_package.json",
+      "sha256": "d99efbe7c31b6f074e2fc83b6a96c25233fe93d1cf39efd9a0da98fe30aa2557"
+    },
+    {
+      "bytes": 2539,
+      "path": "status_matrix.json",
+      "sha256": "d13c34060edd713816f1d21a0a64aca1fb34e311596497df32317c4429a3412e"
+    }
+  ],
+  "createdAt": "2026-11-18T11:35:53+08:00",
+  "failedCount": 0,
+  "inputFingerprint": "sha256:4df0680aa5c933931394129f1f0d2bed7ea8df316e8b258e840c1acee16933bb",
+  "modelVersion": null,
+  "notes": [
+    "九维结果全部来自真实算子 metrics.json；缺数据维度标 no_data 并列入 missing。",
+    "综合分只聚合可用维度并重归一权重；阈值与权重为联调初值（H-03）。",
+    "报告数据包 report_package.json 可被平台渲染；HTML 渲染失败不影响数据包。"
+  ],
+  "operatorId": "dm-ratio-reporting",
+  "operatorVersion": "0.1.1",
+  "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "runId": "97ed001cc0ab02da",
+  "sampleCount": 9,
+  "seed": 42,
+  "semanticCode": "prod_ratio_report_v1",
+  "successCount": 9,
+  "treeVersion": "taxonomy-1013-pending"
+}

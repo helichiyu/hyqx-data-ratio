@@ -3,7 +3,7 @@
 消费 OP-17 成品 manifest/Parquet，按 5%–10% 固定 seed 分层抽样：
 - 有真值：精确/前缀准确率、逐模态准确率、宏 F1、混淆矩阵、错标清单；
 - 无真值（H-05 未提供）：准确率类指标标 `null` + `blockedReason`，只出代理指标，不冒充准确率；
-- 合规/版权：词表/哈希库缺失时 `unavailable`，不编造；
+- 合规/版权：默认开源中文词表垫底（Q-08，2026-11-18 口径），params 可覆盖；版权哈希库缺失时相应分项 `unavailable`，不编造；
 - 综合质量分只聚合可用分项，权重来自配置并记录来源。
 """
 
@@ -34,7 +34,7 @@ from .utils.common import (
 
 OPERATOR_ID = "dm-dataset-evaluation"
 SEMANTIC_CODE = "prod_evaluation_v1"
-OPERATOR_VERSION = "0.1.1"
+OPERATOR_VERSION = "0.1.2"
 DEFAULT_SEED = 42
 
 
@@ -93,6 +93,8 @@ def run(
         }
 
     terms_path = _optional_path(resolved.get("compliance_terms_path"))
+    if terms_path is None:
+        terms_path = _default_lexicon_path(cfg)
     hashes_path = _optional_path(resolved.get("copyright_hashes_path"))
     terms = compliance_util.load_terms(terms_path)
     hashes = compliance_util.load_hashes(hashes_path)
@@ -288,6 +290,19 @@ def _optional_path(raw: Any) -> Path | None:
         return ensure_under_roots(str(raw), environment_roots())
     except ValueError:
         return None
+
+
+def _default_lexicon_path(cfg: dict[str, Any]) -> Path | None:
+    """配置默认合规词表（Q-08 开源中文词表垫底，2026-11-18）。
+
+    仅在运行参数未提供词表路径时生效；平台正式词表到位后经
+    ``params.compliance_terms_path`` 覆盖，无需改代码。
+    """
+    raw = (cfg.get("compliance") or {}).get("termsPath")
+    if not raw:
+        return None
+    path = resolve_relative(str(raw))
+    return path if path.is_file() else None
 
 
 def _composite_score(

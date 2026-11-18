@@ -1,0 +1,21 @@
+{
+  "source": "houbb/sensitive-word@master src/test/resources/dict_v20240407.txt",
+  "license": "Apache-2.0",
+  "upstreamTerms": 65143,
+  "deployedTerms": 65139,
+  "filtered": {
+    "rule": "drop pure-digit entries (substring matching on digit terms is pure false-positive for tech corpora)",
+    "count": 4,
+    "examples": [
+      "610",
+      "64",
+      "89",
+      "8964"
+    ]
+  },
+  "bytes": 1180560,
+  "terms": 65139,
+  "sha256": "a62efb773f34650dfc95f27f9fb59b54a4dae898a9b9cede25d7791039997af6",
+  "fetchedVia": "cdn.jsdelivr.net",
+  "fetchedDate": "2026-11-18"
+}

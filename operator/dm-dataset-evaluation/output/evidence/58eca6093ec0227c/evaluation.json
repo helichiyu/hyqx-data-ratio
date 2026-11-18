@@ -1,0 +1,109 @@
+{
+  "compliance": {
+    "definition": "命中 = 正文包含任一敏感词，或记录 SHA-256/MD5 命中版权哈希库；hitRate = 命中记录数 / 抽样数。",
+    "hashHits": 0,
+    "hashesPath": null,
+    "hashesProvided": 0,
+    "hitCount": 0,
+    "hitRate": 0.0,
+    "hits": [],
+    "passRate": 1.0,
+    "status": "ok",
+    "termHits": 0,
+    "termsPath": "E:/HYQX/数据配比/operator/baseline/compliance/sensitive-words-zh.txt",
+    "termsProvided": 65139
+  },
+  "proxy": {
+    "emptyTextRate": 0.0967741935,
+    "lowConfidenceRate": 0.0967741935,
+    "lowConfidenceThreshold": 0.3,
+    "meanCompleteness": 1.0,
+    "meanConfidence": 0.4608194839,
+    "medianConfidence": 0.438309,
+    "note": "代理指标只反映标签合法性与数据完整性，不等价于人工真值准确率（H-05）。",
+    "pathLegalityRate": 1.0,
+    "proxy": true
+  },
+  "sampling": {
+    "orderHash": "sha256(seed|record_id)",
+    "perModal": {
+      "audio": {
+        "population": 1,
+        "ratio": 1.0,
+        "sampled": 1
+      },
+      "image": {
+        "population": 1,
+        "ratio": 1.0,
+        "sampled": 1
+      },
+      "text": {
+        "population": 275,
+        "ratio": 0.101818,
+        "sampled": 28
+      },
+      "video": {
+        "population": 1,
+        "ratio": 1.0,
+        "sampled": 1
+      }
+    },
+    "population": 278,
+    "ratioEffective": 0.111511,
+    "ratioRequested": 0.1,
+    "sampled": 31
+  },
+  "score": {
+    "components": {
+      "completeness": {
+        "available": true,
+        "value": 1.0,
+        "weight": 0.2
+      },
+      "compliance": {
+        "available": true,
+        "value": 1.0,
+        "weight": 0.2
+      },
+      "labelAccuracy": {
+        "available": false,
+        "value": null,
+        "weight": 0.4
+      },
+      "pathLegality": {
+        "available": true,
+        "value": 1.0,
+        "weight": 0.2
+      }
+    },
+    "definition": "综合分 = Σ 可用分项×权重 / Σ 可用权重；不可用分项剔除，不按 0 计。",
+    "grade": "proxy_excellent",
+    "note": "无人工真值，综合分仅由路径合法率/完整率等代理指标构成，不等价于模型准确率（H-05）。",
+    "scope": "proxy_only",
+    "score": 1.0,
+    "thresholds": {
+      "excellent": 0.9,
+      "good": 0.75,
+      "pass": 0.6
+    },
+    "weightSumUsed": 0.6
+  },
+  "truth": {
+    "accuracy": null,
+    "blockedReason": "TRUTH_REQUIRED",
+    "confusion": null,
+    "evaluated": 0,
+    "macroF1": null,
+    "message": "未提供人工真值（H-05），准确率/F1/混淆矩阵标 null。",
+    "prefixAccuracy": null,
+    "status": "unavailable",
+    "wrongLabels": []
+  },
+  "versionCheck": {
+    "datasetModelVersion": "bge-base-zh-v1.5",
+    "datasetTreeVersion": "taxonomy-1013-pending",
+    "labelsModelVersion": "bge-base-zh-v1.5",
+    "labelsTreeVersion": "taxonomy-1013-pending",
+    "status": "ok"
+  }
+}

@@ -24,7 +24,7 @@
     "records": 0,
     "selection": 154
   },
-  "generatedAt": "2026-11-17T12:36:07+08:00",
+  "generatedAt": "2026-11-18T11:33:22+08:00",
   "inventoryGap": 99722,
   "labelCount": 66,
   "labelStatus": {
@@ -36,7 +36,7 @@
   "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
   "provisional": true,
   "runId": "347d6365d8457c91",
-  "runtimeSec": 0.387,
+  "runtimeSec": 0.149,
   "seed": 42,
   "selectedCount": 278,
   "selectedModals": {

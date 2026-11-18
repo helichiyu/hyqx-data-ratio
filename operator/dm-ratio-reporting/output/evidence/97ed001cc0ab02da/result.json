@@ -1,0 +1,252 @@
+{
+  "status": "succeeded",
+  "data": {
+    "operatorId": "dm-ratio-reporting",
+    "semanticCode": "prod_ratio_report_v1",
+    "operatorVersion": "0.1.1",
+    "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "seed": 42,
+    "runId": "97ed001cc0ab02da",
+    "inputFingerprint": "sha256:4df0680aa5c933931394129f1f0d2bed7ea8df316e8b258e840c1acee16933bb",
+    "outputDir": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-reporting/97ed001cc0ab02da",
+    "modelVersion": null,
+    "treeVersion": "taxonomy-1013-pending",
+    "sampleCount": 9,
+    "successCount": 9,
+    "failedCount": 0,
+    "failedSamples": [],
+    "metrics": {
+      "operatorId": "dm-ratio-reporting",
+      "semanticCode": "prod_ratio_report_v1",
+      "operatorVersion": "0.1.1",
+      "modelVersion": null,
+      "runId": "97ed001cc0ab02da",
+      "paramsHash": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "seed": 42,
+      "treeVersion": "taxonomy-1013-pending",
+      "operatorsConsumed": 9,
+      "dimensionsTotal": 9,
+      "dimensionsAvailable": 9,
+      "overallScore": 0.6889305599,
+      "overallGrade": "pass",
+      "missing": [],
+      "missingOperators": {},
+      "operatorVersions": {
+        "OP-05": null,
+        "OP-07": null,
+        "OP-08": null,
+        "OP-09": null,
+        "OP-10": null,
+        "OP-14": null,
+        "OP-15": "0.1.2",
+        "OP-17": "0.1.1",
+        "OP-18": "0.1.2"
+      },
+      "render": {
+        "status": "ok",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-reporting/97ed001cc0ab02da/report.html",
+        "error": null
+      },
+      "provisional": true,
+      "deterministic": true,
+      "runtimeSec": 0.01,
+      "generatedAt": "2026-11-18T11:35:53+08:00"
+    },
+    "artifacts": [
+      {
+        "path": "conclusions.jsonl",
+        "bytes": 1603,
+        "sha256": "cfc52efbc980594ac134ea42ed618ac3473ae5cf10ea56c35941b8fa73c5e6a9"
+      },
+      {
+        "path": "report.html",
+        "bytes": 3191,
+        "sha256": "8eeaceee346252d53c9bc135a6ef5a3a075960f6604c2157c3015b2d77fb0836"
+      },
+      {
+        "path": "report_package.json",
+        "bytes": 12993,
+        "sha256": "d99efbe7c31b6f074e2fc83b6a96c25233fe93d1cf39efd9a0da98fe30aa2557"
+      },
+      {
+        "path": "status_matrix.json",
+        "bytes": 2539,
+        "sha256": "d13c34060edd713816f1d21a0a64aca1fb34e311596497df32317c4429a3412e"
+      }
+    ],
+    "outputFilePath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-reporting/97ed001cc0ab02da/report_package.json",
+    "deterministic": true,
+    "provisional": true,
+    "result": {
+      "overall": {
+        "score": 0.6889305599,
+        "grade": "pass",
+        "weightSumUsed": 1.0,
+        "dimensionsAvailable": 9,
+        "dimensionsTotal": 9,
+        "missing": [],
+        "thresholds": {
+          "excellent": 0.9,
+          "good": 0.75,
+          "pass": 0.6
+        },
+        "definition": "综合分 = Σ 可用维度分×权重 / Σ 可用权重；不可用维度剔除并列入 missing，不按 0 计。"
+      },
+      "dimensions": [
+        {
+          "key": "scale_source",
+          "nameZh": "规模与来源",
+          "operator": "OP-08",
+          "score": 0.4596903988,
+          "grade": "fail",
+          "weight": 0.1,
+          "status": "ok",
+          "reason": null
+        },
+        {
+          "key": "domain_coverage",
+          "nameZh": "领域覆盖",
+          "operator": "OP-08",
+          "score": 0.8125,
+          "grade": "pass",
+          "weight": 0.12,
+          "status": "ok",
+          "reason": null
+        },
+        {
+          "key": "language_time",
+          "nameZh": "语言、地域与时效",
+          "operator": "OP-09",
+          "score": 0.136546,
+          "grade": "fail",
+          "weight": 0.1,
+          "status": "ok",
+          "reason": null
+        },
+        {
+          "key": "text_taskfit",
+          "nameZh": "文本属性与任务适配",
+          "operator": "OP-10",
+          "score": 0.4688256,
+          "grade": "fail",
+          "weight": 0.1,
+          "status": "ok",
+          "reason": null
+        },
+        {
+          "key": "quality_consistency",
+          "nameZh": "质量与一致性",
+          "operator": "OP-14",
+          "score": 0.7910363333,
+          "grade": "good",
+          "weight": 0.12,
+          "status": "ok",
+          "reason": null
+        },
+        {
+          "key": "label_legality",
+          "nameZh": "标签合法与治理",
+          "operator": "OP-05/OP-07",
+          "score": 1.0,
+          "grade": "excellent",
+          "weight": 0.1,
+          "status": "ok",
+          "reason": null
+        },
+        {
+          "key": "ratio_compliance",
+          "nameZh": "配比合规",
+          "operator": "OP-15",
+          "score": 0.5,
+          "grade": "fail",
+          "weight": 0.14,
+          "status": "ok",
+          "reason": null
+        },
+        {
+          "key": "assembly_integrity",
+          "nameZh": "组装与打包一致性",
+          "operator": "OP-17",
+          "score": 1.0,
+          "grade": "excellent",
+          "weight": 0.1,
+          "status": "ok",
+          "reason": null
+        },
+        {
+          "key": "evaluation_quality",
+          "nameZh": "评测与风险",
+          "operator": "OP-18",
+          "score": 1.0,
+          "grade": "excellent",
+          "weight": 0.12,
+          "status": "ok",
+          "reason": null
+        }
+      ],
+      "conclusions": [
+        {
+          "key": "scale_source",
+          "severity": "critical",
+          "text": "规模与来源：得分 0.4597（fail），来源 OP-08 · sourceDistribution.classes。"
+        },
+        {
+          "key": "domain_coverage",
+          "severity": "warning",
+          "text": "领域覆盖：得分 0.8125（pass），来源 OP-08 · domainCoverage.coverage.level1。"
+        },
+        {
+          "key": "language_time",
+          "severity": "critical",
+          "text": "语言、地域与时效：得分 0.1365（fail），来源 OP-09 · time.freshnessMean。"
+        },
+        {
+          "key": "text_taskfit",
+          "severity": "critical",
+          "text": "文本属性与任务适配：得分 0.4688（fail），来源 OP-10 · distributions.overall.p50。"
+        },
+        {
+          "key": "quality_consistency",
+          "severity": "info",
+          "text": "质量与一致性：得分 0.7910（good），来源 OP-14 · completeness.mean / (1-gini.gini) / polarity.balance。"
+        },
+        {
+          "key": "label_legality",
+          "severity": "info",
+          "text": "标签合法与治理：得分 1.0000（excellent），来源 OP-05/OP-07 · pathLegalRate / legalRate。"
+        },
+        {
+          "key": "ratio_compliance",
+          "severity": "critical",
+          "text": "配比合规：得分 0.5000（fail），来源 OP-15 · checksPassed / checksTotal。"
+        },
+        {
+          "key": "assembly_integrity",
+          "severity": "info",
+          "text": "组装与打包一致性：得分 1.0000（excellent），来源 OP-17 · duplicateRecords / dataset.rows / selectedCount。"
+        },
+        {
+          "key": "evaluation_quality",
+          "severity": "warning",
+          "text": "评测与风险：得分 1.0000（excellent），来源 OP-18 · score.score（无人工真值，proxy_only，不等价于准确率）。"
+        },
+        {
+          "key": "overall",
+          "severity": "warning",
+          "text": "综合评分 0.6889（pass），使用 9/9 个维度。"
+        }
+      ],
+      "render": {
+        "status": "ok",
+        "path": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-reporting/97ed001cc0ab02da/report.html",
+        "error": null
+      },
+      "reportPackagePath": "E:/HYQX/数据配比/operator/runtime/transport/output/dm-ratio-reporting/97ed001cc0ab02da/report_package.json"
+    },
+    "notes": [
+      "九维状态矩阵见 status_matrix.json；完整数据包 report_package.json；结论见 conclusions.jsonl。",
+      "缺失维度如实列入 missing，不按 0 计、不编造。"
+    ],
+    "cached": false
+  }
+}

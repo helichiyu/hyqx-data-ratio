@@ -573,8 +573,8 @@
       "treeVersion": "taxonomy-1013-pending",
       "provisional": true,
       "deterministic": true,
-      "runtimeSec": 0.387,
-      "generatedAt": "2026-11-17T12:36:07+08:00"
+      "runtimeSec": 0.149,
+      "generatedAt": "2026-11-18T11:33:22+08:00"
     },
     "artifacts": [
       {
