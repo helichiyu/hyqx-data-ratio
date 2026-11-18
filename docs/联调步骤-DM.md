@@ -368,3 +368,5 @@ python tools/uap/check_permissions.py
 3. 分类树、数据集、场景、方案、配方包/版本链路完整可操作。
 4. 打标/画像/仿真/生产/分析在算法未接入时稳定失败且信息可读；注入演示数据后报告/准入/专家校验可走通。
 5. 后端构建、前端 type-check/eslint/build 全绿，OpenAPI 101 条。
+
+> 本地壳左侧菜单：优先读取平行语料菜单表；接口不可用或为空时回退到 `register.ts` 静态分组（与 LTP/ASC 本地壳一致）。设置 `VITE_LOCAL_MODULES` 时会跳过菜单表与行业导航请求，避免无关的“网络错误”提示。
