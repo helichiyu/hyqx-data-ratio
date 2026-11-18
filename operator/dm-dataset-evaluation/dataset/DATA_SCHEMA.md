@@ -22,6 +22,7 @@ OP-17 Parquet 需包含：`record_id/label/modal/text/quality_json/hashes_json/c
 | `confusion.json` | 混淆矩阵（有真值时） |
 | `wrong_labels.jsonl` | 错标清单（有真值时，最多 1000 条） |
 | `compliance.json` | 词表/版权命中与命中率，或 `unavailable` |
+| `originality.json` | 自研原创性代理：语料内近重复率/原创性分/top 相似对（Q-08，2026-11-18） |
 | `metrics.json` / `manifest.json` / `summary.json` / `input_manifest.json` / `failures.jsonl` | 指标、版本四件套、汇总、输入指纹、失败 |
 
 `evaluation.json` 关键结构：

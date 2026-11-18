@@ -1,6 +1,6 @@
 {
   "failedCount": 0,
-  "generatedAt": "2026-11-18T11:35:53+08:00",
+  "generatedAt": "2026-11-18T14:22:18+08:00",
   "inputFingerprint": "sha256:ebd465ccf09875836d9980fac33ce2f77617ed02425cf348d31b7c0e75495cd9",
   "metrics": {
     "compliance": {
@@ -11,10 +11,17 @@
       "status": "ok"
     },
     "deterministic": true,
-    "generatedAt": "2026-11-18T11:35:53+08:00",
+    "generatedAt": "2026-11-18T14:22:18+08:00",
     "modelVersion": "bge-base-zh-v1.5",
     "operatorId": "dm-dataset-evaluation",
-    "operatorVersion": "0.1.2",
+    "operatorVersion": "0.1.3",
+    "originality": {
+      "maxSimilarity": 0.632653,
+      "method": "self_built_proxy",
+      "nearDupRate": 0.0,
+      "originalityScore": 1.0,
+      "status": "ok"
+    },
     "paramsHash": "sha256:8c383e416eb64356b8dda21151a5f0c39be2c019b78543957cb595912da92dc6",
     "population": 278,
     "provisional": true,
@@ -29,8 +36,8 @@
       "pathLegalityRate": 1.0,
       "proxy": true
     },
-    "runId": "b4b8b9ecaf9d6026",
-    "runtimeSec": 0.152,
+    "runId": "9b57d91d85821408",
+    "runtimeSec": 0.21,
     "sampleSize": 31,
     "sampling": {
       "orderHash": "sha256(seed|record_id)",
@@ -118,10 +125,10 @@
   },
   "modelVersion": "bge-base-zh-v1.5",
   "operatorId": "dm-dataset-evaluation",
-  "operatorVersion": "0.1.2",
+  "operatorVersion": "0.1.3",
   "paramsHash": "sha256:8c383e416eb64356b8dda21151a5f0c39be2c019b78543957cb595912da92dc6",
   "provisional": true,
-  "runId": "b4b8b9ecaf9d6026",
+  "runId": "9b57d91d85821408",
   "sampleCount": 31,
   "seed": 42,
   "semanticCode": "prod_evaluation_v1",

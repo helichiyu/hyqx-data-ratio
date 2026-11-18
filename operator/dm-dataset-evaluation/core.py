@@ -4,6 +4,7 @@
 - 有真值：精确/前缀准确率、逐模态准确率、宏 F1、混淆矩阵、错标清单；
 - 无真值（H-05 未提供）：准确率类指标标 `null` + `blockedReason`，只出代理指标，不冒充准确率；
 - 合规/版权：默认开源中文词表垫底（Q-08，2026-11-18 口径），params 可覆盖；版权哈希库缺失时相应分项 `unavailable`，不编造；
+- 原创性：自研代理（语料内近重复 n-gram Jaccard，Q-08 2026-11-18 口径"不留空"），代理结果不冒充外部查重；
 - 综合质量分只聚合可用分项，权重来自配置并记录来源。
 """
 
@@ -18,6 +19,7 @@ from typing import Any
 from .utils import compliance as compliance_util
 from .utils import dataset as dataset_util
 from .utils import metrics as metrics_util
+from .utils import originality as originality_util
 from .utils import sample as sample_util
 from .utils.common import (
     ensure_output_dir,
@@ -34,7 +36,7 @@ from .utils.common import (
 
 OPERATOR_ID = "dm-dataset-evaluation"
 SEMANTIC_CODE = "prod_evaluation_v1"
-OPERATOR_VERSION = "0.1.2"
+OPERATOR_VERSION = "0.1.3"
 DEFAULT_SEED = 42
 
 
@@ -108,6 +110,14 @@ def run(
     compliance["termsPath"] = terms_path.as_posix() if terms_path else None
     compliance["hashesPath"] = hashes_path.as_posix() if hashes_path else None
 
+    originality = originality_util.evaluate(
+        sampled,
+        records,
+        int(cfg["originality"]["shingleSize"]),
+        float(cfg["originality"]["nearDupThreshold"]),
+        int(cfg["originality"]["maxPairs"]),
+    )
+
     score = _composite_score(truth_report, proxy, compliance, cfg)
 
     model_version = manifest.get("modelVersion")
@@ -143,6 +153,7 @@ def run(
         "truth": truth_report,
         "proxy": proxy,
         "compliance": compliance,
+        "originality": originality,
         "score": score,
         "versionCheck": version_check,
     }
@@ -154,6 +165,7 @@ def run(
         )
     write_jsonl(output / "wrong_labels.jsonl", truth_report.get("wrongLabels") or [])
     write_json(output / "compliance.json", compliance)
+    write_json(output / "originality.json", originality)
     failures = list(truth_failures)
     write_jsonl(output / "failures.jsonl", failures)
 
@@ -187,6 +199,13 @@ def run(
             "hitCount": compliance.get("hitCount"),
             "hitRate": compliance.get("hitRate"),
             "passRate": compliance.get("passRate"),
+        },
+        "originality": {
+            "status": originality.get("status"),
+            "method": originality.get("method"),
+            "nearDupRate": originality.get("nearDupRate"),
+            "originalityScore": originality.get("originalityScore"),
+            "maxSimilarity": originality.get("maxSimilarity"),
         },
         "score": score,
         "versionCheck": version_check,

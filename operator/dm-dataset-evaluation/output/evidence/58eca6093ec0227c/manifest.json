@@ -6,14 +6,19 @@
       "sha256": "a9858c4e3fb77b7a830d2deb62cfda46228d743f8733404db33c2fd4df2a0194"
     },
     {
-      "bytes": 3004,
+      "bytes": 3515,
       "path": "evaluation.json",
-      "sha256": "e8afe62939d1b887d7c4a21d12dc17172728459dcfd88e15aa1fcfc6ef1038b4"
+      "sha256": "30578bb112a153b0459a88dca64c7ab11e4d60f35cb8b9f2eb5c8b44fa49952e"
     },
     {
       "bytes": 0,
       "path": "failures.jsonl",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 467,
+      "path": "originality.json",
+      "sha256": "0bbbfe92166b74938074046804a9230adfa27d51ed465eb2b56734c0a66f1dcf"
     },
     {
       "bytes": 5150,
@@ -26,7 +31,7 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
   ],
-  "createdAt": "2026-11-18T11:35:53+08:00",
+  "createdAt": "2026-11-18T14:22:18+08:00",
   "failedCount": 0,
   "inputFingerprint": "sha256:ebd465ccf09875836d9980fac33ce2f77617ed02425cf348d31b7c0e75495cd9",
   "modelVersion": "bge-base-zh-v1.5",
@@ -37,9 +42,9 @@
     "综合分只聚合可用分项并重归一权重。"
   ],
   "operatorId": "dm-dataset-evaluation",
-  "operatorVersion": "0.1.2",
+  "operatorVersion": "0.1.3",
   "paramsHash": "sha256:8c383e416eb64356b8dda21151a5f0c39be2c019b78543957cb595912da92dc6",
-  "runId": "b4b8b9ecaf9d6026",
+  "runId": "9b57d91d85821408",
   "sampleCount": 31,
   "seed": 42,
   "semanticCode": "prod_evaluation_v1",

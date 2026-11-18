@@ -158,6 +158,29 @@ def test_compliance_missing_and_provided(tmp_path: Path, monkeypatch):
     assert result["metrics"]["compliance"]["hitRate"] == pytest.approx(0.1)
 
 
+def test_originality_proxy(tmp_path: Path, monkeypatch):
+    # 夹具文本两两不雷同（阈值 0.8）→ 近重复率 0、原创性分 1.0
+    run_dir = _build_run(tmp_path, count=10)
+    result = _run(tmp_path, monkeypatch, run_dir, {"ratio": 1.0})
+    originality = result["metrics"]["originality"]
+    assert originality["status"] == "ok"
+    assert originality["method"] == "self_built_proxy"
+    assert originality["nearDupRate"] == 0.0
+    assert originality["originalityScore"] == 1.0
+
+    # 单元级：近重复文本必须被抓到
+    util = CORE.originality_util
+    records = {
+        "a": {"text": "数据配比中心的知识图谱构建流程包括实体抽取关系抽取和图谱融合"},
+        "b": {"text": "数据配比中心的知识图谱构建流程包括实体抽取关系抽取和图谱融合，补充说明"},
+        "c": {"text": "完全无关的另一段文本，讲的是天气与季节变化"},
+    }
+    report = util.evaluate([{"record_id": "a"}], records, 5, 0.8, 10)
+    assert report["nearDupRate"] == 1.0
+    assert report["originalityScore"] == 0.0
+    assert any(pair["otherId"] == "b" for pair in report["topPairs"])
+
+
 def test_composite_score_formula(tmp_path: Path, monkeypatch):
     run_dir = _build_run(tmp_path, count=10, wrong=2)
     result = _run(

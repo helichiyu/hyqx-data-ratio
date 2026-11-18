@@ -29,6 +29,7 @@
 - 无真值：`accuracy/prefixAccuracy/macroF1/confusion = null`，`blockedReason=TRUTH_REQUIRED`；
 - 代理指标（`proxy=true`）：路径合法率、平均/中位置信度、低置信占比、完整率、空文本率；
 - 合规：命中 = 正文包含敏感词或记录 SHA-256/MD5 命中版权库；资源缺失 `unavailable`；
+- 原创性：自研代理（语料内近重复，字符 n-gram Jaccard；原创性分 = 1 - 近重复率；Q-08 2026-11-18），独立报告不计入综合分；
 - 综合分 = Σ 可用分项×权重 / Σ 可用权重；不可用分项剔除而不是按 0 计；
   无真值时 `score.scope=proxy_only`，等级加 `proxy_` 前缀（如 `proxy_excellent`），避免被误读为效果评测；
   权重与分级见 `configs/evaluation.json`（联调初值，H-03）。
