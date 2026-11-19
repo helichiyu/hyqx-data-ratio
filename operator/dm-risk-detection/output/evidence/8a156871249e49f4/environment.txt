@@ -1,6 +1,0 @@
-python: 3.12.12
-platform: Windows-11-10.0.26200-SP0
-numpy: 2.2.6
-requests: 2.34.2
-INPUT_DIR: 
-OUTPUT_DIR: 

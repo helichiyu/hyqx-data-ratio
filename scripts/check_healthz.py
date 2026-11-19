@@ -1,9 +1,9 @@
-"""逐个调用 22 个算子的 healthz（S0-1 / S0-8）。
+"""逐个调用 map.json 中全部算子的 healthz（S0-1 / S0-8）。
 
 用法：
     "D:/anaconda3/envs/use/python.exe" scripts/check_healthz.py --base-url http://127.0.0.1:17025
 
-退出码 0 表示 22/22 返回 ``code=0`` 且 ``data.ready=true``。
+退出码 0 表示全部返回 ``code=0`` 且 ``data.ready=true``。
 """
 
 from __future__ import annotations

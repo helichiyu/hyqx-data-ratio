@@ -104,7 +104,7 @@ fi
 if [ "$DRY_RUN" = "1" ]; then
     echo "dry-run 文件清单："
     (cd "$STAGE" && find . -type f | sed 's#^\./##' | sort)
-    echo "dry-run 通过：22 个算子核心，无测试/样例/证据/文档"
+    echo "dry-run 通过：算子核心文件齐全，无测试/样例/证据/文档"
     exit 0
 fi
 

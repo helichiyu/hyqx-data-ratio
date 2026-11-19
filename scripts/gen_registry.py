@@ -23,8 +23,8 @@ STATUS_NOT_STARTED = "未开始"
 def main() -> int:
     payload = json.loads(MAP_PATH.read_text(encoding="utf-8"))
     operators = payload["operators"]
-    if len(operators) != 22:
-        raise SystemExit(f"map.json 应有 22 个算子，实际 {len(operators)} 个")
+    if not operators:
+        raise SystemExit("map.json 没有任何算子")
 
     rows = []
     for meta in operators:

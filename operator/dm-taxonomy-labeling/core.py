@@ -47,10 +47,17 @@ def run(
 
     records_path, records_root = _locate_records(input_path)
     model = embedder.Embedder(cfg)
+    snapshot_override = str(resolved_params.get("tree_snapshot_path") or "").strip() or None
+    expected_version = str(resolved_params.get("tree_version") or "").strip() or None
     trees: dict[str, tree.LabelTree] = {}
     matrices: dict[str, np.ndarray] = {}
     for space in cfg["tree"]["spaces"]:
-        space_tree = tree.LabelTree(cfg["tree"]["relativePath"], space)
+        space_tree = tree.LabelTree(
+            cfg["tree"]["relativePath"],
+            space,
+            override_path=snapshot_override,
+            expected_version=expected_version,
+        )
         trees[space] = space_tree
         matrices[space] = model.encode(space_tree.label_texts).astype(np.float32)
         np.save(output / f"label_vectors_{space}.npy", matrices[space].astype(np.float16))
@@ -170,6 +177,7 @@ def run(
     )
     metrics = {
         "treeVersion": next(iter(trees.values())).tree_version if trees else None,
+        "treeHash": next(iter(trees.values())).tree_hash if trees else None,
         "labelSpaceSizes": {space: len(item.labels) for space, item in trees.items()},
         "spacesSeparated": True,
         "textRecords": attempted,
@@ -209,6 +217,8 @@ def run(
         "operatorVersion": OPERATOR_VERSION,
         "modelVersion": model.model_version,
         "treeVersion": metrics["treeVersion"],
+        "treeHash": metrics["treeHash"],
+        "treeSnapshotPath": next(iter(trees.values())).snapshot_path.as_posix() if trees else None,
         "paramsHash": f"sha256:{params_hash(resolved_params)}",
         "seed": resolved_seed,
         "sampleCount": attempted,
@@ -237,6 +247,7 @@ def run(
         "seed": resolved_seed,
         "modelVersion": manifest["modelVersion"],
         "treeVersion": manifest["treeVersion"],
+        "treeHash": manifest["treeHash"],
         "sampleCount": attempted,
         "successCount": manifest["successCount"],
         "failedCount": len(failures),
@@ -250,6 +261,7 @@ def run(
     return {
         "modelVersion": manifest["modelVersion"],
         "treeVersion": manifest["treeVersion"],
+        "treeHash": manifest["treeHash"],
         "sampleCount": attempted,
         "successCount": manifest["successCount"],
         "failedCount": len(failures),

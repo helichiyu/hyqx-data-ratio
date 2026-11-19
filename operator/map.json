@@ -33,38 +33,6 @@
       "status": "implemented"
     },
     {
-      "opId": "OP-03",
-      "operatorId": "dm-text-clustering",
-      "nameZh": "句向量与主题聚类",
-      "semanticCode": "corpus_shard_embed_cluster_v1",
-      "stage": "S2",
-      "priority": "P0",
-      "group": "②分片与打标",
-      "requiresWeights": true,
-      "dependsOn": [
-        "OP-02"
-      ],
-      "version": "0.1.0",
-      "status": "implemented"
-    },
-    {
-      "opId": "OP-04",
-      "operatorId": "dm-stratified-sampling",
-      "nameZh": "分层抽样",
-      "semanticCode": "corpus_shard_stratified_sample_v1",
-      "stage": "S3",
-      "priority": "P1",
-      "group": "②分片与打标",
-      "requiresWeights": false,
-      "dependsOn": [
-        "OP-02",
-        "OP-03",
-        "OP-14"
-      ],
-      "version": "0.1.0",
-      "status": "implemented"
-    },
-    {
       "opId": "OP-05",
       "operatorId": "dm-multimodal-labeling",
       "nameZh": "多模态自动打标",
@@ -89,23 +57,7 @@
       "group": "②分片与打标",
       "requiresWeights": true,
       "dependsOn": [
-        "OP-05"
-      ],
-      "version": "0.1.0",
-      "status": "implemented"
-    },
-    {
-      "opId": "OP-07",
-      "operatorId": "dm-label-governance",
-      "nameZh": "标签治理",
-      "semanticCode": "corpus_label_governance_v1",
-      "stage": "S2",
-      "priority": "P1",
-      "group": "②分片与打标",
-      "requiresWeights": true,
-      "dependsOn": [
-        "OP-05",
-        "OP-06"
+        "OP-02"
       ],
       "version": "0.1.0",
       "status": "implemented"
@@ -121,7 +73,6 @@
       "requiresWeights": true,
       "dependsOn": [
         "OP-02",
-        "OP-05",
         "OP-06"
       ],
       "version": "0.1.0",
@@ -137,8 +88,7 @@
       "group": "③语料画像",
       "requiresWeights": true,
       "dependsOn": [
-        "OP-02",
-        "OP-01"
+        "OP-02"
       ],
       "version": "0.1.0",
       "status": "implemented"
@@ -169,7 +119,6 @@
       "group": "③语料画像",
       "requiresWeights": true,
       "dependsOn": [
-        "OP-01",
         "OP-02"
       ],
       "version": "0.1.0",
@@ -185,7 +134,6 @@
       "group": "③语料画像",
       "requiresWeights": true,
       "dependsOn": [
-        "OP-01",
         "OP-02"
       ],
       "version": "0.1.0",
@@ -223,23 +171,6 @@
       "status": "implemented"
     },
     {
-      "opId": "OP-15",
-      "operatorId": "dm-ratio-computation",
-      "nameZh": "配比引擎",
-      "semanticCode": "ratio_weighted_plan_v1",
-      "stage": "S4",
-      "priority": "P0",
-      "group": "④配比引擎",
-      "requiresWeights": false,
-      "dependsOn": [
-        "OP-05",
-        "OP-08",
-        "OP-14"
-      ],
-      "version": "0.1.2",
-      "status": "implemented"
-    },
-    {
       "opId": "OP-16",
       "operatorId": "dm-ratio-analysis",
       "nameZh": "配比分析与建议",
@@ -248,9 +179,7 @@
       "priority": "P1",
       "group": "④配比引擎",
       "requiresWeights": false,
-      "dependsOn": [
-        "OP-15"
-      ],
+      "dependsOn": [],
       "version": "0.1.2",
       "status": "implemented"
     },
@@ -264,22 +193,7 @@
       "group": "⑤生产评测",
       "requiresWeights": false,
       "dependsOn": [
-        "OP-15"
-      ],
-      "version": "0.1.1",
-      "status": "implemented"
-    },
-    {
-      "opId": "OP-18",
-      "operatorId": "dm-dataset-evaluation",
-      "nameZh": "数据评测",
-      "semanticCode": "prod_evaluation_v1",
-      "stage": "S5",
-      "priority": "P0",
-      "group": "⑤生产评测",
-      "requiresWeights": true,
-      "dependsOn": [
-        "OP-17",
+        "OP-02",
         "OP-05"
       ],
       "version": "0.1.1",
@@ -302,70 +216,10 @@
         "OP-12",
         "OP-13",
         "OP-14",
-        "OP-15",
         "OP-16",
-        "OP-17",
-        "OP-18"
+        "OP-17"
       ],
       "version": "0.1.1",
-      "status": "implemented"
-    },
-    {
-      "opId": "OP-20",
-      "operatorId": "dm-graph-indexing",
-      "nameZh": "知识图谱与向量索引",
-      "semanticCode": "tool_graph_vector_index_v1",
-      "stage": "S6",
-      "priority": "P1",
-      "group": "⑥工具与风险",
-      "requiresWeights": true,
-      "dependsOn": [
-        "OP-02",
-        "OP-03"
-      ],
-      "version": "0.1.0",
-      "status": "implemented"
-    },
-    {
-      "opId": "OP-21",
-      "operatorId": "dm-expert-validation",
-      "nameZh": "专家校验",
-      "semanticCode": "tool_expert_validation_v1",
-      "stage": "S6",
-      "priority": "P1",
-      "group": "⑥工具与风险",
-      "requiresWeights": false,
-      "dependsOn": [
-        "OP-05",
-        "OP-18"
-      ],
-      "version": "0.1.1",
-      "status": "implemented"
-    },
-    {
-      "opId": "OP-22",
-      "operatorId": "dm-risk-detection",
-      "nameZh": "风险检测与分级",
-      "semanticCode": "risk_metric_rule_v1",
-      "stage": "S6",
-      "priority": "P1",
-      "group": "⑥工具与风险",
-      "requiresWeights": false,
-      "dependsOn": [
-        "OP-08",
-        "OP-09",
-        "OP-10",
-        "OP-11",
-        "OP-12",
-        "OP-13",
-        "OP-14",
-        "OP-15",
-        "OP-16",
-        "OP-17",
-        "OP-18",
-        "OP-19"
-      ],
-      "version": "0.1.0",
       "status": "implemented"
     }
   ]

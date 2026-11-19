@@ -20,6 +20,8 @@
 | `max_records` | 1000000 | 最多记录数 |
 | `percentiles` | `[50,90,99]` | 分位数列表 |
 | `domain_labels_path` | 无 | OP-06 结果目录/文件，须在 `INPUT_DIR`/`OUTPUT_DIR` 内 |
+| `tree_snapshot_path` | 无 | 分类树快照路径（须在 `INPUT_DIR`/`OUTPUT_DIR` 内）；缺省用镜像内基线 |
+| `tree_version` | 无 | 期望的树版本；与快照不一致直接失败 |
 | `as_of` | 批次最大 `dt` | 新鲜度基准日 |
 
 ## 3. 指标口径

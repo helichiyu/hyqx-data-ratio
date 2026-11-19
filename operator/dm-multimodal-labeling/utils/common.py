@@ -127,3 +127,21 @@ def resolve_device(configured: Any = None) -> str:
 
 def resolve_operator_path(relative: str) -> Path:
     return (OPERATOR_ROOT / relative).resolve()
+
+
+def ensure_under_roots(raw: str | Path, roots: Iterable[Path]) -> Path:
+    """参数路径闸门：只允许算子池 INPUT_DIR / OUTPUT_DIR 内的绝对路径。"""
+
+    target = Path(raw).resolve()
+    for root in roots:
+        root_resolved = Path(root).resolve()
+        if target == root_resolved or root_resolved in target.parents:
+            return target
+    raise ValueError(f"路径不在允许的根目录内：{target}")
+
+
+def environment_roots() -> list[Path]:
+    return [
+        Path(os.getenv("INPUT_DIR", OPERATOR_ROOT / "runtime" / "input")),
+        Path(os.getenv("OUTPUT_DIR", OPERATOR_ROOT / "runtime" / "output")),
+    ]

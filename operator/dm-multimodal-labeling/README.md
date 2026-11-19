@@ -34,6 +34,8 @@
 | `ocr_enabled` / `asr_enabled` | true | 模态证据开关 |
 | `max_records` | 100000 | 最多处理记录数 |
 | `device` | cpu | 向量模型设备 |
+| `tree_snapshot_path` | 无 | 分类树快照路径（须在 `INPUT_DIR`/`OUTPUT_DIR` 内）；缺省用镜像内基线 |
+| `tree_version` | 无 | 期望的树版本；与快照不一致直接失败，避免静默串版本 |
 
 `seed` 只在参数哈希与结果复算中使用；推理无随机过程。
 
@@ -41,6 +43,7 @@
 
 ```text
 result.jsonl        # 每条：record_id/modal/labels[{path,confidence,topK,evidence,modelVersion,treeVersion}]/topK/unclassified/reasonCode
+# metrics/manifest/summary 增加 treeHash（快照内容 SHA-256）与 treeSnapshotPath，便于追溯与差异比对
 unclassified.jsonl  # 未归类样本与原因、topK、证据
 failures.jsonl      # 未归类 + 工具错误（OCR/ASR/关键帧/媒体缺失）
 label_vectors.npy   # 标签向量 (279,768) float16
@@ -60,7 +63,7 @@ streams/keyframes/<record_id>/  # 视频关键帧
 | `meanConfidenceByModal` | 已打标记录 top1 置信度均值 |
 | `meanEvidenceCharsByModal` | 已打标记录证据字符数均值 |
 | `pathLegalRate` | 命中当前 `treeVersion` 的标签数 / 标签总数（应为 1.0） |
-| `unclassifiedByReason` | `LOW_SIMILARITY` / `LOW_CONFIDENCE` / `SMALL_MARGIN` / `NO_TEXT_EVIDENCE` / `NO_SPEECH` |
+| `unclassifiedByReason` | `UNCLASSIFIED_LOW_SIMILARITY` / `UNCLASSIFIED_LOW_CONFIDENCE` / `UNCLASSIFIED_SMALL_MARGIN` / `UNCLASSIFIED_NO_TEXT_EVIDENCE` / `UNCLASSIFIED_NO_SPEECH` |
 | `toolVersions` | RapidOCR / FunASR / transformers 版本 |
 
 **未评测**：准确率、Wilson 区间、混淆矩阵（无人工标注 H-05）；`annotation.blockedReason=MATCHING_ANNOTATION_REQUIRED`。

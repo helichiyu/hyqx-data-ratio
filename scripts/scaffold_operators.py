@@ -73,8 +73,8 @@ def scaffold_package(package_dir: Path, package_name: str) -> list[str]:
 def main() -> int:
     registry = json.loads(MAP_PATH.read_text(encoding="utf-8"))
     operators = registry["operators"]
-    if len(operators) != 22:
-        print(f"map.json 应有 22 个算子，实际 {len(operators)} 个", file=sys.stderr)
+    if not operators:
+        print("map.json 没有登记任何算子", file=sys.stderr)
         return 1
 
     created: list[str] = scaffold_package(OPERATOR_ROOT / "_template", "_template")
@@ -82,7 +82,7 @@ def main() -> int:
         operator_id = meta["operatorId"]
         created.extend(scaffold_package(OPERATOR_ROOT / operator_id, operator_id))
 
-    print(f"scaffold 完成：22 个算子 + _template，本次新建 {len(created)} 个文件")
+    print(f"scaffold 完成：{len(operators)} 个算子 + _template，本次新建 {len(created)} 个文件")
     for item in created:
         print(f"  + {item}")
     return 0

@@ -1,7 +1,7 @@
 """数据配比中心算子服务统一入口（S0 工程底座）。
 
 单镜像、单入口：本文件只实现一次五端点、路径闸门、统一信封与按 ``operatorId``
-调度，22 个算子不各自实现 HTTP 层。算子核心统一为
+调度，各算子不各自实现 HTTP 层。算子核心统一为
 ``core.run(input_path, params, seed, output_dir) -> dict``，不得依赖 FastAPI/HTTP。
 
 端点（``{operatorId}`` 即 ``operator/`` 下的目录名）：
@@ -201,8 +201,8 @@ def _has_weight_files(directory: Path) -> bool:
 def _load_registry() -> dict[str, dict[str, Any]]:
     payload = json.loads(MAP_PATH.read_text(encoding="utf-8"))
     operators = payload.get("operators") or []
-    if len(operators) != 22:
-        raise RuntimeError(f"map.json 应有 22 个算子，实际 {len(operators)} 个")
+    if not operators:
+        raise RuntimeError("map.json 没有登记任何算子")
     return {str(item["operatorId"]): dict(item) for item in operators}
 
 

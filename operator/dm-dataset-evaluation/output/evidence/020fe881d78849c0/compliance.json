@@ -1,9 +1,0 @@
-{
-  "hashesPath": null,
-  "hitRate": null,
-  "hits": [],
-  "message": "未提供合规词表/版权哈希库（Q-08/H-08），不做合规判定。",
-  "reasonCode": "COMPLIANCE_RESOURCES_REQUIRED",
-  "status": "unavailable",
-  "termsPath": null
-}

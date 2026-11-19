@@ -5,20 +5,26 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 from typing import Any, Iterable
 
 
 def load_tree(path: Path, space: str = "domain") -> dict[str, Any]:
-    snapshot = json.loads(path.read_text(encoding="utf-8"))
+    raw = path.read_bytes()
+    snapshot = json.loads(raw.decode("utf-8"))
     tree = snapshot["trees"][space]
     nodes = tree["nodes"]
+    if not nodes:
+        raise ValueError(f"分类树快照没有可用节点：space={space}")
     level1 = [node["nodeId"] for node in nodes if node["depth"] == 1]
     level2 = [node["nodeId"] for node in nodes if node["depth"] == 2]
     leaves = [node["nodeId"] for node in nodes if node.get("leaf")]
     return {
         "treeVersion": snapshot.get("treeVersion"),
+        "treeHash": "sha256:" + hashlib.sha256(raw).hexdigest(),
+        "snapshotPath": path.as_posix(),
         "level1": level1,
         "level2": level2,
         "leaves": leaves,

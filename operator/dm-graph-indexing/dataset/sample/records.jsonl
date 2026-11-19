@@ -1,3 +1,0 @@
-{"record_id": "g1", "text": "2024-03-01 中国科学院 发布“量子计算”成果 123 项", "modal": "text", "source": "science", "partitions": {"modal": "text", "source": "science", "dt": "2024-03-01"}}
-{"record_id": "g2", "text": "清华大学 与 华为公司 在 2025年5月 开展合作", "modal": "text", "source": "web_text", "partitions": {"modal": "text", "source": "web_text", "dt": "2025-05-01"}}
-{"record_id": "g3", "text": "无实体短文本", "modal": "text", "source": "web_text", "partitions": {"modal": "text", "source": "web_text", "dt": "2025-05-01"}}

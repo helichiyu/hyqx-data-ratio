@@ -2,7 +2,13 @@
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 OPERATOR = "dm-multimodal-analysis"
+EXPECTED_OPERATORS = len(
+    json.loads((Path(__file__).resolve().parents[1] / "operator" / "map.json").read_text(encoding="utf-8"))["operators"]
+)
 
 
 def upload_text(client, operator_id: str, unique_id: str):
@@ -23,8 +29,8 @@ def test_aggregate_health(app_env):
     body = response.json()
     assert body["code"] == 0
     assert body["data"]["status"] == "ok"
-    assert body["data"]["operatorCount"] == 22
-    assert body["data"]["readyCount"] == 22
+    assert body["data"]["operatorCount"] == EXPECTED_OPERATORS
+    assert body["data"]["readyCount"] == EXPECTED_OPERATORS
 
 
 def test_unknown_operator_returns_envelope_404(app_env):

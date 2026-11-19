@@ -51,7 +51,11 @@ def run(
 
     records_path, records_root = _locate_records(input_path)
     standard_paths = _index_standard_paths(records_root)
-    label_tree = tree.LabelTree(cfg)
+    label_tree = tree.LabelTree(
+        cfg,
+        snapshot_path=_optional_text(resolved_params.get("tree_snapshot_path")),
+        expected_version=_optional_text(resolved_params.get("tree_version")),
+    )
     model = embedder.Embedder(cfg)
     label_matrix = labeler.build_label_matrix(model, label_tree, cfg)
 
@@ -251,6 +255,7 @@ def run(
         },
         "labelSpaceSize": len(label_tree.labels),
         "treeVersion": label_tree.tree_version,
+        "treeHash": label_tree.tree_hash,
         "modelVersion": model.model_version,
         "topK": int(cfg["labeling"]["topK"]),
         "confidenceThreshold": float(cfg["labeling"]["confidenceThreshold"]),
@@ -299,6 +304,8 @@ def run(
         "operatorVersion": OPERATOR_VERSION,
         "modelVersion": model.model_version,
         "treeVersion": label_tree.tree_version,
+        "treeHash": label_tree.tree_hash,
+        "treeSnapshotPath": label_tree.snapshot_path.as_posix(),
         "paramsHash": f"sha256:{params_hash(resolved_params)}",
         "seed": resolved_seed,
         "sampleCount": len(result_rows),
@@ -328,6 +335,7 @@ def run(
         "seed": resolved_seed,
         "modelVersion": manifest["modelVersion"],
         "treeVersion": manifest["treeVersion"],
+        "treeHash": manifest["treeHash"],
         "sampleCount": len(result_rows),
         "successCount": labeled_total,
         "failedCount": len(failures),
@@ -341,6 +349,7 @@ def run(
     return {
         "modelVersion": manifest["modelVersion"],
         "treeVersion": manifest["treeVersion"],
+        "treeHash": manifest["treeHash"],
         "sampleCount": len(result_rows),
         "successCount": labeled_total,
         "failedCount": len(failures),
@@ -554,6 +563,11 @@ def _index_standard_paths(records_root: Path) -> dict[str, str]:
         }
     except Exception:  # noqa: BLE001 - 索引缺失时回退约定路径
         return {}
+
+
+def _optional_text(value: Any) -> str | None:
+    text = str(value).strip() if value is not None else ""
+    return text or None
 
 
 def _apply_overrides(cfg: dict[str, Any], params: dict[str, Any]) -> None:

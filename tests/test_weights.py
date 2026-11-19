@@ -14,7 +14,7 @@ def test_weights_ok_reads_weights_dir(tmp_path, monkeypatch):
     monkeypatch.setenv("WEIGHTS_DIR", str(tmp_path))
     app = inference.create_app(tmp_path / "input", tmp_path / "output")
     with TestClient(app) as client:
-        data = client.get("/dm-text-clustering/healthz").json()["data"]
+        data = client.get("/dm-taxonomy-labeling/healthz").json()["data"]
     assert data["weightsOk"] is True
 
 
@@ -22,5 +22,5 @@ def test_weights_ok_false_without_files(tmp_path, monkeypatch):
     monkeypatch.setenv("WEIGHTS_DIR", str(tmp_path / "empty"))
     app = inference.create_app(tmp_path / "input", tmp_path / "output")
     with TestClient(app) as client:
-        data = client.get("/dm-text-clustering/healthz").json()["data"]
+        data = client.get("/dm-taxonomy-labeling/healthz").json()["data"]
     assert data["weightsOk"] is False

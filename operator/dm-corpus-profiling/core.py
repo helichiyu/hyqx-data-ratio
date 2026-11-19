@@ -53,8 +53,17 @@ def run(
 
     records_path, records_root = locate_records(input_path)
     domain_labels = _locate_domain_labels(resolved)
-    tree_path = resolve_relative(cfg["domain"]["treeRelativePath"])
+    snapshot_override = str(resolved.get("tree_snapshot_path") or "").strip() or None
+    if snapshot_override:
+        tree_path = ensure_under_roots(snapshot_override, environment_roots())
+    else:
+        tree_path = resolve_relative(cfg["domain"]["treeRelativePath"])
     tree = domain.load_tree(tree_path)
+    expected_version = str(resolved.get("tree_version") or "").strip() or None
+    if expected_version and expected_version != tree["treeVersion"]:
+        raise ValueError(
+            f"分类树版本不一致：要求 {expected_version}，快照为 {tree['treeVersion']}"
+        )
 
     rows: list[dict[str, Any]] = []
     failures: list[dict[str, Any]] = []
@@ -250,6 +259,8 @@ def run(
         "failedCount": len(failures),
         "failuresByReason": failures_by_reason,
         "treeVersion": tree["treeVersion"],
+        "treeHash": tree["treeHash"],
+        "treeSnapshotPath": tree["snapshotPath"],
         "provisional": True,
         "deterministic": True,
         "runtimeSec": round(time.time() - started, 3),
@@ -267,6 +278,8 @@ def run(
         "operatorVersion": OPERATOR_VERSION,
         "modelVersion": None,
         "treeVersion": tree["treeVersion"],
+        "treeHash": tree["treeHash"],
+        "treeSnapshotPath": tree["snapshotPath"],
         "paramsHash": f"sha256:{params_hash(resolved)}",
         "seed": resolved_seed,
         "sampleCount": attempted,
@@ -296,6 +309,8 @@ def run(
         "seed": resolved_seed,
         "modelVersion": None,
         "treeVersion": tree["treeVersion"],
+        "treeHash": tree["treeHash"],
+        "treeSnapshotPath": tree["snapshotPath"],
         "sampleCount": attempted,
         "successCount": len(rows),
         "failedCount": len(failures),
@@ -308,6 +323,8 @@ def run(
     return {
         "modelVersion": None,
         "treeVersion": tree["treeVersion"],
+        "treeHash": tree["treeHash"],
+        "treeSnapshotPath": tree["snapshotPath"],
         "sampleCount": attempted,
         "successCount": len(rows),
         "failedCount": len(failures),

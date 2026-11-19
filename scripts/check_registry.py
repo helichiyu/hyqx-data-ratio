@@ -4,7 +4,7 @@
     "D:/anaconda3/envs/use/python.exe" scripts/check_registry.py
 
 检查项：
-1. 三处均 22 行，opId/operatorId 唯一；
+1. 三处行数一致，opId/operatorId 唯一；
 2. xlsx 01 表与 map.json 的 opId / operatorId / 名称 / 优先级 / 大环节逐行一致；
 3. map.json 与 registry.json 的全部登记字段一致；
 4. 依赖引用存在、无自依赖、无环；
@@ -66,8 +66,8 @@ def main() -> int:
     xlsx_rows = load_xlsx_rows()
 
     for label, rows in (("map.json", map_rows), ("registry.json", registry_rows), ("xlsx", xlsx_rows)):
-        if len(rows) != 22:
-            problems.append(f"{label} 应为 22 行，实际 {len(rows)} 行")
+        if len(rows) != len(map_rows):
+            problems.append(f"{label} 行数应与 map.json 一致（{len(map_rows)}），实际 {len(rows)} 行")
         op_ids = [row["opId"] for row in rows]
         operator_ids = [row["operatorId"] for row in rows]
         if len(set(op_ids)) != len(op_ids):
@@ -157,7 +157,7 @@ def main() -> int:
         for problem in problems:
             print(f"  - {problem}", file=sys.stderr)
         return 1
-    print("算子台账校验通过：xlsx / map.json / registry.json 各 22 行一致，依赖无环，状态合法")
+    print(f"算子台账校验通过：xlsx / map.json / registry.json 各 {len(map_rows)} 行一致，依赖无环，状态合法")
     return 0
 
 

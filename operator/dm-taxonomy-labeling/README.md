@@ -26,6 +26,8 @@
 | `min_similarity` | 0.45 | 余弦相似度下限 |
 | `max_records` | 100000 | 最多记录数 |
 | `device` | cpu | 向量设备 |
+| `tree_snapshot_path` | 无 | 分类树快照路径（须在 `INPUT_DIR`/`OUTPUT_DIR` 内）；缺省用镜像内基线 |
+| `tree_version` | 无 | 期望的树版本；与快照不一致直接失败 |
 
 ## 3. 输出
 

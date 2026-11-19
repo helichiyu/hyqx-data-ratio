@@ -6,6 +6,10 @@
 
 注意：Git Bash 里 `python` 会先命中 WindowsApps 的商店别名（PATH 中排在
 D:\\anaconda3\\envs\\use 之前），所以建议直接写 python.exe 全路径。
+
+范围提醒（2026-11-19）：OP-03/04/07/15/18/20/21/22 已删除，当前交付 14 个算子。
+本脚本仍保留原始 22 个算子的生成逻辑；直接重跑会覆盖已裁剪的 xlsx。如需重新生成，
+先同步更新本文件中的算子定义，或确认要恢复历史 22 行基线。
 """
 import os
 from openpyxl import Workbook
