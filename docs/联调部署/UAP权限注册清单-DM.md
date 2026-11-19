@@ -21,10 +21,10 @@
 
 ---
 
-## 1. 菜单（3 个分组 + 11 个页面）
+## 1. 菜单（3 个分组 + 10 个页面）
 
 > 左侧菜单按原型拆成「数据治理」「配比生产」两个大菜单；原型中的「质量与合规」保留为第三组，
-> 承载风险预警与专家校验，避免这两个页面从菜单消失。
+> 承载风险预警；专家校验已按 Comic 任务书删除，不再注册菜单。
 
 | # | 名称 | 层级 | 上级 | URL | 排序 | 图标建议 |
 | --- | --- | ---: | --- | --- | ---: | --- |
@@ -41,7 +41,6 @@
 | 11 | 配比分析任务 | 5 | 配比生产 | `/sdom-hsmty/#/data-mixing/analysis/index` | 5 | — |
 | 12 | 质量与合规 | 4 | `YD数据平台` | — | 22 | `Warning` |
 | 13 | 风险预警 | 5 | 质量与合规 | `/sdom-hsmty/#/data-mixing/risk/index` | 1 | — |
-| 14 | 工具链与专家校验 | 5 | 质量与合规 | `/sdom-hsmty/#/data-mixing/expert/index` | 2 | — |
 
 `component` 必须与前端 `src/modules/data-mixing/register.ts` 的 key 一致：
 
@@ -56,14 +55,13 @@
 /data-mixing/production/index
 /data-mixing/analysis/index
 /data-mixing/risk/index
-/data-mixing/expert/index
 ```
 
 > 七维仿真与准入无独立菜单，入口在「配方包管理」页内，其权限资源关联到该菜单。
 
 ---
 
-## 2. 权限资源（89 条）
+## 2. 权限资源（83 条）
 
 `operation` 约定：
 
@@ -233,19 +231,6 @@
 | 风险预警-修改 | `data-mixing:risk:update` | 1 |
 | 风险预警-删除 | `data-mixing:risk:remove` | 3 |
 | 风险预警-风险处置 | `data-mixing:risk:handle` | 1 |
-
-### 2.12 工具链与专家校验
-
-关联菜单：工具链与专家校验
-
-| 资源名称 | 权限码 | operation |
-| --- | --- | ---: |
-| 工具链与专家校验-列表/选项 | `data-mixing:expert:page` | 2 |
-| 工具链与专家校验-详情/样本/统计 | `data-mixing:expert:detail` | 2 |
-| 工具链与专家校验-新增 | `data-mixing:expert:create` | 0 |
-| 工具链与专家校验-删除 | `data-mixing:expert:remove` | 3 |
-| 工具链与专家校验-人工复核 | `data-mixing:expert:review` | 1 |
-| 工具链与专家校验-完成校验并计算指标 | `data-mixing:expert:finish` | 1 |
 
 ---
 

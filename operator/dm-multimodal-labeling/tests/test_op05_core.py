@@ -57,7 +57,7 @@ def test_text_labeling_and_idempotent(tmp_path):
     assert first["successCount"] + first["failedCount"] == 3
     assert first["treeVersion"] == "taxonomy-1013-pending"
     assert first["metrics"]["labelSpaceSize"] == 279
-    assert first["metrics"]["annotation"]["accuracy"] is None
+    assert "annotation" not in first["metrics"]
 
     rows = [
         json.loads(line)

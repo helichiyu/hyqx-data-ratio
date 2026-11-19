@@ -2,7 +2,7 @@
 
 > 版本：v1.0 / 2026-11-18
 > 适用：后端 `hsmty-module-dm-server`、前端 `hsmty-web/src/modules/data-mixing`、UAP 菜单权限。
-> 目标：从零启动本地环境，完成 UAP 导入、11 个页面主流程联调与验收取证。
+> 目标：从零启动本地环境，完成 UAP 导入、10 个页面主流程联调与验收取证。
 
 ---
 
@@ -13,7 +13,7 @@
 | 后端 | `http://127.0.0.1:8082/hs-api` | 已启动，`local-dev`，Liquibase 已执行 |
 | 前端 | `http://localhost:9851/#/data-mixing/dataset/index` | 已启动，Vite 代理到 8082 |
 | 算法 | `http://127.0.0.1:8092` | 已启动，`op-data-mixing`，21/22 算子 ready（speech 缺 torch） |
-| UAP 菜单/资源 | 测试 UAP | 旧结构 12 菜单、89 资源已创建；新结构 3 分组 + 11 页面待重跑导入 |
+| UAP 菜单/资源 | 测试 UAP | 旧结构 12 菜单、89 资源已创建；当前结构 3 分组 + 10 页面、83 资源待重跑导入 |
 | UAP 角色授权 | — | **待执行**：当前会话 `/role/list`、`/auth/selectedTree` 返回 403，无角色管理权限 |
 
 - 后端日志：`C:\Users\Aurora\AppData\Local\Temp\dm_scan\dm_runtime_backend.log`
@@ -228,7 +228,7 @@ python tools/uap/import_dm.py --curl-file uap.curl
 
 预期输出：
 
-- `菜单: 14 条；资源: 89 条`（3 个分组 + 11 个页面；89 个权限码）；
+- `菜单: 13 条；资源: 83 条`（3 个分组 + 10 个页面；83 个权限码）；
 - 根菜单 `YD数据平台` 解析成功；
 - 逐条打印 `[将创建菜单]` / `[复用菜单]`、`[将创建资源]` / `[复用资源]`；
 - 不写任何数据。
@@ -240,8 +240,9 @@ python tools/uap/import_dm.py --curl-file uap.curl --role-name test001 --execute
 ```
 
 > **本次已执行（2026-11-18）**：旧结构 12 个菜单（1 个「数据配比」分组 + 11 个页面）、89 个资源已创建，资源 code/value 已校正为权限码。
-> 新结构改为 3 个分组 + 11 个页面：重跑脚本会创建「数据治理」「配比生产」「质量与合规」三个分组，
-> 并在这三个分组下按名称复用/创建页面菜单。旧「数据配比」分组及其 11 个页面菜单不会自动删除，
+> 新结构改为 3 个分组 + 10 个页面：重跑脚本会创建「数据治理」「配比生产」「质量与合规」三个分组，
+> 并在这三个分组下按名称复用/创建页面菜单。旧「数据配比」分组及其页面菜单不会自动删除；
+> 2026-11-19 按 Comic 任务书删除「工具链与专家校验」，资源从 89 条降为 83 条。
 > 导入后请在 UAP 菜单管理中手工删除旧分组，避免侧边栏出现重复入口。
 > **角色授权未执行**：当前会话访问 `/role/list`、`/auth/selectedTree` 返回 403，无角色管理权限。
 > 请在 UAP「角色管理 → 分配菜单」给测试角色勾选「数据治理」「配比生产」「质量与合规」及各自页面；或换有权限的会话执行：
@@ -261,7 +262,7 @@ python tools/uap/import_dm.py --curl-file uap.curl --role-name test001 --execute
 python tools/uap/check_permissions.py
 ```
 
-预期：`结果: PASS`；后端 89 个权限码、清单 89 个、前端 `can()` 58 个、11 个菜单 component 全部一致。
+预期：`结果: PASS`；后端 83 个权限码、清单 83 个、前端 `can()` 58 个、10 个菜单 component 全部一致。
 
 人工检查：
 
@@ -310,7 +311,6 @@ python tools/uap/check_permissions.py
 | 14 | 配比生产任务 | 选配方版本 + **数据集** → 新建并启动 → 详情 Tabs → 重跑 | 有已完成打标时下载成品 zip 并写产物/算子记录；无打标时明确提示先完成打标；库存不足按 allowShortage 标 partial_failed |
 | 15 | 配比分析任务 | 新建（绑定生产任务/数据集）→ 启动 → 详情 | 有生产产物时九维/报告任务 completed；无生产时提示先完成生产；报告按钮在有结果后可用 |
 | 16 | 风险预警 | 登记 → 编辑 → 处置（handling/closed/ignored）→ 统计 | KPI 与列表状态同步；详情 JSON 正确 |
-| 17 | 工具链与专家校验 | 新建校验任务（需已打标样本）→ 复核 → 完成 | 抽样数量正确；复核一致/改判；完成后 Kappa/Alpha/准确率有值 |
 | 18 | 全页面 | 无权限账号 | 菜单不可见；直接调接口 403；按钮不可见 |
 
 > 分类版本：新建快照复制当前生效版本的全部节点，批量插入（794 节点约 2 秒）；生效版本可继续增删，
@@ -373,32 +373,6 @@ VALUES (799100000000000001, <analysisTaskId>, 'nine_dim', 86.5, 4,
 
 刷新分析详情后，可生成 HTML/Excel 报告并下载；PDF 会明确返回“暂不支持”。
 
-**③ 专家校验样本**
-
-```sql
--- 1) 先建一个打标任务（或用已有任务）
-INSERT INTO hs_data_mixing_labeling_task
-(id, task_code, dataset_id, dataset_name, tree_version, labeling_mode, status,
- total_count, labeled_count, unclassified_count, review_pending_count, progress,
- confidence_threshold, operator_id, del_flag, create_time, update_time)
-VALUES (799200000000000001, 'TEST-LBL-9001', <datasetId>, <datasetName>, 'taxonomy-1013-pending',
-        'auto', 'completed', 10, 10, 0, 10, 100, 0.6, 'dm-multimodal-labeling',
-        'F', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
-
--- 2) 插入 10 条已打标样本（label_path 必须是分类树内真实路径）
-INSERT INTO hs_data_mixing_sample_label
-(id, task_id, dataset_id, sample_id, record_index, modal, label_path, label_name,
- confidence, label_source, review_status, del_flag, create_time, update_time)
-VALUES
-(799200000000000101, 799200000000000001, <datasetId>, 'S1', 1, 'text', '新闻与资讯/时政新闻', '时政新闻', 0.9, 'auto', 'pending', 'F', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
-(799200000000000102, 799200000000000001, <datasetId>, 'S2', 2, 'text', '新闻与资讯/财经新闻', '财经新闻', 0.9, 'auto', 'pending', 'F', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
--- 其余样本按同结构补齐，至少 5 条便于演示
-```
-
-之后在「工具链与专家校验」中按打标任务创建校验任务、复核样本并完成校验。
-
-> SQL 中的中文建议用 UTF-8 文件导入（`mysql --default-character-set=utf8mb4 < seed.sql`），避免命令行编码问题。
-
 ---
 
 ## 5. 验收取证
@@ -410,7 +384,7 @@ VALUES
 | OpenAPI | `/hs-api/v3/api-docs/data-mixing` 200，101 条路径 |
 | UAP | `import_dm.py` dry-run/execute 输出；`check_permissions.py` PASS；重新登录后菜单与 403 验证 |
 | 前端构建 | `NODE_OPTIONS=--max-old-space-size=8192 corepack pnpm type-check`、`corepack pnpm build-only` |
-| 页面 | 11 页主流程截图；任务失败信息截图（算法未接入）；报告下载文件 |
+| 页面 | 10 页主流程截图；任务失败信息截图（算法未接入）；报告下载文件 |
 | 接口 | 关键请求/响应（浏览器 Network 或 curl），包含 400 规则校验与 409 去重 |
 
 ---
@@ -476,9 +450,9 @@ python tools/uap/check_permissions.py
 ## 9. 联调完成标准
 
 1. `check_permissions.py` PASS；UAP 菜单可见、无 403。
-2. 11 个页面均可打开，列表/表单/详情/操作无报错。
+2. 10 个页面均可打开，列表/表单/详情/操作无报错。
 3. 分类树、数据集、场景、方案、配方包/版本链路完整可操作。
-4. 打标/画像/仿真/生产/分析在算法未接入时稳定失败且信息可读；注入演示数据后报告/准入/专家校验可走通。
+4. 打标/画像/仿真/生产/分析在算法未接入时稳定失败且信息可读；注入演示数据后报告/准入可走通。
 5. 后端构建、前端 type-check/eslint/build 全绿，OpenAPI 101 条。
 
 > 本地壳左侧菜单：优先读取平行语料菜单表；接口不可用或为空时回退到 `register.ts` 静态分组（与 LTP/ASC 本地壳一致）。设置 `VITE_LOCAL_MODULES` 时会跳过菜单表与行业导航请求，避免无关的“网络错误”提示。

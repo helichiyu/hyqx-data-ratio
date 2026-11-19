@@ -278,15 +278,6 @@ def run(
             "funasr": _version("funasr"),
             "transformers": _version("transformers"),
         },
-        "annotation": {
-            "accuracy": None,
-            "wilsonLower": None,
-            "wilsonUpper": None,
-            "confusionMatrix": None,
-            "samplesPerModal": {},
-            "blockedReason": "MATCHING_ANNOTATION_REQUIRED",
-            "note": "无人工标注（H-05）；不填准确率/区间/混淆矩阵。",
-        },
         "provisional": True,
         "generatedAt": now_iso(),
     }

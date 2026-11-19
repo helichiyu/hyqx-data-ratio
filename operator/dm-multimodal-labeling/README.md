@@ -19,7 +19,7 @@
 **不做**：
 
 - 不训练/微调分类器；不调用 LLM；
-- 不伪造无证据标签；不产出无人工标注的准确率/F1（`metrics.annotation.accuracy=null`）；
+- 不伪造无证据标签；准确率/F1 不在本算子输出范围；
 - 不做标签治理（OP-07）、领域/能力标签（OP-06）。
 
 ## 2. 接口与参数
@@ -66,7 +66,7 @@ streams/keyframes/<record_id>/  # 视频关键帧
 | `unclassifiedByReason` | `UNCLASSIFIED_LOW_SIMILARITY` / `UNCLASSIFIED_LOW_CONFIDENCE` / `UNCLASSIFIED_SMALL_MARGIN` / `UNCLASSIFIED_NO_TEXT_EVIDENCE` / `UNCLASSIFIED_NO_SPEECH` |
 | `toolVersions` | RapidOCR / FunASR / transformers 版本 |
 
-**未评测**：准确率、Wilson 区间、混淆矩阵（无人工标注 H-05）；`annotation.blockedReason=MATCHING_ANNOTATION_REQUIRED`。
+**未评测**：准确率、Wilson 区间、混淆矩阵不在本算子输出范围（以 Comic 任务书为准）；只输出标注率、置信度分布、路径合法率等过程指标。
 
 ## 5. 复算命令
 

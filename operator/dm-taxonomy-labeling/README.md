@@ -14,7 +14,7 @@
 
 **方法**：内容与标签统一 bge 向量；每个空间独立余弦相似度、topK 内 softmax、相似度/置信度阈值裁剪，每空间最多 3 个标签；未达阈值输出「未明确」。路径必须命中 `treeVersion=taxonomy-1013-pending`。
 
-**不做**：不训练分类器；不合并两个空间；不处理非文本模态（跳过并计数）；无人工标注不填准确率。
+**不做**：不训练分类器；不合并两个空间；不处理非文本模态（跳过并计数）；准确率不在本算子输出范围。
 
 ## 2. 接口与参数
 
@@ -48,7 +48,7 @@ metrics.json / manifest.json / failures.jsonl / input_manifest.json / summary.js
 - `labeledCounts` / `unknownCounts`：按空间统计；
 - `meanLabelsPerRecord` / `meanConfidence`：按空间统计；
 - `pathLegalRate`：命中树的标签占比（应为 1.0）；
-- `annotation.accuracy=null` + `blockedReason=MATCHING_ANNOTATION_REQUIRED`。
+- 不输出 accuracy 字段；只输出标注率、置信度、路径合法率等过程指标。
 
 ## 5. 复算与测试
 
@@ -68,7 +68,7 @@ PY
 1. 零样本多标签，专业/长尾领域区分度有限，阈值需人工确认；
 2. 领域树/能力树权威源与版本待 H-02/Q-01 确认；
 3. 只处理文本记录；图像/音频/视频的领域/能力标签需先转写（后续可接 OP-05 证据）；
-4. 无人工标注，不产出准确率/混淆矩阵。
+4. 准确率/混淆矩阵不在本算子输出范围。
 
 ## 7. 版本与证据
 

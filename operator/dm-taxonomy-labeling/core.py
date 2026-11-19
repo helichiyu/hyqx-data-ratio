@@ -195,11 +195,6 @@ def run(
         "pathLegalRate": round(1 - invalid_labels / max(1, total_labels), 6),
         "unknownLabel": cfg["labeling"]["unknownLabel"],
         "modelVersion": model.model_version,
-        "annotation": {
-            "accuracy": None,
-            "blockedReason": "MATCHING_ANNOTATION_REQUIRED",
-            "note": "无人工标注（H-05）；不填准确率/混淆矩阵。",
-        },
         "provisional": True,
         "generatedAt": now_iso(),
     }
