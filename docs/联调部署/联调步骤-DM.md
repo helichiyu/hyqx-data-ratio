@@ -162,17 +162,19 @@ PORT=8092 DEVICE=cpu MODEL_BACKEND=idg MAX_UPLOAD_BYTES=1073741824 \
 
 ```bash
 curl -s http://127.0.0.1:8092/health
-curl -s http://127.0.0.1:8092/dm-ratio-computation/healthz
+curl -s http://127.0.0.1:8092/dm-ratio-analysis/healthz
 ```
 
 预期：`/health` 返回 200（`status=degraded` 也可接受，表示部分算子缺依赖）；
-`dm-ratio-computation`、`dm-multimodal-analysis`、`dm-corpus-normalization`、`dm-corpus-profiling`、
-`dm-quality-analysis` 的 `ready=true`。
+`dm-multimodal-analysis`、`dm-corpus-normalization`、`dm-multimodal-labeling`、
+`dm-taxonomy-labeling`、`dm-corpus-profiling`、`dm-ratio-analysis`、`dm-dataset-packaging`、
+`dm-ratio-reporting` 的 `ready=true`。
 
-> 本机未放模型权重时：`dm-multimodal-labeling` 会返回 `DEPENDENCY_UNAVAILABLE`（缺 bge-base-zh-v1.5），
-> 打标任务会明确失败；画像 `basic`/`quality` 不依赖权重，可完整跑通。
-> 需要打标时，把模型仓放到 `D:\models\shared\`（含 bge-base-zh-v1.5），或设置 `WEIGHTS_DIR`，
-> 再执行 `python scripts/stage_weights.py` 暂存并校验。
+> 本机未放模型权重时：`dm-multimodal-labeling`、`dm-taxonomy-labeling`（basic 画像前置）会返回
+> `DEPENDENCY_UNAVAILABLE`（缺 bge-base-zh-v1.5），打标与 basic 画像都会明确失败；纯文本画像
+> `language/text/knowledge` 与 `quality` 可先跑通。权重不在 git 中，需从发布包/模型仓准备：
+> 放到 `operator/weights/shared/` 或 `D:\models\shared\`（含 bge / paraformer / vad / punc），
+> 再执行 `python scripts/stage_weights.py` 校验。
 
 后端启动时打开算法开关（默认关闭，未部署算子池的环境保持关闭）：
 
@@ -287,8 +289,8 @@ python tools/uap/check_permissions.py
 ## 4. 页面联调顺序与预期
 
 > 算法已接入（2.3）：数据打标、语料画像会真实调用算子池。
-> 本机未放模型权重时，打标在 OP-05 返回 `DEPENDENCY_UNAVAILABLE`，任务会**明确失败**而不是悬挂；
-> 画像 `basic`/`quality` 不依赖权重，可跑通并落库。
+> 本机未放模型权重时，打标在 OP-05、basic 画像在 OP-06 返回 `DEPENDENCY_UNAVAILABLE`，任务会
+> **明确失败**而不是悬挂；`language/text/knowledge/quality` 画像可先跑通。
 > 仿真/生产/分析已接算子链：仿真独立可跑；生产依赖「已完成打标」；分析依赖「已成功生产」。
 > 上游缺失时会明确失败并指出缺哪一步，不再统一提示“执行链未编排”。
 > 「配比生产」是左侧分组标题，不是按钮：先点它展开，再点「配方包管理/配比生产任务/配比分析任务」。
@@ -300,7 +302,7 @@ python tools/uap/check_permissions.py
 | 3 | 数据接入与标准化 | 新建数据集 → 上传 `.jsonl/.txt` → 查看文件 → 下载 → 启用 | 文件 SHA-256 去重；重复上传 409；统计文件数/大小正确 |
 | 4 | 数据打标 | 选可用数据集 → 新建任务（自动初标）→ 启动 | 有 bge 权重时 completed，样本落库；无权重时 `failed` + `DEPENDENCY_UNAVAILABLE`，不悬挂在 running |
 | 5 | 数据打标 | 查看详情/进度/统计/样本 | 成功时按置信度统计标签、未归类；失败时统计为 0 |
-| 6 | 语料画像分析 | 选数据集 → 画像类型 `basic`/`quality` → 创建并启动 | 任务 completed；结果弹窗显示指标数与 `profile` JSON；画像卡出现摘要 |
+| 6 | 语料画像分析 | 选数据集 → 画像类型 `quality`（basic 需权重）→ 创建并启动 | 任务 completed；结果弹窗显示指标数与 `profile` JSON；画像卡出现摘要 |
 | 7 | 语料画像分析 | 查看任务列表 → 结果 → 画像总览 | 列表状态 completed；`metricCount`、`summary` 与算子 metrics 一致 |
 | 8 | 场景管理 | 新建场景 → 勾选标签树（任意层级）→ 启停 → 删除 | 非法标签 400；停用后 options 为空 |
 | 9 | 配比方案设计 | 新建方案（2 行 40/60，core≥30）→ 保存 → 详情 → 校验 | 比例合计 100；核心占比、覆盖率校验通过；行库存 0、缺口按目标计算 |
@@ -342,10 +344,10 @@ curl -s -X POST http://127.0.0.1:8082/hs-api/data-mixing/profile \
    - 有权重：`completed`，`GET /labeling/{id}/samples` 返回样本；
    - 无权重：`failed`，`errorMessage` 包含 `DEPENDENCY_UNAVAILABLE` 与缺失模型路径。
 
-> 本机已实测：画像 `basic` 10 项指标、`quality` 16 项指标，任务 completed 并落库；
-> 打标在无 bge 权重时按预期失败。
+> 本机已实测：画像 `quality` 16 项指标，任务 completed 并落库；`basic` 已改为
+> OP-01→02→06→08，缺 bge 权重时会在 OP-06 明确失败；权重到位后再验证 basic 10 项指标。
 
-### 其它未接算子链的演示（仅测试库）
+### 手工注入完成态的演示（仅测试库）
 
 以下 SQL 用于演示“已完成”状态，**不要在生产执行**。请先通过页面创建对应任务，再把 `<id>` 替换为实际 ID。
 
