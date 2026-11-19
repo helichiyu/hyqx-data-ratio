@@ -37,13 +37,13 @@
 - 成品目录下载为 zip 存本地存储，写 `stage_artifact`、`operator_run`、`operator_stat`；
 - 库存不足时按 `allowShortage` 标记 completed / partial_failed，写缺口说明。
 
-**当前阻塞**：本机没有 bge 权重，打标无法完成，因此生产会明确失败：
+**当前阻塞**：本地 git checkout 不带权重，本次 `operator/weights/` 为空，打标无法完成，因此生产会明确失败：
 
 ```text
 请先完成数据集【...】的数据打标并产出样本
 ```
 
-**待验证**：权重到位、打标 completed 后，用同一数据集发起生产，确认成品 zip、
+**待验证**：按发布包/模型仓准备权重、打标 completed 后，用同一数据集发起生产，确认成品 zip、
 阶段产物、算子运行记录与缺口统计。
 
 ---
