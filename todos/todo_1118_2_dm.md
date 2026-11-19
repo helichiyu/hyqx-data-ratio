@@ -1,0 +1,77 @@
+# DM 平台开发记录（原 feature 分支 todo_1118_2.md）
+
+# TODO: 数据配比（DM）第二批域：语料画像 + 场景管理 - 2026-11-18
+
+## 需求描述
+
+按 `docs/任务要求/平台变更描述.xlsx` 与 HTML 原型第 4、5 页，继续实现：
+
+1. **语料画像（profile）**：画像任务（规模/来源/语言时效/文本属性/任务适配/知识覆盖/质量一致性）、执行状态与进度、数据集画像概览、画像结果读取；
+2. **场景管理（scene）**：场景 CRUD、标签树勾选、模型定位/训练阶段/应用场景、启停、被配比方案引用时删除保护。
+
+沿用第一批已确认口径：表 `hs_data_mixing_*`、接口 `/hs-api/data-mixing`、权限 `data-mixing:*`、库 `idg_db`、算法只保留网关抽象。
+
+## 任务清单
+
+### 1. 语料画像（profile）
+
+- [x] 1.1 PO/Mapper：`ProfileTaskEntity`、`ProfileResultEntity`
+- [x] 1.2 画像类型与算子映射：`basic/language/text/speech/visual/knowledge/quality` → 7 个算子；按数据集模态判定适用性
+- [x] 1.3 DTO/VO：批量建任务、任务分页/详情/进度、结果、概览
+- [x] 1.4 任务生命周期：按类型批量创建（`startNow` 可选）、启动/停止/重跑、CAS + 分桶锁 + 事务提交后异步
+- [x] 1.5 算法网关扩展：`submitProfile` + `DmProfileJobRequest`；Noop 明确失败
+- [x] 1.6 结果读取与概览：`result` 按 `resultId`/任务最新结果读取；`overview` 按类型汇总最新任务与结果
+- [x] 1.7 Controller + 权限码 `data-mixing:profile:*`
+
+### 2. 场景管理（scene）
+
+- [x] 2.1 PO/Mapper：`SceneEntity`；新增 `tree_version` 列（changeSet 010）
+- [x] 2.2 DTO/VO：CRUD、启停、选项；标签数组与 JSON 互转
+- [x] 2.3 校验：名称唯一、模型定位/训练阶段枚举、标签路径必须存在于分类版本、占比/覆盖范围
+- [x] 2.4 删除保护：被 `hs_data_mixing_ratio_plan` 引用时拒绝
+- [x] 2.5 Controller + 权限码 `data-mixing:scene:*`
+
+### 3. 联动与验证
+
+- [x] 3.1 数据集删除/停用联动检查画像任务（与打标任务同等对待）
+- [x] 3.2 残留任务恢复同时覆盖打标与画像
+- [x] 3.3 Liquibase 010 在 idg_db 执行成功
+- [x] 3.4 local-dev 接口冒烟并清理测试数据
+
+## 验收结果
+
+1. 编译打包通过；OpenAPI 路径 29 → **41**，新增 `/scene` 4 条、`/profile` 8 条。
+2. 场景：
+   - 用真实分类路径创建成功，`tags` JSON 往返一致；
+   - 非法标签返回 400「以下标签不在分类版本内」；
+   - 停用后 options 为空，启用恢复；
+   - 删除后详情返回「场景不存在」。
+3. 画像：
+   - 一次创建 basic/text/quality 三个任务，均约 1 秒进入 `failed`，`errorCode=ALGORITHM_UNAVAILABLE`，错误信息可读；
+   - `overview` 对 text 模态返回 5 个适用类型（basic/language/text/knowledge/quality），失败任务状态与错误可见；
+   - 无结果时返回「该任务尚无画像结果」；
+   - pending 任务可停止，失败任务可重跑（重跑后再次明确失败）。
+4. 数据集：存在画像任务时删除返回 400；删除画像任务后可正常删除。
+5. 清理后数据库：场景 0、数据集 0、画像任务 0、分类节点 794、分类版本 1。
+
+## 已知限制
+
+- 画像结果导入未实现：算法适配器需在成功时写入 `hs_data_mixing_profile_result` 并回填任务的 `result_id`；`complete()` 已支持读取并回填。
+- 场景业务编号 `scene_code` 留空：`SCN` 前缀尚未在平台 ID 规范中登记，待申请后启用。
+- 画像概览对无任务的适用类型返回空状态，前端按「未分析」展示。
+
+## 下一步建议
+
+1. **配比方案（ratio-plan）**：场景引用、配比行、比例合计 100%、核心标签 ≥30%、目标总量/种子、智能推荐记录。
+2. 配方包（recipe）与版本/差异/封存；生产任务（production-task）与执行记录、阶段产物、算子运行/统计、文件流转。
+3. 配比分析（analysis）、风险（risk）、专家校验（expert）。
+
+## 执行记录
+
+### 2026-11-18 11:48–12:00
+
+- 新增 12 个接口：场景 7（page/options/detail/create/update/status/remove）、画像 8（page/overview/detail/create/start/stop/retry/remove/progress/result，共 10 个路径，其中 POST/GET 同路径合并计数）。
+- 新增 `DmProfileSupport`（7 类画像 → 7 个算子、模态适用性）、`DmProfileJobRequest`、`submitProfile`。
+- Liquibase 010：`hs_data_mixing_scene.tree_version` 执行成功，二次启动无变更。
+- 冒烟脚本：`smoke5.py`，结果见 `smoke_result5.txt`（临时文件，不入库）。
+- 测试数据已物理清理，数据库恢复干净基线。
