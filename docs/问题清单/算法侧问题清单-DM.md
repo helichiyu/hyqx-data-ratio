@@ -12,7 +12,7 @@
 
 | # | 事项 | 状态 | 结论 |
 | ---: | --- | --- | --- |
-| 1 | OP-05 bge / 语音权重 | ✅ 已解决 | 权重已在 `operator/weights/shared/`，随发布包/镜像交付；git checkout 不带权重 |
+| 1 | OP-05 bge / 语音权重 | ⚠ 待本地落地 | 算法侧称权重已在 `operator/weights/shared/` 并随发布包/镜像交付；但本地 git checkout 为空，需提供权重包/下载路径 |
 | 2 | OP-11 CPU/依赖 | ✅ 已解决 | CPU 可跑，按 `operator/requirements.txt` 安装；本机需 ffmpeg |
 | 3 | OP-08 / OP-06 | ✅ 已解决 | basic 画像平台链路已改为 OP-01→02→06→08，OP-06 失败即任务失败 |
 | 4 | 模型网关凭据 | ✅ 已答复 | 当前 14 个算子均不调用网关，凭据缺失不影响任务 |
@@ -23,7 +23,7 @@
 
 ---
 
-## 1. 打标算子 OP-05 缺少 bge 权重（✅ 已解决）
+## 1. 打标算子 OP-05 缺少 bge 权重（⚠ 待本地权重包）
 
 **现象**：数据打标任务启动后约数秒失败：
 
@@ -42,6 +42,9 @@
 2. 交付方式：直接给权重包，或给可从内网模型仓下载的脚本；
 3. 目录约定确认：`operator/weights/shared/bge-base-zh-v1.5/`，或 `WEIGHTS_DIR`/`D:\models\shared\bge-base-zh-v1.5/`；
 4. 是否还需要 RapidOCR、FunASR paraformer-zh 等模型文件才能覆盖图像/音频/视频打标。
+
+**2026-11-20 状态**：算法侧答复权重已在 `operator/weights/shared/`，并随发布包/镜像交付；但**本地 git checkout 的 `operator/weights/` 仍为空**（权重按约定不进 git）。
+所以这不是算法代码缺陷，但仍是**本地联调未闭环的交付项**：需要算法侧给发布包/下载路径，或直接拷贝权重到本地。
 
 **平台侧动作**：权重到位后执行 `python scripts/stage_weights.py`，重启 8092，重新打标。
 
@@ -146,6 +149,6 @@ OP-05 README 默认参数为 `confidence_threshold=0.25`。
 
 ## 9. 剩余非算法阻塞（本地环境准备）
 
-- `git checkout` 不包含 `operator/weights/`；需从发布包/模型仓放入 bge、paraformer、vad、punc 等权重，再执行 `python scripts/stage_weights.py` 校验。
+- **权重交付未闭环（算法侧）**：`git checkout` 不包含 `operator/weights/`，本地目录为空；需要算法侧提供发布包/下载路径，或把 bge、paraformer、vad、punc 等权重放到 `operator/weights/shared/`（或 `WEIGHTS_DIR`），再执行 `python scripts/stage_weights.py` 校验。
 - 本机需按 `operator/requirements.txt` 安装 torch/transformers/funasr 等依赖，并安装 ffmpeg；否则打标/语音/basic 画像会明确报依赖缺失。
-- 这些是本地环境准备项，不是算法代码缺陷；算法侧问题清单其余项均已答复/解决。
+- 依赖/ffmpeg 属于本地环境准备；权重属于算法侧交付物。除此之外，算法侧问题均已答复/解决。
