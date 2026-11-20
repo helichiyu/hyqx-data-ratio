@@ -141,3 +141,11 @@ OP-05 README 默认参数为 `confidence_threshold=0.25`。
 
 分类体系性能验证过程中创建了多个「性能验证-批量快照」草稿版本；不影响算子，
 但版本列表会看到。后续可加版本删除/归档清理能力。
+
+---
+
+## 9. 剩余非算法阻塞（本地环境准备）
+
+- `git checkout` 不包含 `operator/weights/`；需从发布包/模型仓放入 bge、paraformer、vad、punc 等权重，再执行 `python scripts/stage_weights.py` 校验。
+- 本机需按 `operator/requirements.txt` 安装 torch/transformers/funasr 等依赖，并安装 ffmpeg；否则打标/语音/basic 画像会明确报依赖缺失。
+- 这些是本地环境准备项，不是算法代码缺陷；算法侧问题清单其余项均已答复/解决。
