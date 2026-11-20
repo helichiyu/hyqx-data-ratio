@@ -12,7 +12,9 @@
 
 | # | 事项 | 状态 | 结论 |
 | ---: | --- | --- | --- |
-| 1 | OP-05 bge / 语音权重 | ⚠ 待本地落地 | 算法侧称权重已在 `operator/weights/shared/` 并随发布包/镜像交付；但本地 git checkout 为空，需提供权重包/下载路径 |
+| 1a | bge-base-zh-v1.5 | ✅ 已解决 | 已从 ModelScope `BAAI/bge-base-zh-v1.5` 下载，13 个文件 SHA256 全部匹配 |
+| 1b | paraformer-zh | ⚠ 版本不一致 | ModelScope 上游已下载，但 `model.pt` 等 5 个文件与 `SHA256SUMS` 不一致，`.mdl/.msc/.mv` 等 7 个文件上游没有；音频/视频 ASR 未验证 |
+| 1c | fsmn-vad / ct-punc | ⚠ 未使用/未校验 | 代码当前只读 `paraformer-zh`；SHA 清单未登记这两个目录，联调音频前需算法侧确认 |
 | 2 | OP-11 CPU/依赖 | ✅ 已解决 | CPU 可跑，按 `operator/requirements.txt` 安装；本机需 ffmpeg |
 | 3 | OP-08 / OP-06 | ✅ 已解决 | basic 画像平台链路已改为 OP-01→02→06→08，OP-06 失败即任务失败 |
 | 4 | 模型网关凭据 | ✅ 已答复 | 当前 14 个算子均不调用网关，凭据缺失不影响任务 |
@@ -23,7 +25,7 @@
 
 ---
 
-## 1. 打标算子 OP-05 缺少 bge 权重（⚠ 待本地权重包）
+## 1. 打标算子 OP-05 权重（bge ✅ / paraformer ⚠）
 
 **现象**：数据打标任务启动后约数秒失败：
 
@@ -43,8 +45,10 @@
 3. 目录约定确认：`operator/weights/shared/bge-base-zh-v1.5/`，或 `WEIGHTS_DIR`/`D:\models\shared\bge-base-zh-v1.5/`；
 4. 是否还需要 RapidOCR、FunASR paraformer-zh 等模型文件才能覆盖图像/音频/视频打标。
 
-**2026-11-20 状态**：算法侧答复权重已在 `operator/weights/shared/`，并随发布包/镜像交付；但**本地 git checkout 的 `operator/weights/` 仍为空**（权重按约定不进 git）。
-所以这不是算法代码缺陷，但仍是**本地联调未闭环的交付项**：需要算法侧给发布包/下载路径，或直接拷贝权重到本地。
+**2026-11-20 状态**：
+- `bge-base-zh-v1.5`：已从 ModelScope 下载到 `operator/weights/shared/bge-base-zh-v1.5/`，13 个文件 SHA256 与清单全部匹配；文本打标/basic 画像已跑通。
+- `paraformer-zh`：已从 ModelScope 下载，但上游 `model.pt`、`config.yaml`、`configuration.json`、README、示例音频与清单 SHA 不一致，且清单中的 `.mdl/.msc/.mv`、`asr_example_hotword.wav`、`hotword.txt`、`fig/res.png`、`fig/seaco.png` 上游没有；**音频/视频 ASR 未验证**。需要算法侧提供与 `SHA256SUMS` 完全一致的权重包，或更新清单/说明哪些文件非必需。
+- `fsmn-vad`、`ct-punc`：算法答复提到，但当前算子和 SHA 清单都没有使用/登记；联调音频前需确认。
 
 **平台侧动作**：权重到位后执行 `python scripts/stage_weights.py`，重启 8092，重新打标。
 
@@ -149,6 +153,8 @@ OP-05 README 默认参数为 `confidence_threshold=0.25`。
 
 ## 9. 剩余非算法阻塞（本地环境准备）
 
-- **权重交付未闭环（算法侧）**：`git checkout` 不包含 `operator/weights/`，本地目录为空；需要算法侧提供发布包/下载路径，或把 bge、paraformer、vad、punc 等权重放到 `operator/weights/shared/`（或 `WEIGHTS_DIR`），再执行 `python scripts/stage_weights.py` 校验。
+- **bge 权重已落地**：已放 `operator/weights/shared/bge-base-zh-v1.5/`，SHA 全匹配；文本打标、basic 画像已跑通。
+- **paraformer 权重版本不一致（算法侧待确认）**：上游 ModelScope 文件与 `SHA256SUMS` 不一致，音频/视频 ASR 尚未验证；需算法侧提供与清单一致的权重包或更新清单。
+- `fsmn-vad`、`ct-punc` 当前代码未使用，SHA 清单也未登记；如需音频/视频，先确认是否必需。
 - 本机需按 `operator/requirements.txt` 安装 torch/transformers/funasr 等依赖，并安装 ffmpeg；否则打标/语音/basic 画像会明确报依赖缺失。
-- 依赖/ffmpeg 属于本地环境准备；权重属于算法侧交付物。除此之外，算法侧问题均已答复/解决。
+- 依赖/ffmpeg 属于本地环境准备；paraformer 权重版本不一致属于算法侧交付物问题。bge/文本链路已闭环。
