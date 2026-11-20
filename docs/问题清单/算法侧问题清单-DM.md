@@ -52,6 +52,47 @@
 
 **平台侧动作**：权重到位后执行 `python scripts/stage_weights.py`，重启 8092，重新打标。
 
+
+### 1.1 paraformer-zh 版本不一致的详细核对（2026-11-20）
+
+`operator/weights/SHA256SUMS` 是 2026-11-16 由内部参考模型目录生成的；2026-11-20 从 ModelScope 公共仓库
+`iic/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-pytorch` 下载后，逐文件比对结果：
+
+| 文件 | 清单期望（前缀） | 公共仓库实际（前缀） | 结论 |
+| --- | --- | --- | --- |
+| `model.pt` | `3d491689...` | `5bba782a...`（880,502,012 B） | ❌ 不一致 |
+| `config.yaml` | `6602efa9...` | `bfd424b9...` | ❌ 不一致 |
+| `configuration.json` | `1acac324...` | `b7d29179...` | ❌ 不一致 |
+| `README.md` | `44723036...` | `efd38df0...` | ❌ 不一致 |
+| `example/asr_example.wav` | `2ffa478d...` | `a1bd32dc...` | ❌ 不一致 |
+| `am.mvn` | `29b3c740...` | `29b3c740...` | ✅ 一致 |
+| `seg_dict` | `59a2ef80...` | `59a2ef80...` | ✅ 一致 |
+| `tokens.json` | `2b20c2b1...` | `2b20c2b1...` | ✅ 一致 |
+| `.mdl` / `.msc` / `.mv` | 清单有 | 公共仓库没有 | ❌ 缺失 |
+| `asr_example_hotword.wav`、`example/hotword.txt`、`fig/res.png`、`fig/seaco.png` | 清单有 | 公共仓库没有 | ❌ 缺失（参考目录附加素材） |
+
+另：公共仓库多出 `.gitattributes`、`fig/struct.png`，清单未登记。
+
+已核对 ModelScope 的 `master`、`v2.0.5`、`v2.0.4` 三个 revision，`model.pt` 的 SHA 都是
+`5bba782a...`，说明**不是选错 tag**；清单对应的是内部参考目录中的另一份模型/缓存，而不是当前公共仓库。
+
+**判断**：
+
+- `am.mvn/seg_dict/tokens.json` 一致，说明模型家族/词表相同；
+- `model.pt`、`config.yaml`、`configuration.json` 不一致，说明权重或配置版本不同；
+- `.mdl/.msc/.mv` 是 ModelScope SDK 的缓存元数据，公共仓库本来就没有；
+- 其余缺失文件是内部参考目录的附加示例/图片，运行期不读取。
+
+**影响**：
+
+- 代码运行时只检查 `model.pt` 是否存在，不校验 SHA，所以公共模型**可能能加载**；
+- 但算子验证证据用的是内部模型，不能保证 ASR 输出与验收一致；因此音频/视频打标、语音画像暂不宣称通过。
+
+**建议算法侧二选一**：
+
+1. 提供与 `SHA256SUMS` 完全一致的内部 `paraformer-zh` 目录（含 `.mdl/.msc/.mv` 等），或提供发布包下载路径；
+2. 如果公共模型可以接受，重新生成 `SHA256SUMS` 并注明 `paraformer-zh` 的 ModelScope revision/版本，平台按新清单校验后再测音频/视频。
+
 ---
 
 ## 2. OP-11 语音画像依赖 torch/funasr（✅ 已解决）
